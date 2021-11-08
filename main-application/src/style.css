@@ -252,7 +252,7 @@ Header img{
     transition: .5s;
 }
 @media(max-width:992px){
-    .hero h1{
+    Header h1{
         position: absolute;
         top: 30%;
         left: 50%;
@@ -260,7 +260,7 @@ Header img{
         font-size:11vw;
         white-space: nowrap;
     }
-    .hero h3{
+    Header h3{
         position: absolute;
         top: 60%;
         left: 50%;
@@ -268,34 +268,34 @@ Header img{
         font-size: 1.5rem;
         white-space: nowrap;
     }
-    .hero #know-more{
+    Header #know-more{
         position: absolute;
         top: 75%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
-    .hero #know-more:hover{
+    Header #know-more:hover{
         position: absolute;
         top: 74%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
-    .hero #github{
+    Header #github{
         position: absolute;
         top: 85%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
-    .hero #github:hover{
+    Header #github:hover{
         position: absolute;
         top: 84%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
-    .hero img{
+    Header img{
         display: none;
     }
-    .about img{
+    #about img{
         display: none;
     }
     .projects .card{
@@ -304,7 +304,7 @@ Header img{
     }
 }
 @media(max-width:600px){
-    .about h1{
+    #about h1{
         white-space: nowrap;
     }
     .projects .card{
