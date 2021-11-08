@@ -96,11 +96,19 @@ Header #github:hover{
     box-shadow:0 0 10px #0096ff;
 }
 Header img{
-    width: 30vw;
+    width: 40vw;
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 0%;
     transform: translate(0%,-50%);
+}
+Header p{
+    position: absolute;
+    right: -2%;
+    bottom: 6%;
+    color: white;
+    z-index: 100;
+    transform: rotate(90deg);
 }
 #about{
     align-items: center;
@@ -169,10 +177,10 @@ Header img{
     background: #292C35;
     border-color: #292C35;
     box-shadow: 0 0 10px #fff;
-    transition: .5s;
+    transition: 1s;
 }
 .projects .card:hover{
-    box-shadow: 0 0 20px #0096FF;
+    box-shadow: 0 0 10px #0096FF;
 }
 .card-title,.card-text{
     color: #fff;
@@ -239,6 +247,7 @@ Header img{
     justify-content: center;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 10px #0096FF;
 }
 .footer p{
     color: #0096ff;
