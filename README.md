@@ -1,7 +1,7 @@
 # React.js-Portfolio
 
 
-This is fully responsive portfolio made with React.js, Html, Css
+This is a fully responsive portfolio made with React.js, Html, Css
 
 Fork this repository and run:
 
