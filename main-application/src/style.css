@@ -26,7 +26,6 @@ html{
     color: #292C35;
     background: #fff;
 }
-
 .toggle-btn{
     position: fixed;
     right: 0;
@@ -121,6 +120,7 @@ Header{
 Header h1{
     color: white;
     font-size: 5rem;
+    text-align: left;
     position: absolute;
     top: 40%;
     left: 30%;
@@ -196,6 +196,9 @@ Header p{
     color: white;
     z-index: 100;
     transform: rotate(90deg);
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 #about{
     align-items: center;
@@ -346,6 +349,32 @@ Header p{
     font-size: 30px;
     margin: 20px;
     transition: .5s;
+}
+@keyframes bounce{
+    0%{
+        position: absolute;
+        right: -2%;
+        bottom: 6%;
+        color: white;
+        z-index: 100;
+        transform: rotate(90deg);
+    }
+    50%{
+        position: absolute;
+        right: -2%;
+        bottom: 10%;
+        color: white;
+        z-index: 100;
+        transform: rotate(90deg);
+    }
+    100%{
+        position: absolute;
+        right: -2%;
+        bottom: 6%;
+        color: white;
+        z-index: 100;
+        transform: rotate(90deg);
+    }
 }
 @media(max-width:992px){
     Header h1{
