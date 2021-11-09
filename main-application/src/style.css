@@ -26,6 +26,93 @@ html{
     color: #292C35;
     background: #fff;
 }
+
+.toggle-btn{
+    position: fixed;
+    right: 0;
+    margin:25px;
+    padding:10px;
+    width: 60px;
+    height:60px;
+    z-index: 2000;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    border:none;
+    outline:none;
+    background:linear-gradient(to bottom right, #0096FF, #ADD8E6);
+    fill: #fff;
+    border-radius: 5px;
+}
+.toggle-btn:active,.toggle-btn:focus{
+    border:none;
+    outline: none;
+}
+.sidenav {
+    height: 90vh;
+    margin: 20px;
+    width: 0;
+    position: fixed;
+    z-index: 4000;
+    top: 0;
+    right: 0;
+    background:linear-gradient(to bottom right, #0096FF, #ADD8E6);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-radius: 20px;
+}
+  
+.sidenav a {
+    margin-left: 20px;
+    margin-top:20px;
+    padding: 20px;
+    width: fit-content;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #292C35;
+    text-decoration: none;
+    text-shadow: 0 0 10px #fff;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.item{
+    color: #fff;
+    background: #292C35;
+    transition: .5s;
+    font-weight: 500;
+    text-transform: uppercase;
+    background:transparent;
+    border-left:2px solid transparent;
+    border-right:2px solid transparent;
+    border-top:2px solid transparent;
+    color:black;
+}
+.item:hover{
+    border-radius: 15px;
+}
 Header{
     background:  #292C35;
     width: 100%;

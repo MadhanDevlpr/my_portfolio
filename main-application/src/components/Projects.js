@@ -2,7 +2,7 @@ import React from 'react';
 
 function Projects() {
     return (
-        <div>
+        <div id="projectss">
             <div className="projects">
                 <div className="projecttitle">
                     <h1 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true">Some of my projects.</h1>

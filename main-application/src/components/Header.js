@@ -3,7 +3,7 @@ import logo from '../images/sideimg.png';
 
 const Header = () => {
     return (
-        <header>
+        <header id="header">
             <h1>Hello,<br/> I'm <span className="glow">Aadithya</span></h1>
             <h3>Front end Developer</h3>
             <a id="know-more" href="#about">Know more</a>
