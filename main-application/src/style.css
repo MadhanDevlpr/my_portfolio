@@ -23,12 +23,13 @@ html{
 }
 *::selection{
     font-weight: bolder;
-    color: #292C35;
-    background: #fff;
+    background: #292C35;
+    color: transparent;
+    box-shadow: 0 0 10px #0096FF;
 }
 .toggle-btn{
     position: fixed;
-    right: 0;
+    left: 0;
     margin:25px;
     padding:10px;
     width: 60px;
@@ -41,12 +42,12 @@ html{
     display: flex;
     border:none;
     outline:none;
-    background:linear-gradient(to bottom right, #0096FF, #ADD8E6);
+    background: #292C35;
     fill: #fff;
     border-radius: 5px;
+    border: 2px solid #0096FF;
 }
 .toggle-btn:active,.toggle-btn:focus{
-    border:none;
     outline: none;
 }
 .sidenav {
@@ -56,8 +57,9 @@ html{
     position: fixed;
     z-index: 4000;
     top: 0;
-    right: 0;
-    background:linear-gradient(to bottom right, #0096FF, #ADD8E6);
+    left: 0;
+    background: #292C35;
+    box-shadow:0 0 10px #0096FF;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -67,17 +69,15 @@ html{
 .sidenav a {
     margin-left: 20px;
     margin-top:20px;
-    padding: 20px;
-    width: fit-content;
+    padding: 10px;
     text-decoration: none;
     display: block;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
+    color: #0096FF;
 }
   
 .sidenav a:hover {
-    color: #292C35;
     text-decoration: none;
-    text-shadow: 0 0 10px #fff;
 }
   
 .sidenav .closebtn {
@@ -98,19 +98,18 @@ html{
     .sidenav a {font-size: 18px;}
 }
 .item{
-    color: #fff;
-    background: #292C35;
+    border:2px solid #0096FF;
+    width: 150px;
     transition: .5s;
     font-weight: 500;
-    text-transform: uppercase;
+    text-align: center;
     background:transparent;
-    border-left:2px solid transparent;
-    border-right:2px solid transparent;
-    border-top:2px solid transparent;
-    color:black;
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
 }
 .item:hover{
-    border-radius: 15px;
+    background: #0096FF;
+    color: #292C35;
 }
 Header{
     background:  #292C35;
@@ -199,6 +198,7 @@ Header p{
     animation-name: bounce;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+    cursor: vertical-text;
 }
 #about{
     align-items: center;
@@ -299,12 +299,16 @@ Header p{
     border: none;
     outline: none;
     margin-left: 2vw;
-    width: 40%;
+    width: 45%;
     padding: 18px 12px 18px 12px;
     border-radius: 10px;
     background: #292C35;
     box-shadow: 0 0 10px #0096FF;
     color: #0096FF;
+}
+.wrap-input{
+    display: flex;
+    flex-direction: row;
 }
 .feedbk textarea{
     margin-left: 2vw;
@@ -435,5 +439,26 @@ Header p{
     .projects .card{
         width: 80%;
         margin: 5px;
+    }
+    
+}
+@media(max-width:300px){
+    Header h1{
+        font-size: 2.5rem;
+    }
+    Header #know-more{
+        white-space: nowrap;
+    }
+    #about h1{
+        font-size: 2.5rem;
+    }
+    .projects h1{
+        font-size: 2rem;
+    }
+    .feedbk h1{
+        font-size: 2.5rem;
+    }
+    .feedbk .wrap-input{
+        flex-direction: column;
     }
 }

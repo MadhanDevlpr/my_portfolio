@@ -4,7 +4,7 @@ function Footer() {
     return (
         <div className="footer">
             <div className="wrap">
-                <a target="_blank" rel="noreferrer" href="github.com/MadhanDevlpr">
+                <a target="_blank" rel="noreferrer" href="https://github.com/MadhanDevlpr">
                     <i className="fab fa-github"></i>
                 </a><br />
                 <a target="_blank" rel="noreferrer" href="https://codepen.io/madhanaadithya">
