@@ -43,7 +43,7 @@ html{
     display: flex;
     border:none;
     outline:none;
-    background: #292C35;
+    background: #000000;
     fill: #fff;
     border-radius: 5px;
     border: 2px solid #198754;
@@ -59,16 +59,19 @@ html{
     z-index: 4000;
     top: 0;
     left: 0;
-    background: #292C35;
+    background: #000000;
     box-shadow:0 0 10px #198754;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
     border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
   
 .sidenav a {
-    margin-left: 20px;
     margin-top:20px;
     padding: 10px;
     text-decoration: none;
@@ -124,6 +127,7 @@ Header{
 Header h1{
     color: white;
     font-size: 5rem;
+    overflow:hidden;
     text-align: left;
     position: absolute;
     top: 40%;
@@ -141,6 +145,7 @@ Header h1 .glow{
 Header h3{
     font-size: 2rem;
     position: absolute;
+    overflow:hidden;
     top: 65%;
     left: 25%;
     transform: translate(-50%,-50%);
@@ -164,7 +169,9 @@ Header #know-more:hover{
     top: 79%;
     left: 18%;
     transform: translate(-50%,-50%);
-    box-shadow:0 0 10px #198754;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
 }
 Header #github{
     position: absolute;
@@ -174,8 +181,9 @@ Header #github{
     color: #198754;
     text-decoration: none;
     padding: 10px 30px 10px 30px;
-    background: transparent;
-    border: 2px solid #198754;
+    background: #fff;
+    border: 2px solid #fff;
+    color: #198754;
     border-radius: 10px;
     transition: .5s;
 }
@@ -184,12 +192,14 @@ Header #github:hover{
     top: 79%;
     left: 35%;
     transform: translate(-50%,-50%);
-    box-shadow:0 0 10px #198754;
+    border: 2px solid #198754;
+    background: transparent;
+    color: #198754;
 }
 Header p{
     position: absolute;
     right: -2%;
-    bottom: 6%;
+    bottom: 10%;
     color: white;
     z-index: 100;
     transform: rotate(90deg);
@@ -200,21 +210,24 @@ Header p{
 }
 #about{
     align-items: center;
+    overflow:hidden;
     text-align: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: radial-gradient(circle at bottom right, #0000004e 40%,#000000,#000000), url(./images/background.png);
+    background: radial-gradient(circle at bottom left, #0000004e 40%,#000000,#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
 }
 #about .text{
   width: 95%;
+  overflow: hidden;
 }
 #about h1{
   margin: 30px;
+  overflow:hidden;
   font-size: 3rem;
   padding-top: 20px;
   font-weight: 300;
@@ -240,31 +253,69 @@ Header p{
     -oz-background-clip: text;
 }
 
-.projects{
-    background: radial-gradient(circle at top left, #0000004e 10%,#000000,#000000), url(./images/background.png);
+.skills-container{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background: radial-gradient(circle at bottom left, #0000004e 40%,#000000,#000000), url(./images/background.png);
     background-attachment: fixed;
-    background-size: cover;
+    background-size:cover;
+    background-position: center;
     text-align: center;
 }
-.projects h1{
-    padding-bottom: 40px;
-    padding-top: 50px;
+.skills-container h1{
     color: transparent;
+    overflow:hidden;
     background: linear-gradient(to right, #198754,#ADD8E6);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -oz-background-clip: text;
-    font-weight: 300;
+}
+.skills{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills .icon{
+    border: 2px solid #198754;
+    margin: 15px;
+    border-radius: 15px;
+}
+.skills .icon svg{
+    padding: 20px;
+    fill: #198754;
+}
+.projects{
+    background: radial-gradient(circle at top right, #0000004e 1%,#000000,#000000), url(./images/background.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    overflow:hidden;
 }
 .cards{
     width: 100%;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    background: radial-gradient(circle at top left, #0000004e 10%,#000000,#000000), url(./images/background.png);
+    background: radial-gradient(circle at top right, #0000004e 1%,#000000,#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
+    overflow:hidden;
+}
+.projects h1{
+    padding-bottom: 40px;
+    padding-top: 50px;
+    color: transparent;
+    overflow: hidden;
+    background: linear-gradient(to right, #198754,#ADD8E6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -oz-background-clip: text;
+    font-weight: 300;
+    overflow:hidden;
 }
 .projects .card{
     width: 20%;
@@ -273,16 +324,20 @@ Header p{
     border-color:#198754;
     border-width: 5px;
     border-radius: 30px;
-    box-shadow: 0 0 50px #198754;
     transition: 1s;
 }
 .card-title,.card-text{
     color: #fff;
+    overflow:hidden;
 }
+
 .feedbk{
     width: 100%;
     height: auto;
-    background: #292C35;
+    background: radial-gradient(circle at top left, #0000004e 1%,#000000,#000000), url(./images/background.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 .feedbk h1{
     color: transparent;
@@ -293,6 +348,7 @@ Header p{
     -oz-background-clip: text;
     font-weight: 300;
     margin: 40px;
+    overflow:hidden;
     font-size: 3rem;
 }
 .feedbk form{
@@ -305,13 +361,14 @@ Header p{
     width: 45%;
     padding: 18px 12px 18px 12px;
     border-radius: 10px;
-    background: #292C35;
-    box-shadow: 0 0 10px #198754;
+    background: transparent;
+    border:2px solid #198754;
     color: #198754;
 }
 .wrap-input{
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 }
 .feedbk textarea{
     margin-left: 2vw;
@@ -321,8 +378,8 @@ Header p{
     outline: none;
     padding: 18px 12px 18px 12px;
     border-radius: 10px;
-    background: #292C35;
-    box-shadow: 0 0 10px #198754;
+    background: transparent;
+    border:2px solid #198754;
     color: #198754;
     max-height: 400px;
 }
@@ -338,9 +395,10 @@ Header p{
 }
 .footer{
     height: auto;
-    background: radial-gradient(ellipse at bottom right, #1987543e 0%, #000000, #000000), url(./images/background.png);
-    background-size: cover;
+    background: radial-gradient(circle at top right, #0000004e 50%,#000000,#000000), url(./images/background.png);
     background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -367,24 +425,24 @@ Header p{
 @keyframes bounce{
     0%{
         position: absolute;
-        right: -2%;
-        bottom: 6%;
+        right: -5%;
+        bottom: 10%;
         color: white;
         z-index: 100;
         transform: rotate(90deg);
     }
     50%{
         position: absolute;
-        right: -2%;
-        bottom: 10%;
+        right: -5%;
+        bottom: 20%;
         color: white;
         z-index: 100;
         transform: rotate(90deg);
     }
     100%{
         position: absolute;
-        right: -2%;
-        bottom: 6%;
+        right: -5%;
+        bottom: 10%;
         color: white;
         z-index: 100;
         transform: rotate(90deg);
