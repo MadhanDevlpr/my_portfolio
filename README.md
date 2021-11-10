@@ -1,5 +1,6 @@
 # React.js-Portfolio
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7fcbe0e1-cffc-4c62-9c82-d22d53cca190/deploy-status)](https://app.netlify.com/sites/madhan/deploys)
 
 This is a fully responsive portfolio made with React.js, Html, Css
 
