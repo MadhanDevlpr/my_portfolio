@@ -12,7 +12,7 @@ html{
     width: 5px;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./images/background.png);
     background-size: cover;
-    background-position: center;
+    background-position: right;
 }
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(to bottom,#fff,#198754);
@@ -113,7 +113,7 @@ html{
     color: #292C35;
 }
 Header{
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./images/background.png);
+    background: radial-gradient(circle at bottom right, #0000004e 40%,#000000,#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
@@ -204,7 +204,7 @@ Header p{
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./images/background.png);
+    background: radial-gradient(circle at bottom right, #0000004e 40%,#000000,#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
@@ -240,7 +240,9 @@ Header p{
 }
 
 .projects{
-    background: #292C35;
+    background: radial-gradient(circle at top left, #0000004e 10%,#000000,#000000), url(./images/background.png);
+    background-attachment: fixed;
+    background-size: cover;
     text-align: center;
 }
 .projects h1{
@@ -259,13 +261,17 @@ Header p{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    background: #292C35;
+    background: radial-gradient(circle at top left, #0000004e 10%,#000000,#000000), url(./images/background.png);
+    background-attachment: fixed;
+    background-size: cover;
 }
 .projects .card{
     width: 20%;
     margin: 40px;
-    background: #292C35;
-    border-color: #292C35;
+    background: transparent;
+    border-color:#198754;
+    border-width: 5px;
+    border-radius: 30px;
     box-shadow: 0 0 50px #198754;
     transition: 1s;
 }
@@ -275,7 +281,6 @@ Header p{
 .feedbk{
     width: 100%;
     height: auto;
-    min-height: 100vh;
     background: #292C35;
 }
 .feedbk h1{
@@ -332,7 +337,9 @@ Header p{
 }
 .footer{
     height: auto;
-    background: #292C35;    
+    background: radial-gradient(ellipse at bottom right, #1987543e 0%, #000000, #000000), url(./images/background.png);
+    background-size: cover;
+    background-attachment: fixed;
     align-items: center;
     text-align: center;
     justify-content: center;
