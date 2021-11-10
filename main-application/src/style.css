@@ -9,23 +9,23 @@ html{
     overflow-x: hidden;
 }
 ::-webkit-scrollbar{
-    width: 20px;
-    background: #292C35;
+    width: 5px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./images/background.png);
+    background-size: cover;
+    background-position: center;
 }
 ::-webkit-scrollbar-thumb{
-    border: 6px solid #292C35;
-    background: linear-gradient(to bottom,#fff,#0096FF);
-    border-radius: 300px;
+    background: linear-gradient(to bottom,#fff,#198754);
     transition: .5s;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background: linear-gradient(to bottom,#ffffff8e,#0096FF8e);
+    background: linear-gradient(to bottom,#ffffff8e,#1987548e);
 }
 *::selection{
     font-weight: bolder;
     background: #292C35;
     color: transparent;
-    box-shadow: 0 0 10px #0096FF;
+    box-shadow: 0 0 10px #198754;
 }
 .toggle-btn{
     position: fixed;
@@ -45,7 +45,7 @@ html{
     background: #292C35;
     fill: #fff;
     border-radius: 5px;
-    border: 2px solid #0096FF;
+    border: 2px solid #198754;
 }
 .toggle-btn:active,.toggle-btn:focus{
     outline: none;
@@ -59,7 +59,7 @@ html{
     top: 0;
     left: 0;
     background: #292C35;
-    box-shadow:0 0 10px #0096FF;
+    box-shadow:0 0 10px #198754;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -73,11 +73,12 @@ html{
     text-decoration: none;
     display: block;
     transition: 0.3s ease-in-out;
-    color: #0096FF;
+    color: #198754;
 }
   
 .sidenav a:hover {
     text-decoration: none;
+    color: #fff;
 }
   
 .sidenav .closebtn {
@@ -98,7 +99,7 @@ html{
     .sidenav a {font-size: 18px;}
 }
 .item{
-    border:2px solid #0096FF;
+    border:2px solid #198754;
     width: 150px;
     transition: .5s;
     font-weight: 500;
@@ -108,11 +109,14 @@ html{
     border-radius: 10px;
 }
 .item:hover{
-    background: #0096FF;
+    background: #198754;
     color: #292C35;
 }
 Header{
-    background:  #292C35;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./images/background.png);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
     width: 100%;
     height: 100vh;
 }
@@ -127,7 +131,7 @@ Header h1{
 }
 Header h1 .glow{
     color: transparent;
-    background: linear-gradient(to right, #0096ff,#ADD8E6);
+    background: linear-gradient(to right, #198754,#ADD8E6);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -149,8 +153,8 @@ Header #know-more{
     color: #fff;
     text-decoration: none;
     padding: 10px 30px 10px 30px;
-    background: #0096FF;
-    border: 2px solid #0096FF;
+    background: #198754;
+    border: 2px solid #198754;
     border-radius: 10px;
     transition: .5s;
 }
@@ -159,18 +163,18 @@ Header #know-more:hover{
     top: 79%;
     left: 18%;
     transform: translate(-50%,-50%);
-    box-shadow:0 0 10px #0096ff;
+    box-shadow:0 0 10px #198754;
 }
 Header #github{
     position: absolute;
     top: 80%;
     left: 35%;
     transform: translate(-50%,-50%);
-    color: #0096FF;
+    color: #198754;
     text-decoration: none;
     padding: 10px 30px 10px 30px;
     background: transparent;
-    border: 2px solid #0096FF;
+    border: 2px solid #198754;
     border-radius: 10px;
     transition: .5s;
 }
@@ -179,14 +183,7 @@ Header #github:hover{
     top: 79%;
     left: 35%;
     transform: translate(-50%,-50%);
-    box-shadow:0 0 10px #0096ff;
-}
-Header img{
-    width: 40vw;
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translate(0%,-50%);
+    box-shadow:0 0 10px #198754;
 }
 Header p{
     position: absolute;
@@ -207,7 +204,10 @@ Header p{
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: #292C35;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./images/background.png);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
 }
 #about .text{
   width: 95%;
@@ -218,7 +218,7 @@ Header p{
   padding-top: 20px;
   font-weight: 300;
   color: transparent;
-    background: linear-gradient(to right, #0096ff,#ADD8E6);
+    background: linear-gradient(to right, #198754,#ADD8E6);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -226,13 +226,13 @@ Header p{
 }
 #about img{
   margin: 20px;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 #about p{
   line-height: 40px;
   margin-top: 60px;
   color: transparent;
-    background: linear-gradient(to right, #0096ff,#ADD8E6);
+    background: linear-gradient(to right, #198754,#ADD8E6);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -247,7 +247,7 @@ Header p{
     padding-bottom: 40px;
     padding-top: 50px;
     color: transparent;
-    background: linear-gradient(to right, #0096ff,#ADD8E6);
+    background: linear-gradient(to right, #198754,#ADD8E6);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -266,11 +266,8 @@ Header p{
     margin: 40px;
     background: #292C35;
     border-color: #292C35;
-    box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 50px #198754;
     transition: 1s;
-}
-.projects .card:hover{
-    box-shadow: 0 0 10px #0096FF;
 }
 .card-title,.card-text{
     color: #fff;
@@ -283,7 +280,7 @@ Header p{
 }
 .feedbk h1{
     color: transparent;
-    background: linear-gradient(to right, #0096ff,#ADD8E6);
+    background: linear-gradient(to right, #198754,#ADD8E6);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -303,8 +300,8 @@ Header p{
     padding: 18px 12px 18px 12px;
     border-radius: 10px;
     background: #292C35;
-    box-shadow: 0 0 10px #0096FF;
-    color: #0096FF;
+    box-shadow: 0 0 10px #198754;
+    color: #198754;
 }
 .wrap-input{
     display: flex;
@@ -319,15 +316,15 @@ Header p{
     padding: 18px 12px 18px 12px;
     border-radius: 10px;
     background: #292C35;
-    box-shadow: 0 0 10px #0096FF;
-    color: #0096FF;
+    box-shadow: 0 0 10px #198754;
+    color: #198754;
     max-height: 400px;
 }
 .feedbk input::placeholder{
-    color: #0096FF;
+    color: #198754;
 }
 .feedbk textarea::placeholder{
-    color: #0096FF;
+    color: #198754;
 }
 .feedbk .buttonn{
     width: 100px;
@@ -341,18 +338,23 @@ Header p{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 10px #0096FF;
+    box-shadow: 0 0 10px #198754;
 }
 .footer p{
-    color: #0096ff;
+    color: #198754;
 }
 .wrap{
     display:flex
 }
+
 .wrap a i{
     font-size: 30px;
     margin: 20px;
     transition: .5s;
+    color: #198754;
+}
+.wrap a i:hover{
+    color:#1987548e
 }
 @keyframes bounce{
     0%{
@@ -421,16 +423,15 @@ Header p{
         left: 50%;
         transform: translate(-50%,-50%);
     }
-    Header img{
-        display: none;
-    }
-    #about img{
-        display: none;
-    }
     .projects .card{
         width: 50%;
         margin: 40px;
     }
+    #about img{
+        margin: 20px;
+        border-radius: 10px;
+        width: 50%;
+      }
 }
 @media(max-width:600px){
     #about h1{
@@ -440,7 +441,11 @@ Header p{
         width: 80%;
         margin: 5px;
     }
-    
+    #about img{
+        margin: 20px;
+        border-radius: 10px;
+        width: 80%;
+      }
 }
 @media(max-width:300px){
     Header h1{
