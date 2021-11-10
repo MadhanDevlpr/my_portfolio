@@ -9,6 +9,18 @@ Fork this repository and run:
 git clone https://github.com/<yourusername>/React.js-Portfolio
 ```
 
+Move to the main-directory
+
+```
+cd main-application
+```
+
+Install node_modules
+
+```
+npm i
+```
+
 Run this command below to see a live demo:
 
 ``` 
