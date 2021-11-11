@@ -4,6 +4,10 @@
 
 This is a fully responsive portfolio made with React.js, Html, Css
 
+
+
+# Setup
+
 Fork this repository and run:
 
 ``` 
