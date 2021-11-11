@@ -23,14 +23,13 @@ html{
     background: linear-gradient(to bottom,#ffffff8e,#1987548e);
 }
 *::selection{
-    font-weight: bolder;
-    background: #292C35;
+    background: #2f363d;
     color: transparent;
-    box-shadow: 0 0 10px #198754;
 }
 .toggle-btn{
     position: fixed;
-    left: 0;
+    top:0;
+    right: 0;
     margin:25px;
     padding:10px;
     width: 60px;
@@ -43,7 +42,7 @@ html{
     display: flex;
     border:none;
     outline:none;
-    background: #000000;
+    background: transparent;
     fill: #fff;
     border-radius: 5px;
     border: 2px solid #198754;
@@ -58,8 +57,7 @@ html{
     position: fixed;
     z-index: 4000;
     top: 0;
-    left: 0;
-    background: #000000;
+    right: 0;
     box-shadow:0 0 10px #198754;
     overflow-x: hidden;
     transition: 0.5s;
@@ -69,6 +67,7 @@ html{
     align-items: center;
     display: flex;
     flex-direction: column;
+    backdrop-filter: blur(80px);
 }
   
 .sidenav a {
@@ -117,7 +116,7 @@ html{
     color: #292C35;
 }
 Header{
-    background: radial-gradient(circle at bottom right, #0000004e 40%,#000000,#000000), url(./images/background.png);
+    background: radial-gradient(circle at bottom right, #0000004e 40%,rgba(0,0,0,0.8),#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
@@ -216,7 +215,7 @@ Header p{
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: radial-gradient(circle at bottom left, #0000004e 40%,#000000,#000000), url(./images/background.png);
+    background: radial-gradient(circle at bottom left, #0000004e 40%,rgba(0,0,0,0.8),#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
@@ -256,7 +255,7 @@ Header p{
 .skills-container{
     padding-top: 20px;
     padding-bottom: 40px;
-    background: radial-gradient(circle at bottom left, #0000004e 40%,#000000,#000000), url(./images/background.png);
+    background: radial-gradient(circle at bottom left, #0000004e 40%,rgba(0,0,0,0.8),#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
@@ -275,18 +274,26 @@ Header p{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 .skills .icon{
-    border: 2px solid #198754;
     margin: 15px;
-    border-radius: 15px;
 }
 .skills .icon svg{
     padding: 20px;
+    fill: #fff;
+    background: #198754;
+    border: 2px solid #198754;
+    border-radius: 15px;
+}
+.skills .icon:hover svg{
     fill: #198754;
+    background: #fff;
+    border: 2px solid #fff;
 }
 .projects{
-    background: radial-gradient(circle at top right, #0000004e 1%,#000000,#000000), url(./images/background.png);
+    background: radial-gradient(circle at top right, #0000004e 1%,rgba(0,0,0,0.8),#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -298,7 +305,7 @@ Header p{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    background: radial-gradient(circle at top right, #0000004e 1%,#000000,#000000), url(./images/background.png);
+    background: radial-gradient(circle at top right, #0000004e 1%,rgba(0,0,0,0.8),#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -334,7 +341,7 @@ Header p{
 .feedbk{
     width: 100%;
     height: auto;
-    background: radial-gradient(circle at top left, #0000004e 1%,#000000,#000000), url(./images/background.png);
+    background: radial-gradient(circle at top left, #0000004e 1%,rgba(0,0,0,0.8),#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -358,7 +365,7 @@ Header p{
     border: none;
     outline: none;
     margin-left: 2vw;
-    width: 45%;
+    width: 42.5%;
     padding: 18px 12px 18px 12px;
     border-radius: 10px;
     background: transparent;
@@ -392,10 +399,15 @@ Header p{
 .feedbk .buttonn{
     width: 100px;
     padding: 8px 10px 8px 10px;
+    transition: 1s;
+}
+.feedbk .buttonn:hover{
+    background: #198754;
+    color: #fff;
 }
 .footer{
     height: auto;
-    background: radial-gradient(circle at top right, #0000004e 50%,#000000,#000000), url(./images/background.png);
+    background: radial-gradient(circle at top right, #0000004e 50%,rgba(0,0,0,0.8),#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -498,6 +510,9 @@ Header p{
         border-radius: 10px;
         width: 50%;
       }
+      .skills{
+        margin: 0;
+    }
 }
 @media(max-width:600px){
     #about h1{
