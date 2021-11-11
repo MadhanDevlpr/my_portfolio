@@ -4,6 +4,10 @@
 
 This is a fully responsive portfolio made with React.js, Html, Css
 
+
+
+# Setup
+
 Fork this repository and run:
 
 ``` 
@@ -32,7 +36,11 @@ Edit all the components and style as per your wish.
 
 # Deployment in Netlify
 
-First log in to Netlify and create a new site with Github
+## Log in to Netlify and create a new site with Github.
+
+### 
+
+Fill up the Basic build settings with the content highlighted below.
 
 Base Directory : ```main-application```
 
@@ -40,6 +48,7 @@ Build command : ```npm run build```
 
 publish directory : ```main-application/build```
 
+and click Deploy.
 
 
 # License
