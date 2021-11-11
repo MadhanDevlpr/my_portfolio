@@ -116,7 +116,7 @@ html{
     color: #292C35;
 }
 Header{
-    background: radial-gradient(circle at bottom right, #0000004e 40%,rgba(0,0,0,0.8),#000000), url(./images/background.png);
+    background: radial-gradient(circle at bottom right, #0000004e   0%,#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
@@ -215,7 +215,7 @@ Header p{
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: radial-gradient(circle at bottom left, #0000004e 40%,rgba(0,0,0,0.8),#000000), url(./images/background.png);
+    background: radial-gradient(circle at bottom left, #0000004e   0%,#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
@@ -255,7 +255,7 @@ Header p{
 .skills-container{
     padding-top: 20px;
     padding-bottom: 40px;
-    background: radial-gradient(circle at bottom left, #0000004e 40%,rgba(0,0,0,0.8),#000000), url(./images/background.png);
+    background: radial-gradient(circle at bottom left, #0000004e   0%,#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
@@ -286,6 +286,9 @@ Header p{
     background: #198754;
     border: 2px solid #198754;
     border-radius: 15px;
+    transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
 }
 .skills .icon:hover svg{
     fill: #198754;
@@ -293,7 +296,7 @@ Header p{
     border: 2px solid #fff;
 }
 .projects{
-    background: radial-gradient(circle at top right, #0000004e 1%,rgba(0,0,0,0.8),#000000), url(./images/background.png);
+    background: radial-gradient(circle at top right, #0000004e  0%,#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -305,7 +308,7 @@ Header p{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    background: radial-gradient(circle at top right, #0000004e 1%,rgba(0,0,0,0.8),#000000), url(./images/background.png);
+    background: radial-gradient(circle at top right, #0000004e 0%,#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -341,7 +344,7 @@ Header p{
 .feedbk{
     width: 100%;
     height: auto;
-    background: radial-gradient(circle at top left, #0000004e 1%,rgba(0,0,0,0.8),#000000), url(./images/background.png);
+    background: radial-gradient(circle at top left, #0000004e 0%,#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -407,7 +410,7 @@ Header p{
 }
 .footer{
     height: auto;
-    background: radial-gradient(circle at top right, #0000004e 50%,rgba(0,0,0,0.8),#000000), url(./images/background.png);
+    background: radial-gradient(circle at top right, #0000004e 0%,#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
