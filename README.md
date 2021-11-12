@@ -24,7 +24,7 @@ Move to the main-directory
 cd main-application
 ```
 
-Install node_modules
+Install required node_modules
 
 ```
 npm i
