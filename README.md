@@ -4,11 +4,15 @@
 
 This is a fully responsive portfolio made with React.js, Html, Css
 
-### Site URL / Demo -  https://madhan.netlify.app
+## Screenshot
+
+<img width="960" alt="react" src="https://user-images.githubusercontent.com/81558579/141415906-992e236f-98c6-455e-aaa5-a9d1d81eb24b.png">
+
+### Link to <a  target="_blank" href="https://madhan.netlify.app">Demo</a>
 
 # Setup
 
-Fork this repository and run:
+Fork or clone this repository and run:
 
 ``` 
 git clone https://github.com/<yourusername>/React.js-Portfolio
