@@ -11,7 +11,7 @@ function Footer() {
                     <i className="fab fa-codepen"></i>
                 </a>
             </div>
-            <a className="github-button"  href="https://github.com/MadhanDevlpr/React.js-Portfolio" data-size="large" data-show-count="true" aria-label="Star MadhanDevlpr/React.js-Portfolio on GitHub">Star</a><br />
+            <a class="github-button" href="https://github.com/MadhanDevlpr/React.js-Portfolio" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star MadhanDevlpr/React.js-Portfolio on GitHub">Star</a><br />
             <p>Made by Madhan Aadithya with React.js</p>
             <p>&copy; 2021, Open sourced with MIT License</p>
         </div>
