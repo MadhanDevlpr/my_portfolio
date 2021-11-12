@@ -4,7 +4,7 @@
 
 This is a fully responsive portfolio made with React.js, Html, Css
 
-### Link to <a href="https://madhan.netlify.app" target="_blank">Demo</a>
+### Link to <a  target="_blank" href="https://madhan.netlify.app">Demo</a>
 
 # Setup
 
