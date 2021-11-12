@@ -36,7 +36,7 @@ Run this command below to see a live demo:
 npm start 
 ```
 
-Edit all the components and style as per your wish.
+Make required changes in ``` main-application/src/components``` to suit your needs
 
 # Deployment in Netlify
 
