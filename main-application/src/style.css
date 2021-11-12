@@ -67,7 +67,7 @@ html{
     align-items: center;
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(80px);
+    backdrop-filter: blur(10px);
 }
   
 .sidenav a {
