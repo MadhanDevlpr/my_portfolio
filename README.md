@@ -4,9 +4,12 @@
 
 This is a fully responsive portfolio made with React.js, Html, Css
 
+<img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Netlify Status" />
+
 ## Screenshot
 
 <img width="960" alt="react" src="https://user-images.githubusercontent.com/81558579/141415906-992e236f-98c6-455e-aaa5-a9d1d81eb24b.png">
+
 
 ### Link to <a  target="_blank" href="https://madhan.netlify.app">Demo</a>
 
