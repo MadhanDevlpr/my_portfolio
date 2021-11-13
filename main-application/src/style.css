@@ -116,7 +116,7 @@ html{
     color: #292C35;
 }
 Header{
-    background: radial-gradient(circle at bottom right, #0000004e   0%,#000000), url(./images/background.png);
+    background: radial-gradient(circle at top right, #0000004e   50%,#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
@@ -215,7 +215,7 @@ Header p{
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: radial-gradient(circle at bottom left, #0000004e   0%,#000000), url(./images/background.png);
+    background: radial-gradient(circle at top left, #0000004e   50%,#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
@@ -255,7 +255,7 @@ Header p{
 .skills-container{
     padding-top: 20px;
     padding-bottom: 40px;
-    background: radial-gradient(circle at bottom left, #0000004e   0%,#000000), url(./images/background.png);
+    background: radial-gradient(circle at top left, #0000004e   50%,#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
@@ -296,7 +296,7 @@ Header p{
     border: 2px solid #fff;
 }
 .projects{
-    background: radial-gradient(circle at top right, #0000004e  0%,#000000), url(./images/background.png);
+    background: radial-gradient(circle at top right, #0000004e  50%,#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -308,7 +308,7 @@ Header p{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    background: radial-gradient(circle at top right, #0000004e 0%,#000000), url(./images/background.png);
+    background: radial-gradient(circle at top right, #0000004e 50%,#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -344,7 +344,7 @@ Header p{
 .feedbk{
     width: 100%;
     height: auto;
-    background: radial-gradient(circle at top left, #0000004e 0%,#000000), url(./images/background.png);
+    background: radial-gradient(circle at top left, #0000004e 50%,#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -410,7 +410,7 @@ Header p{
 }
 .footer{
     height: auto;
-    background: radial-gradient(circle at top right, #0000004e 0%,#000000), url(./images/background.png);
+    background: radial-gradient(circle at top right, #0000004e 50%,#000000), url(./images/background.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -423,6 +423,10 @@ Header p{
 }
 .footer p{
     color: #198754;
+}
+.footer p svg{
+    fill: #198754;
+    margin-left: 5px;
 }
 .wrap{
     display:flex
@@ -440,7 +444,7 @@ Header p{
 @keyframes bounce{
     0%{
         position: absolute;
-        right: -5%;
+        right: 0;
         bottom: 10%;
         color: white;
         z-index: 100;
@@ -448,15 +452,16 @@ Header p{
     }
     50%{
         position: absolute;
-        right: -5%;
+        right: 0;
         bottom: 20%;
-        color: white;
+        color: #198754;
+        text-shadow: 0 0 10px #198754;
         z-index: 100;
         transform: rotate(90deg);
     }
     100%{
         position: absolute;
-        right: -5%;
+        right: 0;
         bottom: 10%;
         color: white;
         z-index: 100;
