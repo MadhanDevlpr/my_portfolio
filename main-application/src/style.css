@@ -453,7 +453,7 @@ Header p{
     50%{
         position: absolute;
         right: 0;
-        bottom: 20%;
+        bottom: 15%;
         color: #198754;
         text-shadow: 0 0 10px #198754;
         z-index: 100;
