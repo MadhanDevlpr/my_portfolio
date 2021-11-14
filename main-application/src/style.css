@@ -116,7 +116,7 @@ html{
     color: #292C35;
 }
 Header{
-    background: radial-gradient(circle at top right, #0000004e   50%,#000000), url(./images/background.png);
+    background: radial-gradient(circle at top right, #1b27354e   50%,#090a0f), url(./images/background.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
@@ -215,7 +215,7 @@ Header p{
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: radial-gradient(circle at top left, #0000004e   50%,#000000), url(./images/background.png);
+    background: radial-gradient(circle at top left, #1b27354e   50%,#090a0f), url(./images/background.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
@@ -255,7 +255,7 @@ Header p{
 .skills-container{
     padding-top: 20px;
     padding-bottom: 40px;
-    background: radial-gradient(circle at top left, #0000004e   50%,#000000), url(./images/background.png);
+    background: radial-gradient(circle at top left, #1b27354e   50%,#090a0f), url(./images/background.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
@@ -296,7 +296,7 @@ Header p{
     border: 2px solid #fff;
 }
 .projects{
-    background: radial-gradient(circle at top right, #0000004e  50%,#000000), url(./images/background.png);
+    background: radial-gradient(circle at top right, #1b27354e  50%,#090a0f), url(./images/background.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -308,7 +308,7 @@ Header p{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    background: radial-gradient(circle at top right, #0000004e 50%,#000000), url(./images/background.png);
+    background: radial-gradient(circle at top right, #1b27354e 50%,#090a0f), url(./images/background.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -344,7 +344,7 @@ Header p{
 .feedbk{
     width: 100%;
     height: auto;
-    background: radial-gradient(circle at top left, #0000004e 50%,#000000), url(./images/background.png);
+    background: radial-gradient(circle at top left, #1b27354e 50%,#090a0f), url(./images/background.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -410,7 +410,7 @@ Header p{
 }
 .footer{
     height: auto;
-    background: radial-gradient(circle at top right, #0000004e 50%,#000000), url(./images/background.png);
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -420,13 +420,33 @@ Header p{
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 10px #198754;
+    padding-top: 5vh;
+}
+.footer .fa-chevron-up{
+    font-size: 30px;
+    color: #198754;
+    padding-bottom: 6vh;
+    transition: .5s;
+}
+.footer .fa-chevron-up:hover{
+    color: #1987548e;
 }
 .footer p{
     color: #198754;
+    font-size: 12px;
 }
 .footer p svg{
     fill: #198754;
     margin-left: 5px;
+}
+.footer p a{
+    color: #198754;
+    text-decoration: none;
+    transition: .2s;
+}
+.footer p a:hover{
+    color: #fff;
+    text-decoration: none;
 }
 .wrap{
     display:flex
