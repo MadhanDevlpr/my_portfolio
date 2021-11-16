@@ -197,7 +197,7 @@ Header #github:hover{
 }
 Header p{
     position: absolute;
-    right: -2%;
+    right: -3%;
     bottom: 10%;
     color: white;
     z-index: 100;
@@ -461,6 +461,7 @@ Header p{
 }
 .footer p svg{
     fill: #198754;
+    
 }
 .footer p a{
     color: #198754;
@@ -565,6 +566,33 @@ Header p{
         border-radius: 10px;
         width: 80%;
       }
+      @keyframes bounce{
+        0%{
+            position: absolute;
+            right: -6%;
+            bottom: 10%;
+            color: white;
+            z-index: 100;
+            transform: rotate(90deg);
+        }
+        50%{
+            position: absolute;
+            right: -6%;
+            bottom: 12%;
+            color: #198754;
+            text-shadow: 0 0 10px #198754;
+            z-index: 100;
+            transform: rotate(90deg);
+        }
+        100%{
+            position: absolute;
+            right: -6%;
+            bottom: 10%;
+            color: white;
+            z-index: 100;
+            transform: rotate(90deg);
+        }
+    }
 }
 @media(max-width:300px){
     Header h1{
@@ -584,5 +612,32 @@ Header p{
     }
     .feedbk .wrap-input{
         flex-direction: column;
+    }
+    @keyframes bounce{
+        0%{
+            position: absolute;
+            right: -10%;
+            bottom: 10%;
+            color: white;
+            z-index: 100;
+            transform: rotate(90deg);
+        }
+        50%{
+            position: absolute;
+            right: -10%;
+            bottom: 12%;
+            color: #198754;
+            text-shadow: 0 0 10px #198754;
+            z-index: 100;
+            transform: rotate(90deg);
+        }
+        100%{
+            position: absolute;
+            right: -10%;
+            bottom: 10%;
+            color: white;
+            z-index: 100;
+            transform: rotate(90deg);
+        }
     }
 }
