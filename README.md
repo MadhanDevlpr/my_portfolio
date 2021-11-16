@@ -2,7 +2,7 @@
 
 Site URL / Demo - https://madhan-developer.herokuapp.com/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is being bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
