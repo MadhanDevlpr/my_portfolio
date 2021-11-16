@@ -344,7 +344,7 @@ Header p{
 .feedbk{
     width: 100%;
     height: auto;
-    background: radial-gradient(circle at top left, #1b27354e 50%,#090a0f), url(../images/background.png);
+    background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -360,6 +360,10 @@ Header p{
     margin: 40px;
     overflow:hidden;
     font-size: 3rem;
+}
+.feedbk p{
+    margin-left: 2vw;
+    color: #198754;
 }
 .feedbk form{
     height: auto;
@@ -399,14 +403,10 @@ Header p{
 .feedbk textarea::placeholder{
     color: #198754;
 }
-.feedbk .buttonn{
-    width: 100px;
-    padding: 8px 10px 8px 10px;
-    transition: 1s;
+.feedbk .btn-success{
+    margin-left: 2vw;
 }
 .feedbk .buttonn:hover{
-    background: #198754;
-    color: #fff;
 }
 .footer{
     height: 430px;
