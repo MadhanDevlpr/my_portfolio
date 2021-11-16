@@ -16,11 +16,11 @@ html{
     background-position: right;
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(to bottom,#fff,#198754);
+    background: linear-gradient(to bottom,#e7dfdd,#a239ca);
     transition: .5s;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background: linear-gradient(to bottom,#ffffff8e,#1987548e);
+    background: linear-gradient(to bottom,#e7dfdd8e,#a239ca8e);
 }
 *::selection{
     background: #2f363d;
@@ -43,9 +43,9 @@ html{
     border:none;
     outline:none;
     background: transparent;
-    fill: #fff;
+    fill: #e7dfdd;
     border-radius: 5px;
-    border: 2px solid #198754;
+    border: 2px solid #a239ca;
 }
 .toggle-btn:active,.toggle-btn:focus{
     outline: none;
@@ -58,7 +58,7 @@ html{
     z-index: 4000;
     top: 0;
     right: 0;
-    box-shadow:0 0 10px #198754;
+    box-shadow:0 0 10px #a239ca;
     overflow-x: hidden;
     transition: 0.5s;
     border-radius: 20px;
@@ -76,12 +76,12 @@ html{
     text-decoration: none;
     display: block;
     transition: 0.3s ease-in-out;
-    color: #198754;
+    color: #a239ca;
 }
   
 .sidenav a:hover {
     text-decoration: none;
-    color: #fff;
+    color: #e7dfdd;
 }
   
 .sidenav .closebtn {
@@ -102,7 +102,7 @@ html{
     .sidenav a {font-size: 18px;}
 }
 .item{
-    border:2px solid #198754;
+    border:2px solid #a239ca;
     width: 150px;
     transition: .5s;
     font-weight: 500;
@@ -112,11 +112,11 @@ html{
     border-radius: 10px;
 }
 .item:hover{
-    background: #198754;
-    color: #292C35;
+    background: #a239ca;
+    color: #e7dfdd;
 }
 Header{
-    background: radial-gradient(circle at top right, #1b27354e   50%,#090a0f), url(../images/background.png);
+    background: radial-gradient(circle at top right, #4717f68e   -50%,#0e0b16 100%),url(../images/background.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
@@ -135,7 +135,7 @@ Header h1{
 }
 Header h1 .glow{
     color: transparent;
-    background: linear-gradient(to right, #198754,#ADD8E6);
+    background: linear-gradient(to right, #a239ca,#e7dfdd);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -155,11 +155,11 @@ Header #know-more{
     top: 80%;
     left: 18%;
     transform: translate(-50%,-50%);
-    color: #fff;
+    color: #e7dfdd;
     text-decoration: none;
     padding: 10px 30px 10px 30px;
-    background: #198754;
-    border: 2px solid #198754;
+    background: #a239ca;
+    border: 2px solid #a239ca;
     border-radius: 10px;
     transition: .5s;
 }
@@ -168,21 +168,21 @@ Header #know-more:hover{
     top: 79%;
     left: 18%;
     transform: translate(-50%,-50%);
-    border: 2px solid #fff;
+    border: 2px solid #e7dfdd;
     background: transparent;
-    color: #fff;
+    color: #e7dfdd;
 }
 Header #github{
     position: absolute;
     top: 80%;
     left: 35%;
     transform: translate(-50%,-50%);
-    color: #198754;
+    color: #a239ca;
     text-decoration: none;
     padding: 10px 30px 10px 30px;
-    background: #fff;
-    border: 2px solid #fff;
-    color: #198754;
+    background: #e7dfdd;
+    border: 2px solid #e7dfdd;
+    color: #a239ca;
     border-radius: 10px;
     transition: .5s;
 }
@@ -191,9 +191,9 @@ Header #github:hover{
     top: 79%;
     left: 35%;
     transform: translate(-50%,-50%);
-    border: 2px solid #198754;
+    border: 2px solid #a239ca;
     background: transparent;
-    color: #198754;
+    color: #a239ca;
 }
 Header p{
     position: absolute;
@@ -215,7 +215,7 @@ Header p{
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: radial-gradient(circle at top left, #1b27354e   50%,#090a0f), url(../images/background.png);
+    background: radial-gradient(circle at top left, #a239ca8e   50%,#0e0b16), url(../images/background.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
@@ -231,7 +231,7 @@ Header p{
   padding-top: 20px;
   font-weight: 300;
   color: transparent;
-    background: linear-gradient(to right, #198754,#ADD8E6);
+    background: linear-gradient(to right, #4717f6,#e7dfdd);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -240,22 +240,21 @@ Header p{
 #about img{
   margin: 20px;
   border-radius: 10px;
+  box-shadow: 0 0 10px #4717f6;
 }
 #about p{
   line-height: 40px;
   margin-top: 60px;
-  color: transparent;
-    background: linear-gradient(to right, #198754,#ADD8E6);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -oz-background-clip: text;
+    color: #a239ca;
+    background: #e7dfdd;
+    padding: 30px;
+    border-radius: 16px;
 }
 
 .skills-container{
     padding-top: 20px;
     padding-bottom: 40px;
-    background: radial-gradient(circle at top left, #1b27354e   50%,#090a0f), url(../images/background.png);
+    background: radial-gradient(circle at top left, #a239ca8e   50%,#0e0b16), url(../images/background.png);
     background-attachment: fixed;
     background-size:cover;
     background-position: center;
@@ -264,7 +263,7 @@ Header p{
 .skills-container h1{
     color: transparent;
     overflow:hidden;
-    background: linear-gradient(to right, #198754,#ADD8E6);
+    background: linear-gradient(to right, #a239ca,#e7dfdd);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -282,21 +281,21 @@ Header p{
 }
 .skills .icon svg{
     padding: 20px;
-    fill: #fff;
-    background: #198754;
-    border: 2px solid #198754;
+    fill: #e7dfdd;
+    background: #a239ca;
+    border: 2px solid #a239ca;
     border-radius: 15px;
     transition: .5s;
     -moz-transition: .5s;
     -webkit-transition: .5s;
 }
 .skills .icon:hover svg{
-    fill: #198754;
-    background: #fff;
-    border: 2px solid #fff;
+    fill: #a239ca;
+    background: #e7dfdd;
+    border: 2px solid #e7dfdd;
 }
 .projects{
-    background: radial-gradient(circle at top right, #1b27354e  50%,#090a0f), url(../images/background.png);
+    background: radial-gradient(circle at top right, #a239ca8e  50%,#0e0b16), url(../images/background.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -308,7 +307,7 @@ Header p{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    background: radial-gradient(circle at top right, #1b27354e 50%,#090a0f), url(../images/background.png);
+    background: radial-gradient(circle at top right, #a239ca8e 50%,#0e0b16), url(../images/background.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -319,7 +318,7 @@ Header p{
     padding-top: 50px;
     color: transparent;
     overflow: hidden;
-    background: linear-gradient(to right, #198754,#ADD8E6);
+    background: linear-gradient(to right, #a239ca,#e7dfdd);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -330,32 +329,28 @@ Header p{
 .projects .card{
     width: 20%;
     margin: 40px;
-    background: transparent;
-    box-shadow: 0 0 15px #1b2735;
+    background:transparent;
     border-radius: 15px;
     transition: 1s;
-    backdrop-filter: grayscale(100%);
+    backdrop-filter: blur(1px);
+    box-shadow: 0 0 10px #4717f6;
 }
 .card-title,.card-text{
-    color: #fff;
+    color: #e7dfdd;
     overflow:hidden;
 }
 
 .feedbk{
     width: 100%;
     height: auto;
-    background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+    background: radial-gradient(ellipse at top, #4717f6 -100%, #0e0b16 100%);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
 .feedbk h1{
     color: transparent;
-    background: linear-gradient(to right, #198754,#ADD8E6);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -oz-background-clip: text;
+    color: #e7dfdd;
     font-weight: 300;
     margin: 40px;
     overflow:hidden;
@@ -363,7 +358,7 @@ Header p{
 }
 .feedbk p{
     margin-left: 2vw;
-    color: #198754;
+    color: #e7dfdd;
 }
 .feedbk form{
     height: auto;
@@ -376,8 +371,8 @@ Header p{
     padding: 18px 12px 18px 12px;
     border-radius: 10px;
     background: transparent;
-    border:2px solid #198754;
-    color: #198754;
+    border:2px solid #e7dfdd;
+    color: #e7dfdd;
 }
 .wrap-input{
     display: flex;
@@ -393,24 +388,25 @@ Header p{
     padding: 18px 12px 18px 12px;
     border-radius: 10px;
     background: transparent;
-    border:2px solid #198754;
-    color: #198754;
+    border:2px solid #e7dfdd;
+    color: #e7dfdd;
     max-height: 400px;
 }
 .feedbk input::placeholder{
-    color: #198754;
+    color: #e7dfdd;
 }
 .feedbk textarea::placeholder{
-    color: #198754;
+    color: #e7dfdd;
 }
-.feedbk .btn-success{
+.feedbk .btn{
     margin-left: 2vw;
-}
-.feedbk .buttonn:hover{
+    background: #e7dfdd;
+    border-color: #e7dfdd;
+    outline-color: #e7dfdd;
 }
 .footer{
     height: 430px;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    background: radial-gradient(ellipse at bottom, #4717f6 -60%, #0e0b16 100%);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -419,22 +415,22 @@ Header p{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 10px #198754;
+    box-shadow: 0 0 10px #a239ca;
     padding-top: 5vh;
 }
 .footer .fa-chevron-up{
     font-size: 30px;
     font-stretch: extra-expanded;
-    color: #fff;
-    background: #090a0f;
+    color: #e7dfdd;
+    background: #0e0b16;
     padding: 15px;
     border-radius: 10px;
     transition: .5s;
     overflow: hidden;
 }
 .footer .fa-chevron-up:hover{
-    color: #198754;
-    background: #fff;
+    color: #a239ca;
+    background: #e7dfdd;
 }
 .wrap{
     display:flex;
@@ -444,32 +440,32 @@ Header p{
     font-size: 30px;
     margin: 20px;
     transition: .5s;
-    color: #198754;
+    color: #a239ca;
 }
 .wrap a i:hover{
-    color: #fff;
+    color: #e7dfdd;
 }
 .footer hr{
-    background: #198754;
+    background: #a239ca;
     width: 280px;
     height: 1.5px;
 }
 .footer p{
-    color: #198754;
+    color: #a239ca;
     font-size: 12px;
     font-stretch: extra-expanded;
 }
 .footer p svg{
-    fill: #198754;
+    fill: #a239ca;
     
 }
 .footer p a{
-    color: #198754;
+    color: #a239ca;
     text-decoration: none;
     transition: .2s;
 }
 .footer p a:hover{
-    color: #fff;
+    color: #e7dfdd;
     text-decoration: none;
 }
 @keyframes bounce{
@@ -485,8 +481,8 @@ Header p{
         position: absolute;
         right: 0;
         bottom: 12%;
-        color: #198754;
-        text-shadow: 0 0 10px #198754;
+        color: #a239ca;
+        text-shadow: 0 0 10px #a239ca;
         z-index: 100;
         transform: rotate(90deg);
     }
@@ -579,8 +575,8 @@ Header p{
             position: absolute;
             right: -6%;
             bottom: 12%;
-            color: #198754;
-            text-shadow: 0 0 10px #198754;
+            color: #a239ca;
+            text-shadow: 0 0 10px #a239ca;
             z-index: 100;
             transform: rotate(90deg);
         }
@@ -626,8 +622,8 @@ Header p{
             position: absolute;
             right: -10%;
             bottom: 12%;
-            color: #198754;
-            text-shadow: 0 0 10px #198754;
+            color: #a239ca;
+            text-shadow: 0 0 10px #a239ca;
             z-index: 100;
             transform: rotate(90deg);
         }

@@ -11,7 +11,7 @@ function Feedback() {
                 <input required="" placeholder="Name" type="text" name="Name" /><br /><br />
             </div><br /><br />
             <textarea required="" className="feedf" placeholder="Feedback" type="text" name="Feedback" spellCheck="true" min-height="400px" width="auto"></textarea><br /><br />
-            <button className="buttonn" type="submit" className="btn btn-success btn-lg">Send</button><br /><br />
+            <button type="submit" className="btn btn-light buttonn">Send</button><br /><br />
             </form>
         </div>
     )
