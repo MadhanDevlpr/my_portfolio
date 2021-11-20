@@ -44,9 +44,7 @@ body{
 }
 ::-webkit-scrollbar{
     width: 5px;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/background.jpg);
-    background-size: cover;
-    background-position: right;
+    background: white;
 }
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(to bottom,#ffffff,#272341);
@@ -382,6 +380,13 @@ Header #github:hover{
     }
 }
 @media(max-width:992px){
+    #about{
+        clip-path:none
+    }
+    .feedbk{
+        clip-path: none;
+        padding-top: 5%;
+    }
     Header h1{
         position: absolute;
         top: 30%;

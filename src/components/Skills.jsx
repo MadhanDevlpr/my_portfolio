@@ -4,16 +4,12 @@ const Skills = () => {
   return (
     <div className="skills-container">
       <div>
-        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+        <h1>
           Skills
         </h1>
       </div>
       <div
         className="skills"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-delay="500"
-        data-aos-once="true"
       >
         <div className="icon">
           <svg
