@@ -9,122 +9,62 @@ html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+body{
+    background: white;
+}
+.navbar-toggler
+{
+    border:none;
+    outline: none;
+}
+.navbar-toggler:focus{
+    border:none;
+    outline:none
+}
+.navbar-toggler:active{
+    border:none;
+    outline:none
+}
+.navbar-toggler-icon:focus{
+    border:none;
+    outline: none;
+}
+.navbar{
+    background: white;
+}
+.nav-item{
+    padding: 0px 20px 0px 20px;
+    color: black;
+    transition: .5s;
+}
+.nav-item:hover{
+    box-shadow: 0 0 5px red;
+    padding: 0px 20px 0px 20px;
+    border-radius: 10px;
+}
 ::-webkit-scrollbar{
     width: 5px;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/background.png);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/background.jpg);
     background-size: cover;
     background-position: right;
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(to bottom,#e7dfdd,#a239ca);
+    background: linear-gradient(to bottom,#ffffff,#272341);
     transition: .5s;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background: linear-gradient(to bottom,#e7dfdd8e,#a239ca8e);
+    background: linear-gradient(to bottom,#ffffff8e,#2723418e);
 }
 *::selection{
     background: #2f363d;
     color: transparent;
 }
-.toggle-btn{
-    position: fixed;
-    top:0;
-    right: 0;
-    margin:25px;
-    padding:10px;
-    width: 60px;
-    height:60px;
-    z-index: 2000;
-    cursor: pointer;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    border:none;
-    outline:none;
-    background: transparent;
-    fill: #e7dfdd;
-    border-radius: 5px;
-    border: 2px solid #a239ca;
-}
-.toggle-btn:active,.toggle-btn:focus{
-    outline: none;
-}
-.sidenav {
-    height: 90vh;
-    margin: 20px;
-    width: 0;
-    position: fixed;
-    z-index: 4000;
-    top: 0;
-    right: 0;
-    box-shadow:0 0 10px #a239ca;
-    overflow-x: hidden;
-    transition: 0.5s;
-    border-radius: 20px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    backdrop-filter: blur(15px);
-}
-  
-.sidenav a {
-    margin-top:20px;
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-    transition: 0.3s ease-in-out;
-    color: #a239ca;
-}
-  
-.sidenav a:hover {
-    text-decoration: none;
-    color: #e7dfdd;
-}
-  
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-  
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-  
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-.item{
-    border:2px solid #a239ca;
-    width: 150px;
-    transition: .5s;
-    font-weight: 500;
-    text-align: center;
-    background:transparent;
-    padding: 10px 30px 10px 30px;
-    border-radius: 10px;
-}
-.item:hover{
-    background: #a239ca;
-    color: #e7dfdd;
-}
 Header{
-    background: radial-gradient(circle at top right, #4717f68e   -50%,#0e0b16 100%),url(../images/background.png);
-    background-attachment: fixed;
-    background-size:cover;
-    background-position: center;
     width: 100%;
     height: 100vh;
 }
 Header h1{
-    color: white;
+    color: #272341;
     font-size: 5rem;
     overflow:hidden;
     text-align: left;
@@ -134,12 +74,7 @@ Header h1{
     transform: translate(-50%,-50%);
 }
 Header h1 .glow{
-    color: transparent;
-    background: linear-gradient(to right, #a239ca,#e7dfdd);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -oz-background-clip: text;
+    color: rgba(255,10,0);
 }
 Header h3{
     font-size: 2rem;
@@ -148,18 +83,18 @@ Header h3{
     top: 65%;
     left: 25%;
     transform: translate(-50%,-50%);
-    color: white;
+    color: #272341;
 }
 Header #know-more{
     position: absolute;
     top: 80%;
     left: 18%;
     transform: translate(-50%,-50%);
-    color: #e7dfdd;
+    color: #ffffff;
     text-decoration: none;
     padding: 10px 30px 10px 30px;
-    background: #a239ca;
-    border: 2px solid #a239ca;
+    background: rgba(255,10,0);
+    border: 2px solid rgba(255,10,0);
     border-radius: 10px;
     transition: .5s;
 }
@@ -168,21 +103,20 @@ Header #know-more:hover{
     top: 79%;
     left: 18%;
     transform: translate(-50%,-50%);
-    border: 2px solid #e7dfdd;
+    border: 2px solid rgba(255,50,0);
     background: transparent;
-    color: #e7dfdd;
+    color: rgba(255,50,0);
 }
 Header #github{
     position: absolute;
     top: 80%;
     left: 35%;
     transform: translate(-50%,-50%);
-    color: #a239ca;
+    color: rgba(255,10,0);
     text-decoration: none;
     padding: 10px 30px 10px 30px;
-    background: #e7dfdd;
-    border: 2px solid #e7dfdd;
-    color: #a239ca;
+    background: #ffffff;
+    border: 2px solid #ffffff;
     border-radius: 10px;
     transition: .5s;
 }
@@ -191,21 +125,9 @@ Header #github:hover{
     top: 79%;
     left: 35%;
     transform: translate(-50%,-50%);
-    border: 2px solid #a239ca;
+    border: 2px solid rgba(255,10,0);
     background: transparent;
-    color: #a239ca;
-}
-Header p{
-    position: absolute;
-    right: -3%;
-    bottom: 10%;
-    color: white;
-    z-index: 100;
-    transform: rotate(90deg);
-    animation-name: bounce;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    cursor: vertical-text;
+    color: rgba(255,10,0);
 }
 #about{
     align-items: center;
@@ -214,11 +136,9 @@ Header p{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    background: radial-gradient(circle at top left, #a239ca8e   50%,#0e0b16), url(../images/background.png);
-    background-attachment: fixed;
-    background-size:cover;
-    background-position: center;
+    width: 100%;padding-bottom: 25%;
+    background: rgba(255,50,0);
+    clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 0);
 }
 #about .text{
   width: 95%;
@@ -230,23 +150,18 @@ Header p{
   font-size: 3rem;
   padding-top: 20px;
   font-weight: 300;
-  color: transparent;
-    background: linear-gradient(to right, #4717f6,#e7dfdd);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -oz-background-clip: text;
+  color: white;
 }
 #about img{
   margin: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px #4717f6;
+  box-shadow: 0 0 10px  rgba(255,10,0);
 }
 #about p{
   line-height: 40px;
   margin-top: 60px;
-    color: #a239ca;
-    background: #e7dfdd;
+    color: #272341;
+    background: #ffffff;
     padding: 30px;
     border-radius: 16px;
 }
@@ -254,20 +169,11 @@ Header p{
 .skills-container{
     padding-top: 20px;
     padding-bottom: 40px;
-    background: radial-gradient(circle at top left, #a239ca8e   50%,#0e0b16), url(../images/background.png);
-    background-attachment: fixed;
-    background-size:cover;
-    background-position: center;
     text-align: center;
 }
 .skills-container h1{
-    color: transparent;
+    color: #272341;
     overflow:hidden;
-    background: linear-gradient(to right, #a239ca,#e7dfdd);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -oz-background-clip: text;
 }
 .skills{
     justify-content: center;
@@ -281,24 +187,20 @@ Header p{
 }
 .skills .icon svg{
     padding: 20px;
-    fill: #e7dfdd;
-    background: #a239ca;
-    border: 2px solid #a239ca;
+    fill: #ffffff;
+    background: rgba(255,50,0);
+    border: 2px solid rgba(255,50,0);
     border-radius: 15px;
     transition: .5s;
     -moz-transition: .5s;
     -webkit-transition: .5s;
 }
 .skills .icon:hover svg{
-    fill: #a239ca;
-    background: #e7dfdd;
-    border: 2px solid #e7dfdd;
+    fill: rgba(255,50,0);
+    background: #ffffff;
+    border: 2px solid rgba(255,50,0);
 }
 .projects{
-    background: radial-gradient(circle at top right, #a239ca8e  50%,#0e0b16), url(../images/background.png);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
     text-align: center;
     overflow:hidden;
 }
@@ -307,22 +209,13 @@ Header p{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    background: radial-gradient(circle at top right, #a239ca8e 50%,#0e0b16), url(../images/background.png);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
     overflow:hidden;
 }
 .projects h1{
     padding-bottom: 40px;
     padding-top: 50px;
-    color: transparent;
+    color: #272341;
     overflow: hidden;
-    background: linear-gradient(to right, #a239ca,#e7dfdd);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -oz-background-clip: text;
     font-weight: 300;
     overflow:hidden;
 }
@@ -333,24 +226,23 @@ Header p{
     border-radius: 15px;
     transition: 1s;
     backdrop-filter: blur(1px);
-    box-shadow: 0 0 10px #4717f6;
+    box-shadow: 0 0 10px  rgba(255,10,0);
 }
 .card-title,.card-text{
-    color: #e7dfdd;
+    color: #272341;
     overflow:hidden;
 }
 
 .feedbk{
     width: 100%;
     height: auto;
-    background: radial-gradient(ellipse at top, #4717f6 -100%, #0e0b16 100%);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    background: rgba(255,50,0);
+    clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
+    padding-top: 20%;
 }
 .feedbk h1{
     color: transparent;
-    color: #e7dfdd;
+    color: #ffffff;
     font-weight: 300;
     margin: 40px;
     overflow:hidden;
@@ -358,7 +250,7 @@ Header p{
 }
 .feedbk p{
     margin-left: 2vw;
-    color: #e7dfdd;
+    color: #ffffff;
 }
 .feedbk form{
     height: auto;
@@ -371,8 +263,8 @@ Header p{
     padding: 18px 12px 18px 12px;
     border-radius: 10px;
     background: transparent;
-    border:2px solid #e7dfdd;
-    color: #e7dfdd;
+    border:2px solid #ffffff;
+    color: #ffffff;
 }
 .wrap-input{
     display: flex;
@@ -388,92 +280,86 @@ Header p{
     padding: 18px 12px 18px 12px;
     border-radius: 10px;
     background: transparent;
-    border:2px solid #e7dfdd;
-    color: #e7dfdd;
+    border:2px solid #ffffff;
+    color: #ffffff;
     max-height: 400px;
 }
 .feedbk input::placeholder{
-    color: #e7dfdd;
+    color: #ffffff;
 }
 .feedbk textarea::placeholder{
-    color: #e7dfdd;
+    color: #ffffff;
 }
 .feedbk .btn{
     margin-left: 2vw;
-    background: #e7dfdd;
-    border-color: #e7dfdd;
-    outline-color: #e7dfdd;
+    background: #ffffff;
+    border-color: #ffffff;
+    outline-color: #ffffff;
 }
 .footer{
     height: 430px;
-    background: radial-gradient(ellipse at bottom, #4717f6 -60%, #0e0b16 100%);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
     align-items: center;
     text-align: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 10px #a239ca;
+    box-shadow: 0 0 10px #272341;
     padding-top: 5vh;
 }
 .footer .fa-chevron-up{
     font-size: 30px;
     font-stretch: extra-expanded;
-    color: #e7dfdd;
-    background: #0e0b16;
+    color: #272341;
     padding: 15px;
     border-radius: 10px;
     transition: .5s;
     overflow: hidden;
 }
-.footer .fa-chevron-up:hover{
-    color: #a239ca;
-    background: #e7dfdd;
-}
 .wrap{
     display:flex;
 }
-
 .wrap a i{
     font-size: 30px;
     margin: 20px;
     transition: .5s;
-    color: #a239ca;
+    color: #272341;
+    border: solid+2px#272341;
+    padding: 15px;
+    border-radius: 50%;
 }
 .wrap a i:hover{
-    color: #e7dfdd;
+    color: #fff;
+    background: #272341;
 }
 .footer hr{
-    background: #a239ca;
+    background: #272341;
     width: 280px;
     height: 1.5px;
 }
 .footer p{
-    color: #a239ca;
+    color: #272341;
     font-size: 12px;
     font-stretch: extra-expanded;
 }
 .footer p svg{
-    fill: #a239ca;
+    fill: #272341;
     
 }
 .footer p a{
-    color: #a239ca;
+    color: #272341;
     text-decoration: none;
     transition: .2s;
+    border-bottom: solid+2px#ffffff;
 }
 .footer p a:hover{
-    color: #e7dfdd;
-    text-decoration: none;
+    border-bottom: solid+2px#272341;
 }
 @keyframes bounce{
     0%{
         position: absolute;
         right: 0;
         bottom: 10%;
-        color: white;
+        color: #ffffff;
         z-index: 100;
         transform: rotate(90deg);
     }
@@ -481,8 +367,8 @@ Header p{
         position: absolute;
         right: 0;
         bottom: 12%;
-        color: #a239ca;
-        text-shadow: 0 0 10px #a239ca;
+        color: #272341;
+        text-shadow: 0 0 10px #272341;
         z-index: 100;
         transform: rotate(90deg);
     }
@@ -490,7 +376,7 @@ Header p{
         position: absolute;
         right: 0;
         bottom: 10%;
-        color: white;
+        color: #ffffff;
         z-index: 100;
         transform: rotate(90deg);
     }
@@ -567,7 +453,7 @@ Header p{
             position: absolute;
             right: -6%;
             bottom: 10%;
-            color: white;
+            color: #ffffff;
             z-index: 100;
             transform: rotate(90deg);
         }
@@ -575,8 +461,8 @@ Header p{
             position: absolute;
             right: -6%;
             bottom: 12%;
-            color: #a239ca;
-            text-shadow: 0 0 10px #a239ca;
+            color: #272341;
+            text-shadow: 0 0 10px #272341;
             z-index: 100;
             transform: rotate(90deg);
         }
@@ -584,7 +470,7 @@ Header p{
             position: absolute;
             right: -6%;
             bottom: 10%;
-            color: white;
+            color: #ffffff;
             z-index: 100;
             transform: rotate(90deg);
         }
@@ -614,7 +500,7 @@ Header p{
             position: absolute;
             right: -10%;
             bottom: 10%;
-            color: white;
+            color: #ffffff;
             z-index: 100;
             transform: rotate(90deg);
         }
@@ -622,8 +508,8 @@ Header p{
             position: absolute;
             right: -10%;
             bottom: 12%;
-            color: #a239ca;
-            text-shadow: 0 0 10px #a239ca;
+            color: #272341;
+            text-shadow: 0 0 10px #272341;
             z-index: 100;
             transform: rotate(90deg);
         }
@@ -631,7 +517,7 @@ Header p{
             position: absolute;
             right: -10%;
             bottom: 10%;
-            color: white;
+            color: #ffffff;
             z-index: 100;
             transform: rotate(90deg);
         }
