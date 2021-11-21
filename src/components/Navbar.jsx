@@ -1,9 +1,28 @@
 import React from 'react'
 import logo from '../images/logo.png'
 function Navbar() {
+  const navtoggle = () =>{
+    if (window.scrollY >= 20){
+      navShrink()
+    }
+    else{
+      navExpand()
+    }
+  }
+  window.addEventListener('scroll',navtoggle)
+  const navShrink = () =>{
+    document.getElementsByClassName('navbar')[0].classList.replace('p-4','p-1')
+    document.getElementsByClassName('navbar')[0].style.boxShadow = "0 0 20px rgba(255,50,0)"
+  }
+  const navExpand = () =>{
+    document.getElementsByClassName('navbar')[0].classList.replace('p-1','p-4')
+    document.getElementsByClassName('navbar')[0].style.boxShadow = "none"
+  }
+  
+  
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light fixed-top p-3">
+            <nav id="navbar" id="navbar-nav" className="navbar navbar-expand-lg navbar-light fixed-top p-4">
               <a className="navbar-brand" href="#header">
               <img src={logo} width="50" height="50" alt=""/>
               </a>

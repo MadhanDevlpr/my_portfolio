@@ -12,6 +12,9 @@ html{
 body{
     background: white;
 }
+.navbar{
+    transition: .5s;
+}
 .navbar-toggler
 {
     border:none;
@@ -43,15 +46,14 @@ body{
     border-radius: 10px;
 }
 ::-webkit-scrollbar{
-    width: 5px;
+    width: 16px;
     background: white;
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(to bottom,#ffffff,#272341);
+    background:rgba(255,50,0);
     transition: .5s;
-}
-::-webkit-scrollbar-thumb:hover{
-    background: linear-gradient(to bottom,#ffffff8e,#2723418e);
+    border:5px solid white;
+    border-radius: 300px;
 }
 *::selection{
     background: #2f363d;
@@ -134,9 +136,12 @@ Header #github:hover{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    width: 100%;padding-bottom: 25%;
+    width: 95%;padding-bottom: 25%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     background: rgba(255,50,0);
     clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 0);
+    margin:40px
 }
 #about .text{
   width: 95%;
@@ -381,7 +386,11 @@ Header #github:hover{
 }
 @media(max-width:992px){
     #about{
-        clip-path:none
+        clip-path:none;
+        width: 100%;padding-bottom: 25%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        margin:0px
     }
     .feedbk{
         clip-path: none;
