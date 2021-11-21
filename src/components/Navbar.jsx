@@ -11,20 +11,21 @@ function Navbar() {
   }
   window.addEventListener('scroll',navtoggle)
   const navShrink = () =>{
-    document.getElementsByClassName('navbar')[0].classList.replace('p-4','p-1')
-    document.getElementsByClassName('navbar')[0].style.boxShadow = "0 0 20px rgba(255,50,0)"
+    document.getElementsByClassName('navbar')[0].classList.replace('p-4','p-1');
+    document.getElementsByClassName('navbar')[0].classList.replace('bg-transparent','bg-dark');
   }
   const navExpand = () =>{
     document.getElementsByClassName('navbar')[0].classList.replace('p-1','p-4')
+    document.getElementsByClassName('navbar')[0].classList.replace('bg-dark','bg-transparent')
     document.getElementsByClassName('navbar')[0].style.boxShadow = "none"
   }
   
   
     return (
         <div>
-            <nav id="navbar" id="navbar-nav" className="navbar navbar-expand-lg navbar-light fixed-top p-4">
+            <nav id="navbar" id="navbar-nav" className="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top p-4">
               <a className="navbar-brand" href="#header">
-              <img src={logo} width="50" height="50" alt=""/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M A D H A N
               </a>
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
