@@ -5,7 +5,7 @@
 
 version: 2
 updates:
-  - package-ecosystem: "" # Reademe.md
+  - package-ecosystem: "" # npm
     directory: "/" # public/manifest.json
     schedule:
       interval: "daily"
