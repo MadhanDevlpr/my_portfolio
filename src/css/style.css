@@ -15,6 +15,14 @@ body{
 .navbar{
     transition: .5s;
 }
+.navbar-brand{
+    font-weight: bold;
+    background: #212529;
+    padding: 20px;
+    border-radius: 15px;
+    visibility: hidden;
+}
+
 .navbar-toggler
 {
     border:none;
@@ -41,7 +49,7 @@ body{
     transition: .5s;
 }
 .nav-item:hover{
-    box-shadow: 0 0 5px teal;
+    box-shadow: 0 0 5px #162c34;
     padding: 0px 20px 0px 20px;
     border-radius: 10px;
 }
@@ -51,7 +59,7 @@ body{
     background-size: cover;
 }
 ::-webkit-scrollbar-thumb{
-    background:teal;
+    background:#162c34;
 }
 *::selection{
     background: #2f363d;
@@ -60,7 +68,7 @@ body{
 Header{
     width: 100%;
     height: 100vh;
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/bg.png) center center fixed;
+    background:radial-gradient(ellipse at top left,#000 40%,rgba(0,0,0,0.5)),url(../images/bg.png) center center fixed;
     background-size: cover;
 }
 Header h1{
@@ -74,7 +82,11 @@ Header h1{
     transform: translate(-50%,-50%);
 }
 Header h1 .glow{
-    color: teal;
+    color: transparent;
+    background: url(../images/bg.png);
+    background-clip:text;
+    -webkit-background-clip:text;
+    background-size: cover;
 }
 Header h3{
     font-size: 2rem;
@@ -93,8 +105,8 @@ Header #know-more{
     color: #ffffff;
     text-decoration: none;
     padding: 10px 30px 10px 30px;
-    background: teal;
-    border: 2px solid teal;
+    background: #162c34;
+    border: 2px solid #162c34;
     border-radius: 10px;
     transition: .5s;
 }
@@ -103,16 +115,16 @@ Header #know-more:hover{
     top: 79%;
     left: 18%;
     transform: translate(-50%,-50%);
-    border: 2px solid teal;
+    border: 2px solid #fff;
     background: transparent;
-    color: teal;
+    color: #fff;
 }
 Header #github{
     position: absolute;
     top: 80%;
     left: 35%;
     transform: translate(-50%,-50%);
-    color: teal;
+    color: #162c34;
     text-decoration: none;
     padding: 10px 30px 10px 30px;
     background: #ffffff;
@@ -125,9 +137,9 @@ Header #github:hover{
     top: 79%;
     left: 35%;
     transform: translate(-50%,-50%);
-    border: 2px solid teal;
+    border: 2px solid #fff;
     background: transparent;
-    color: teal;
+    color: #fff;
 }
 #about{
     align-items: center;
@@ -137,7 +149,8 @@ Header #github:hover{
     display: flex;
     flex-direction: column;
     width: 100%;padding-bottom: 25%;
-    background: radial-gradient(ellipse at top left,teal 30%,rgba(0,0,0,0.6) 30%),url(../images/bg.png) center center fixed;
+    background: radial-gradient(ellipse at bottom right,#000 15%,rgba(0,0,0,0.6)),url(../images/bg.png) center center fixed;
+    background-attachment: fixed;
     background-size: cover;
     clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 0);
     
@@ -157,12 +170,12 @@ Header #github:hover{
 #about img{
   margin: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px  teal;
+  box-shadow: 0 0 10px  #162c34;
 }
 #about p{
   line-height: 40px;
   margin-top: 60px;
-    color: teal;
+    color: #162c34;
     background: #ffffff;
     padding: 30px;
     border-radius: 16px;
@@ -174,7 +187,7 @@ Header #github:hover{
     text-align: center;
 }
 .skills-container h1{
-    color: teal;
+    color: #162c34;
     overflow:hidden;
 }
 .skills{
@@ -190,17 +203,17 @@ Header #github:hover{
 .skills .icon svg{
     padding: 20px;
     fill: #ffffff;
-    background: teal;
-    border: 2px solid teal;
+    background: #162c34;
+    border: 2px solid #162c34;
     border-radius: 15px;
     transition: .5s;
     -moz-transition: .5s;
     -webkit-transition: .5s;
 }
 .skills .icon:hover svg{
-    fill: teal;
+    fill: #162c34;
     background: #ffffff;
-    border: 2px solid teal;
+    border: 2px solid #162c34;
 }
 .projects{
     text-align: center;
@@ -216,7 +229,7 @@ Header #github:hover{
 .projects h1{
     padding-bottom: 40px;
     padding-top: 50px;
-    color: teal;
+    color: #162c34;
     overflow: hidden;
     font-weight: 300;
     overflow:hidden;
@@ -228,7 +241,7 @@ Header #github:hover{
     border-radius: 15px;
     transition: 1s;
     backdrop-filter: blur(1px);
-    box-shadow: 0 0 10px  teal;
+    box-shadow: 0 0 10px  #162c34;
 }
 .card-title,.card-text{
     color: #ffffff;
@@ -238,7 +251,7 @@ Header #github:hover{
 .feedbk{
     width: 100%;
     height: auto;
-    background: teal;
+    background: #162c34;
     clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
     padding-top: 20%;
 }
@@ -299,7 +312,7 @@ Header #github:hover{
     outline-color: #ffffff;
 }
 .footer{
-    height: 430px;
+    height: auto;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -311,7 +324,7 @@ Header #github:hover{
 .footer .fa-chevron-up{
     font-size: 30px;
     font-stretch: extra-expanded;
-    color: teal;
+    color: #162c34;
     padding: 15px;
     border-radius: 10px;
     transition: .5s;
@@ -324,31 +337,38 @@ Header #github:hover{
     font-size: 30px;
     margin: 20px;
     transition: .5s;
-    color: teal;
-    border: solid+2px#008080;
+    background: #008080;
+    color: #fff;
+    border: solid+5px#162c34;
     padding: 15px;
     border-radius: 50%;
+    outline: solid+5px#008080;
+    box-shadow: 0 0 20px #162c34;
 }
 .wrap a i:hover{
     color: #fff;
-    background: teal;
+    text-shadow: 0 0 15px #fff;
+    background: #162c34;
+    border: 5px solid #008080;
+    outline: solid+5px#162c34;
+    box-shadow: 0 0 20px #008080;
 }
 .footer hr{
-    background: teal;
+    background: #162c34;
     width: 280px;
     height: 1.5px;
 }
 .footer p{
-    color: teal;
+    color: #162c34;
     font-size: 12px;
     font-stretch: extra-expanded;
 }
 .footer p svg{
-    fill: teal;
+    fill: #162c34;
     
 }
 .footer p a{
-    color: teal;
+    color: #162c34;
     text-decoration: none;
     transition: .2s;
     border-bottom: solid+2px#ffffff;
