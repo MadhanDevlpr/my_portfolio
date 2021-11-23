@@ -10,7 +10,7 @@ html{
     overflow-x: hidden;
 }
 body{
-    background: white;
+    background: #65463E;
 }
 .navbar{
     transition: .5s;
@@ -40,26 +40,21 @@ body{
     border:none;
     outline: none;
 }
-.navbar{
-    background: white;
-}
 .nav-item{
     padding: 0px 20px 0px 20px;
     color: black;
     transition: .5s;
 }
 .nav-item:hover{
-    box-shadow: 0 0 5px #162c34;
+    box-shadow: 0 0 5px #DCBAA9;
     padding: 0px 20px 0px 20px;
     border-radius: 10px;
 }
 ::-webkit-scrollbar{
     width: 5px;
-    background:url(../images/bg.png) center center fixed;
-    background-size: cover;
 }
 ::-webkit-scrollbar-thumb{
-    background:#162c34;
+    background:#DCBAA9;
 }
 *::selection{
     background: #2f363d;
@@ -68,11 +63,11 @@ body{
 Header{
     width: 100%;
     height: 100vh;
-    background:radial-gradient(ellipse at top left,#000 40%,rgba(0,0,0,0.5)),url(../images/bg.png) center center fixed;
+    background:linear-gradient(to bottom right,  #65463E, #65463E);
     background-size: cover;
 }
 Header h1{
-    color: #ffffff;
+    color: #D2E5D0;
     font-size: 5rem;
     overflow:hidden;
     text-align: left;
@@ -82,11 +77,7 @@ Header h1{
     transform: translate(-50%,-50%);
 }
 Header h1 .glow{
-    color: transparent;
-    background: url(../images/bg.png);
-    background-clip:text;
-    -webkit-background-clip:text;
-    background-size: cover;
+    color: #AAD6A0;
 }
 Header h3{
     font-size: 2rem;
@@ -95,18 +86,18 @@ Header h3{
     top: 65%;
     left: 25%;
     transform: translate(-50%,-50%);
-    color: #ffffff;
+    color: #D2E5D0;
 }
 Header #know-more{
     position: absolute;
     top: 80%;
     left: 18%;
     transform: translate(-50%,-50%);
-    color: #ffffff;
+    color: #65463E;
     text-decoration: none;
     padding: 10px 30px 10px 30px;
-    background: #162c34;
-    border: 2px solid #162c34;
+    background: #DCBAA9;
+    border: 2px solid #DCBAA9;
     border-radius: 10px;
     transition: .5s;
 }
@@ -115,20 +106,20 @@ Header #know-more:hover{
     top: 79%;
     left: 18%;
     transform: translate(-50%,-50%);
-    border: 2px solid #fff;
+    border: 2px solid #D2E5D0;
     background: transparent;
-    color: #fff;
+    color: #D2E5D0;
 }
 Header #github{
     position: absolute;
     top: 80%;
     left: 35%;
     transform: translate(-50%,-50%);
-    color: #162c34;
+    color: #65463E;
     text-decoration: none;
     padding: 10px 30px 10px 30px;
-    background: #ffffff;
-    border: 2px solid #ffffff;
+    background: #D2E5D0;
+    border: 2px solid #D2E5D0;
     border-radius: 10px;
     transition: .5s;
 }
@@ -137,9 +128,32 @@ Header #github:hover{
     top: 79%;
     left: 35%;
     transform: translate(-50%,-50%);
-    border: 2px solid #fff;
+    border: 2px solid #D2E5D0;
     background: transparent;
-    color: #fff;
+    color: #D2E5D0;
+}
+Header .terminal{
+    background: url(../images/terminal.png) center center;
+    width: 620px;
+    height: 400px;
+    background-size: 620px 400px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 68%;
+    right: 2%;
+    z-index: 50;
+    border-radius: 15px;
+}
+.innertext{
+    margin-left: 30px;
+    margin-top: 80px;
+    color: #D2E5D0;
+}
+.innertext p a{
+    color: #DCBAA9;
+}
+.innertext span{
+    display: flex;
 }
 #about{
     align-items: center;
@@ -149,11 +163,9 @@ Header #github:hover{
     display: flex;
     flex-direction: column;
     width: 100%;padding-bottom: 25%;
-    background: radial-gradient(ellipse at bottom right,#000 15%,rgba(0,0,0,0.6)),url(../images/bg.png) center center fixed;
-    background-attachment: fixed;
-    background-size: cover;
-    clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 0);
-    
+    background: #DCBAA9;
+    clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
+    padding-top: 20%;
 }
 #about .text{
   width: 95%;
@@ -165,55 +177,20 @@ Header #github:hover{
   font-size: 3rem;
   padding-top: 20px;
   font-weight: 300;
-  color: white;
+  color: #65463E
 }
 #about img{
   margin: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px  #162c34;
+  box-shadow: 0 0 10px  #DCBAA9;
 }
 #about p{
   line-height: 40px;
   margin-top: 60px;
-    color: #162c34;
-    background: #ffffff;
+    color: #65463E;
+    background: #D2E5D0;
     padding: 30px;
     border-radius: 16px;
-}
-
-.skills-container{
-    padding-top: 20px;
-    padding-bottom: 40px;
-    text-align: center;
-}
-.skills-container h1{
-    color: #162c34;
-    overflow:hidden;
-}
-.skills{
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 250px;
-    margin-right: 250px;
-}
-.skills .icon{
-    margin: 15px;
-}
-.skills .icon svg{
-    padding: 20px;
-    fill: #ffffff;
-    background: #162c34;
-    border: 2px solid #162c34;
-    border-radius: 15px;
-    transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-}
-.skills .icon:hover svg{
-    fill: #162c34;
-    background: #ffffff;
-    border: 2px solid #162c34;
 }
 .projects{
     text-align: center;
@@ -229,7 +206,7 @@ Header #github:hover{
 .projects h1{
     padding-bottom: 40px;
     padding-top: 50px;
-    color: #162c34;
+    color: #D2E5D0;
     overflow: hidden;
     font-weight: 300;
     overflow:hidden;
@@ -237,27 +214,69 @@ Header #github:hover{
 .projects .card{
     width: 20%;
     margin: 40px;
-    background:#212529;
+    background:linear-gradient(to bottom right,#AAD6A0,#D2E5D0);
     border-radius: 15px;
     transition: 1s;
     backdrop-filter: blur(1px);
-    box-shadow: 0 0 10px  #162c34;
+    box-shadow: 0 0 10px  #DCBAA9;
 }
 .card-title,.card-text{
-    color: #ffffff;
+    color: #65463E;
     overflow:hidden;
 }
-
+.btn-primary{
+    background-color: #65463E;
+    outline: #65463E;
+    border: #65463E;
+}
+.btn-primary:hover{
+    background-color: #65463E;
+    box-shadow: 0 0 6px #65463E;
+}
+.skills-container{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.skills-container h1{
+    color: #D2E5D0;
+    overflow:hidden;
+}
+.skills{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.skills .icon{
+    margin: 15px;
+}
+.skills .icon svg{
+    padding: 20px;
+    fill: #65463E;
+    background: #DCBAA9;
+    border: 2px solid #DCBAA9;
+    border-radius: 15px;
+    transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+}
+.skills .icon:hover svg{
+    fill: #DCBAA9;
+    background: #65463E;
+    border: 2px solid #DCBAA9;
+}
 .feedbk{
     width: 100%;
     height: auto;
-    background: #162c34;
+    background: #DCBAA9;
     clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
     padding-top: 20%;
 }
 .feedbk h1{
     color: transparent;
-    color: #ffffff;
+    color: #65463E;
     font-weight: 300;
     margin: 40px;
     overflow:hidden;
@@ -265,7 +284,7 @@ Header #github:hover{
 }
 .feedbk p{
     margin-left: 2vw;
-    color: #ffffff;
+    color: #65463E;
 }
 .feedbk form{
     height: auto;
@@ -278,8 +297,8 @@ Header #github:hover{
     padding: 18px 12px 18px 12px;
     border-radius: 10px;
     background: transparent;
-    border:2px solid #ffffff;
-    color: #ffffff;
+    border:2px solid #65463E;
+    color: #65463E;
 }
 .wrap-input{
     display: flex;
@@ -295,21 +314,22 @@ Header #github:hover{
     padding: 18px 12px 18px 12px;
     border-radius: 10px;
     background: transparent;
-    border:2px solid #ffffff;
-    color: #ffffff;
+    border:2px solid #65463E;
+    color: #65463E;
     max-height: 400px;
 }
 .feedbk input::placeholder{
-    color: #ffffff;
+    color: #65463E;
 }
 .feedbk textarea::placeholder{
-    color: #ffffff;
+    color: #65463E;
 }
 .feedbk .btn{
     margin-left: 2vw;
-    background: #ffffff;
-    border-color: #ffffff;
-    outline-color: #ffffff;
+    color: #D2E5D0;
+    background: #65463E;
+    border-color: #65463E;
+    outline-color: #65463E;
 }
 .footer{
     height: auto;
@@ -318,13 +338,13 @@ Header #github:hover{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 10px #ffffff;
+    box-shadow: 0 0 10px #D2E5D0;
     padding-top: 5vh;
 }
 .footer .fa-chevron-up{
     font-size: 30px;
     font-stretch: extra-expanded;
-    color: #162c34;
+    color: #D2E5D0;
     padding: 15px;
     border-radius: 10px;
     transition: .5s;
@@ -337,51 +357,51 @@ Header #github:hover{
     font-size: 30px;
     margin: 20px;
     transition: .5s;
-    background: #008080;
-    color: #fff;
-    border: solid+5px#162c34;
+    background: #AAD6A0;
+    color: #65463E;
+    border: solid+5px#65463E;
     padding: 15px;
     border-radius: 50%;
-    outline: solid+5px#008080;
-    box-shadow: 0 0 20px #162c34;
+    outline: solid+5px#AAD6A0;
+    box-shadow: 0 0 20px #DCBAA9;
 }
 .wrap a i:hover{
-    color: #fff;
-    text-shadow: 0 0 15px #fff;
-    background: #162c34;
-    border: 5px solid #008080;
-    outline: solid+5px#162c34;
-    box-shadow: 0 0 20px #008080;
+    color: #AAD6A0;
+    text-shadow: 0 0 15px #AAD6A0;
+    background: #65463E;
+    border: 5px solid #AAD6A0;
+    outline: solid+5px#65463E;
+    box-shadow: 0 0 20px #AAD6A0;
 }
 .footer hr{
-    background: #162c34;
+    background: #DCBAA9;
     width: 280px;
     height: 1.5px;
 }
 .footer p{
-    color: #162c34;
+    color: #D2E5D0;
     font-size: 12px;
     font-stretch: extra-expanded;
 }
 .footer p svg{
-    fill: #162c34;
+    fill: #DCBAA9;
     
 }
 .footer p a{
-    color: #162c34;
+    color: #D2E5D0;
     text-decoration: none;
     transition: .2s;
-    border-bottom: solid+2px#ffffff;
+    border-bottom: solid+2px#65463E;
 }
 .footer p a:hover{
-    border-bottom: solid+2px#008080;
+    border-bottom: solid+2px#AAD6A0;
 }
 @keyframes bounce{
     0%{
         position: absolute;
         right: 0;
         bottom: 10%;
-        color: #ffffff;
+        color: #D2E5D0;
         z-index: 100;
         transform: rotate(90deg);
     }
@@ -389,8 +409,8 @@ Header #github:hover{
         position: absolute;
         right: 0;
         bottom: 12%;
-        color: #ffffff;
-        text-shadow: 0 0 10px #ffffff;
+        color: #D2E5D0;
+        text-shadow: 0 0 10px #D2E5D0;
         z-index: 100;
         transform: rotate(90deg);
     }
@@ -398,7 +418,7 @@ Header #github:hover{
         position: absolute;
         right: 0;
         bottom: 10%;
-        color: #ffffff;
+        color: #D2E5D0;
         z-index: 100;
         transform: rotate(90deg);
     }
@@ -410,6 +430,9 @@ Header #github:hover{
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
         margin:0px
+    }
+    .terminal{
+        display: none;
     }
     .feedbk{
         clip-path: none;
@@ -486,7 +509,7 @@ Header #github:hover{
             position: absolute;
             right: -6%;
             bottom: 10%;
-            color: #ffffff;
+            color: #D2E5D0;
             z-index: 100;
             transform: rotate(90deg);
         }
@@ -494,8 +517,8 @@ Header #github:hover{
             position: absolute;
             right: -6%;
             bottom: 12%;
-            color: #ffffff;
-            text-shadow: 0 0 10px #ffffff;
+            color: #D2E5D0;
+            text-shadow: 0 0 10px #D2E5D0;
             z-index: 100;
             transform: rotate(90deg);
         }
@@ -503,7 +526,7 @@ Header #github:hover{
             position: absolute;
             right: -6%;
             bottom: 10%;
-            color: #ffffff;
+            color: #D2E5D0;
             z-index: 100;
             transform: rotate(90deg);
         }
@@ -533,7 +556,7 @@ Header #github:hover{
             position: absolute;
             right: -10%;
             bottom: 10%;
-            color: #ffffff;
+            color: #D2E5D0;
             z-index: 100;
             transform: rotate(90deg);
         }
@@ -541,8 +564,8 @@ Header #github:hover{
             position: absolute;
             right: -10%;
             bottom: 12%;
-            color: #ffffff;
-            text-shadow: 0 0 10px #ffffff;
+            color: #D2E5D0;
+            text-shadow: 0 0 10px #D2E5D0;
             z-index: 100;
             transform: rotate(90deg);
         }
@@ -550,7 +573,7 @@ Header #github:hover{
             position: absolute;
             right: -10%;
             bottom: 10%;
-            color: #ffffff;
+            color: #D2E5D0;
             z-index: 100;
             transform: rotate(90deg);
         }
