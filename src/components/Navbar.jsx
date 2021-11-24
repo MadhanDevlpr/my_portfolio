@@ -15,20 +15,23 @@ function Navbar() {
   }
   window.addEventListener('scroll',navtoggle);
   window.addEventListener('resize',navtoggle);
-  const navShrink = () =>{
+  window.addEventListener('load',navtoggle);
+  
+  const navShrink = () =>{  
     document.getElementsByClassName('navbar')[0].classList.replace('p-4','p-2');
-    document.getElementsByClassName('navbar')[0].classList.replace('bg-transparent','bg-dark');
+    document.getElementsByClassName('navbar')[0].style.background = "#181818";
     document.getElementsByClassName('navbar-brand')[0].style.visibility = "visible"
   }
   const navExpand = () =>{
     document.getElementsByClassName('navbar')[0].classList.replace('p-2','p-4');
-    document.getElementsByClassName('navbar')[0].classList.replace('bg-dark','bg-transparent');
+    document.getElementsByClassName('navbar')[0].style.background = "transparent";
     document.getElementsByClassName('navbar')[0].style.boxShadow = "none";
     document.getElementsByClassName('navbar-brand')[0].style.visibility = "hidden"
   }
+  
     return (
         <div>
-            <nav id="navbar navbar-nav" className="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top p-4">
+            <nav id="navbar navbar-nav" className="navbar navbar-expand-lg navbar-dark fixed-top p-4">
               <a className="navbar-brand" href="#header">
               M A D H A N
               </a>

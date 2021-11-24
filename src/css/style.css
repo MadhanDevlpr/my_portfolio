@@ -10,14 +10,13 @@ html{
     overflow-x: hidden;
 }
 body{
-    background: #65463E;
+    background: #122620;
 }
 .navbar{
     transition: .5s;
 }
 .navbar-brand{
     font-weight: bold;
-    background: #212529;
     padding: 20px;
     border-radius: 15px;
     visibility: hidden;
@@ -46,7 +45,7 @@ body{
     transition: .5s;
 }
 .nav-item:hover{
-    box-shadow: 0 0 5px #DCBAA9;
+    box-shadow: 0 0 5px #B68D40;
     padding: 0px 20px 0px 20px;
     border-radius: 10px;
 }
@@ -54,20 +53,20 @@ body{
     width: 5px;
 }
 ::-webkit-scrollbar-thumb{
-    background:#DCBAA9;
+    background:#F4EBD0;
 }
 *::selection{
-    background: #2f363d;
+    background: #F4EBD0;
     color: transparent;
 }
 Header{
     width: 100%;
     height: 100vh;
-    background:linear-gradient(to bottom right,  #65463E, #65463E);
+    background:linear-gradient(to bottom right,  #122620, #122620);
     background-size: cover;
 }
 Header h1{
-    color: #D2E5D0;
+    color: #F4EBD0;
     font-size: 5rem;
     overflow:hidden;
     text-align: left;
@@ -77,7 +76,7 @@ Header h1{
     transform: translate(-50%,-50%);
 }
 Header h1 .glow{
-    color: #AAD6A0;
+    color: #D6AD60;
 }
 Header h3{
     font-size: 2rem;
@@ -86,18 +85,18 @@ Header h3{
     top: 65%;
     left: 25%;
     transform: translate(-50%,-50%);
-    color: #D2E5D0;
+    color: #F4EBD0;
 }
 Header #know-more{
     position: absolute;
     top: 80%;
     left: 18%;
     transform: translate(-50%,-50%);
-    color: #65463E;
+    color: #122620;
     text-decoration: none;
     padding: 10px 30px 10px 30px;
-    background: #DCBAA9;
-    border: 2px solid #DCBAA9;
+    background: #B68D40;
+    border: 2px solid #B68D40;
     border-radius: 10px;
     transition: .5s;
 }
@@ -106,20 +105,20 @@ Header #know-more:hover{
     top: 79%;
     left: 18%;
     transform: translate(-50%,-50%);
-    border: 2px solid #D2E5D0;
+    border: 2px solid #F4EBD0;
     background: transparent;
-    color: #D2E5D0;
+    color: #F4EBD0;
 }
 Header #github{
     position: absolute;
     top: 80%;
     left: 35%;
     transform: translate(-50%,-50%);
-    color: #65463E;
+    color: #122620;
     text-decoration: none;
     padding: 10px 30px 10px 30px;
-    background: #D2E5D0;
-    border: 2px solid #D2E5D0;
+    background: #F4EBD0;
+    border: 2px solid #F4EBD0;
     border-radius: 10px;
     transition: .5s;
 }
@@ -128,29 +127,30 @@ Header #github:hover{
     top: 79%;
     left: 35%;
     transform: translate(-50%,-50%);
-    border: 2px solid #D2E5D0;
+    border: 2px solid #F4EBD0;
     background: transparent;
-    color: #D2E5D0;
+    color: #F4EBD0;
 }
 Header .terminal{
     background: url(../images/terminal.png) center center;
-    width: 620px;
-    height: 400px;
-    background-size: 620px 400px;
+    width:  48.4375vw;
+    height: 61.72839506172839vh;
+    background-size:  48.4375vw 61.72839506172839vh;
     background-repeat: no-repeat;
     position: absolute;
     top: 68%;
     right: 2%;
     z-index: 50;
     border-radius: 15px;
+    box-shadow: 0 0 15px #181818;
 }
 .innertext{
     margin-left: 30px;
     margin-top: 80px;
-    color: #D2E5D0;
+    color: #F4EBD0;
 }
 .innertext p a{
-    color: #DCBAA9;
+    color: #B68D40;
 }
 .innertext span{
     display: flex;
@@ -163,7 +163,7 @@ Header .terminal{
     display: flex;
     flex-direction: column;
     width: 100%;padding-bottom: 25%;
-    background: #DCBAA9;
+    background: #B68D40;
     clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
     padding-top: 20%;
 }
@@ -177,18 +177,18 @@ Header .terminal{
   font-size: 3rem;
   padding-top: 20px;
   font-weight: 300;
-  color: #65463E
+  color: #122620
 }
 #about img{
   margin: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px  #DCBAA9;
+  box-shadow: 0 0 10px  #B68D40;
 }
 #about p{
   line-height: 40px;
   margin-top: 60px;
-    color: #65463E;
-    background: #D2E5D0;
+    color: #122620;
+    background: #F4EBD0;
     padding: 30px;
     border-radius: 16px;
 }
@@ -206,7 +206,7 @@ Header .terminal{
 .projects h1{
     padding-bottom: 40px;
     padding-top: 50px;
-    color: #D2E5D0;
+    color: #F4EBD0;
     overflow: hidden;
     font-weight: 300;
     overflow:hidden;
@@ -214,24 +214,24 @@ Header .terminal{
 .projects .card{
     width: 20%;
     margin: 40px;
-    background:linear-gradient(to bottom right,#AAD6A0,#D2E5D0);
+    background:linear-gradient(to bottom right,#D6AD60,#F4EBD0);
     border-radius: 15px;
     transition: 1s;
     backdrop-filter: blur(1px);
-    box-shadow: 0 0 10px  #DCBAA9;
+    box-shadow: 0 0 10px  #B68D40;
 }
 .card-title,.card-text{
-    color: #65463E;
+    color: #122620;
     overflow:hidden;
 }
 .btn-primary{
-    background-color: #65463E;
-    outline: #65463E;
-    border: #65463E;
+    background-color: #122620;
+    outline: #122620;
+    border: #122620;
 }
 .btn-primary:hover{
-    background-color: #65463E;
-    box-shadow: 0 0 6px #65463E;
+    background-color: #122620;
+    box-shadow: 0 0 6px #122620;
 }
 .skills-container{
     padding-top: 20px;
@@ -239,7 +239,7 @@ Header .terminal{
     text-align: center;
 }
 .skills-container h1{
-    color: #D2E5D0;
+    color: #F4EBD0;
     overflow:hidden;
 }
 .skills{
@@ -254,29 +254,29 @@ Header .terminal{
 }
 .skills .icon svg{
     padding: 20px;
-    fill: #65463E;
-    background: #DCBAA9;
-    border: 2px solid #DCBAA9;
+    fill: #122620;
+    background: #B68D40;
+    border: 2px solid #B68D40;
     border-radius: 15px;
     transition: .5s;
     -moz-transition: .5s;
     -webkit-transition: .5s;
 }
 .skills .icon:hover svg{
-    fill: #DCBAA9;
-    background: #65463E;
-    border: 2px solid #DCBAA9;
+    fill: #B68D40;
+    background: #122620;
+    border: 2px solid #B68D40;
 }
 .feedbk{
     width: 100%;
     height: auto;
-    background: #DCBAA9;
+    background: #B68D40;
     clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
     padding-top: 20%;
 }
 .feedbk h1{
     color: transparent;
-    color: #65463E;
+    color: #122620;
     font-weight: 300;
     margin: 40px;
     overflow:hidden;
@@ -284,7 +284,7 @@ Header .terminal{
 }
 .feedbk p{
     margin-left: 2vw;
-    color: #65463E;
+    color: #122620;
 }
 .feedbk form{
     height: auto;
@@ -297,8 +297,8 @@ Header .terminal{
     padding: 18px 12px 18px 12px;
     border-radius: 10px;
     background: transparent;
-    border:2px solid #65463E;
-    color: #65463E;
+    border:2px solid #122620;
+    color: #122620;
 }
 .wrap-input{
     display: flex;
@@ -314,22 +314,22 @@ Header .terminal{
     padding: 18px 12px 18px 12px;
     border-radius: 10px;
     background: transparent;
-    border:2px solid #65463E;
-    color: #65463E;
+    border:2px solid #122620;
+    color: #122620;
     max-height: 400px;
 }
 .feedbk input::placeholder{
-    color: #65463E;
+    color: #122620;
 }
 .feedbk textarea::placeholder{
-    color: #65463E;
+    color: #122620;
 }
 .feedbk .btn{
     margin-left: 2vw;
-    color: #D2E5D0;
-    background: #65463E;
-    border-color: #65463E;
-    outline-color: #65463E;
+    color: #F4EBD0;
+    background: #122620;
+    border-color: #122620;
+    outline-color: #122620;
 }
 .footer{
     height: auto;
@@ -338,13 +338,13 @@ Header .terminal{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 10px #D2E5D0;
+    box-shadow: 0 0 10px #F4EBD0;
     padding-top: 5vh;
 }
 .footer .fa-chevron-up{
     font-size: 30px;
     font-stretch: extra-expanded;
-    color: #D2E5D0;
+    color: #F4EBD0;
     padding: 15px;
     border-radius: 10px;
     transition: .5s;
@@ -357,51 +357,51 @@ Header .terminal{
     font-size: 30px;
     margin: 20px;
     transition: .5s;
-    background: #AAD6A0;
-    color: #65463E;
-    border: solid+5px#65463E;
+    background: #D6AD60;
+    color: #122620;
+    border: solid+5px#122620;
     padding: 15px;
     border-radius: 50%;
-    outline: solid+5px#AAD6A0;
-    box-shadow: 0 0 20px #DCBAA9;
+    outline: solid+5px#D6AD60;
+    box-shadow: 0 0 20px #B68D40;
 }
 .wrap a i:hover{
-    color: #AAD6A0;
-    text-shadow: 0 0 15px #AAD6A0;
-    background: #65463E;
-    border: 5px solid #AAD6A0;
-    outline: solid+5px#65463E;
-    box-shadow: 0 0 20px #AAD6A0;
+    color: #D6AD60;
+    text-shadow: 0 0 15px #D6AD60;
+    background: #122620;
+    border: 5px solid #D6AD60;
+    outline: solid+5px#122620;
+    box-shadow: 0 0 20px #D6AD60;
 }
 .footer hr{
-    background: #DCBAA9;
+    background: #B68D40;
     width: 280px;
     height: 1.5px;
 }
 .footer p{
-    color: #D2E5D0;
+    color: #F4EBD0;
     font-size: 12px;
     font-stretch: extra-expanded;
 }
 .footer p svg{
-    fill: #DCBAA9;
+    fill: #B68D40;
     
 }
 .footer p a{
-    color: #D2E5D0;
+    color: #F4EBD0;
     text-decoration: none;
     transition: .2s;
-    border-bottom: solid+2px#65463E;
+    border-bottom: solid+2px#122620;
 }
 .footer p a:hover{
-    border-bottom: solid+2px#AAD6A0;
+    border-bottom: solid+2px#D6AD60;
 }
 @keyframes bounce{
     0%{
         position: absolute;
         right: 0;
         bottom: 10%;
-        color: #D2E5D0;
+        color: #F4EBD0;
         z-index: 100;
         transform: rotate(90deg);
     }
@@ -409,8 +409,8 @@ Header .terminal{
         position: absolute;
         right: 0;
         bottom: 12%;
-        color: #D2E5D0;
-        text-shadow: 0 0 10px #D2E5D0;
+        color: #F4EBD0;
+        text-shadow: 0 0 10px #F4EBD0;
         z-index: 100;
         transform: rotate(90deg);
     }
@@ -418,7 +418,7 @@ Header .terminal{
         position: absolute;
         right: 0;
         bottom: 10%;
-        color: #D2E5D0;
+        color: #F4EBD0;
         z-index: 100;
         transform: rotate(90deg);
     }
@@ -443,7 +443,7 @@ Header .terminal{
         top: 30%;
         left: 50%;
         transform: translate(-50%,-50%);
-        font-size:11vw;
+        font-size:9vw;
         white-space: nowrap;
     }
     Header h3{
@@ -504,32 +504,13 @@ Header .terminal{
         border-radius: 10px;
         width: 80%;
       }
-      @keyframes bounce{
-        0%{
-            position: absolute;
-            right: -6%;
-            bottom: 10%;
-            color: #D2E5D0;
-            z-index: 100;
-            transform: rotate(90deg);
-        }
-        50%{
-            position: absolute;
-            right: -6%;
-            bottom: 12%;
-            color: #D2E5D0;
-            text-shadow: 0 0 10px #D2E5D0;
-            z-index: 100;
-            transform: rotate(90deg);
-        }
-        100%{
-            position: absolute;
-            right: -6%;
-            bottom: 10%;
-            color: #D2E5D0;
-            z-index: 100;
-            transform: rotate(90deg);
-        }
+      Header h1{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size:12vw;
+        white-space: nowrap;
     }
 }
 @media(max-width:300px){
@@ -556,7 +537,7 @@ Header .terminal{
             position: absolute;
             right: -10%;
             bottom: 10%;
-            color: #D2E5D0;
+            color: #F4EBD0;
             z-index: 100;
             transform: rotate(90deg);
         }
@@ -564,8 +545,8 @@ Header .terminal{
             position: absolute;
             right: -10%;
             bottom: 12%;
-            color: #D2E5D0;
-            text-shadow: 0 0 10px #D2E5D0;
+            color: #F4EBD0;
+            text-shadow: 0 0 10px #F4EBD0;
             z-index: 100;
             transform: rotate(90deg);
         }
@@ -573,7 +554,7 @@ Header .terminal{
             position: absolute;
             right: -10%;
             bottom: 10%;
-            color: #D2E5D0;
+            color: #F4EBD0;
             z-index: 100;
             transform: rotate(90deg);
         }
