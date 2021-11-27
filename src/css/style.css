@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 body{
-    background: #122620;
+    background: #e9ecef;
 }
 .navbar{
     transition: .5s;
@@ -45,7 +46,8 @@ body{
     transition: .5s;
 }
 .nav-item:hover{
-    box-shadow: 0 0 5px #B68D40;
+    background: #3FD2C75e;
+    box-shadow: 0 0 10px #3FD2C75e;
     padding: 0px 20px 0px 20px;
     border-radius: 10px;
 }
@@ -53,30 +55,25 @@ body{
     width: 5px;
 }
 ::-webkit-scrollbar-thumb{
-    background:#F4EBD0;
+    background:#3FD2C7;
 }
 *::selection{
-    background: #F4EBD0;
+    background: #3FD2C7;
     color: transparent;
 }
 Header{
     width: 100%;
     height: 100vh;
-    background:linear-gradient(to bottom right,  #122620, #122620);
-    background-size: cover;
 }
 Header h1{
-    color: #F4EBD0;
+    color: #00458B;
     font-size: 5rem;
     overflow:hidden;
     text-align: left;
     position: absolute;
     top: 40%;
-    left: 30%;
+    left: 28%;
     transform: translate(-50%,-50%);
-}
-Header h1 .glow{
-    color: #D6AD60;
 }
 Header h3{
     font-size: 2rem;
@@ -85,18 +82,18 @@ Header h3{
     top: 65%;
     left: 25%;
     transform: translate(-50%,-50%);
-    color: #F4EBD0;
+    color: #3FD2C7;
 }
 Header #know-more{
     position: absolute;
     top: 80%;
     left: 18%;
     transform: translate(-50%,-50%);
-    color: #122620;
+    color: #00458B;
     text-decoration: none;
     padding: 10px 30px 10px 30px;
-    background: #B68D40;
-    border: 2px solid #B68D40;
+    background: #3FD2C7;
+    border: 2px solid #3FD2C7;
     border-radius: 10px;
     transition: .5s;
 }
@@ -105,20 +102,20 @@ Header #know-more:hover{
     top: 79%;
     left: 18%;
     transform: translate(-50%,-50%);
-    border: 2px solid #F4EBD0;
+    border: 2px solid #3FD2C7;
     background: transparent;
-    color: #F4EBD0;
+    color: #3FD2C7;
 }
 Header #github{
     position: absolute;
     top: 80%;
     left: 35%;
     transform: translate(-50%,-50%);
-    color: #122620;
+    color: #00458B;
     text-decoration: none;
     padding: 10px 30px 10px 30px;
-    background: #F4EBD0;
-    border: 2px solid #F4EBD0;
+    background: #3FD2C7;
+    border: 2px solid #3FD2C7;
     border-radius: 10px;
     transition: .5s;
 }
@@ -127,9 +124,9 @@ Header #github:hover{
     top: 79%;
     left: 35%;
     transform: translate(-50%,-50%);
-    border: 2px solid #F4EBD0;
+    border: 2px solid #3FD2C7;
     background: transparent;
-    color: #F4EBD0;
+    color: #3FD2C7;
 }
 Header .terminal{
     background: url(../images/terminal.png) center center;
@@ -147,10 +144,10 @@ Header .terminal{
 .innertext{
     margin-left: 30px;
     margin-top: 80px;
-    color: #F4EBD0;
+    color: #3FD2C7;
 }
 .innertext p a{
-    color: #B68D40;
+    color: #3FD2C7;
 }
 .innertext span{
     display: flex;
@@ -163,7 +160,7 @@ Header .terminal{
     display: flex;
     flex-direction: column;
     width: 100%;padding-bottom: 25%;
-    background: #B68D40;
+    background: #3FD2C7;
     clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
     padding-top: 20%;
 }
@@ -177,18 +174,18 @@ Header .terminal{
   font-size: 3rem;
   padding-top: 20px;
   font-weight: 300;
-  color: #122620
+  color: #00458B
 }
 #about img{
   margin: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px  #B68D40;
+  box-shadow: 0 0 10px  #3FD2C7;
 }
 #about p{
   line-height: 40px;
   margin-top: 60px;
-    color: #122620;
-    background: #F4EBD0;
+    color: #00458B;
+    background: #3FD2C7;
     padding: 30px;
     border-radius: 16px;
 }
@@ -206,7 +203,7 @@ Header .terminal{
 .projects h1{
     padding-bottom: 40px;
     padding-top: 50px;
-    color: #F4EBD0;
+    color: #00458B;
     overflow: hidden;
     font-weight: 300;
     overflow:hidden;
@@ -214,24 +211,22 @@ Header .terminal{
 .projects .card{
     width: 20%;
     margin: 40px;
-    background:linear-gradient(to bottom right,#D6AD60,#F4EBD0);
     border-radius: 15px;
     transition: 1s;
-    backdrop-filter: blur(1px);
-    box-shadow: 0 0 10px  #B68D40;
+    border:none;
 }
 .card-title,.card-text{
-    color: #122620;
+    color: #00458B;
     overflow:hidden;
 }
 .btn-primary{
-    background-color: #122620;
-    outline: #122620;
-    border: #122620;
+    background-color: #00458B;
+    outline: #00458B;
+    border: #00458B;
 }
 .btn-primary:hover{
-    background-color: #122620;
-    box-shadow: 0 0 6px #122620;
+    background-color: #00458B;
+    box-shadow: 0 0 6px #00458B;
 }
 .skills-container{
     padding-top: 20px;
@@ -239,7 +234,7 @@ Header .terminal{
     text-align: center;
 }
 .skills-container h1{
-    color: #F4EBD0;
+    color: #00458B;
     overflow:hidden;
 }
 .skills{
@@ -254,29 +249,30 @@ Header .terminal{
 }
 .skills .icon svg{
     padding: 20px;
-    fill: #122620;
-    background: #B68D40;
-    border: 2px solid #B68D40;
+    fill: #00458B;
+    background: transparent;
+    border: 2px solid transparent;
     border-radius: 15px;
     transition: .5s;
     -moz-transition: .5s;
     -webkit-transition: .5s;
 }
 .skills .icon:hover svg{
-    fill: #B68D40;
-    background: #122620;
-    border: 2px solid #B68D40;
+    fill: #00458B;
+    background: #3FD2C7;
+    border: 2px solid #3FD2C7;
 }
 .feedbk{
     width: 100%;
     height: auto;
-    background: #B68D40;
+    background: linear-gradient(to bottom, transparent, #3FD2C7);
+    background-attachment: fixed;
     clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
     padding-top: 20%;
 }
 .feedbk h1{
     color: transparent;
-    color: #122620;
+    color: #00458B;
     font-weight: 300;
     margin: 40px;
     overflow:hidden;
@@ -284,7 +280,7 @@ Header .terminal{
 }
 .feedbk p{
     margin-left: 2vw;
-    color: #122620;
+    color: #00458B;
 }
 .feedbk form{
     height: auto;
@@ -297,8 +293,8 @@ Header .terminal{
     padding: 18px 12px 18px 12px;
     border-radius: 10px;
     background: transparent;
-    border:2px solid #122620;
-    color: #122620;
+    border:2px solid #00458B;
+    color: #00458B;
 }
 .wrap-input{
     display: flex;
@@ -314,22 +310,22 @@ Header .terminal{
     padding: 18px 12px 18px 12px;
     border-radius: 10px;
     background: transparent;
-    border:2px solid #122620;
-    color: #122620;
+    border:2px solid #00458B;
+    color: #00458B;
     max-height: 400px;
 }
 .feedbk input::placeholder{
-    color: #122620;
+    color: #00458B;
 }
 .feedbk textarea::placeholder{
-    color: #122620;
+    color: #00458B;
 }
 .feedbk .btn{
     margin-left: 2vw;
-    color: #F4EBD0;
-    background: #122620;
-    border-color: #122620;
-    outline-color: #122620;
+    color: #3FD2C7;
+    background: #00458B;
+    border-color: #00458B;
+    outline-color: #00458B;
 }
 .footer{
     height: auto;
@@ -338,13 +334,13 @@ Header .terminal{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 10px #F4EBD0;
+    box-shadow: 0 0 10px #3FD2C7;
     padding-top: 5vh;
 }
 .footer .fa-chevron-up{
     font-size: 30px;
     font-stretch: extra-expanded;
-    color: #F4EBD0;
+    color: #00458B;
     padding: 15px;
     border-radius: 10px;
     transition: .5s;
@@ -357,70 +353,51 @@ Header .terminal{
     font-size: 30px;
     margin: 20px;
     transition: .5s;
-    background: #D6AD60;
-    color: #122620;
-    border: solid+5px#122620;
+    background: #00458B;
+    color: #3FD2C7;
+    border: solid+5px#3FD2C7;
     padding: 15px;
     border-radius: 50%;
-    outline: solid+5px#D6AD60;
-    box-shadow: 0 0 20px #B68D40;
+    outline: solid+5px#00458B;
+    box-shadow: 0 0 20px #3FD2C7;
 }
 .wrap a i:hover{
-    color: #D6AD60;
-    text-shadow: 0 0 15px #D6AD60;
-    background: #122620;
-    border: 5px solid #D6AD60;
-    outline: solid+5px#122620;
-    box-shadow: 0 0 20px #D6AD60;
+    color: #00458B;
+    background: #3FD2C7;
+    border: 5px solid #00458B;
+    outline: solid+5px#3FD2C7;
+    box-shadow: 0 0 20px #00458B;
 }
 .footer hr{
-    background: #B68D40;
+    background: #3FD2C7;
     width: 280px;
     height: 1.5px;
 }
 .footer p{
-    color: #F4EBD0;
+    color: #00458B;
     font-size: 12px;
     font-stretch: extra-expanded;
 }
 .footer p svg{
-    fill: #B68D40;
+    fill: #00458B;
     
 }
 .footer p a{
-    color: #F4EBD0;
+    color: #00458B;
     text-decoration: none;
     transition: .2s;
-    border-bottom: solid+2px#122620;
+    border-bottom: solid+2px#fff;
 }
 .footer p a:hover{
-    border-bottom: solid+2px#D6AD60;
+    border-bottom: solid+2px#00458B;
 }
-@keyframes bounce{
+
+@keyframes rotate{
     0%{
-        position: absolute;
-        right: 0;
-        bottom: 10%;
-        color: #F4EBD0;
-        z-index: 100;
-        transform: rotate(90deg);
-    }
-    50%{
-        position: absolute;
-        right: 0;
-        bottom: 12%;
-        color: #F4EBD0;
-        text-shadow: 0 0 10px #F4EBD0;
-        z-index: 100;
-        transform: rotate(90deg);
+        transform: rotate(0deg);
     }
     100%{
-        position: absolute;
-        right: 0;
-        bottom: 10%;
-        color: #F4EBD0;
-        z-index: 100;
-        transform: rotate(90deg);
+        transform: rotate(360deg);
     }
 }
 @media(max-width:992px){
@@ -537,7 +514,7 @@ Header .terminal{
             position: absolute;
             right: -10%;
             bottom: 10%;
-            color: #F4EBD0;
+            color: #3FD2C7;
             z-index: 100;
             transform: rotate(90deg);
         }
@@ -545,8 +522,8 @@ Header .terminal{
             position: absolute;
             right: -10%;
             bottom: 12%;
-            color: #F4EBD0;
-            text-shadow: 0 0 10px #F4EBD0;
+            color: #3FD2C7;
+            text-shadow: 0 0 10px #3FD2C7;
             z-index: 100;
             transform: rotate(90deg);
         }
@@ -554,7 +531,7 @@ Header .terminal{
             position: absolute;
             right: -10%;
             bottom: 10%;
-            color: #F4EBD0;
+            color: #3FD2C7;
             z-index: 100;
             transform: rotate(90deg);
         }
