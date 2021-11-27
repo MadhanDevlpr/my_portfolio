@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 import About from './components/About';
 import Feedback from './components/Feedback';
 import Footer from './components/Footer';
-import './css/style.css';
+import './css/style.scss';
 
 function App() {
   return (

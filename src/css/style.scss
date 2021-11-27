@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+$blue:#00458B;
+$teal:#3FD2C7;
+$green5e:#3FD2C75e;
+$white:#fff;
+$bluishwhite:#e9ecef;
+
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +17,7 @@ html{
     overflow-x: hidden;
 }
 body{
-    background: #e9ecef;
+    background: $bluishwhite;
 }
 .navbar{
     transition: .5s;
@@ -42,12 +48,11 @@ body{
 }
 .nav-item{
     padding: 0px 20px 0px 20px;
-    color: black;
     transition: .5s;
 }
 .nav-item:hover{
-    background: #3FD2C75e;
-    box-shadow: 0 0 10px #3FD2C75e;
+    background: $green5e;
+    box-shadow: 0 0 10px $green5e;
     padding: 0px 20px 0px 20px;
     border-radius: 10px;
 }
@@ -55,10 +60,10 @@ body{
     width: 5px;
 }
 ::-webkit-scrollbar-thumb{
-    background:#3FD2C7;
+    background:$teal;
 }
 *::selection{
-    background: #3FD2C7;
+    background: $teal;
     color: transparent;
 }
 Header{
@@ -66,7 +71,7 @@ Header{
     height: 100vh;
 }
 Header h1{
-    color: #00458B;
+    color: $blue;
     font-size: 5rem;
     overflow:hidden;
     text-align: left;
@@ -82,18 +87,18 @@ Header h3{
     top: 65%;
     left: 25%;
     transform: translate(-50%,-50%);
-    color: #3FD2C7;
+    color: $teal;
 }
 Header #know-more{
     position: absolute;
     top: 80%;
     left: 18%;
     transform: translate(-50%,-50%);
-    color: #00458B;
+    color: $blue;
     text-decoration: none;
     padding: 10px 30px 10px 30px;
-    background: #3FD2C7;
-    border: 2px solid #3FD2C7;
+    background: $teal;
+    border: 2px solid $teal;
     border-radius: 10px;
     transition: .5s;
 }
@@ -102,20 +107,20 @@ Header #know-more:hover{
     top: 79%;
     left: 18%;
     transform: translate(-50%,-50%);
-    border: 2px solid #3FD2C7;
+    border: 2px solid $teal;
     background: transparent;
-    color: #3FD2C7;
+    color: $teal;
 }
 Header #github{
     position: absolute;
     top: 80%;
     left: 35%;
     transform: translate(-50%,-50%);
-    color: #00458B;
+    color: $blue;
     text-decoration: none;
     padding: 10px 30px 10px 30px;
-    background: #3FD2C7;
-    border: 2px solid #3FD2C7;
+    background: $teal;
+    border: 2px solid $teal;
     border-radius: 10px;
     transition: .5s;
 }
@@ -124,9 +129,9 @@ Header #github:hover{
     top: 79%;
     left: 35%;
     transform: translate(-50%,-50%);
-    border: 2px solid #3FD2C7;
+    border: 2px solid $teal;
     background: transparent;
-    color: #3FD2C7;
+    color: $teal;
 }
 Header .terminal{
     background: url(../images/terminal.png) center center;
@@ -144,10 +149,10 @@ Header .terminal{
 .innertext{
     margin-left: 30px;
     margin-top: 80px;
-    color: #3FD2C7;
+    color: $teal;
 }
 .innertext p a{
-    color: #3FD2C7;
+    color: $teal;
 }
 .innertext span{
     display: flex;
@@ -160,7 +165,7 @@ Header .terminal{
     display: flex;
     flex-direction: column;
     width: 100%;padding-bottom: 25%;
-    background: #3FD2C7;
+    background: $teal;
     clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
     padding-top: 20%;
 }
@@ -174,18 +179,18 @@ Header .terminal{
   font-size: 3rem;
   padding-top: 20px;
   font-weight: 300;
-  color: #00458B
+  color: $blue
 }
 #about img{
   margin: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px  #3FD2C7;
+  box-shadow: 0 0 10px  $teal;
 }
 #about p{
   line-height: 40px;
   margin-top: 60px;
-    color: #00458B;
-    background: #3FD2C7;
+    color: $blue;
+    background: $teal;
     padding: 30px;
     border-radius: 16px;
 }
@@ -203,7 +208,7 @@ Header .terminal{
 .projects h1{
     padding-bottom: 40px;
     padding-top: 50px;
-    color: #00458B;
+    color: $blue;
     overflow: hidden;
     font-weight: 300;
     overflow:hidden;
@@ -216,17 +221,17 @@ Header .terminal{
     border:none;
 }
 .card-title,.card-text{
-    color: #00458B;
+    color: $blue;
     overflow:hidden;
 }
 .btn-primary{
-    background-color: #00458B;
-    outline: #00458B;
-    border: #00458B;
+    background-color: $blue;
+    outline: $blue;
+    border: $blue;
 }
 .btn-primary:hover{
-    background-color: #00458B;
-    box-shadow: 0 0 6px #00458B;
+    background-color: $blue;
+    box-shadow: 0 0 6px $blue;
 }
 .skills-container{
     padding-top: 20px;
@@ -234,7 +239,7 @@ Header .terminal{
     text-align: center;
 }
 .skills-container h1{
-    color: #00458B;
+    color: $blue;
     overflow:hidden;
 }
 .skills{
@@ -249,7 +254,7 @@ Header .terminal{
 }
 .skills .icon svg{
     padding: 20px;
-    fill: #00458B;
+    fill: $blue;
     background: transparent;
     border: 2px solid transparent;
     border-radius: 15px;
@@ -258,21 +263,21 @@ Header .terminal{
     -webkit-transition: .5s;
 }
 .skills .icon:hover svg{
-    fill: #00458B;
-    background: #3FD2C7;
-    border: 2px solid #3FD2C7;
+    fill: $blue;
+    background: $teal;
+    border: 2px solid $teal;
 }
 .feedbk{
     width: 100%;
     height: auto;
-    background: linear-gradient(to bottom, transparent, #3FD2C7);
+    background: linear-gradient(to bottom, transparent, $teal);
     background-attachment: fixed;
     clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
     padding-top: 20%;
 }
 .feedbk h1{
     color: transparent;
-    color: #00458B;
+    color: $blue;
     font-weight: 300;
     margin: 40px;
     overflow:hidden;
@@ -280,7 +285,7 @@ Header .terminal{
 }
 .feedbk p{
     margin-left: 2vw;
-    color: #00458B;
+    color: $blue;
 }
 .feedbk form{
     height: auto;
@@ -293,8 +298,8 @@ Header .terminal{
     padding: 18px 12px 18px 12px;
     border-radius: 10px;
     background: transparent;
-    border:2px solid #00458B;
-    color: #00458B;
+    border:2px solid $blue;
+    color: $blue;
 }
 .wrap-input{
     display: flex;
@@ -310,22 +315,22 @@ Header .terminal{
     padding: 18px 12px 18px 12px;
     border-radius: 10px;
     background: transparent;
-    border:2px solid #00458B;
-    color: #00458B;
+    border:2px solid $blue;
+    color: $blue;
     max-height: 400px;
 }
 .feedbk input::placeholder{
-    color: #00458B;
+    color: $blue;
 }
 .feedbk textarea::placeholder{
-    color: #00458B;
+    color: $blue;
 }
 .feedbk .btn{
     margin-left: 2vw;
-    color: #3FD2C7;
-    background: #00458B;
-    border-color: #00458B;
-    outline-color: #00458B;
+    color: $teal;
+    background: $blue;
+    border-color: $blue;
+    outline-color: $blue;
 }
 .footer{
     height: auto;
@@ -334,13 +339,13 @@ Header .terminal{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 10px #3FD2C7;
+    box-shadow: 0 0 10px $teal;
     padding-top: 5vh;
 }
 .footer .fa-chevron-up{
     font-size: 30px;
     font-stretch: extra-expanded;
-    color: #00458B;
+    color: $blue;
     padding: 15px;
     border-radius: 10px;
     transition: .5s;
@@ -353,43 +358,43 @@ Header .terminal{
     font-size: 30px;
     margin: 20px;
     transition: .5s;
-    background: #00458B;
-    color: #3FD2C7;
-    border: solid+5px#3FD2C7;
+    background: $blue;
+    color: $teal;
+    border: 5px solid $teal;
     padding: 15px;
     border-radius: 50%;
-    outline: solid+5px#00458B;
-    box-shadow: 0 0 20px #3FD2C7;
+    outline: 5px solid $blue;
+    box-shadow: 0 0 20px $teal;
 }
 .wrap a i:hover{
-    color: #00458B;
-    background: #3FD2C7;
-    border: 5px solid #00458B;
-    outline: solid+5px#3FD2C7;
-    box-shadow: 0 0 20px #00458B;
+    color: $blue;
+    background: $teal;
+    border: 5px solid $blue;
+    outline: 5px solid $teal;
+    box-shadow: 0 0 20px $blue;
 }
 .footer hr{
-    background: #3FD2C7;
+    background: $teal;
     width: 280px;
     height: 1.5px;
 }
 .footer p{
-    color: #00458B;
+    color: $blue;
     font-size: 12px;
     font-stretch: extra-expanded;
 }
 .footer p svg{
-    fill: #00458B;
+    fill: $blue;
     
 }
 .footer p a{
-    color: #00458B;
+    color: $blue;
     text-decoration: none;
     transition: .2s;
-    border-bottom: solid+2px#fff;
+    border-bottom: 2px solid $white;
 }
 .footer p a:hover{
-    border-bottom: solid+2px#00458B;
+    border-bottom: 2px solid $blue;
 }
 
 @keyframes rotate{
@@ -514,7 +519,7 @@ Header .terminal{
             position: absolute;
             right: -10%;
             bottom: 10%;
-            color: #3FD2C7;
+            color: $teal;
             z-index: 100;
             transform: rotate(90deg);
         }
@@ -522,8 +527,8 @@ Header .terminal{
             position: absolute;
             right: -10%;
             bottom: 12%;
-            color: #3FD2C7;
-            text-shadow: 0 0 10px #3FD2C7;
+            color: $teal;
+            text-shadow: 0 0 10px $teal;
             z-index: 100;
             transform: rotate(90deg);
         }
@@ -531,7 +536,7 @@ Header .terminal{
             position: absolute;
             right: -10%;
             bottom: 10%;
-            color: #3FD2C7;
+            color: $teal;
             z-index: 100;
             transform: rotate(90deg);
         }
