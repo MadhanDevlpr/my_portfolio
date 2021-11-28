@@ -12,28 +12,28 @@ const Skills = () => {
         className="skills"
       >
         <div className="icon">
-          <i class="fab fa-react"></i>
+          <i className="fab fa-react"></i>
         </div>
         <div className="icon">
-          <i class="fab fa-html5"></i>
+          <i className="fab fa-html5"></i>
         </div>
         <div className="icon">
-          <i class="fab fa-css3"></i>
+          <i className="fab fa-css3"></i>
         </div>
         <div className="icon">
-          <i class="fab fa-python"></i>
+          <i className="fab fa-python"></i>
         </div>
         <div className="icon">
-          <i class="fab fa-bootstrap"></i>
+          <i className="fab fa-bootstrap"></i>
         </div>
         <div className="icon">
-          <i class="fab fa-js-square"></i>
+          <i className="fab fa-js-square"></i>
         </div>
         <div className="icon">
-          <i class="fab fa-git-alt"></i>
+          <i className="fab fa-git-alt"></i>
         </div>
         <div className="icon">
-          <i class="fab fa-sass"></i>
+          <i className="fab fa-sass"></i>
         </div>
       </div>
     </div>
