@@ -107,8 +107,8 @@ Header #know-more:hover{
     top: 79%;
     left: 18%;
     transform: translate(-50%,-50%);
-    border: 2px solid $teal;
-    background: transparent;
+    border: 2px solid $blue;
+    background: $blue;
     color: $teal;
 }
 Header #github{
@@ -129,8 +129,8 @@ Header #github:hover{
     top: 79%;
     left: 35%;
     transform: translate(-50%,-50%);
-    border: 2px solid $teal;
-    background: transparent;
+    border: 2px solid $blue;
+    background: $blue;
     color: $teal;
 }
 Header .terminal{
