@@ -246,15 +246,17 @@ Header .terminal{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .skills .icon{
     margin: 15px;
 }
-.skills .icon svg{
+.skills .icon i{
     padding: 20px;
-    fill: $blue;
+    font-size:50px;
+    color: $blue;
+    text-shadow: 0 0 10px $teal;
     background: transparent;
     border: 2px solid transparent;
     border-radius: 15px;
@@ -262,7 +264,7 @@ Header .terminal{
     -moz-transition: .5s;
     -webkit-transition: .5s;
 }
-.skills .icon:hover svg{
+.skills .icon:hover i{
     fill: $blue;
     background: $teal;
     border: 2px solid $teal;
@@ -374,9 +376,9 @@ Header .terminal{
     box-shadow: 0 0 20px $blue;
 }
 .footer hr{
-    background: $teal;
-    width: 280px;
-    height: 1.5px;
+    background: linear-gradient(to right, transparent,$blue,transparent);
+    width: 90%;
+    height: 2px;
 }
 .footer p{
     color: $blue;

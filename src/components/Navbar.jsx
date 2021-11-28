@@ -19,7 +19,7 @@ function Navbar() {
   
   const navShrink = () =>{  
     document.getElementsByClassName('navbar')[0].classList.replace('p-4','p-2');
-    document.getElementsByClassName('navbar')[0].style.background = "#ffffff9e";
+    document.getElementsByClassName('navbar')[0].style.background = "rgba(255,255,255,0.9)";
     document.getElementsByClassName('navbar-brand')[0].style.visibility = "visible"
   }
   const navExpand = () =>{
