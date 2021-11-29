@@ -12,7 +12,7 @@ const Header = () => {
                     <span><p className="dollar">$ &nbsp;</p><p> Feel free to contribute to this on <a target="_blank" rel="noreferrer"  href="https://github.com/MadhanDevlpr/React.js-Portfolio">github</a>,</p></span>
                     <span><p className="dollar">$ &nbsp;</p><p> I've made this portfolio with Reactjs and Css,</p></span>
                     <span><p className="dollar">$ &nbsp;</p><p> <a target="_blank" rel="noreferrer"  href="https://madhandevlpr.github.io/React.js-Portfolio/">Documentation</a></p></span><br/>
-                    <p>Add some unique info about you here.</p>
+                    <p>Add some awards you've got or some certificates you've earnt here.</p>
                 </div>
             </div>
         </header>
