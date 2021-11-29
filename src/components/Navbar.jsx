@@ -18,12 +18,12 @@ function Navbar() {
   window.addEventListener('load',navtoggle);
   
   const navShrink = () =>{  
-    document.getElementsByClassName('navbar')[0].classList.replace('p-4','p-2');
+    document.getElementsByClassName('navbar')[0].classList.replace('p-4','p-1');
     document.getElementsByClassName('navbar')[0].style.background = "rgba(255,255,255,0.9)";
     document.getElementsByClassName('navbar-brand')[0].style.visibility = "visible"
   }
   const navExpand = () =>{
-    document.getElementsByClassName('navbar')[0].classList.replace('p-2','p-4');
+    document.getElementsByClassName('navbar')[0].classList.replace('p-1','p-4');
     document.getElementsByClassName('navbar')[0].style.background = "transparent";
     document.getElementsByClassName('navbar')[0].style.boxShadow = "none";
     document.getElementsByClassName('navbar-brand')[0].style.visibility = "hidden"
