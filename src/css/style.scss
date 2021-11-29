@@ -12,7 +12,51 @@ $bluishwhite:#e9ecef;
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    background: $bluishwhite;
+    scroll-snap-type: y mandatory;
+}
+.navbar{
+    transition: .5s;
+}
+.navbar-brand{
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 15px;
+    visibility: hidden;
+}
 
+.navbar-toggler
+{
+    border:none;
+    outline: none;
+}
+.navbar-toggler:focus{
+    border:none;
+    outline:none
+}
+.navbar-toggler:active{
+    border:none;
+    outline:none
+}
+.navbar-toggler-icon:focus{
+    border:none;
+    outline: none;
+}
+.nav-item{
+    padding: 0px 20px 0px 20px;
+    transition: .5s;
+}
+.nav-item:hover{
+    background: $green5e;
+    box-shadow: 0 0 10px $green5e;
+    padding: 0px 20px 0px 20px;
+    border-radius: 10px;
+}
 ::-webkit-scrollbar{
     width: 5px;
 }
@@ -23,392 +67,347 @@ $bluishwhite:#e9ecef;
     background: $teal;
     color: transparent;
 }
-html{
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    body{
-        background: $bluishwhite;
-        scroll-snap-type: y mandatory;
-        //Main elements
-        .navbar{
-            transition: .5s;
-        }
-        .navbar-brand{
-            font-weight: bold;
-            padding: 20px;
-            border-radius: 15px;
-            visibility: hidden;
-        }
-        
-        .navbar-toggler
-        {
-            border:none;
-            outline: none;
-        }
-        .navbar-toggler:focus{
-            border:none;
-            outline:none
-        }
-        .navbar-toggler:active{
-            border:none;
-            outline:none
-        }
-        .navbar-toggler-icon:focus{
-            border:none;
-            outline: none;
-        }
-        .nav-item{
-            padding: 0px 20px 0px 20px;
-            transition: .5s;
-        }
-        .nav-item:hover{
-            background: $green5e;
-            box-shadow: 0 0 10px $green5e;
-            padding: 0px 20px 0px 20px;
-            border-radius: 10px;
-        }
-        Header{
-            width: 100%;
-            height: 100vh;
-            //Header elements
-        
-            h1{
-                color: $blue;
-                font-size: 5rem;
-                overflow:hidden;
-                text-align: left;
-                position: absolute;
-                top: 40%;
-                left: 28%;
-                transform: translate(-50%,-50%);
-            }
-            h3{
-                font-size: 2rem;
-                position: absolute;
-                overflow:hidden;
-                top: 65%;
-                left: 25%;
-                transform: translate(-50%,-50%);
-                color: $teal;
-            }
-            #know-more{
-                position: absolute;
-                top: 80%;
-                left: 18%;
-                transform: translate(-50%,-50%);
-                color: $blue;
-                text-decoration: none;
-                padding: 10px 30px 10px 30px;
-                background: $teal;
-                border: 2px solid $teal;
-                border-radius: 10px;
-                transition: .5s;
-            }
-            #know-more:hover{
-                position: absolute;
-                top: 79%;
-                left: 18%;
-                transform: translate(-50%,-50%);
-                border: 2px solid $blue;
-                background: $blue;
-                color: $teal;
-            }
-            #github{
-                position: absolute;
-                top: 80%;
-                left: 35%;
-                transform: translate(-50%,-50%);
-                color: $blue;
-                text-decoration: none;
-                padding: 10px 30px 10px 30px;
-                background: $teal;
-                border: 2px solid $teal;
-                border-radius: 10px;
-                transition: .5s;
-            }
-            #github:hover{
-                position: absolute;
-                top: 79%;
-                left: 35%;
-                transform: translate(-50%,-50%);
-                border: 2px solid $blue;
-                background: $blue;
-                color: $teal;
-            }
-            .terminal{
-                background: url(../images/terminal.png) center center;
-                width:  48.4375vw;
-                height: 61.72839506172839vh;
-                background-size:  48.4375vw 61.72839506172839vh;
-                background-repeat: no-repeat;
-                position: absolute;
-                top: 68%;
-                right: 2%;
-                z-index: 50;
-                border-radius: 15px;
-                box-shadow: 0 0 15px #181818;
-            }
-            .innertext{
-                margin-left: 30px;
-                margin-top: 80px;
-                color: $teal;
-            }
-            .innertext p a{
-                color: $teal;
-            }
-            .innertext span{
-                display: flex;
-            }
-        }
-        #about{
-            align-items: center;
-            overflow:hidden;
-            text-align: center;
-            justify-content: center;
-            display: flex;
-            flex-direction: column;
-            width: 100%;padding-bottom: 25%;
-            background: $teal;
-            clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
-            padding-top: 20%;
-            //About elements
-            .text{
-                width: 95%;
-                overflow: hidden;
-              }
-              h1{
-                margin: 30px;
-                overflow:hidden;
-                font-size: 3rem;
-                padding-top: 20px;
-                font-weight: 300;
-                color: $blue
-              }
-              img{
-                margin: 20px;
-                border-radius: 10px;
-                box-shadow: 0 0 10px  $teal;
-              }
-              p{
-                line-height: 40px;
-                margin-top: 60px;
-                  color: $blue;
-                  background: $teal;
-                  padding: 30px;
-                  border-radius: 16px;
-              }
-        }
-        .projects{
-            text-align: center;
-            overflow:hidden;
-            //Projects elements
-            .cards{
-                width: 100%;
-                justify-content: center;
-                display: flex;
-                flex-wrap: wrap;
-                overflow:hidden;
-            }
-            h1{
-                padding-bottom: 40px;
-                padding-top: 50px;
-                color: $blue;
-                overflow: hidden;
-                font-weight: 300;
-                overflow:hidden;
-            }
-            .card{
-                width: 20%;
-                margin: 40px;
-                border-radius: 15px;
-                transition: 1s;
-                border:none;
-            }
-            .card-title,.card-text{
-                color: $blue;
-                overflow:hidden;
-            }
-            .btn-primary{
-                background-color: $blue;
-                outline: $blue;
-                border: $blue;
-            }
-            .btn-primary:hover{
-                background-color: $blue;
-                box-shadow: 0 0 6px $blue;
-            }
-        }
-        .skills-container{
-            padding-top: 20px;
-            padding-bottom: 40px;
-            text-align: center;
-            //Skills elements
-            h1{
-                color: $blue;
-                overflow:hidden;
-            }
-            .skills{
-                justify-content: center;
-                display: flex;
-                flex-wrap: wrap;
-                margin-left: 10px;
-                margin-right: 10px;
-            }
-            .skills .icon{
-                margin: 15px;
-            }
-            .skills .icon i{
-                padding: 20px;
-                font-size:50px;
-                color: $blue;
-                text-shadow: 0 0 10px $teal;
-                background: transparent;
-                border: 2px solid transparent;
-                border-radius: 15px;
-                transition: .5s;
-                -moz-transition: .5s;
-                -webkit-transition: .5s;
-            }
-            .skills .icon:hover i{
-                fill: $blue;
-                background: $teal;
-                border: 2px solid $teal;
-            }
-        }
-        .feedbk{
-            width: 100%;
-            height: auto;
-            background: linear-gradient(to bottom, transparent, $teal);
-            background-attachment: fixed;
-            clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
-            padding-top: 20%;
-            //Feedback elements
-            h1{
-                color: transparent;
-                color: $blue;
-                font-weight: 300;
-                margin: 40px;
-                overflow:hidden;
-                font-size: 3rem;
-            }
-            p{
-                margin-left: 2vw;
-                color: $blue;
-            }
-            form{
-                height: auto;
-            }
-            input{
-                border: none;
-                outline: none;
-                margin-left: 2vw;
-                width: 42.5%;
-                padding: 18px 12px 18px 12px;
-                border-radius: 10px;
-                background: transparent;
-                border:2px solid $blue;
-                color: $blue;
-            }
-            .wrap-input{
-                display: flex;
-                flex-direction: row;
-                overflow: hidden;
-            }
-            textarea{
-                margin-left: 2vw;
-                min-width: 90vw;
-                height: 200px;
-                border: none;
-                outline: none;
-                padding: 18px 12px 18px 12px;
-                border-radius: 10px;
-                background: transparent;
-                border:2px solid $blue;
-                color: $blue;
-                max-height: 400px;
-            }
-            input::placeholder{
-                color: $blue;
-            }
-            textarea::placeholder{
-                color: $blue;
-            }
-            .btn{
-                margin-left: 2vw;
-                color: $teal;
-                background: $blue;
-                border-color: $blue;
-                outline-color: $blue;
-            }
-        }
-        .footer{
-            height: auto;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 0 10px $teal;
-            padding-top: 5vh;
-            //Footer elements
-            .fa-chevron-up{
-                font-size: 30px;
-                font-stretch: extra-expanded;
-                color: $blue;
-                padding: 15px;
-                border-radius: 10px;
-                transition: .5s;
-                overflow: hidden;
-            }
-            .wrap{
-                display:flex;
-            }
-            .wrap a i{
-                font-size: 30px;
-                margin: 20px;
-                transition: .5s;
-                background: $blue;
-                color: $teal;
-                border: 5px solid $teal;
-                padding: 15px;
-                border-radius: 50%;
-                outline: 5px solid $blue;
-                box-shadow: 0 0 20px $teal;
-            }
-            .wrap a i:hover{
-                color: $blue;
-                background: $teal;
-                border: 5px solid $blue;
-                outline: 5px solid $teal;
-                box-shadow: 0 0 20px $blue;
-            }
-            hr{
-                background: linear-gradient(to right, transparent,$blue,transparent);
-                width: 90%;
-                height: 2px;
-            }
-            p{
-                color: $blue;
-                font-size: 12px;
-                font-stretch: extra-expanded;
-            }
-            p svg{
-                fill: $blue;
-                
-            }
-            p a{
-                color: $blue;
-                text-decoration: none;
-                transition: .2s;
-                border-bottom: 2px solid $white;
-            }
-            p a:hover{
-                border-bottom: 2px solid $blue;
-            }
-        }
-    }
+Header{
+    width: 100%;
+    height: 100vh;
+}
+Header h1{
+    color: $blue;
+    font-size: 5rem;
+    overflow:hidden;
+    text-align: left;
+    position: absolute;
+    top: 40%;
+    left: 28%;
+    transform: translate(-50%,-50%);
+}
+Header h3{
+    font-size: 2rem;
+    position: absolute;
+    overflow:hidden;
+    top: 65%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    color: $teal;
+}
+Header #know-more{
+    position: absolute;
+    top: 80%;
+    left: 18%;
+    transform: translate(-50%,-50%);
+    color: $blue;
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    background: $teal;
+    border: 2px solid $teal;
+    border-radius: 10px;
+    transition: .5s;
+}
+Header #know-more:hover{
+    position: absolute;
+    top: 79%;
+    left: 18%;
+    transform: translate(-50%,-50%);
+    border: 2px solid $blue;
+    background: $blue;
+    color: $teal;
+}
+Header #github{
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    color: $blue;
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    background: $teal;
+    border: 2px solid $teal;
+    border-radius: 10px;
+    transition: .5s;
+}
+Header #github:hover{
+    position: absolute;
+    top: 79%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    border: 2px solid $blue;
+    background: $blue;
+    color: $teal;
+}
+Header .terminal{
+    background: url(../images/terminal.png) center center;
+    width:  48.4375vw;
+    height: 61.72839506172839vh;
+    background-size:  48.4375vw 61.72839506172839vh;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 68%;
+    right: 2%;
+    z-index: 50;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #181818;
+}
+.innertext{
+    margin-left: 30px;
+    margin-top: 80px;
+    color: $teal;
+}
+.innertext p a{
+    color: $teal;
+}
+.innertext span{
+    display: flex;
+}
+#about{
+    align-items: center;
+    overflow:hidden;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;padding-bottom: 25%;
+    background: $teal;
+    clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
+    padding-top: 20%;
+}
+#about .text{
+  width: 95%;
+  overflow: hidden;
+}
+#about h1{
+  margin: 30px;
+  overflow:hidden;
+  font-size: 3rem;
+  padding-top: 20px;
+  font-weight: 300;
+  color: $blue
+}
+#about img{
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px  $teal;
+}
+#about p{
+  line-height: 40px;
+  margin-top: 60px;
+    color: $blue;
+    background: $teal;
+    padding: 30px;
+    border-radius: 16px;
+}
+.projects{
+    text-align: center;
+    overflow:hidden;
+}
+.cards{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    overflow:hidden;
+}
+.projects h1{
+    padding-bottom: 40px;
+    padding-top: 50px;
+    color: $blue;
+    overflow: hidden;
+    font-weight: 300;
+    overflow:hidden;
+}
+.projects .card{
+    width: 20%;
+    margin: 40px;
+    border-radius: 15px;
+    transition: 1s;
+    border:none;
+}
+.card-title,.card-text{
+    color: $blue;
+    overflow:hidden;
+}
+.btn-primary{
+    background-color: $blue;
+    outline: $blue;
+    border: $blue;
+}
+.btn-primary:hover{
+    background-color: $blue;
+    box-shadow: 0 0 6px $blue;
+}
+.skills-container{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.skills-container h1{
+    color: $blue;
+    overflow:hidden;
+}
+.skills{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.skills .icon{
+    margin: 15px;
+}
+.skills .icon i{
+    padding: 20px;
+    font-size:50px;
+    color: $blue;
+    text-shadow: 0 0 10px $teal;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+}
+.skills .icon:hover i{
+    fill: $blue;
+    background: $teal;
+    border: 2px solid $teal;
+}
+.feedbk{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, transparent, $teal);
+    background-attachment: fixed;
+    clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
+    padding-top: 20%;
+}
+.feedbk h1{
+    color: transparent;
+    color: $blue;
+    font-weight: 300;
+    margin: 40px;
+    overflow:hidden;
+    font-size: 3rem;
+}
+.feedbk p{
+    margin-left: 2vw;
+    color: $blue;
+}
+.feedbk form{
+    height: auto;
+}
+.feedbk input{
+    border: none;
+    outline: none;
+    margin-left: 2vw;
+    width: 42.5%;
+    padding: 18px 12px 18px 12px;
+    border-radius: 10px;
+    background: transparent;
+    border:2px solid $blue;
+    color: $blue;
+}
+.wrap-input{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.feedbk textarea{
+    margin-left: 2vw;
+    min-width: 90vw;
+    height: 200px;
+    border: none;
+    outline: none;
+    padding: 18px 12px 18px 12px;
+    border-radius: 10px;
+    background: transparent;
+    border:2px solid $blue;
+    color: $blue;
+    max-height: 400px;
+}
+.feedbk input::placeholder{
+    color: $blue;
+}
+.feedbk textarea::placeholder{
+    color: $blue;
+}
+.feedbk .btn{
+    margin-left: 2vw;
+    color: $teal;
+    background: $blue;
+    border-color: $blue;
+    outline-color: $blue;
+}
+.footer{
+    height: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px $teal;
+    padding-top: 5vh;
+}
+.footer .fa-chevron-up{
+    font-size: 30px;
+    font-stretch: extra-expanded;
+    color: $blue;
+    padding: 15px;
+    border-radius: 10px;
+    transition: .5s;
+    overflow: hidden;
+}
+.wrap{
+    display:flex;
+}
+.wrap a i{
+    font-size: 30px;
+    margin: 20px;
+    transition: .5s;
+    background: $blue;
+    color: $teal;
+    border: 5px solid $teal;
+    padding: 15px;
+    border-radius: 50%;
+    outline: 5px solid $blue;
+    box-shadow: 0 0 20px $teal;
+}
+.wrap a i:hover{
+    color: $blue;
+    background: $teal;
+    border: 5px solid $blue;
+    outline: 5px solid $teal;
+    box-shadow: 0 0 20px $blue;
+}
+.footer hr{
+    background: linear-gradient(to right, transparent,$blue,transparent);
+    width: 90%;
+    height: 2px;
+}
+.footer p{
+    color: $blue;
+    font-size: 12px;
+    font-stretch: extra-expanded;
+}
+.footer p svg{
+    fill: $blue;
+    
+}
+.footer p a{
+    color: $blue;
+    text-decoration: none;
+    transition: .2s;
+    border-bottom: 2px solid $white;
+}
+.footer p a:hover{
+    border-bottom: 2px solid $blue;
 }
 
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 @media(max-width:992px){
     #about{
         clip-path:none;
