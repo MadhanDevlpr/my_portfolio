@@ -98,7 +98,7 @@ html{
                 text-align: left;
                 position: absolute;
                 top: 40%;
-                right: 0%;
+                left: 75%;
                 transform: translate(-50%,-50%);
                 .glow{
                     font-size: 5rem;
@@ -110,14 +110,14 @@ html{
                 position: absolute;
                 overflow:hidden;
                 top: 55%;
-                right: 22%;
+                left: 75%;
                 transform: translate(-50%,-50%);
                 color: $teal;
             }
             #know-more{
                 position: absolute;
                 top: 68%;
-                right: 28%;
+                left: 70%;
                 transform: translate(-50%,-50%);
                 color: $teal;
                 text-decoration: none;
@@ -134,7 +134,7 @@ html{
             #github{
                 position: absolute;
                 top: 68%;
-                right: 18%;
+                left: 82%;
                 transform: translate(-50%,-50%);
                 color: $teal;
                 text-decoration: none;
@@ -421,7 +421,7 @@ html{
                     top: 60%;
                     left: 50%;
                     transform: translate(-50%,-50%);
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                     white-space: nowrap;
                 }
                 #know-more{
