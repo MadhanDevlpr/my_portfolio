@@ -3,7 +3,8 @@ $blue:#00458B;
 $teal:#3FD2C7;
 $green5e:#3FD2C75e;
 $white:#fff;
-$bluishwhite:#e9ecef;
+$tealishblack: rgb(0, 0, 0);
+
 *{
     margin: 0;
     padding: 0;
@@ -24,8 +25,11 @@ html{
     scroll-behavior: smooth;
     overflow-x: hidden;
     body{
-        background: $bluishwhite;
-        scroll-snap-type: y mandatory;
+        background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../images/background.png);
+        background-size: -100%;
+        background-size: cover;
+        background-position:left;
+        background-attachment: fixed;
         //Main-elements        
         .navbar{
             transition: .5s;
@@ -67,94 +71,75 @@ html{
         Header{
             width: 100%;
             height: 100vh;
+            background: transparent;
             //Header elements
             h1{
-                color: $blue;
-                font-size: 5rem;
+                color: transparent;
+                background: linear-gradient(to right,$teal,$blue);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -oz-background-clip: text;
+                font-size: 1rem;
                 overflow:hidden;
                 text-align: left;
                 position: absolute;
                 top: 40%;
-                left: 28%;
+                left: 24%;
                 transform: translate(-50%,-50%);
+                .glow{
+                    font-size: 5rem;
+                    text-transform: lowercase;
+                }
             }
             h3{
-                font-size: 2rem;
+                font-size: .8rem;
                 position: absolute;
                 overflow:hidden;
-                top: 65%;
-                left: 25%;
+                top: 55%;
+                left: 22%;
                 transform: translate(-50%,-50%);
                 color: $teal;
             }
             #know-more{
                 position: absolute;
-                top: 80%;
+                top: 68%;
                 left: 18%;
                 transform: translate(-50%,-50%);
-                color: $blue;
+                color: $teal;
                 text-decoration: none;
-                padding: 10px 30px 10px 30px;
-                background: $teal;
-                border: 2px solid $teal;
+                padding: 8px 20px 8px 20px;
+                background: transparent;
+                border: 2px solid transparent;
+                border-bottom: 2px solid $teal;
                 border-radius: 10px;
                 transition: .5s;
+                font-size: .8rem;
             }
             #know-more:hover{
-                position: absolute;
-                top: 79%;
-                left: 18%;
-                transform: translate(-50%,-50%);
-                border: 2px solid $blue;
-                background: $blue;
+                border: 2px solid $teal;
                 color: $teal;
             }
             #github{
                 position: absolute;
-                top: 80%;
-                left: 35%;
+                top: 68%;
+                left: 30%;
                 transform: translate(-50%,-50%);
-                color: $blue;
+                color: $teal;
                 text-decoration: none;
-                padding: 10px 30px 10px 30px;
-                background: $teal;
-                border: 2px solid $teal;
+                padding: 8px 20px 8px 20px;
+                background: transparent;
+                border: 2px solid transparent;
+                border-top: 2px solid $teal;
                 border-radius: 10px;
                 transition: .5s;
+                font-size: .8rem;
             }
             #github:hover{
-                position: absolute;
-                top: 79%;
-                left: 35%;
-                transform: translate(-50%,-50%);
-                border: 2px solid $blue;
-                background: $blue;
+                border: 2px solid $teal;
                 color: $teal;
             }
-            .terminal{
-                background: url(../images/terminal.png) center center;
-                width:  48.4375vw;
-                height: 61.72839506172839vh;
-                background-size:  48.4375vw 61.72839506172839vh;
-                background-repeat: no-repeat;
-                position: absolute;
-                top: 68%;
-                right: 2%;
-                z-index: 50;
-                border-radius: 15px;
-                box-shadow: 0 0 15px #181818;
-            }
-            .innertext{
-                margin-left: 30px;
-                margin-top: 80px;
-                color: $teal;
-            }
-            .innertext p a{
-                color: $teal;
-            }
-            .innertext span{
-                display: flex;
-            }
+            
         }
         #about{
             align-items: center;
@@ -208,7 +193,7 @@ html{
             h1{
                 padding-bottom: 40px;
                 padding-top: 50px;
-                color: $blue;
+                color: $teal;
                 overflow: hidden;
                 font-weight: 300;
                 overflow:hidden;
@@ -216,22 +201,25 @@ html{
             .card{
                 width: 20%;
                 margin: 40px;
-                border-radius: 15px;
+                border-radius: 0px;
                 transition: 1s;
-                border:none;
+                background: rgba(0,0,0,0.8);
+                border-left:2px solid $teal;
+                border-right:2px solid $teal;
             }
             .card-title,.card-text{
-                color: $blue;
+                color: $teal;
                 overflow:hidden;
             }
             .btn-primary{
-                background-color: $blue;
-                outline: $blue;
-                border: $blue;
+                color: $tealishblack;
+                background-color: $teal;
+                outline: $teal;
+                border: $teal;
             }
             .btn-primary:hover{
-                background-color: $blue;
-                box-shadow: 0 0 6px $blue;
+                background-color: $teal;
+                box-shadow: 0 0 6px $teal;
             }
         }
         .skills-container{
@@ -240,8 +228,9 @@ html{
             text-align: center;
             //Skills elements
             h1{
-                color: $blue;
+                color: $teal;
                 overflow:hidden;
+                font-weight: lighter;
             }
             .skills{
                 justify-content: center;
@@ -256,8 +245,7 @@ html{
             .skills .icon i{
                 padding: 20px;
                 font-size:50px;
-                color: $blue;
-                text-shadow: 0 0 10px $teal;
+                color: $teal;
                 background: transparent;
                 border: 2px solid transparent;
                 border-radius: 15px;
@@ -266,15 +254,14 @@ html{
                 -webkit-transition: .5s;
             }
             .skills .icon:hover i{
-                fill: $blue;
-                background: $teal;
                 border: 2px solid $teal;
             }
         }
         .feedbk{
             width: 100%;
             height: auto;
-            background: linear-gradient(to bottom, transparent, $teal);
+            box-shadow: 0 0 10px $white;
+            background: $teal;
             background-attachment: fixed;
             clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
             padding-top: 20%;
@@ -345,6 +332,7 @@ html{
             display: flex;
             flex-direction: column;
             box-shadow: 0 0 10px $teal;
+            background: $tealishblack;
             padding-top: 5vh;
             //Footer elements
             .fa-chevron-up{
@@ -384,37 +372,31 @@ html{
                 height: 2px;
             }
             p{
-                color: $blue;
+                color: $teal;
                 font-size: 12px;
                 font-stretch: extra-expanded;
+                height: 100%;
             }
             p svg{
-                fill: $blue;
-                
+                fill: $teal;
             }
             p a{
-                color: $blue;
+                color: $white;
                 text-decoration: none;
                 transition: .2s;
-                border-bottom: 2px solid $white;
+                border-bottom: 2px solid $tealishblack;
             }
             p a:hover{
-                border-bottom: 2px solid $blue;
+                color: $white;
             }
         }
         @media(max-width:992px){
             Header{
-                .terminal{
-                    display: none;
-                }
-                
                 h1{
                     position: absolute;
                     top: 30%;
                     left: 50%;
                     transform: translate(-50%,-50%);
-                    font-size:9vw;
-                    white-space: nowrap;
                 }
                 h3{
                     position: absolute;
@@ -474,13 +456,21 @@ html{
             }
         }
         @media(max-width:600px){
-            Header h1{
-                position: absolute;
-                top: 30%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                font-size:12vw;
-                white-space: nowrap;
+            Header {
+                    h1{
+                    position: absolute;
+                    top: 30%;
+                    left: 50%;
+                    font-size: 1rem;
+                    transform: translate(-50%,-50%);
+                    white-space: nowrap;
+                    .glow{
+                        font-size:4rem
+                    }
+                }
+                h3{
+                    font-size:0.8rem
+                }
             }
             #about{
                 h1{
@@ -500,7 +490,10 @@ html{
         @media(max-width:300px){
             Header{
                 h1{
-                    font-size: 2.5rem;
+                    font-size: 0.8rem;
+                    .glow{
+                        font-size:2.8rem
+                    }
                 }
                 #know-more{
                     white-space: nowrap;
@@ -523,3 +516,4 @@ html{
         }
     }
 }
+
