@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 $blue:#00458B;
 $teal:#3FD2C7;
 $green5e:#3FD2C75e;
@@ -9,10 +9,11 @@ $tealishblack: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 *::-webkit-scrollbar{
     width: 5px;
+    background: $tealishblack;
 }
 *::-webkit-scrollbar-thumb{
     background:$teal;
@@ -30,6 +31,17 @@ html{
         background-size: cover;
         background-position:left;
         background-attachment: fixed;
+        //Preloader
+        #preloader{
+            background: #0000008e;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            text-align:center;
+            justify-content: center;
+            display: flex;
+            color: white;
+        }
         //Main-elements        
         .navbar{
             transition: .5s;
@@ -59,6 +71,7 @@ html{
             }
             .nav-item{
                 padding: 0px 20px 0px 20px;
+                font-size: .9rem;
                 transition: .5s;
             }
             .nav-item:hover{
@@ -85,7 +98,7 @@ html{
                 text-align: left;
                 position: absolute;
                 top: 40%;
-                left: 24%;
+                right: 0%;
                 transform: translate(-50%,-50%);
                 .glow{
                     font-size: 5rem;
@@ -97,14 +110,14 @@ html{
                 position: absolute;
                 overflow:hidden;
                 top: 55%;
-                left: 22%;
+                right: 22%;
                 transform: translate(-50%,-50%);
                 color: $teal;
             }
             #know-more{
                 position: absolute;
                 top: 68%;
-                left: 18%;
+                right: 28%;
                 transform: translate(-50%,-50%);
                 color: $teal;
                 text-decoration: none;
@@ -112,34 +125,109 @@ html{
                 background: transparent;
                 border: 2px solid transparent;
                 border-bottom: 2px solid $teal;
-                border-radius: 10px;
                 transition: .5s;
                 font-size: .8rem;
             }
             #know-more:hover{
-                border: 2px solid $teal;
-                color: $teal;
+                top:67.5%;
             }
             #github{
                 position: absolute;
                 top: 68%;
-                left: 30%;
+                right: 18%;
                 transform: translate(-50%,-50%);
                 color: $teal;
                 text-decoration: none;
                 padding: 8px 20px 8px 20px;
                 background: transparent;
                 border: 2px solid transparent;
-                border-top: 2px solid $teal;
-                border-radius: 10px;
+                border-bottom: 2px solid $teal;
                 transition: .5s;
                 font-size: .8rem;
             }
             #github:hover{
-                border: 2px solid $teal;
-                color: $teal;
+                top:67.5%;
             }
             
+        }
+        .projects{
+            text-align: center;
+            overflow:hidden;
+            //Projects
+            .cards{
+                width: 100%;
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                overflow:hidden;
+            }
+            h1{
+                padding-bottom: 40px;
+                padding-top: 50px;
+                color: $teal;
+                overflow: hidden;
+                font-weight: 300;
+                overflow:hidden;
+            }
+            .card{
+                width: 20%;
+                margin: 40px;
+                border-radius: 0px;
+                transition: .5s;
+                background:  $teal;
+                box-shadow: -5px 5px 0px $blue;
+            }
+            .card:hover{
+                box-shadow: -5px 5px 10px $teal;
+            }
+            .card-title,.card-text{
+                color: $blue;
+                overflow:hidden;
+            }
+            .btn-primary{
+                color: $blue;
+                background-color: transparent;
+                outline: $teal;
+                border: $teal;
+            }
+            .btn-primary:hover{
+                box-shadow: 0 0 6px $blue;
+            }
+        }
+        .skills-container{
+            padding-top: 20px;
+            padding-bottom: 40px;
+            text-align: center;
+            //Skills elements
+            h1{
+                color: $teal;
+                overflow:hidden;
+                font-weight: lighter;
+            }
+            .skills{
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .skills .icon{
+                margin: 15px;
+            }
+            .skills .icon i{
+                padding: 20px;
+                font-size:50px;
+                color: $teal;
+                background: transparent;
+                border: 2px solid transparent;
+                border-radius: 15px;
+                transition: .5s;
+                -moz-transition: .5s;
+                -webkit-transition: .5s;
+            }
+            .skills .icon:hover i{
+                border: 2px solid $teal;
+            }
         }
         #about{
             align-items: center;
@@ -177,84 +265,6 @@ html{
                 background: $teal;
                 padding: 30px;
                 border-radius: 16px;
-            }
-        }
-        .projects{
-            text-align: center;
-            overflow:hidden;
-            //Projects
-            .cards{
-                width: 100%;
-                justify-content: center;
-                display: flex;
-                flex-wrap: wrap;
-                overflow:hidden;
-            }
-            h1{
-                padding-bottom: 40px;
-                padding-top: 50px;
-                color: $teal;
-                overflow: hidden;
-                font-weight: 300;
-                overflow:hidden;
-            }
-            .card{
-                width: 20%;
-                margin: 40px;
-                border-radius: 0px;
-                transition: 1s;
-                background: rgba(0,0,0,0.8);
-                border-left:2px solid $teal;
-                border-right:2px solid $teal;
-            }
-            .card-title,.card-text{
-                color: $teal;
-                overflow:hidden;
-            }
-            .btn-primary{
-                color: $tealishblack;
-                background-color: $teal;
-                outline: $teal;
-                border: $teal;
-            }
-            .btn-primary:hover{
-                background-color: $teal;
-                box-shadow: 0 0 6px $teal;
-            }
-        }
-        .skills-container{
-            padding-top: 20px;
-            padding-bottom: 40px;
-            text-align: center;
-            //Skills elements
-            h1{
-                color: $teal;
-                overflow:hidden;
-                font-weight: lighter;
-            }
-            .skills{
-                justify-content: center;
-                display: flex;
-                flex-wrap: wrap;
-                margin-left: 10px;
-                margin-right: 10px;
-            }
-            .skills .icon{
-                margin: 15px;
-            }
-            .skills .icon i{
-                padding: 20px;
-                font-size:50px;
-                color: $teal;
-                background: transparent;
-                border: 2px solid transparent;
-                border-radius: 15px;
-                transition: .5s;
-                -moz-transition: .5s;
-                -webkit-transition: .5s;
-            }
-            .skills .icon:hover i{
-                border: 2px solid $teal;
             }
         }
         .feedbk{
@@ -365,6 +375,14 @@ html{
                 border: 5px solid $blue;
                 outline: 5px solid $teal;
                 box-shadow: 0 0 20px $blue;
+            }
+            .git-ele{
+                color: $teal;
+                text-decoration: none;
+                font-size: .8rem;
+                border-bottom: 2px solid $teal;
+                padding: 2px 15px 2px 15px;
+                transition: .5s;
             }
             hr{
                 background: linear-gradient(to right, transparent,$blue,transparent);
