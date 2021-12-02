@@ -33,7 +33,6 @@ html{
         background-attachment: fixed;
         //Preloader
         #preloader{
-            background: #0000008e;
             width: 100vw;
             height: 100vh;
             align-items: center;
@@ -41,6 +40,34 @@ html{
             justify-content: center;
             display: flex;
             color: white;
+            #loader{
+                border-radius: 100%;
+                width: 30%;
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+            }
+            h1{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                color: $teal;
+                animation-name:fade;
+                animation-duration: 7s;
+            }
+            @keyframes fade{
+                0%{
+                    opacity: 0;
+                }
+                50%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
         }
         //Main-elements        
         .navbar{
@@ -72,13 +99,15 @@ html{
             .nav-item{
                 padding: 0px 20px 0px 20px;
                 font-size: .9rem;
+                border:2px solid transparent;
                 transition: .5s;
+                border-radius: 5px;
             }
             .nav-item:hover{
-                background: $green5e;
-                box-shadow: 0 0 10px $green5e;
+                background: transparent;
+                border:2px solid $teal;
                 padding: 0px 20px 0px 20px;
-                border-radius: 10px;
+                border-radius: 5px;
             }
         }
         Header{
@@ -175,20 +204,29 @@ html{
                 border-radius: 0px;
                 transition: .5s;
                 background:  $teal;
-                box-shadow: -5px 5px 0px $blue;
+                transform: rotateZ(10deg);
+                box-shadow: 8px 8px 0px $blue;
             }
             .card:hover{
-                box-shadow: -5px 5px 10px $teal;
+                transform: rotateZ(0deg);
             }
-            .card-title,.card-text{
+            .card-title{
+                font-weight: 900;
+                background: $blue;
+                color: $teal;
+                padding: 10px;
+                border-radius: 15px;
+            }
+            .card-text{
                 color: $blue;
                 overflow:hidden;
             }
             .btn-primary{
                 color: $blue;
                 background-color: transparent;
-                outline: $teal;
-                border: $teal;
+                outline: $blue;
+                border:2px solid $blue;
+
             }
             .btn-primary:hover{
                 box-shadow: 0 0 6px $blue;

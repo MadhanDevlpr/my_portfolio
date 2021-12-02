@@ -1,17 +1,60 @@
 import React, {Suspense,lazy}from 'react';
 import './css/style.scss';
-import loader from './images/loader.gif';
-const Navbar = lazy(()=>import('./components/Navbar'));
-const Header = lazy(()=>import('./components/Header'));
-const Projects = lazy(()=>import('./components/Projects'));
-const About = lazy(()=>import('./components/About'));
-const Skills = lazy(()=>import('./components/Skills'));
-const Feedback = lazy(()=>import('./components/Feedback'));
-const Footer = lazy(()=>import('./components/Footer'));
+
+import Loader from './components/Loader';
+const Navbar = lazy(()=>{
+  return Promise.all([
+    import("./components/Navbar"),
+    new Promise(resolve => setTimeout(resolve, 8000))
+  ])
+  .then(([moduleExports]) => moduleExports);
+});
+const Header = lazy(() => {
+  return Promise.all([
+    import("./components/Header"),
+    new Promise(resolve => setTimeout(resolve, 8000))
+  ])
+  .then(([moduleExports]) => moduleExports);
+});
+const Projects = lazy(()=>{
+  return Promise.all([
+    import("./components/Projects"),
+    new Promise(resolve => setTimeout(resolve, 8000))
+  ])
+  .then(([moduleExports]) => moduleExports);
+});
+const About = lazy(()=>{
+  return Promise.all([
+    import("./components/About"),
+    new Promise(resolve => setTimeout(resolve, 8000))
+  ])
+  .then(([moduleExports]) => moduleExports);
+});
+const Skills = lazy(()=>{
+  return Promise.all([
+    import("./components/Skills"),
+    new Promise(resolve => setTimeout(resolve, 8000))
+  ])
+  .then(([moduleExports]) => moduleExports);
+});
+const Feedback = lazy(()=>{
+  return Promise.all([
+    import("./components/Feedback"),
+    new Promise(resolve => setTimeout(resolve, 8000))
+  ])
+  .then(([moduleExports]) => moduleExports);
+});
+const Footer = lazy(()=>{
+  return Promise.all([
+    import("./components/Footer"),
+    new Promise(resolve => setTimeout(resolve, 8000))
+  ])
+  .then(([moduleExports]) => moduleExports);
+});
 function App() {
   return (
     <div className="App">
-      <Suspense fallback={<div id="preloader"><img width="300px" height="300px" src={loader} alt="___" autoPlay loop={true}/></div>}>
+      <Suspense fallback={<Loader/>}>
         <Navbar />
         <Header />
         <Projects />
