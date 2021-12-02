@@ -10,6 +10,7 @@ $tealishblack: rgb(0, 0, 0);
     padding: 0;
     overflow-x: hidden;
     font-family: 'Comfortaa', cursive;
+    transition: .5s;
 }
 *::-webkit-scrollbar{
     width: 5px;
@@ -55,7 +56,7 @@ html{
                 transform: translate(-50%,-50%);
                 color: $teal;
                 animation-name:fade;
-                animation-duration: 7s;
+                animation-duration: 1.2s;
             }
             @keyframes fade{
                 0%{
@@ -70,50 +71,103 @@ html{
             }
         }
         //Main-elements        
-        .navbar{
+        .toggle-btn{
+            position: fixed;
+            left: 0;
+            margin:0px;
+            padding:40px;
+            width: 120px;
+            height:120px;
+            z-index: 2000;
+            cursor: pointer;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            border:none;
+            outline:none;
+            background:transparent;
+            fill: $teal;
+            border-radius: 5px;
+        }
+        .toggle-btn:active,.toggle-btn:focus{
+            border:none;
+            outline: none;
+        }
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 4000;
+            top: 0;
+            left: 0;
+            background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(../images/background.png);
+            background-size: -100%;
+            background-size: cover;
+            background-position:right;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            
+        }
+        .links{
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .sidenav a {
+            padding: 10px;
+            text-transform: lowercase;
+            text-decoration: none;
+            color: $teal;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+            color: $teal;
+            text-decoration: none;
+        }
+        
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            color: $teal;
+        }
+        .sidenav .closebtn:hover{
+            color: $teal;
+        }
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+        .item{
+            margin:30px;
+            width: 200px;
             transition: .5s;
-            //Nav elements
-            .navbar-brand{
-                font-weight: bold;
-                padding: 20px;
-                border-radius: 15px;
-                visibility: hidden;
-            }
-            .navbar-toggler
-            {
-                border:none;
-                outline: none;
-            }
-            .navbar-toggler:focus{
-                border:none;
-                outline:none
-            }
-            .navbar-toggler:active{
-                border:none;
-                outline:none
-            }
-            .navbar-toggler-icon:focus{
-                border:none;
-                outline: none;
-            }
-            .nav-item{
-                padding: 0px 20px 0px 20px;
-                font-size: .9rem;
-                border:2px solid transparent;
-                transition: .5s;
-                border-radius: 5px;
-            }
-            .nav-item:hover{
-                background: transparent;
-                border:2px solid $teal;
-                padding: 0px 20px 0px 20px;
-                border-radius: 5px;
-            }
+            font-weight: 500;
+            text-transform: uppercase;
+            background:transparent;
+            border-bottom:2px dotted transparent;
+            letter-spacing: 5px;
+        }
+        .item:hover{
+            letter-spacing: 6px;
         }
         Header{
             width: 100%;
             height: 100vh;
             background: transparent;
+
             //Header elements
             h1{
                 color: transparent;
@@ -486,6 +540,7 @@ html{
                     left: 50%;
                     transform: translate(-50%,-50%);
                 }
+                
             }
             #about{
                 clip-path:none;
@@ -502,6 +557,7 @@ html{
             .projects .card{
                 width: 50%;
                 margin: 40px;
+                transform: rotateZ(0deg);
             }
             .feedbk{
                 clip-path: none;
