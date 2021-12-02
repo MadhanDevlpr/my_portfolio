@@ -74,10 +74,10 @@ html{
         .toggle-btn{
             position: fixed;
             left: 0;
-            margin:0px;
-            padding:40px;
-            width: 120px;
-            height:120px;
+            margin:12px;
+            padding:10px;
+            width: 60px;
+            height:60px;
             z-index: 2000;
             cursor: pointer;
             align-items: center;
@@ -86,7 +86,7 @@ html{
             display: flex;
             border:none;
             outline:none;
-            background:transparent;
+            background:#000;
             fill: $teal;
             border-radius: 5px;
         }
@@ -96,19 +96,17 @@ html{
         }
         .sidenav {
             height: 100%;
-            width: 0;
+            width: 100%;
             position: fixed;
-            z-index: 4000;
-            top: 0;
-            left: 0;
-            background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(../images/background.png);
+            z-index:7000;
+            top: -100%;
+            background:#00458b;
             background-size: -100%;
             background-size: cover;
             background-position:right;
-            overflow-x: hidden;
-            transition: 0.5s;
+            overflow: hidden;
+            transition: 1s;
             padding-top: 60px;
-            
         }
         .links{
             align-items: center;
@@ -125,26 +123,25 @@ html{
             padding: 10px;
             text-transform: lowercase;
             text-decoration: none;
-            color: $teal;
+            color: $blue;
             display: block;
-            transition: 0.3s;
+            transition: .3s;
         }
         
         .sidenav a:hover {
-            color: $teal;
-            text-decoration: none;
+            color: $blue;
         }
         
         .sidenav .closebtn {
             position: absolute;
             top: 0;
-            right: 25px;
+            left: 0px;
             font-size: 36px;
-            margin-left: 50px;
-            color: $teal;
+            margin-left: 20px;
+            color: $blue;
         }
         .sidenav .closebtn:hover{
-            color: $teal;
+            color: $blue;
             cursor: pointer;
         }
         @media screen and (max-height: 450px) {
@@ -154,15 +151,17 @@ html{
         .item{
             margin:30px;
             width: 200px;
-            transition: .5s;
+            padding-left: 50px;
+            transition: .3s;
             font-weight: 500;
             text-transform: uppercase;
             background:transparent;
-            border-bottom:2px dotted transparent;
             letter-spacing: 5px;
+            border-left: 2px solid transparent;
         }
         .item:hover{
-            letter-spacing: 6px;
+            letter-spacing: 7px;
+            border-left: 2px solid $blue;
         }
         Header{
             width: 100%;
@@ -435,7 +434,7 @@ html{
             display: flex;
             flex-direction: column;
             box-shadow: 0 0 10px $teal;
-            background: $tealishblack;
+            background: black;
             padding-top: 5vh;
             //Footer elements
             .fa-chevron-up{
