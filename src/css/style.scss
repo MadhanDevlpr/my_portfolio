@@ -145,6 +145,7 @@ html{
         }
         .sidenav .closebtn:hover{
             color: $teal;
+            cursor: pointer;
         }
         @media screen and (max-height: 450px) {
             .sidenav {padding-top: 15px;}
