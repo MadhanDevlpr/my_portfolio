@@ -73,8 +73,8 @@ html{
         //Main-elements        
         .toggle-btn{
             position: fixed;
-            left: 0;
-            margin:12px;
+            right: 0;
+            margin:22px;
             padding:10px;
             width: 60px;
             height:60px;
@@ -86,9 +86,11 @@ html{
             display: flex;
             border:none;
             outline:none;
-            background:#000;
-            fill: $teal;
-            border-radius: 5px;
+            border-radius: 10px;
+            fill: #000000;
+            display: block;
+            background: $teal;
+            transition: .5s;
         }
         .toggle-btn:active,.toggle-btn:focus{
             border:none;
@@ -99,11 +101,10 @@ html{
             width: 100%;
             position: fixed;
             z-index:7000;
-            top: -100%;
-            background:#00458b;
-            background-size: -100%;
-            background-size: cover;
-            background-position:right;
+            top: -120%;
+            background: rgba(0,0,0,1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 10px $teal;
             overflow: hidden;
             transition: 1s;
             padding-top: 60px;
@@ -115,6 +116,8 @@ html{
             display: flex;
             flex-direction: column;
             position: absolute;
+            border-radius: 15px;
+            background: rgba(0,0,0,0.8);
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
@@ -123,25 +126,27 @@ html{
             padding: 10px;
             text-transform: lowercase;
             text-decoration: none;
-            color: $blue;
+            color: $teal;
             display: block;
             transition: .3s;
         }
         
         .sidenav a:hover {
-            color: $blue;
+            color: $teal;
         }
         
         .sidenav .closebtn {
             position: absolute;
             top: 0;
             left: 0px;
-            font-size: 36px;
-            margin-left: 20px;
-            color: $blue;
+            margin: 20px;
+            border-radius: 10px;
+            fill:$blue;
+            background: $teal;
+            text-shadow: 0 0 5px $teal;
         }
         .sidenav .closebtn:hover{
-            color: $blue;
+            color: $teal;
             cursor: pointer;
         }
         @media screen and (max-height: 450px) {
@@ -157,11 +162,10 @@ html{
             text-transform: uppercase;
             background:transparent;
             letter-spacing: 5px;
-            border-left: 2px solid transparent;
+            border-radius: 300px;
         }
         .item:hover{
             letter-spacing: 7px;
-            border-left: 2px solid $blue;
         }
         Header{
             width: 100%;
@@ -181,7 +185,7 @@ html{
                 text-align: left;
                 position: absolute;
                 top: 40%;
-                left: 75%;
+                left: 25%;
                 transform: translate(-50%,-50%);
                 .glow{
                     font-size: 5rem;
@@ -193,14 +197,14 @@ html{
                 position: absolute;
                 overflow:hidden;
                 top: 55%;
-                left: 75%;
+                left: 25%;
                 transform: translate(-50%,-50%);
                 color: $teal;
             }
             #know-more{
                 position: absolute;
                 top: 68%;
-                left: 70%;
+                left: 20%;
                 transform: translate(-50%,-50%);
                 color: $teal;
                 text-decoration: none;
@@ -217,7 +221,7 @@ html{
             #github{
                 position: absolute;
                 top: 68%;
-                left: 82%;
+                left: 32%;
                 transform: translate(-50%,-50%);
                 color: $teal;
                 text-decoration: none;
