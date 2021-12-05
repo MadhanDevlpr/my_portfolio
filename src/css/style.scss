@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-$blue:#00458B;
-$teal:#3FD2C7;
+$blue:#fff;
+$red:#ff2c5a;
 $green5e:#3FD2C75e;
 $white:#fff;
-$tealishblack: rgb(0, 0, 0);
+$redishblack: rgb(0, 0, 0);
 
 *{
     margin: 0;
@@ -14,10 +14,10 @@ $tealishblack: rgb(0, 0, 0);
 }
 *::-webkit-scrollbar{
     width: 5px;
-    background: $tealishblack;
+    background: $redishblack;
 }
 *::-webkit-scrollbar-thumb{
-    background:$teal;
+    background:$red;
 }
 *::selection{
     background: $blue;
@@ -27,7 +27,7 @@ html{
     scroll-behavior: smooth;
     overflow-x: hidden;
     body{
-        background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../images/background.png);
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1)),url(../images/background.png);
         background-size: -100%;
         background-size: cover;
         background-position:left;
@@ -108,7 +108,7 @@ html{
             border-radius: 10px;
             fill: #000000;
             display: block;
-            background: $teal;
+            background: #fff;
             transition: .5s;
         }
         .toggle-btn:active,.toggle-btn:focus{
@@ -123,7 +123,7 @@ html{
             top: -120%;
             background: rgba(0,0,0,1);
             backdrop-filter: blur(10px);
-            box-shadow: 0 0 10px $teal;
+            box-shadow: 0 0 10px $red;
             overflow: hidden;
             transition: 1s;
             padding-top: 60px;
@@ -145,20 +145,20 @@ html{
             padding: 10px;
             text-transform: lowercase;
             text-decoration: none;
-            color: $teal;
+            color: $red;
             display: block;
             transition: .3s;
         }
         
         .sidenav a:hover {
-            color: $teal;
+            color: $red;
         }
         .sidenav p{
             position: absolute;
             bottom:0%;
             margin-right: 25px;
             background: #0000009e;
-            color: $teal;
+            color: $red;
             font-size: .8rem;
             padding: 10px;
             border-radius: 10px;
@@ -171,11 +171,11 @@ html{
             margin: 20px;
             border-radius: 10px;
             fill:$blue;
-            background: $teal;
-            text-shadow: 0 0 5px $teal;
+            background: $red;
+            text-shadow: 0 0 5px $red;
         }
         .sidenav .closebtn:hover{
-            color: $teal;
+            color: $red;
             cursor: pointer;
         }
         @media screen and (max-height: 450px) {
@@ -199,16 +199,19 @@ html{
         Header{
             width: 100%;
             height: 100vh;
-            background: transparent;
-
+            background: linear-gradient(to bottom,transparent 65%,#000);
             //Header elements
+            video{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                width: 100%;
+                z-index: -1;
+                filter: grayscale(100%);
+            }
             h1{
-                color: transparent;
-                background: linear-gradient(to right,$teal,$blue);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -moz-background-clip: text;
-                -oz-background-clip: text;
+                color: #fff;
                 font-size: 1rem;
                 overflow:hidden;
                 text-align: left;
@@ -219,6 +222,8 @@ html{
                 .glow{
                     font-size: 5rem;
                     text-transform: lowercase;
+                    color: $red;
+                    text-shadow: 0 0 10px $red;
                 }
             }
             h3{
@@ -228,47 +233,52 @@ html{
                 top: 55%;
                 left: 25%;
                 transform: translate(-50%,-50%);
-                color: $teal;
+                color: $white;
             }
             #know-more{
                 position: absolute;
-                top: 68%;
-                left: 20%;
+                top: 75%;
+                left: 18%;
                 transform: translate(-50%,-50%);
-                color: $teal;
+                color: $red;
                 text-decoration: none;
-                padding: 8px 20px 8px 20px;
-                background: transparent;
+                padding: 8px 28px 8px 28px;
+                background: $white;
                 border: 2px solid transparent;
-                border-bottom: 2px solid $teal;
+                border-radius: 300px;
                 transition: .5s;
                 font-size: .8rem;
             }
             #know-more:hover{
-                top:67.5%;
+                top:74.5%;
+                background: $red;
+                color: $white;
             }
             #github{
                 position: absolute;
-                top: 68%;
+                top: 75%;
                 left: 32%;
                 transform: translate(-50%,-50%);
-                color: $teal;
+                color: $red;
                 text-decoration: none;
-                padding: 8px 20px 8px 20px;
-                background: transparent;
+                padding: 8px 28px 8px 28px;
+                background: $white;
                 border: 2px solid transparent;
-                border-bottom: 2px solid $teal;
+                border-radius: 300px;
                 transition: .5s;
                 font-size: .8rem;
             }
             #github:hover{
-                top:67.5%;
+                top:74.5%;
+                background: $red;
+                color: $white;
             }
             
         }
         .projects{
             text-align: center;
             overflow:hidden;
+            background: linear-gradient(to bottom,#000,transparent);
             //Projects
             .cards{
                 width: 100%;
@@ -280,7 +290,7 @@ html{
             h1{
                 padding-bottom: 40px;
                 padding-top: 50px;
-                color: $teal;
+                color: $red;
                 overflow: hidden;
                 font-weight: 300;
                 overflow:hidden;
@@ -290,34 +300,42 @@ html{
                 margin: 40px;
                 border-radius: 0px;
                 transition: .5s;
-                background:  $teal;
+                background:  $red;
                 transform: rotateZ(5deg);
                 box-shadow: 8px 8px 0px $white;
             }
             .card:hover{
                 transform: rotateZ(0deg);
                 background: $white;
-                box-shadow: 8px 8px 0px $teal;
+                box-shadow: 8px 8px 0px $red;                
+            }
+            .card:hover .card-title{
+                color: black;
+            }
+            .card:hover .card-text{
+                color: black;
+            }
+            .card:hover .btn-primary{
+                color: black;
             }
             .card-title{
                 font-weight: 900;
-                color: #000;
+                color: #fff;
                 padding: 10px;
                 border-radius: 15px;
             }
             .card-text{
-                color: #000;
+                color: #fff;
                 overflow:hidden;
             }
             .btn-primary{
-                color:#000;
+                color:#fff;
                 background-color: transparent;
-                outline:#000;
-                border:2px solid#000;
-
+                outline:#fff;
+                border:2px solid#fff;
             }
             .btn-primary:hover{
-                box-shadow: 0 0 6px $blue;
+                box-shadow: 0 0 6px $red;
             }
         }
         .skills-container{
@@ -326,7 +344,7 @@ html{
             text-align: center;
             //Skills elements
             h1{
-                color: $teal;
+                color: $red;
                 overflow:hidden;
                 font-weight: lighter;
             }
@@ -343,7 +361,7 @@ html{
             .skills .icon i{
                 padding: 20px;
                 font-size:50px;
-                color: $teal;
+                color: $red;
                 background: transparent;
                 border: 2px solid transparent;
                 border-radius: 15px;
@@ -352,7 +370,7 @@ html{
                 -webkit-transition: .5s;
             }
             .skills .icon:hover i{
-                border: 2px solid $teal;
+                border: 2px solid $red;
             }
         }
         #about{
@@ -363,7 +381,7 @@ html{
             display: flex;
             flex-direction: column;
             width: 100%;padding-bottom: 25%;
-            background: $teal;
+            background: $red;
             clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
             padding-top: 20%;
             //About elements
@@ -382,13 +400,13 @@ html{
             img{
                 margin: 20px;
                 border-radius: 10px;
-                box-shadow: 0 0 10px  $teal;
+                box-shadow: 0 0 10px  $red;
             }
             p{
                 line-height: 40px;
                 margin-top: 60px;
                 color: $blue;
-                background: $teal;
+                background: $red;
                 padding: 30px;
                 border-radius: 16px;
             }
@@ -397,7 +415,7 @@ html{
             width: 100%;
             height: auto;
             box-shadow: 0 0 10px $white;
-            background: $teal;
+            background: $red;
             background-attachment: fixed;
             clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
             padding-top: 20%;
@@ -454,7 +472,7 @@ html{
             }
             .btn{
                 margin-left: 2vw;
-                color: $teal;
+                color: $red;
                 background: $blue;
                 border-color: $blue;
                 outline-color: $blue;
@@ -467,7 +485,7 @@ html{
             justify-content: center;
             display: flex;
             flex-direction: column;
-            box-shadow: 0 0 10px $teal;
+            box-shadow: 0 0 10px $red;
             background: black;
             padding-top: 5vh;
             //Footer elements
@@ -488,25 +506,25 @@ html{
                 margin: 20px;
                 transition: .5s;
                 background: $blue;
-                color: $teal;
-                border: 5px solid $teal;
+                color: $red;
+                border: 5px solid $red;
                 padding: 15px;
                 border-radius: 50%;
                 outline: 5px solid $blue;
-                box-shadow: 0 0 20px $teal;
+                box-shadow: 0 0 20px $red;
             }
             .wrap a i:hover{
                 color: $blue;
-                background: $teal;
+                background: $red;
                 border: 5px solid $blue;
-                outline: 5px solid $teal;
+                outline: 5px solid $red;
                 box-shadow: 0 0 20px $blue;
             }
             .git-ele{
-                color: $teal;
+                color: $red;
                 text-decoration: none;
                 font-size: .8rem;
-                border-bottom: 2px solid $teal;
+                border-bottom: 2px solid $red;
                 padding: 2px 15px 2px 15px;
                 transition: .5s;
             }
@@ -516,19 +534,19 @@ html{
                 height: 2px;
             }
             p{
-                color: $teal;
+                color: $red;
                 font-size: 12px;
                 font-stretch: extra-expanded;
                 height: 100%;
             }
             p svg{
-                fill: $teal;
+                fill: $red;
             }
             p a{
                 color: $white;
                 text-decoration: none;
                 transition: .2s;
-                border-bottom: 2px solid $tealishblack;
+                border-bottom: 2px solid $redishblack;
             }
             p a:hover{
                 color: $white;
