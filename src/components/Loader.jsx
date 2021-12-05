@@ -1,10 +1,14 @@
 import React from 'react'
-import loader from '../images/loader.gif';
+import loader from '../images/loader.gif'
 const Loader = () => {
+    window.onload = function(){
+        document.getElementById('loader').style.animationName = "fade"
+    }
     return (
         <div id="preloader">
-            <img id="loader" src={loader} alt="___" autoPlay loop={true}/>
-            <h1>aadithya</h1>
+            <div id="loader" className="loader-wrapper">
+                <img src={loader}></img>
+            </div>
         </div>
     )
 }
