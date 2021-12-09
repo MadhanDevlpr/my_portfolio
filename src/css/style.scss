@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-$blue:#fff;
-$red:#ff2c5a;
-$green5e:#3FD2C75e;
-$white:#fff;
-$redishblack: rgb(0, 0, 0);
+
+$brown:rgba(20,1,0,1);
+$white:#ffffff;
+$brownishblack: rgb(0, 0, 0);
 
 *{
     margin: 0;
@@ -14,28 +13,24 @@ $redishblack: rgb(0, 0, 0);
 }
 *::-webkit-scrollbar{
     width: 5px;
-    background: $redishblack;
+    background: $brownishblack;
 }
 *::-webkit-scrollbar-thumb{
-    background:$red;
+    background:$white;
 }
 *::selection{
-    background: $blue;
+    background: $white;
     color: transparent;
 }
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
     body{
-        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1)),url(../images/background.png);
-        background-size: -100%;
-        background-size: cover;
-        background-position:left;
-        background-attachment: fixed;
         //Preloader
+        background: #000;
         #preloader{
             color: white;
-            .loader-wrapper {
+            .loader-wrapper{
                 width: 100%;
                 height: 100vh;
                 position: absolute;
@@ -120,10 +115,9 @@ html{
             width: 100%;
             position: fixed;
             z-index:7000;
-            top: -120%;
-            background: rgba(0,0,0,1);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 0 10px $red;
+            background: radial-gradient(ellipse at bottom, rgba(20,1,0,.9) 0%, #000000 100%);
+            top: 0%;
+            left: 100%;
             overflow: hidden;
             transition: 1s;
             padding-top: 60px;
@@ -136,7 +130,7 @@ html{
             flex-direction: column;
             position: absolute;
             border-radius: 15px;
-            background: rgba(0,0,0,0.8);
+            width: 80%;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
@@ -145,20 +139,20 @@ html{
             padding: 10px;
             text-transform: lowercase;
             text-decoration: none;
-            color: $red;
+            color: $white;
             display: block;
-            transition: .3s;
+            transition: .2s;
         }
         
         .sidenav a:hover {
-            color: $red;
+            color: $white;
         }
         .sidenav p{
             position: absolute;
             bottom:0%;
             margin-right: 25px;
             background: #0000009e;
-            color: $red;
+            color: $brown;
             font-size: .8rem;
             padding: 10px;
             border-radius: 10px;
@@ -170,12 +164,12 @@ html{
             left: 0px;
             margin: 20px;
             border-radius: 10px;
-            fill:$blue;
-            background: $red;
-            text-shadow: 0 0 5px $red;
+            fill:$white;
+            background: $brown;
+            text-shadow: 0 0 5px $brown;
         }
         .sidenav .closebtn:hover{
-            color: $red;
+            color: $brown;
             cursor: pointer;
         }
         @media screen and (max-height: 450px) {
@@ -196,89 +190,67 @@ html{
         .item:hover{
             letter-spacing: 7px;
         }
+        .parallax-window{
+            min-height: 100vh;
+        }
         Header{
             width: 100%;
             height: 100vh;
-            background: linear-gradient(to bottom,transparent 65%,#000);
+            background: radial-gradient(ellipse at bottom, rgba(20,1,0,.9) 0%, #000000 100%);
             //Header elements
-            video{
-                position: absolute;
-                top:50%;
-                left:50%;
-                transform: translate(-50%,-50%);
-                width: 100%;
-                z-index: -1;
-                filter: grayscale(100%);
-            }
             h1{
                 color: #fff;
                 font-size: 1rem;
                 overflow:hidden;
                 text-align: left;
                 position: absolute;
-                top: 40%;
+                top: 42%;
                 left: 25%;
                 transform: translate(-50%,-50%);
                 .glow{
                     font-size: 5rem;
                     text-transform: lowercase;
-                    color: $red;
-                    text-shadow: 0 0 10px $red;
+                    color: $white;
                 }
             }
             h3{
-                font-size: .8rem;
+                font-size: .9rem;
                 position: absolute;
+                width:275px;
+                text-align: left;
                 overflow:hidden;
-                top: 55%;
+                top: 64%;
                 left: 25%;
                 transform: translate(-50%,-50%);
+                line-height: 30px;
                 color: $white;
             }
             #know-more{
                 position: absolute;
-                top: 75%;
-                left: 18%;
+                top: 85%;
+                left: 20%;
                 transform: translate(-50%,-50%);
-                color: $red;
+                color: $brown;
                 text-decoration: none;
                 padding: 8px 28px 8px 28px;
                 background: $white;
+                font-weight: bolder;
                 border: 2px solid transparent;
-                border-radius: 300px;
+                border-radius: 5px;
                 transition: .5s;
                 font-size: .8rem;
             }
             #know-more:hover{
-                top:74.5%;
-                background: $red;
+                top:84.5%;
+                background: transparent;
+                border: 2px solid $white;
                 color: $white;
             }
-            #github{
-                position: absolute;
-                top: 75%;
-                left: 32%;
-                transform: translate(-50%,-50%);
-                color: $red;
-                text-decoration: none;
-                padding: 8px 28px 8px 28px;
-                background: $white;
-                border: 2px solid transparent;
-                border-radius: 300px;
-                transition: .5s;
-                font-size: .8rem;
-            }
-            #github:hover{
-                top:74.5%;
-                background: $red;
-                color: $white;
-            }
-            
         }
         .projects{
             text-align: center;
             overflow:hidden;
-            background: linear-gradient(to bottom,#000,transparent);
+            background: radial-gradient(ellipse at top, rgba(20,1,0,.9) 0%, #000000 100%);
             //Projects
             .cards{
                 width: 100%;
@@ -290,7 +262,7 @@ html{
             h1{
                 padding-bottom: 40px;
                 padding-top: 50px;
-                color: $red;
+                color: $white;
                 overflow: hidden;
                 font-weight: 300;
                 overflow:hidden;
@@ -300,14 +272,14 @@ html{
                 margin: 40px;
                 border-radius: 0px;
                 transition: .5s;
-                background:  $red;
+                background:  $brown;
                 transform: rotateZ(5deg);
-                box-shadow: 8px 8px 0px $white;
+                box-shadow: 8px 8px 0px #000;
             }
             .card:hover{
                 transform: rotateZ(0deg);
                 background: $white;
-                box-shadow: 8px 8px 0px $red;                
+                box-shadow: 8px 8px 0px $brown;                
             }
             .card:hover .card-title{
                 color: black;
@@ -335,7 +307,7 @@ html{
                 border:2px solid#fff;
             }
             .btn-primary:hover{
-                box-shadow: 0 0 6px $red;
+                box-shadow: 0 0 6px $brown;
             }
         }
         .skills-container{
@@ -344,7 +316,7 @@ html{
             text-align: center;
             //Skills elements
             h1{
-                color: $red;
+                color: $white;
                 overflow:hidden;
                 font-weight: lighter;
             }
@@ -361,7 +333,7 @@ html{
             .skills .icon i{
                 padding: 20px;
                 font-size:50px;
-                color: $red;
+                color: $white;
                 background: transparent;
                 border: 2px solid transparent;
                 border-radius: 15px;
@@ -370,7 +342,7 @@ html{
                 -webkit-transition: .5s;
             }
             .skills .icon:hover i{
-                border: 2px solid $red;
+                border: 2px solid $white;
             }
         }
         #about{
@@ -381,7 +353,7 @@ html{
             display: flex;
             flex-direction: column;
             width: 100%;padding-bottom: 25%;
-            background: $red;
+            background: $brown;
             clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
             padding-top: 20%;
             //About elements
@@ -395,18 +367,18 @@ html{
                 font-size: 3rem;
                 padding-top: 20px;
                 font-weight: 300;
-                color: $blue
+                color: $white
             }
             img{
                 margin: 20px;
                 border-radius: 10px;
-                box-shadow: 0 0 10px  $red;
+                box-shadow: 0 0 10px  $brown;
             }
             p{
                 line-height: 40px;
                 margin-top: 60px;
-                color: $blue;
-                background: $red;
+                color: $white;
+                background: $brown;
                 padding: 30px;
                 border-radius: 16px;
             }
@@ -415,14 +387,14 @@ html{
             width: 100%;
             height: auto;
             box-shadow: 0 0 10px $white;
-            background: $red;
+            background: $brown;
             background-attachment: fixed;
             clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
             padding-top: 20%;
             //Feedback elements
             h1{
                 color: transparent;
-                color: $blue;
+                color: $white;
                 font-weight: 300;
                 margin: 40px;
                 overflow:hidden;
@@ -430,7 +402,7 @@ html{
             }
             p{
                 margin-left: 2vw;
-                color: $blue;
+                color: $white;
             }
             form{
                 height: auto;
@@ -443,8 +415,8 @@ html{
                 padding: 18px 12px 18px 12px;
                 border-radius: 10px;
                 background: transparent;
-                border:2px solid $blue;
-                color: $blue;
+                border:2px solid $white;
+                color: $white;
             }
             .wrap-input{
                 display: flex;
@@ -460,22 +432,22 @@ html{
                 padding: 18px 12px 18px 12px;
                 border-radius: 10px;
                 background: transparent;
-                border:2px solid $blue;
-                color: $blue;
+                border:2px solid $white;
+                color: $white;
                 max-height: 400px;
             }
             input::placeholder{
-                color: $blue;
+                color: $white;
             }
             textarea::placeholder{
-                color: $blue;
+                color: $white;
             }
             .btn{
                 margin-left: 2vw;
-                color: $red;
-                background: $blue;
-                border-color: $blue;
-                outline-color: $blue;
+                color: $brown;
+                background: $white;
+                border-color: $white;
+                outline-color: $white;
             }
         }
         .footer{
@@ -485,14 +457,14 @@ html{
             justify-content: center;
             display: flex;
             flex-direction: column;
-            box-shadow: 0 0 10px $red;
+            box-shadow: 0 0 10px $brown;
             background: black;
             padding-top: 5vh;
             //Footer elements
             .fa-chevron-up{
                 font-size: 30px;
                 font-stretch: extra-expanded;
-                color: $blue;
+                color: $white;
                 padding: 15px;
                 border-radius: 10px;
                 transition: .5s;
@@ -505,48 +477,51 @@ html{
                 font-size: 30px;
                 margin: 20px;
                 transition: .5s;
-                background: $blue;
-                color: $red;
-                border: 5px solid $red;
+                background: $white;
+                color: $brown;
+                border: 5px solid $brown;
                 padding: 15px;
                 border-radius: 50%;
-                outline: 5px solid $blue;
-                box-shadow: 0 0 20px $red;
+                outline: 5px solid $white;
+                box-shadow: 0 0 20px $brown;
             }
             .wrap a i:hover{
-                color: $blue;
-                background: $red;
-                border: 5px solid $blue;
-                outline: 5px solid $red;
-                box-shadow: 0 0 20px $blue;
+                color: $white;
+                background: $brown;
+                border: 5px solid $white;
+                outline: 5px solid $brown;
+                box-shadow: 0 0 20px $white;
             }
             .git-ele{
-                color: $red;
+                color: $white;
                 text-decoration: none;
                 font-size: .8rem;
-                border-bottom: 2px solid $red;
+                border-bottom: 2px solid $white;
                 padding: 2px 15px 2px 15px;
                 transition: .5s;
             }
             hr{
-                background: linear-gradient(to right, transparent,$blue,transparent);
+                color:$white;
                 width: 90%;
                 height: 2px;
             }
             p{
-                color: $red;
+                color: $white;
                 font-size: 12px;
                 font-stretch: extra-expanded;
                 height: 100%;
             }
             p svg{
-                fill: $red;
+                fill: $brown;
+                background: $white;
+                padding: 1px;
+                border-radius: 20%;
             }
             p a{
                 color: $white;
                 text-decoration: none;
                 transition: .2s;
-                border-bottom: 2px solid $redishblack;
+                border-bottom: 2px solid $brownishblack;
             }
             p a:hover{
                 color: $white;
@@ -564,9 +539,9 @@ html{
                     position: absolute;
                     top: 60%;
                     left: 50%;
+                    text-align: center;
                     transform: translate(-50%,-50%);
                     font-size: 1rem;
-                    white-space: nowrap;
                 }
                 #know-more{
                     position: absolute;

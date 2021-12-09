@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-      <Loader />
+        <Loader />
         <Navbar />
         <Header />
         <Projects />
