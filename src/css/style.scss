@@ -195,8 +195,26 @@ html{
         Header{
             width: 100%;
             height: 100vh;
-            background: radial-gradient(circle at top right,$green 30%,$violet 30%);
             //Header elements
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                width: 500px;
+                height: auto;
+                position: absolute;
+                top:50%;
+                left: 70%;
+                transform: translate(-50%,-50%);
+            }
+            .box{
+                pointer-events: none;
+                width: 28px;
+                height: 28px;
+                margin: 2px;
+                box-shadow: 0 0 10px $green;
+                background-color: $green;
+                font-size: 14px;
+            }
             h1{
                 color: $green;
                 font-size: 1rem;
