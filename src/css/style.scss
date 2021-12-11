@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-$brown:rgba(20,1,0,1);
-$white:#ffffff;
-$brownishblack: rgb(0, 0, 0);
+@import url(//db.onlinewebfonts.com/c/25c294f3631fb5a0c1ef659a85cabdcf?family=Sifonn);
+$violet:#8600ff;
+$green:#79ff00;
+$greei5e:#79ff009e;
 
 *{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: 'Comfortaa', cursive;
+    font-family: Comfortaa;
     transition: .5s;
 }
 *::-webkit-scrollbar{
     width: 5px;
-    background: $brownishblack;
+
 }
 *::-webkit-scrollbar-thumb{
-    background:$white;
+    background:$green;
 }
 *::selection{
-    background: $white;
+    background: $green;
     color: transparent;
 }
 html{
@@ -27,7 +27,7 @@ html{
     overflow-x: hidden;
     body{
         //Preloader
-        background: #000;
+        background: $violet;
         #preloader{
             color: white;
             .loader-wrapper{
@@ -115,7 +115,7 @@ html{
             width: 100%;
             position: fixed;
             z-index:7000;
-            background: radial-gradient(ellipse at bottom, rgba(20,1,0,.9) 0%, #000000 100%);
+            background: $greei5e;
             top: 0%;
             left: 100%;
             overflow: hidden;
@@ -139,20 +139,19 @@ html{
             padding: 10px;
             text-transform: lowercase;
             text-decoration: none;
-            color: $white;
+            color: $violet;
             display: block;
             transition: .2s;
         }
         
         .sidenav a:hover {
-            color: $white;
+            color: $violet;
         }
         .sidenav p{
             position: absolute;
             bottom:0%;
             margin-right: 25px;
-            background: #0000009e;
-            color: $brown;
+            color: $violet;
             font-size: .8rem;
             padding: 10px;
             border-radius: 10px;
@@ -164,12 +163,12 @@ html{
             left: 0px;
             margin: 20px;
             border-radius: 10px;
-            fill:$white;
-            background: $brown;
-            text-shadow: 0 0 5px $brown;
+            fill:$green;
+            background: $violet;
+            text-shadow: 0 0 5px $violet;
         }
         .sidenav .closebtn:hover{
-            color: $brown;
+            color: $violet;
             cursor: pointer;
         }
         @media screen and (max-height: 450px) {
@@ -196,10 +195,10 @@ html{
         Header{
             width: 100%;
             height: 100vh;
-            background: radial-gradient(ellipse at bottom, rgba(20,1,0,.9) 0%, #000000 100%);
+            background: radial-gradient(circle at top right,$green 30%,$violet 30%);
             //Header elements
             h1{
-                color: #fff;
+                color: $green;
                 font-size: 1rem;
                 overflow:hidden;
                 text-align: left;
@@ -209,8 +208,9 @@ html{
                 transform: translate(-50%,-50%);
                 .glow{
                     font-size: 5rem;
+                    font-weight: 100;
                     text-transform: lowercase;
-                    color: $white;
+                    color: $green;
                 }
             }
             h3{
@@ -223,17 +223,17 @@ html{
                 left: 25%;
                 transform: translate(-50%,-50%);
                 line-height: 30px;
-                color: $white;
+                color: $green;
             }
             #know-more{
                 position: absolute;
                 top: 85%;
                 left: 20%;
                 transform: translate(-50%,-50%);
-                color: $brown;
+                color: $violet;
                 text-decoration: none;
                 padding: 8px 28px 8px 28px;
-                background: $white;
+                background: $green;
                 font-weight: bolder;
                 border: 2px solid transparent;
                 border-radius: 5px;
@@ -243,14 +243,14 @@ html{
             #know-more:hover{
                 top:84.5%;
                 background: transparent;
-                border: 2px solid $white;
-                color: $white;
+                border: 2px solid $green;
+                color: $green;
             }
         }
         .projects{
             text-align: center;
             overflow:hidden;
-            background: radial-gradient(ellipse at top, rgba(20,1,0,.9) 0%, #000000 100%);
+            background: $violet;
             //Projects
             .cards{
                 width: 100%;
@@ -262,7 +262,7 @@ html{
             h1{
                 padding-bottom: 40px;
                 padding-top: 50px;
-                color: $white;
+                color: $green;
                 overflow: hidden;
                 font-weight: 300;
                 overflow:hidden;
@@ -270,44 +270,38 @@ html{
             .card{
                 width: 30%;
                 margin: 40px;
-                border-radius: 0px;
+                border: none;
+                outline: none;
                 transition: .5s;
-                background:  $brown;
-                transform: rotateZ(5deg);
+                background:  $green;
                 box-shadow: 8px 8px 0px #000;
             }
             .card:hover{
                 transform: rotateZ(0deg);
-                background: $white;
-                box-shadow: 8px 8px 0px $brown;                
+                background: $green;
+                box-shadow: 8px 8px 0px $violet;                
             }
             .card:hover .card-title{
                 color: black;
             }
-            .card:hover .card-text{
-                color: black;
-            }
-            .card:hover .btn-primary{
-                color: black;
-            }
             .card-title{
                 font-weight: 900;
-                color: #fff;
+                color: $violet;
                 padding: 10px;
                 border-radius: 15px;
             }
             .card-text{
-                color: #fff;
+                color: $violet;
                 overflow:hidden;
             }
             .btn-primary{
-                color:#fff;
+                color:$violet;
                 background-color: transparent;
-                outline:#fff;
-                border:2px solid#fff;
+                outline:$violet;
+                border:2px solid$violet;
             }
             .btn-primary:hover{
-                box-shadow: 0 0 6px $brown;
+                box-shadow: 0 0 6px $violet;
             }
         }
         .skills-container{
@@ -316,7 +310,7 @@ html{
             text-align: center;
             //Skills elements
             h1{
-                color: $white;
+                color: $green;
                 overflow:hidden;
                 font-weight: lighter;
             }
@@ -333,7 +327,7 @@ html{
             .skills .icon i{
                 padding: 20px;
                 font-size:50px;
-                color: $white;
+                color: $green;
                 background: transparent;
                 border: 2px solid transparent;
                 border-radius: 15px;
@@ -342,7 +336,7 @@ html{
                 -webkit-transition: .5s;
             }
             .skills .icon:hover i{
-                border: 2px solid $white;
+                border: 2px solid $green;
             }
         }
         #about{
@@ -353,7 +347,7 @@ html{
             display: flex;
             flex-direction: column;
             width: 100%;padding-bottom: 25%;
-            background: $brown;
+            background: $green;
             clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
             padding-top: 20%;
             //About elements
@@ -367,18 +361,18 @@ html{
                 font-size: 3rem;
                 padding-top: 20px;
                 font-weight: 300;
-                color: $white
+                color: $violet
             }
             img{
                 margin: 20px;
                 border-radius: 10px;
-                box-shadow: 0 0 10px  $brown;
+                box-shadow: 0 0 10px  $violet;
+                filter: grayscale(100%);
             }
             p{
                 line-height: 40px;
                 margin-top: 60px;
-                color: $white;
-                background: $brown;
+                color: $violet;
                 padding: 30px;
                 border-radius: 16px;
             }
@@ -386,15 +380,15 @@ html{
         .feedbk{
             width: 100%;
             height: auto;
-            box-shadow: 0 0 10px $white;
-            background: $brown;
+            box-shadow: 0 0 10px $green;
+            background: $green;
             background-attachment: fixed;
             clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
             padding-top: 20%;
             //Feedback elements
             h1{
                 color: transparent;
-                color: $white;
+                color: $violet;
                 font-weight: 300;
                 margin: 40px;
                 overflow:hidden;
@@ -402,7 +396,7 @@ html{
             }
             p{
                 margin-left: 2vw;
-                color: $white;
+                color: $violet;
             }
             form{
                 height: auto;
@@ -415,8 +409,8 @@ html{
                 padding: 18px 12px 18px 12px;
                 border-radius: 10px;
                 background: transparent;
-                border:2px solid $white;
-                color: $white;
+                border:2px solid $violet;
+                color: $violet;
             }
             .wrap-input{
                 display: flex;
@@ -432,22 +426,22 @@ html{
                 padding: 18px 12px 18px 12px;
                 border-radius: 10px;
                 background: transparent;
-                border:2px solid $white;
-                color: $white;
+                border:2px solid $violet;
+                color: $violet;
                 max-height: 400px;
             }
             input::placeholder{
-                color: $white;
+                color: $violet;
             }
             textarea::placeholder{
-                color: $white;
+                color: $violet;
             }
             .btn{
                 margin-left: 2vw;
-                color: $brown;
-                background: $white;
-                border-color: $white;
-                outline-color: $white;
+                color: $green;
+                background: $violet;
+                border-color: $violet;
+                outline-color: $violet;
             }
         }
         .footer{
@@ -457,14 +451,14 @@ html{
             justify-content: center;
             display: flex;
             flex-direction: column;
-            box-shadow: 0 0 10px $brown;
-            background: black;
+            box-shadow: 0 0 10px $violet;
+            background: $violet;
             padding-top: 5vh;
             //Footer elements
             .fa-chevron-up{
                 font-size: 30px;
                 font-stretch: extra-expanded;
-                color: $white;
+                color: $green;
                 padding: 15px;
                 border-radius: 10px;
                 transition: .5s;
@@ -477,54 +471,54 @@ html{
                 font-size: 30px;
                 margin: 20px;
                 transition: .5s;
-                background: $white;
-                color: $brown;
-                border: 5px solid $brown;
+                background: $green;
+                color: $violet;
+                border: 5px solid $violet;
                 padding: 15px;
                 border-radius: 50%;
-                outline: 5px solid $white;
-                box-shadow: 0 0 20px $brown;
+                outline: 5px solid $green;
+                box-shadow: 0 0 20px $violet;
             }
             .wrap a i:hover{
-                color: $white;
-                background: $brown;
-                border: 5px solid $white;
-                outline: 5px solid $brown;
-                box-shadow: 0 0 20px $white;
+                color: $green;
+                background: $violet;
+                border: 5px solid $green;
+                outline: 5px solid $violet;
+                box-shadow: 0 0 20px $green;
             }
             .git-ele{
-                color: $white;
+                color: $green;
                 text-decoration: none;
                 font-size: .8rem;
-                border-bottom: 2px solid $white;
+                border-bottom: 2px solid $green;
                 padding: 2px 15px 2px 15px;
                 transition: .5s;
             }
             hr{
-                color:$white;
+                background: linear-gradient(to right,transparent,black,transparent);
                 width: 90%;
                 height: 2px;
             }
             p{
-                color: $white;
+                color: $green;
                 font-size: 12px;
                 font-stretch: extra-expanded;
                 height: 100%;
             }
             p svg{
-                fill: $brown;
-                background: $white;
+                fill: $violet;
+                background: $green;
                 padding: 1px;
                 border-radius: 20%;
             }
             p a{
-                color: $white;
+                color: $green;
                 text-decoration: none;
                 transition: .2s;
-                border-bottom: 2px solid $brownishblack;
+            
             }
             p a:hover{
-                color: $white;
+                color: $green;
             }
         }
         @media(max-width:992px){
