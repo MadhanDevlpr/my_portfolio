@@ -271,7 +271,7 @@ html{
             #know-more{
                 position: absolute;
                 top: 85%;
-                left: 20%;
+                left: 18%;
                 transform: translate(-50%,-50%);
                 color: $violet;
                 text-decoration: none;
@@ -284,6 +284,27 @@ html{
                 font-size: .8rem;
             }
             #know-more:hover{
+                top:84.5%;
+                background: transparent;
+                border: 2px solid $green;
+                color: $green;
+            }
+            #projects-btn{
+                position: absolute;
+                top: 85%;
+                left: 32%;
+                transform: translate(-50%,-50%);
+                color: $violet;
+                text-decoration: none;
+                padding: 8px 28px 8px 28px;
+                background: $green;
+                font-weight: bolder;
+                border: 2px solid transparent;
+                border-radius: 5px;
+                transition: .5s;
+                font-size: .8rem;
+            }
+            #projects-btn:hover{
                 top:84.5%;
                 background: transparent;
                 border: 2px solid $green;
@@ -598,13 +619,13 @@ html{
                     left: 50%;
                     transform: translate(-50%,-50%);
                 }
-                #github{
+                #projects-btn{
                     position: absolute;
                     top: 85%;
                     left: 50%;
                     transform: translate(-50%,-50%);
                 }
-                #github:hover{
+                #projects-btn:hover{
                     position: absolute;
                     top: 84%;
                     left: 50%;
