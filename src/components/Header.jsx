@@ -1,22 +1,10 @@
 import React from 'react';
-import anime from 'animejs/lib/anime.es.js';
 
 const Header = () => {
-    const boxes = document.querySelectorAll('.box');
-    anime({
-        targets: boxes,
-        scale: [
-          {value: .1, easing: 'easeOutSine', duration: 500},
-          {value: 1, easing: 'easeOutSine', duration: 1200}
-        ],
-        delay: anime.stagger(200, {grid: [14, 14], from: 'center'}),
-        loop:true
-      });
-
     return (
         <header id="header">
             <h1>HI THERE I'M ,<br/><span className="glow">aadithya</span></h1>
-            <h3>I'm a web developer who build interactive site with css, javascript, I also make my own UI Designs.</h3>
+            <h3>I build highly interactive sites with pure css and javascript, the languages well known for me are <code>Python, Html, Css, Sass, Javacript</code>, the tools and frameworks I use are <code>Vs Code, React, Flask, Git Bash, WSL.</code></h3>
             <a id="know-more" href="#about">know more</a>
             <div className="container">
                <div className="box"></div>
@@ -232,5 +220,4 @@ const Header = () => {
         </header>
     )
 }
-
 export default Header

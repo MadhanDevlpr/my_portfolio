@@ -205,15 +205,33 @@ html{
                 top:50%;
                 left: 70%;
                 transform: translate(-50%,-50%);
+                overflow: hidden;
+                padding: 5px;
             }
             .box{
                 pointer-events: none;
-                width: 28px;
-                height: 28px;
+                width: 30px;
+                height: 30px;
                 margin: 2px;
-                box-shadow: 0 0 10px $green;
-                background-color: $green;
                 font-size: 14px;
+                transform: rotate(360deg);
+                animation-name: shake-more;
+                animation-duration: 10s;
+                animation-delay: 7000ms;
+                animation-iteration-count: infinite;
+                background: $green;
+            }
+            @keyframes shake-more{
+                0%{
+                    transform: rotate(360deg);
+                }
+                50%{
+                    transform: rotate(-360deg);
+                    background:linear-gradient(to bottom right,$green 50%,$violet 50%);
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
             }
             h1{
                 color: $green;
@@ -232,9 +250,9 @@ html{
                 }
             }
             h3{
-                font-size: .9rem;
+                font-size: .7rem;
                 position: absolute;
-                width:275px;
+                width:350px;
                 text-align: left;
                 overflow:hidden;
                 top: 64%;
@@ -242,7 +260,14 @@ html{
                 transform: translate(-50%,-50%);
                 line-height: 30px;
                 color: $green;
+                code{
+                    color: white;
+                    font-weight: 900;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
             }
+
             #know-more{
                 position: absolute;
                 top: 85%;
@@ -541,6 +566,9 @@ html{
         }
         @media(max-width:992px){
             Header{
+                .container{
+                    display: none;
+                }
                 h1{
                     position: absolute;
                     top: 30%;
@@ -549,7 +577,7 @@ html{
                 }
                 h3{
                     position: absolute;
-                    top: 60%;
+                    top: 55%;
                     left: 50%;
                     text-align: center;
                     transform: translate(-50%,-50%);
