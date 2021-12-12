@@ -208,6 +208,9 @@ html{
                 overflow: hidden;
                 padding: 5px;
             }
+            .container:hover .box{
+                background: white;
+            }
             .box{
                 pointer-events: none;
                 width: 30px;
@@ -224,13 +227,24 @@ html{
             @keyframes shake-more{
                 0%{
                     transform: rotate(360deg);
+                    background: $green;
+                }
+                25%{
+                    background: $violet;
+                    transform: rotate(-360deg);
                 }
                 50%{
+                    background: white;
+                    box-shadow: 0 0 10px white;
+                    transform: rotate(360deg);
+                }
+                75%{
+                    background: $violet;
                     transform: rotate(-360deg);
-                    background:linear-gradient(to bottom right,$green 50%,$violet 50%);
                 }
                 100%{
                     transform: rotate(360deg);
+                    background: $green;
                 }
             }
             h1{
