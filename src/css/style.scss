@@ -196,57 +196,46 @@ html{
             width: 100%;
             height: 100vh;
             //Header elements
+            $n: 70;
             .container{
+                position: absolute;
+                top: 50%;
+                left: 75%;
+                transform: translate(-50%,-50%);
                 display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
                 flex-wrap: wrap;
                 width: 500px;
                 height: auto;
-                position: absolute;
-                top:50%;
-                left: 70%;
-                transform: translate(-50%,-50%);
                 overflow: hidden;
                 padding: 5px;
             }
-            .container:hover .box{
-                background: white;
-            }
-            .box{
-                pointer-events: none;
-                width: 30px;
-                height: 30px;
-                margin: 2px;
-                font-size: 14px;
-                transform: rotate(360deg);
-                animation-name: shake-more;
-                animation-duration: 10s;
-                animation-delay: 7000ms;
-                animation-iteration-count: infinite;
-                background: $green;
-            }
-            @keyframes shake-more{
-                0%{
-                    transform: rotate(360deg);
+            $n: 70;
+            .box {
+                    opacity: 1;
+                    animation-name: fade-in;
+                    animation-duration: 5s;
+                    animation-delay: 7000ms;
+                    animation-iteration-count: infinite;
+                    width: 30px;
+                    height: 30px;
                     background: $green;
-                }
-                25%{
-                    background: $violet;
-                    transform: rotate(-360deg);
-                }
-                50%{
-                    background: white;
-                    box-shadow: 0 0 10px white;
-                    transform: rotate(360deg);
-                }
-                75%{
-                    background: $violet;
-                    transform: rotate(-360deg);
-                }
-                100%{
-                    transform: rotate(360deg);
-                    background: $green;
-                }
+                    margin: 2px;
+                    transition: 1s;
+                    @for $x from 0 to $n*35 {
+                        &:nth-child(#{$x}) {
+                            animation-delay: 50ms * ($x - 0);
+                        }
+                    }
             }
+            @keyframes fade-in {
+                to {
+                  opacity: 0;
+                  transform: rotate(-360deg);
+                }
+              }
             h1{
                 color: $green;
                 font-size: 1rem;
