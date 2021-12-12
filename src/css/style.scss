@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url(//db.onlinewebfonts.com/c/25c294f3631fb5a0c1ef659a85cabdcf?family=Sifonn);
-$violet:#8600ff;
-$green:#79ff00;
-$greei5e:#79ff009e;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+$stone:#152639;
+$gray:#AFC2E1;
 
 *{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: Comfortaa;
+    font-family:  'Comfortaa';
     transition: .5s;
 }
 *::-webkit-scrollbar{
@@ -16,18 +15,18 @@ $greei5e:#79ff009e;
 
 }
 *::-webkit-scrollbar-thumb{
-    background:$green;
+    background:$gray;
 }
 *::selection{
-    background: $green;
-    color: transparent;
+    background: $stone;
+    color: $gray;
 }
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
     body{
         //Preloader
-        background: $violet;
+        background:$stone;
         #preloader{
             color: white;
             .loader-wrapper{
@@ -100,10 +99,10 @@ html{
             display: flex;
             border:none;
             outline:none;
-            border-radius: 10px;
-            fill: #000000;
+            border-radius: 5px;
+            fill: $gray;
             display: block;
-            background: #fff;
+            background: $stone;
             transition: .5s;
         }
         .toggle-btn:active,.toggle-btn:focus{
@@ -115,7 +114,7 @@ html{
             width: 100%;
             position: fixed;
             z-index:7000;
-            background: $green;
+            background: $gray;
             top: 0%;
             left: 100%;
             overflow: hidden;
@@ -139,19 +138,19 @@ html{
             padding: 10px;
             text-transform: lowercase;
             text-decoration: none;
-            color: $violet;
+            color: $stone;
             display: block;
             transition: .2s;
         }
         
         .sidenav a:hover {
-            color: $violet;
+            color: $stone;
         }
         .sidenav p{
             position: absolute;
             bottom:0%;
             margin-right: 25px;
-            color: $violet;
+            color: $stone;
             font-size: .8rem;
             padding: 10px;
             border-radius: 10px;
@@ -163,12 +162,12 @@ html{
             left: 0px;
             margin: 20px;
             border-radius: 10px;
-            fill:$green;
-            background: $violet;
-            text-shadow: 0 0 5px $violet;
+            fill:$gray;
+            background: $stone;
+            text-shadow: 0 0 5px $stone;
         }
         .sidenav .closebtn:hover{
-            color: $violet;
+            color: $stone;
             cursor: pointer;
         }
         @media screen and (max-height: 450px) {
@@ -195,6 +194,11 @@ html{
         Header{
             width: 100%;
             height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/background.png) center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -oz-background-size: cover;
+            background-size: cover;
             //Header elements
             $n: 70;
             .container{
@@ -217,11 +221,10 @@ html{
                     opacity: 1;
                     animation-name: fade-in;
                     animation-duration: 5s;
-                    animation-delay: 7000ms;
                     animation-iteration-count: infinite;
                     width: 30px;
                     height: 30px;
-                    background: $green;
+                    background: $gray;
                     margin: 2px;
                     transition: 1s;
                     @for $x from 0 to $n*35 {
@@ -237,7 +240,7 @@ html{
                 }
               }
             h1{
-                color: $green;
+                color: $gray;
                 font-size: 1rem;
                 overflow:hidden;
                 text-align: left;
@@ -249,7 +252,7 @@ html{
                     font-size: 5rem;
                     font-weight: 100;
                     text-transform: lowercase;
-                    color: $green;
+                    color: $gray;
                 }
             }
             h3{
@@ -262,12 +265,13 @@ html{
                 left: 25%;
                 transform: translate(-50%,-50%);
                 line-height: 30px;
-                color: $green;
+                color: $gray;
                 code{
                     color: white;
                     font-weight: 900;
                     padding: 5px;
                     border-radius: 10px;
+                    font-family: 'Fira Code', monospace;
                 }
             }
 
@@ -276,10 +280,10 @@ html{
                 top: 85%;
                 left: 18%;
                 transform: translate(-50%,-50%);
-                color: $violet;
+                color: $stone;
                 text-decoration: none;
                 padding: 8px 28px 8px 28px;
-                background: $green;
+                background: $gray;
                 font-weight: bolder;
                 border: 2px solid transparent;
                 border-radius: 5px;
@@ -289,18 +293,18 @@ html{
             #know-more:hover{
                 top:84.5%;
                 background: transparent;
-                border: 2px solid $green;
-                color: $green;
+                border: 2px solid $gray;
+                color: $gray;
             }
             #projects-btn{
                 position: absolute;
                 top: 85%;
                 left: 32%;
                 transform: translate(-50%,-50%);
-                color: $violet;
+                color: $stone;
                 text-decoration: none;
                 padding: 8px 28px 8px 28px;
-                background: $green;
+                background: $gray;
                 font-weight: bolder;
                 border: 2px solid transparent;
                 border-radius: 5px;
@@ -310,14 +314,14 @@ html{
             #projects-btn:hover{
                 top:84.5%;
                 background: transparent;
-                border: 2px solid $green;
-                color: $green;
+                border: 2px solid $gray;
+                color: $gray;
             }
         }
         .projects{
             text-align: center;
             overflow:hidden;
-            background: $violet;
+            background: $stone;
             //Projects
             .cards{
                 width: 100%;
@@ -329,7 +333,7 @@ html{
             h1{
                 padding-bottom: 40px;
                 padding-top: 50px;
-                color: $green;
+                color: $gray;
                 overflow: hidden;
                 font-weight: 300;
                 overflow:hidden;
@@ -346,32 +350,30 @@ html{
                 border: none;
                 outline: none;
                 transition: .5s;
-                background:  $green;
-                box-shadow: 8px 8px 10px #0000000e;
-                filter: brightness(0.4);
+                background:  $gray;
+                transform: rotate(11.25deg);
             }
-            .card:hover{   
-                box-shadow: 16px 16px 10px #0000009e;
-                filter: brightness(1);
+            .card:hover{
+                transform: rotate(0deg);
             }
             .card-title{
                 font-weight: 900;
-                color: $violet;
+                color: $stone;
                 padding: 10px;
                 border-radius: 15px;
             }
             .card-text{
-                color: $violet;
+                color: $stone;
                 overflow:hidden;
             }
             .btn-primary{
-                color:$violet;
+                color:$stone;
                 background-color: transparent;
-                outline:$violet;
-                border:2px solid$violet;
+                outline:$stone;
+                border:2px solid$stone;
             }
             .btn-primary:hover{
-                box-shadow: 0 0 6px $violet;
+                box-shadow: 0 0 6px $stone;
             }
         }
         .skills-container{
@@ -380,7 +382,7 @@ html{
             text-align: center;
             //Skills elements
             h1{
-                color: $green;
+                color: $gray;
                 overflow:hidden;
                 font-weight: lighter;
             }
@@ -397,7 +399,7 @@ html{
             .skills .icon i{
                 padding: 20px;
                 font-size:50px;
-                color: $green;
+                color: $gray;
                 background: transparent;
                 border: 2px solid transparent;
                 border-radius: 15px;
@@ -406,7 +408,7 @@ html{
                 -webkit-transition: .5s;
             }
             .skills .icon:hover i{
-                border: 2px solid $green;
+                border: 2px solid $gray;
             }
         }
         #about{
@@ -417,7 +419,7 @@ html{
             display: flex;
             flex-direction: column;
             width: 100%;padding-bottom: 25%;
-            background: $green;
+            background: $gray;
             clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
             padding-top: 20%;
             //About elements
@@ -431,18 +433,18 @@ html{
                 font-size: 3rem;
                 padding-top: 20px;
                 font-weight: 300;
-                color: $violet
+                color: $stone
             }
             img{
                 margin: 20px;
                 border-radius: 10px;
-                box-shadow: 0 0 10px  $violet;
+                box-shadow: 0 0 10px  $stone;
                 filter: grayscale(100%);
             }
             p{
                 line-height: 40px;
                 margin-top: 60px;
-                color: $violet;
+                color: $stone;
                 padding: 30px;
                 border-radius: 16px;
             }
@@ -450,15 +452,15 @@ html{
         .feedbk{
             width: 100%;
             height: auto;
-            box-shadow: 0 0 10px $green;
-            background: $green;
+            box-shadow: 0 0 10px $gray;
+            background: $gray;
             background-attachment: fixed;
             clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
             padding-top: 20%;
             //Feedback elements
             h1{
                 color: transparent;
-                color: $violet;
+                color: $stone;
                 font-weight: 300;
                 margin: 40px;
                 overflow:hidden;
@@ -466,21 +468,22 @@ html{
             }
             p{
                 margin-left: 2vw;
-                color: $violet;
+                color: $stone;
             }
             form{
                 height: auto;
             }
             input{
+                font-family: 'Fira Code';
                 border: none;
                 outline: none;
                 margin-left: 2vw;
                 width: 42.5%;
-                padding: 18px 12px 18px 12px;
+                padding: 5px 10px 5px 10px;
                 border-radius: 10px;
                 background: transparent;
-                border:2px solid $violet;
-                color: $violet;
+                border:2px solid $stone;
+                color: $stone;
             }
             .wrap-input{
                 display: flex;
@@ -488,30 +491,31 @@ html{
                 overflow: hidden;
             }
             textarea{
+                font-family: 'Fira Code';
                 margin-left: 2vw;
                 min-width: 90vw;
                 height: 200px;
                 border: none;
                 outline: none;
-                padding: 18px 12px 18px 12px;
+                padding: 5px 10px 5px 10px;
                 border-radius: 10px;
                 background: transparent;
-                border:2px solid $violet;
-                color: $violet;
+                border:2px solid $stone;
+                color: $stone;
                 max-height: 400px;
             }
             input::placeholder{
-                color: $violet;
+                color: $stone;
             }
             textarea::placeholder{
-                color: $violet;
+                color: $stone;
             }
             .btn{
                 margin-left: 2vw;
-                color: $green;
-                background: $violet;
-                border-color: $violet;
-                outline-color: $violet;
+                color: $gray;
+                background: $stone;
+                border-color: $stone;
+                outline-color: $stone;
             }
         }
         .footer{
@@ -521,14 +525,14 @@ html{
             justify-content: center;
             display: flex;
             flex-direction: column;
-            box-shadow: 0 0 10px $violet;
-            background: $violet;
+            border-top: 2px solid $stone;
+            background: $gray;
             padding-top: 5vh;
             //Footer elements
             .fa-chevron-up{
                 font-size: 30px;
                 font-stretch: extra-expanded;
-                color: $green;
+                color: $stone;
                 padding: 15px;
                 border-radius: 10px;
                 transition: .5s;
@@ -541,54 +545,55 @@ html{
                 font-size: 30px;
                 margin: 20px;
                 transition: .5s;
-                background: $green;
-                color: $violet;
-                border: 5px solid $violet;
+                background: $gray;
+                color: $stone;
+                border: 5px solid $stone;
                 padding: 15px;
                 border-radius: 50%;
-                outline: 5px solid $green;
-                box-shadow: 0 0 20px $violet;
+                outline: 5px solid $gray;
+                box-shadow: 0 0 20px $stone;
             }
             .wrap a i:hover{
-                color: $green;
-                background: $violet;
-                border: 5px solid $green;
-                outline: 5px solid $violet;
-                box-shadow: 0 0 20px $green;
+                color: $gray;
+                background: $stone;
+                border: 5px solid $gray;
+                outline: 5px solid $stone;
+                box-shadow: 0 0 20px $gray;
             }
             .git-ele{
-                color: $green;
+                color: $stone;
                 text-decoration: none;
                 font-size: .8rem;
-                border-bottom: 2px solid $green;
+                border-bottom: 2px solid $stone;
                 padding: 2px 15px 2px 15px;
                 transition: .5s;
             }
             hr{
-                background: linear-gradient(to right,transparent,black,transparent);
+                background: linear-gradient(to right,transparent,$stone,transparent);
                 width: 90%;
                 height: 2px;
             }
             p{
-                color: $green;
+                color: $stone;
                 font-size: 12px;
                 font-stretch: extra-expanded;
                 height: 100%;
             }
             p svg{
-                fill: $violet;
-                background: $green;
+                fill: $stone;
+                background: $gray;
                 padding: 1px;
                 border-radius: 20%;
             }
             p a{
-                color: $green;
+                color: $stone;
                 text-decoration: none;
                 transition: .2s;
-            
+                padding-bottom: 2px;
+                border-bottom: 1.5px solid $stone;
             }
             p a:hover{
-                color: $green;
+                color: $stone;
             }
         }
         @media(max-width:992px){
