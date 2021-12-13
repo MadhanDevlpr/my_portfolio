@@ -216,27 +216,42 @@ html{
                 overflow: hidden;
                 padding: 5px;
             }
-            $n: 70;
             .box {
-                    opacity: 1;
                     animation-name: fade-in;
-                    animation-duration: 5s;
+                    animation-duration: 20s;
                     animation-iteration-count: infinite;
+                    opacity: 1;
                     width: 30px;
                     height: 30px;
                     background: $gray;
                     margin: 2px;
                     transition: 1s;
-                    @for $x from 0 to $n*35 {
-                        &:nth-child(#{$x}) {
-                            animation-delay: 50ms * ($x - 0);
-                        }
-                    }
+                    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+                    border-radius: 50%;
             }
             @keyframes fade-in {
-                to {
-                  opacity: 0;
-                  transform: rotate(-360deg);
+                0%{
+                    transform: rotate(-360deg);
+                    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+
+                }
+                25%{
+                    transform: rotate(360deg);
+                    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+                }
+                50%{
+                    transform: rotate(-360deg);
+                    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+
+                }
+                75%{
+                    transform: rotate(360deg);
+                    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+                }
+                100%{
+                    transform: rotate(-360deg);
+                    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+
                 }
               }
             h1{
