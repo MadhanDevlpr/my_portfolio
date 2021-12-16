@@ -17,6 +17,14 @@ function Navbar() {
             <rect rx="10px" ry="10px" y="65" width="100" height="10"></rect>
           </svg>
             <div id="mySidenav" onClick={closeNav}  className="sidenav">
+            <div className="wrap">
+                <a target="_blank" rel="noreferrer" href="https://github.com/MadhanDevlpr">
+                    <i className="fab fa-github"></i>
+                </a><br />
+                <a target="_blank" rel="noreferrer" href="https://codepen.io/madhanaadithya">
+                    <i className="fab fa-codepen"></i>
+                </a>
+            </div>
               <div className="links">
                 <a className="item"  onClick={closeNav}     href="#header">home</a>
                 <a className="item"  onClick={closeNav}     href="#projectss">Projects</a>

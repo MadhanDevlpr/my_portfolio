@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
-$stone:#152639;
-$gray:#AFC2E1;
+$revolver:#1C142B;
+$shake:#5DADCD;
 
 *{
     margin: 0;
@@ -15,18 +15,18 @@ $gray:#AFC2E1;
 
 }
 *::-webkit-scrollbar-thumb{
-    background:$gray;
+    background:$shake;
 }
 *::selection{
-    background: $stone;
-    color: $gray;
+    background: white;
+    color: transparent;
 }
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
     body{
         //Preloader
-        background:$stone;
+        background:$revolver;
         #preloader{
             color: white;
             .loader-wrapper{
@@ -100,9 +100,9 @@ html{
             border:none;
             outline:none;
             border-radius: 5px;
-            fill: $gray;
+            fill: $shake;
             display: block;
-            background: $stone;
+            background: $revolver;
             transition: .5s;
         }
         .toggle-btn:active,.toggle-btn:focus{
@@ -114,12 +114,42 @@ html{
             width: 100%;
             position: fixed;
             z-index:7000;
-            background: $gray;
+            background: $shake;
             top: 0%;
             left: 100%;
             overflow: hidden;
             transition: 1s;
             padding-top: 60px;
+            .wrap{
+                position: absolute;
+                top: 50%;
+                left: 2.5%;
+                transform: translate(-50%,-50%);
+                width: 80px;
+                height: fit-content;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                background: transparent;
+                border-radius: 300px;
+                z-index: 20000;
+                i{
+                    color: $revolver;
+                    font-size: 15px;
+                    padding: 10px;
+                    border-radius: 50%;
+                    background: $shake;
+                    transition: .5s;
+                    border: 2px solid transparent;
+                }
+                i:hover{
+                    color: $shake;
+                    background: $revolver;
+                    border: 2px solid $shake;
+                }
+            }
         }
         .links{
             align-items: center;
@@ -138,19 +168,19 @@ html{
             padding: 10px;
             text-transform: lowercase;
             text-decoration: none;
-            color: $stone;
+            color: $revolver;
             display: block;
             transition: .2s;
         }
         
         .sidenav a:hover {
-            color: $stone;
+            color: $revolver;
         }
         .sidenav p{
             position: absolute;
             bottom:0%;
             margin-right: 25px;
-            color: $stone;
+            color: $revolver;
             font-size: .8rem;
             padding: 10px;
             border-radius: 10px;
@@ -162,12 +192,12 @@ html{
             left: 0px;
             margin: 20px;
             border-radius: 10px;
-            fill:$gray;
-            background: $stone;
-            text-shadow: 0 0 5px $stone;
+            fill:$shake;
+            background: $revolver;
+            text-shadow: 0 0 5px $revolver;
         }
         .sidenav .closebtn:hover{
-            color: $stone;
+            color: $revolver;
             cursor: pointer;
         }
         @media screen and (max-height: 450px) {
@@ -195,79 +225,36 @@ html{
             width: 100%;
             height: 100vh;
             background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/background.png) center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -oz-background-size: cover;
-            background-size: cover;
+            background-size: 100%;      
+            background-repeat: no-repeat;    
+            animation-name: background;  
+            animation-duration: 5s;
+            animation-delay: 4.5s;
             //Header elements
-            $n: 70;
-            .container{
-                position: absolute;
-                top: 50%;
-                left: 75%;
-                transform: translate(-50%,-50%);
-                display: flex;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-                flex-wrap: wrap;
-                width: 500px;
-                height: auto;
-                overflow: hidden;
-                padding: 5px;
+            @keyframes background {
+                from{
+                    background-size: 150%;      
+                }
+                to{
+                    background-size: 100%;      
+                }
             }
-            .box {
-                    animation-name: fade-in;
-                    animation-duration: 20s;
-                    animation-iteration-count: infinite;
-                    opacity: 1;
-                    width: 30px;
-                    height: 30px;
-                    background: $gray;
-                    margin: 2px;
-                    transition: 1s;
-                    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
-                    border-radius: 49.99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999%;
-            }
-            @keyframes fade-in {
-                0%{
-                    transform: rotate(-360deg);
-                    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
-
-                }
-                25%{
-                    transform: rotate(360deg);
-                    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-                }
-                50%{
-                    transform: rotate(-360deg);
-                    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
-
-                }
-                75%{
-                    transform: rotate(360deg);
-                    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-                }
-                100%{
-                    transform: rotate(-360deg);
-                    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
-
-                }
-              }
+            
             h1{
-                color: $gray;
+                color: $shake;
                 font-size: 1rem;
                 overflow:hidden;
                 text-align: left;
                 position: absolute;
                 top: 42%;
-                left: 25%;
+                left: 50%;
                 transform: translate(-50%,-50%);
                 .glow{
-                    font-size: 5rem;
+                    font-size: 6rem;
                     font-weight: 100;
                     text-transform: lowercase;
-                    color: $gray;
+                    color: white;
+                    text-shadow: 0 0 5px $shake;
                 }
             }
             h3{
@@ -277,10 +264,10 @@ html{
                 text-align: left;
                 overflow:hidden;
                 top: 64%;
-                left: 25%;
+                left: 50%;
                 transform: translate(-50%,-50%);
                 line-height: 30px;
-                color: $gray;
+                color: $shake;
                 code{
                     color: white;
                     font-weight: 900;
@@ -293,12 +280,12 @@ html{
             #know-more{
                 position: absolute;
                 top: 85%;
-                left: 18%;
+                left: 42.5%;
                 transform: translate(-50%,-50%);
-                color: $stone;
+                color: $revolver;
                 text-decoration: none;
                 padding: 8px 28px 8px 28px;
-                background: $gray;
+                background: $shake;
                 font-weight: bolder;
                 border: 2px solid transparent;
                 border-radius: 5px;
@@ -308,18 +295,18 @@ html{
             #know-more:hover{
                 top:84.5%;
                 background: transparent;
-                border: 2px solid $gray;
-                color: $gray;
+                border: 2px solid $shake;
+                color: $shake;
             }
             #projects-btn{
                 position: absolute;
                 top: 85%;
-                left: 32%;
+                left: 55%;
                 transform: translate(-50%,-50%);
-                color: $stone;
+                color: $revolver;
                 text-decoration: none;
                 padding: 8px 28px 8px 28px;
-                background: $gray;
+                background: $shake;
                 font-weight: bolder;
                 border: 2px solid transparent;
                 border-radius: 5px;
@@ -329,14 +316,14 @@ html{
             #projects-btn:hover{
                 top:84.5%;
                 background: transparent;
-                border: 2px solid $gray;
-                color: $gray;
+                border: 2px solid $shake;
+                color: $shake;
             }
         }
         .projects{
             text-align: center;
             overflow:hidden;
-            background: $stone;
+            background: $revolver;
             //Projects
             .cards{
                 width: 100%;
@@ -348,7 +335,7 @@ html{
             h1{
                 padding-bottom: 40px;
                 padding-top: 50px;
-                color: $gray;
+                color: $shake;
                 overflow: hidden;
                 font-weight: 300;
                 overflow:hidden;
@@ -365,7 +352,7 @@ html{
                 border: none;
                 outline: none;
                 transition: .5s;
-                background:  $gray;
+                background:  $shake;
                 transform: rotate(11.25deg);
             }
             .card:hover{
@@ -373,22 +360,22 @@ html{
             }
             .card-title{
                 font-weight: 900;
-                color: $stone;
+                color: $revolver;
                 padding: 10px;
                 border-radius: 15px;
             }
             .card-text{
-                color: $stone;
+                color: $revolver;
                 overflow:hidden;
             }
             .btn-primary{
-                color:$stone;
+                color:$revolver;
                 background-color: transparent;
-                outline:$stone;
-                border:2px solid$stone;
+                outline:$revolver;
+                border:2px solid$revolver;
             }
             .btn-primary:hover{
-                box-shadow: 0 0 6px $stone;
+                box-shadow: 0 0 6px $revolver;
             }
         }
         .skills-container{
@@ -397,7 +384,7 @@ html{
             text-align: center;
             //Skills elements
             h1{
-                color: $gray;
+                color: $shake;
                 overflow:hidden;
                 font-weight: lighter;
             }
@@ -414,7 +401,7 @@ html{
             .skills .icon i{
                 padding: 20px;
                 font-size:50px;
-                color: $gray;
+                color: $shake;
                 background: transparent;
                 border: 2px solid transparent;
                 border-radius: 15px;
@@ -423,7 +410,7 @@ html{
                 -webkit-transition: .5s;
             }
             .skills .icon:hover i{
-                border: 2px solid $gray;
+                border: 2px solid $shake;
             }
         }
         #about{
@@ -434,7 +421,7 @@ html{
             display: flex;
             flex-direction: column;
             width: 100%;padding-bottom: 25%;
-            background: $gray;
+            background: $shake;
             clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
             padding-top: 20%;
             //About elements
@@ -448,18 +435,18 @@ html{
                 font-size: 3rem;
                 padding-top: 20px;
                 font-weight: 300;
-                color: $stone
+                color: $revolver
             }
             img{
                 margin: 20px;
                 border-radius: 10px;
-                box-shadow: 0 0 10px  $stone;
+                box-shadow: 0 0 10px  $revolver;
                 filter: grayscale(100%);
             }
             p{
                 line-height: 40px;
                 margin-top: 60px;
-                color: $stone;
+                color: $revolver;
                 padding: 30px;
                 border-radius: 16px;
             }
@@ -467,15 +454,15 @@ html{
         .feedbk{
             width: 100%;
             height: auto;
-            box-shadow: 0 0 10px $gray;
-            background: $gray;
+            box-shadow: 0 0 10px $shake;
+            background: $shake;
             background-attachment: fixed;
             clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
             padding-top: 20%;
             //Feedback elements
             h1{
                 color: transparent;
-                color: $stone;
+                color: $revolver;
                 font-weight: 300;
                 margin: 40px;
                 overflow:hidden;
@@ -483,7 +470,7 @@ html{
             }
             p{
                 margin-left: 2vw;
-                color: $stone;
+                color: $revolver;
             }
             form{
                 height: auto;
@@ -497,8 +484,8 @@ html{
                 padding: 5px 10px 5px 10px;
                 border-radius: 10px;
                 background: transparent;
-                border:2px solid $stone;
-                color: $stone;
+                border:2px solid $revolver;
+                color: $revolver;
             }
             .wrap-input{
                 display: flex;
@@ -515,22 +502,22 @@ html{
                 padding: 5px 10px 5px 10px;
                 border-radius: 10px;
                 background: transparent;
-                border:2px solid $stone;
-                color: $stone;
+                border:2px solid $revolver;
+                color: $revolver;
                 max-height: 400px;
             }
             input::placeholder{
-                color: $stone;
+                color: $revolver;
             }
             textarea::placeholder{
-                color: $stone;
+                color: $revolver;
             }
             .btn{
                 margin-left: 2vw;
-                color: $gray;
-                background: $stone;
-                border-color: $stone;
-                outline-color: $stone;
+                color: $shake;
+                background: $revolver;
+                border-color: $revolver;
+                outline-color: $revolver;
             }
         }
         .footer{
@@ -540,81 +527,55 @@ html{
             justify-content: center;
             display: flex;
             flex-direction: column;
-            border-top: 2px solid $stone;
-            background: $gray;
+            border-top: 2px solid $revolver;
+            background: $shake;
             padding-top: 5vh;
             //Footer elements
-            .fa-chevron-up{
-                font-size: 30px;
-                font-stretch: extra-expanded;
-                color: $stone;
-                padding: 15px;
-                border-radius: 10px;
-                transition: .5s;
-                overflow: hidden;
-            }
-            .wrap{
-                display:flex;
-            }
-            .wrap a i{
-                font-size: 30px;
-                margin: 20px;
-                transition: .5s;
-                background: $gray;
-                color: $stone;
-                border: 5px solid $stone;
-                padding: 15px;
-                border-radius: 50%;
-                outline: 5px solid $gray;
-                box-shadow: 0 0 20px $stone;
-            }
-            .wrap a i:hover{
-                color: $gray;
-                background: $stone;
-                border: 5px solid $gray;
-                outline: 5px solid $stone;
-                box-shadow: 0 0 20px $gray;
-            }
-            .git-ele{
-                color: $stone;
-                text-decoration: none;
-                font-size: .8rem;
-                border-bottom: 2px solid $stone;
-                padding: 2px 15px 2px 15px;
-                transition: .5s;
-            }
             hr{
-                background: linear-gradient(to right,transparent,$stone,transparent);
+                background: linear-gradient(to right,transparent,$revolver,transparent);
                 width: 90%;
                 height: 2px;
             }
             p{
-                color: $stone;
+                color: $revolver;
                 font-size: 12px;
                 font-stretch: extra-expanded;
                 height: 100%;
             }
             p svg{
-                fill: $stone;
-                background: $gray;
+                fill: $revolver;
+                background: $shake;
                 padding: 1px;
                 border-radius: 20%;
             }
             p a{
-                color: $stone;
+                color: $revolver;
                 text-decoration: none;
                 transition: .2s;
                 padding-bottom: 2px;
-                border-bottom: 1.5px solid $stone;
+                border-bottom: 1.5px solid $revolver;
             }
             p a:hover{
-                color: $stone;
+                color: $revolver;
             }
+            .wrap .git-ele{
+                color: $revolver;
+                font-family: 'Fira Code';
+                text-decoration: none;
+                border-bottom:2px solid $revolver;
+                padding: 0px 10px 0px 10px;
+            }
+            .wrap .git-ele:hover{
+                padding: 0px 15px 0px 15px;
+            }
+
         }
         @media(max-width:992px){
             Header{
-                .container{
-                    display: none;
+                background-size: cover;    
+                animation:none;
+                .wrap{
+                    left: 8%;
                 }
                 h1{
                     position: absolute;
@@ -628,7 +589,7 @@ html{
                     left: 50%;
                     text-align: center;
                     transform: translate(-50%,-50%);
-                    font-size: 1rem;
+                    font-size: .8rem;
                 }
                 #know-more{
                     position: absolute;
@@ -691,11 +652,12 @@ html{
                     transform: translate(-50%,-50%);
                     white-space: nowrap;
                     .glow{
-                        font-size:4rem
+                        font-size:4.5rem
                     }
                 }
                 h3{
-                    font-size:0.8rem
+                    font-size: 0.6rem;
+                    width: 300px;
                 }
             }
             #about{
@@ -720,6 +682,10 @@ html{
                     .glow{
                         font-size:2.8rem
                     }
+                }
+                h3{
+                    font-size: .4rem;
+                    width: 200px;
                 }
                 #know-more{
                     white-space: nowrap;
