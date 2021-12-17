@@ -23,7 +23,6 @@ $shake:#5DADCD;
 }
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden;
     body{
         //Preloader
         background:$revolver;
@@ -114,20 +113,25 @@ html{
             width: 100%;
             position: fixed;
             z-index:7000;
-            background: $shake;
+            background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)), url(../images/background.png);
+            box-shadow: 0 0 100px $shake;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -oz-background-size: cover;
             top: 0%;
-            left: 100%;
+            left: 150%;
             overflow: hidden;
-            transition: 1s;
+            transition: 2s;
             padding-top: 60px;
             h2{
                 position: absolute;
                 top: 10%;
                 left: 50%;
                 transform: translate(-50%,-50%);
-                color: $revolver;
+                color: $shake;
                 text-transform: lowercase;
-                border-bottom: 2px solid $revolver;
+                border-bottom: 2px solid $shake;
             }
             .wrap{
                 position: absolute;
@@ -146,22 +150,24 @@ html{
                 z-index: 20000;
                 span{
                     font-size: 14px;
-                    border-bottom: 2px ridge $revolver;
+                    color: $shake;
+                    border-bottom: 2px ridge $shake;
                     margin-bottom: 20px;
                 }
                 a{
                     font-size: 12px;
+                    color: $shake;
                 }
                 a:hover{
                     background: transparent;
-                    color: $revolver;
+                    color: $shake;
                 }
                 i{
-                    color: $revolver;
+                    color: $shake;
                     font-size: 15px;
                     padding: 10px;
                     border-radius: 50%;
-                    background: $shake;
+                    background: $revolver;
                     transition: .5s;
                     border: 2px solid transparent;
                 }
@@ -189,20 +195,17 @@ html{
             padding: 10px;
             text-transform: lowercase;
             text-decoration: none;
-            color: $revolver;
+            color: $shake;
             display: block;
-            transition: .2s;
         }
-        
         .sidenav a:hover {
-            background: $revolver;
             color: $shake;
         }
         .sidenav p{
             position: absolute;
             bottom:0%;
             margin-right: 25px;
-            color: $revolver;
+            color: $shake;
             font-size: .8rem;
             padding: 10px;
             border-radius: 10px;
@@ -230,17 +233,15 @@ html{
             margin:20px;
             width: 200px;
             padding-left: 50px;
-            transition: .3s;
+            transition: .1s;
             font-weight: 500;
             text-transform: uppercase;
             background:transparent;
-            letter-spacing: 5px;
+            letter-spacing: 0px;
             border-radius: 300px;
         }
         .item:hover{
-            letter-spacing: 7px;
-            background: $revolver;
-            color: $shake;
+            letter-spacing: 1px;
         }
         .parallax-window{
             min-height: 100vh;

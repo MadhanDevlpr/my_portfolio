@@ -3,11 +3,13 @@ function Navbar() {
   function openNav() {
     document.getElementById("mySidenav").style.left= "0%";
     document.getElementsByClassName('toggle-btn')[0].style.opacity = "0"
+    document.getElementsByTagName("html")[0].style.overflowY ="hidden";
   }
   
   function closeNav() {
-    document.getElementById("mySidenav").style.left = "100%";
+    document.getElementById("mySidenav").style.left = "150%";
     document.getElementsByClassName('toggle-btn')[0].style.opacity = "1"
+    document.getElementsByTagName("html")[0].style.overflowY ="scroll";
   }
     return (
         <div>
