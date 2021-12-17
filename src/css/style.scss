@@ -120,10 +120,19 @@ html{
             overflow: hidden;
             transition: 1s;
             padding-top: 60px;
+            h2{
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: $revolver;
+                text-transform: lowercase;
+                border-bottom: 2px solid $revolver;
+            }
             .wrap{
                 position: absolute;
                 top: 50%;
-                left: 2.5%;
+                left: 5%;
                 transform: translate(-50%,-50%);
                 width: 80px;
                 height: fit-content;
@@ -135,6 +144,18 @@ html{
                 background: transparent;
                 border-radius: 300px;
                 z-index: 20000;
+                span{
+                    font-size: 14px;
+                    border-bottom: 2px ridge $revolver;
+                    margin-bottom: 20px;
+                }
+                a{
+                    font-size: 12px;
+                }
+                a:hover{
+                    background: transparent;
+                    color: $revolver;
+                }
                 i{
                     color: $revolver;
                     font-size: 15px;
@@ -160,7 +181,7 @@ html{
             position: absolute;
             border-radius: 15px;
             width: 80%;
-            top: 50%;
+            top: 60%;
             left: 50%;
             transform: translate(-50%,-50%);
         }
@@ -174,7 +195,8 @@ html{
         }
         
         .sidenav a:hover {
-            color: $revolver;
+            background: $revolver;
+            color: $shake;
         }
         .sidenav p{
             position: absolute;
@@ -205,7 +227,7 @@ html{
             .sidenav a {font-size: 18px;}
         }
         .item{
-            margin:30px;
+            margin:20px;
             width: 200px;
             padding-left: 50px;
             transition: .3s;
@@ -217,6 +239,8 @@ html{
         }
         .item:hover{
             letter-spacing: 7px;
+            background: $revolver;
+            color: $shake;
         }
         .parallax-window{
             min-height: 100vh;
@@ -230,13 +254,16 @@ html{
             animation-name: background;  
             animation-duration: 5s;
             animation-delay: 4.5s;
+            filter:grayscale(0%)    ;
             //Header elements
             @keyframes background {
                 from{
-                    background-size: 150%;      
+                    background-size: 150%;  
+                    filter:grayscale(100%)    ;
                 }
                 to{
                     background-size: 100%;      
+                    filter:grayscale(0%)    ;
                 }
             }
             
