@@ -1,7 +1,7 @@
 import React from 'react';
 function Navbar() {
   function openNav() {
-    document.getElementById("mySidenav").style.left= "0%";
+    document.getElementById("mySidenav").style.left= "50%";
     document.getElementsByClassName('toggle-btn')[0].style.opacity = "0"
     document.getElementsByTagName("html")[0].style.overflowY ="hidden";
   }
