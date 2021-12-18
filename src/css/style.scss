@@ -251,7 +251,7 @@ html{
         Header{
             width: 100%;
             height: 100vh;
-            background: linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/background.png) center center fixed;
+            background: linear-gradient(to top,$revolver,rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/background.png) center center fixed;
             background-size: 100% auto;      
             background-repeat: no-repeat;    
             animation-name: background;  

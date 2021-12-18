@@ -3,9 +3,8 @@ import React from 'react';
 const Header = () => {
     window.onscroll = function(){
         if ((window.innerWidth >= 900)){
-            if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
                 document.getElementById('header').style.backgroundSize = "150% auto"
-                
             }else{
                 document.getElementById('header').style.backgroundSize = "100% auto"
             }
