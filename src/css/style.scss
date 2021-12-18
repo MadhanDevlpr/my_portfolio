@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
-$revolver:#1C142B;
-$shake:#5DADCD;
+$revolver:black;
+$shake:#00FFFF;
 
 *{
     margin: 0;
@@ -257,8 +257,9 @@ html{
             animation-name: background;  
             animation-duration: 5s;
             animation-delay: 4.5s;
-            filter:grayscale(0%)    ;
-            transition: 3s;
+            filter:grayscale(0%);
+
+            transition: 2s;
             //Header elements
             @keyframes background {
                 from{

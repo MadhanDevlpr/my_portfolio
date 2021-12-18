@@ -3,10 +3,12 @@ import React from 'react';
 const Header = () => {
     window.onscroll = function(){
         if ((window.innerWidth >= 900)){
-            if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+            if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
                 document.getElementById('header').style.backgroundSize = "150% auto"
+                document.getElementById('header').style.opacity = "0"
             }else{
                 document.getElementById('header').style.backgroundSize = "100% auto"
+                document.getElementById('header').style.opacity = "1"
             }
         }
         };
