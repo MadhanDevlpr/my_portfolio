@@ -25,7 +25,7 @@ html{
     scroll-behavior: smooth;
     body{
         //Preloaderz
-        background:$revolver;
+        background:$shake;
         #preloader{
             color: white;
             .loader-wrapper{
@@ -250,15 +250,15 @@ html{
         }
         Header{
             width: 100%;
-            height: 100vh;
-            background: linear-gradient(to top,$revolver,rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/background.png) center center fixed;
+            height: 80vh;
+            background: linear-gradient(to top,$revolver,rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0)), url(../images/background.png) center center fixed;
             background-size: 100% auto;      
             background-repeat: no-repeat;    
             animation-name: background;  
             animation-duration: 5s;
             animation-delay: 4.5s;
             filter:grayscale(0%);
-
+            transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
             transition: 2s;
             //Header elements
             @keyframes background {
