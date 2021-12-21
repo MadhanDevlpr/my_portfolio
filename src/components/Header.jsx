@@ -3,14 +3,29 @@ import React from 'react';
 const Header = () => {
     window.onscroll = function(){
         if ((window.innerWidth >= 900)){
-            if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                document.getElementById('header').style.backgroundSize = "150% auto"
-                document.getElementById('header').style.opacity = "0"
-            }else{
+            if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById('header').style.backgroundSize = `${window.scrollY+100}%`;
+                document.getElementById('header').style.opacity = '0.8';
+                if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                    document.getElementById('header').style.opacity = '0.6';
+                }
+                if(document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+                    document.getElementById('header').style.opacity = '0.4';
+                }
+                if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                    document.getElementById('header').style.opacity = '0.2';
+                }
+                if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    document.getElementById('header').style.opacity = '0';
+                }
+            }
+            
+            else{
                 document.getElementById('header').style.backgroundSize = "100% auto"
-                document.getElementById('header').style.opacity = "1"
+                document.getElementById('header').style.opacity = '1';
             }
         }
+        console.log(window.scrollY)
         };
     return (
         <header id="header">
