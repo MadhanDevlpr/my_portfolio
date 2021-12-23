@@ -46,18 +46,28 @@ html{
                 text-decoration: none;
                 padding-bottom: 20px;
             }
+            .dropdown{
+                margin-right: 10vw;
+            }
             .dropdown-menu{
                 margin-top: 20px;
                 background: $shake;
-                box-shadow: 0 0 10px $revolver;
+                box-shadow: 0 0 10px $revolver; 
+                transition: 1s;
             }
             .dropdown-divider{
                 border-width: 2px;
                 border-color: $revolver;
             }
+            .dropdown-item{
+                text-shadow: 0 0 1px $revolver;
+                color: $revolver;
+                font-weight: 900;
+            }
             .dropdown-item:hover{
                 background: $revolver;
                 color: $shake;
+                text-shadow: 0 0 1px $shake
             }
         //Preloaderz
         background:$revolver;
@@ -136,11 +146,15 @@ html{
             @keyframes background {
                 from{
                     background-size: 150%;  
-                    filter:grayscale(100%)    ;
+                    filter:grayscale(100%);
+                    transform:perspective(1000px) rotateX(-25deg);
+                    box-shadow: 0 0 10px $shake;
                 }
                 to{
                     background-size: 100%;      
                     filter:grayscale(0%)    ;
+                    transform:perspective(1000px) rotateX(0deg);
+                    box-shadow: 0 0 10px transparent;
                 }
             }
             
