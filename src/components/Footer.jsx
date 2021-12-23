@@ -9,8 +9,8 @@ function Footer() {
             <p>Open sourced under MIT License</p><br />
             <hr />
             <div className="wrap float-end">
-                <a className="git-ele" href="https://github.com/MadhanDevlpr/React.js-Portfolio/fork" target="_blank" aria-label="Fork MadhanDevlpr/React.js-Portfolio on GitHub">Fork</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a className="git-ele" href="https://github.com/MadhanDevlpr/React.js-Portfolio" target="_blank" aria-label="Star MadhanDevlpr/React.js-Portfolio on GitHub">Star</a>
+                <a className="git-ele" href="https://github.com/MadhanDevlpr/React.js-Portfolio/fork" target="_blank" rel="noreferrer" aria-label="Fork MadhanDevlpr/React.js-Portfolio on GitHub">Fork</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a className="git-ele" href="https://github.com/MadhanDevlpr/React.js-Portfolio" target="_blank" rel="noreferrer" aria-label="Star MadhanDevlpr/React.js-Portfolio on GitHub">Star</a>
             </div><br />
         </div>
     )

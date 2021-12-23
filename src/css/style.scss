@@ -6,7 +6,6 @@ $shake:#00FFFF;
 *{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     font-family:  'Comfortaa';
     transition: .5s;
 }
@@ -23,9 +22,45 @@ $shake:#00FFFF;
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
     body{
+            .navbar-toggler{
+                outline: none;
+                box-shadow: none;
+            }
+            .navbar-toggler:focus,
+            .navbar-toggler:active,
+            .navbar-toggler-icon:focus {
+                outline: none;
+                box-shadow: none;
+            }
+            .navbar-brand{
+                color: $shake;
+            }
+            .nav-object{
+                margin-left: 2.5vw;
+                margin-right: 2.5vw;
+            }
+            .item{
+                color: $shake;
+                text-decoration: none;
+                padding-bottom: 20px;
+            }
+            .dropdown-menu{
+                margin-top: 20px;
+                background: $shake;
+                box-shadow: 0 0 10px $revolver;
+            }
+            .dropdown-divider{
+                border-width: 2px;
+                border-color: $revolver;
+            }
+            .dropdown-item:hover{
+                background: $revolver;
+                color: $shake;
+            }
         //Preloaderz
-        background:$shake;
+        background:$revolver;
         #preloader{
             color: white;
             .loader-wrapper{
@@ -83,174 +118,10 @@ html{
               }
         }
         //Main-elements        
-        .toggle-btn{
-            position: fixed;
-            right: 0;
-            margin:22px;
-            padding:10px;
-            width: 45px;
-            height:45px;
-            z-index: 2000;
-            cursor: pointer;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            display: flex;
-            border:none;
-            outline:none;
-            border-radius: 5px;
-            fill: $shake;
-            display: block;
-            background: $revolver;
-            transition: .5s;
-        }
-        .toggle-btn:active,.toggle-btn:focus{
-            border:none;
-            outline: none;
-        }
-        .sidenav {
-            height: 96%;
-            width: 96%;
-            position: fixed;
-            z-index:7000;
-            background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)), url(../images/background.png);
-            box-shadow: 0 0 10px $shake;
-            border-radius: 10px;
-            background-size: cover;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -oz-background-size: cover;
-            top: 50%;
-            left: 150%;
-            transform: translate(-50%,-50%);
-            overflow: hidden;
-            transition: 2s;
-            padding-top: 60px;
-            h2{
-                position: absolute;
-                top: 10%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                color: $shake;
-                text-transform: lowercase;
-                border-bottom: 2px solid $shake;
-            }
-            .wrap{
-                position: absolute;
-                top: 50%;
-                left: 5%;
-                transform: translate(-50%,-50%);
-                width: 80px;
-                height: fit-content;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-                display: flex;
-                flex-direction: column;
-                background: transparent;
-                border-radius: 300px;
-                z-index: 20000;
-                span{
-                    font-size: 14px;
-                    color: $shake;
-                    border-bottom: 2px ridge $shake;
-                    margin-bottom: 20px;
-                }
-                a{
-                    font-size: 12px;
-                    color: $shake;
-                }
-                a:hover{
-                    background: transparent;
-                    color: $shake;
-                }
-                i{
-                    color: $shake;
-                    font-size: 15px;
-                    padding: 10px;
-                    border-radius: 50%;
-                    background: $revolver;
-                    transition: .5s;
-                    border: 2px solid transparent;
-                }
-                i:hover{
-                    color: $shake;
-                    background: $revolver;
-                    border: 2px solid $shake;
-                }
-            }
-        }
-        .links{
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            border-radius: 15px;
-            width: 80%;
-            top: 60%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-        .sidenav a {
-            padding: 10px;
-            text-transform: lowercase;
-            text-decoration: none;
-            color: $shake;
-            display: block;
-        }
-        .sidenav a:hover {
-            color: $shake;
-        }
-        .sidenav p{
-            position: absolute;
-            bottom:0%;
-            margin-right: 25px;
-            color: $shake;
-            font-size: .8rem;
-            padding: 10px;
-            border-radius: 10px;
-            right: 0%;
-        }
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            left: 0px;
-            margin: 20px;
-            border-radius: 10px;
-            fill:$shake;
-            background: $revolver;
-            text-shadow: 0 0 5px $revolver;
-        }
-        .sidenav .closebtn:hover{
-            color: $revolver;
-            cursor: pointer;
-        }
-        @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
-        }
-        .item{
-            margin:20px;
-            width: 200px;
-            padding-left: 50px;
-            transition: .1s;
-            font-weight: 500;
-            text-transform: uppercase;
-            background:transparent;
-            letter-spacing: 0px;
-            border-radius: 300px;
-        }
-        .item:hover{
-            letter-spacing: 1px;
-        }
-        .parallax-window{
-            min-height: 100vh;
-        }
         Header{
             width: 100%;
-            height: 80vh;
+            height: 100vh;
+            overflow-x: hidden;
             background: linear-gradient(to top,$revolver,rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0)), url(../images/background.png) center center fixed;
             background-size: 100% auto;      
             background-repeat: no-repeat;    
@@ -259,6 +130,7 @@ html{
             animation-delay: 4.5s;
             filter:grayscale(0%);
             transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+            box-shadow: 0 0 5px $shake;
             transition: 2s;
             //Header elements
             @keyframes background {
@@ -385,10 +257,25 @@ html{
                 outline: none;
                 transition: .5s;
                 background:  $shake;
-                transform: rotate(11.25deg);
             }
             .card:hover{
-                transform: rotate(0deg);
+                transform: scale(1.1);
+                background:transparent
+            }
+            .card:hover .card-title{
+                color: $shake;
+            }
+            .card:hover .card-text{
+                color: $shake;
+            }
+            .card:hover .btn-primary{
+                color:$shake;
+                background-color: transparent;
+                outline:$shake;
+                border:2px solid$shake;
+            }
+            .card:hover .btn-primary:hover{
+                box-shadow: 0 0 10px $shake;
             }
             .card-title{
                 font-weight: 900;
@@ -515,7 +402,7 @@ html{
                 width: 42.5%;
                 padding: 5px 10px 5px 10px;
                 border-radius: 10px;
-                background: transparent;
+                background: $shake;
                 border:2px solid $revolver;
                 color: $revolver;
             }
@@ -533,7 +420,7 @@ html{
                 outline: none;
                 padding: 5px 10px 5px 10px;
                 border-radius: 10px;
-                background: transparent;
+                background: $shake;
                 border:2px solid $revolver;
                 color: $revolver;
                 max-height: 400px;
@@ -603,6 +490,11 @@ html{
 
         }
         @media(max-width:992px){
+            .nav-object{
+                margin-left: 2.5vw;
+                margin-right: 2.5vw;
+                margin: 2.5vw;
+            }
             Header{
                 background-size: cover;    
                 animation:none;

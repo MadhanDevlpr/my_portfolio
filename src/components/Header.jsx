@@ -1,31 +1,29 @@
 import React from 'react';
 
 const Header = () =>{
-    window.onscroll = function(){
+    const scrollAnime = ()=>{
         if ((window.innerWidth >= 900)){
             if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById('header').style.backgroundSize = `${window.scrollY+100}%`;
-                document.getElementById('header').style.transform = 'perspective(1000px) rotateX(5deg)';
+                document.getElementById('header').style.transform = 'perspective(1000px) rotateX(-5deg)';
                 if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-                    document.getElementById('header').style.transform = 'perspective(1000px) rotateX(12.5deg)';
+                    document.getElementById('header').style.transform = 'perspective(1000px) rotateX(-12.5deg)';
                 }
                 if(document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-                    document.getElementById('header').style.transform = 'perspective(1000px) rotateX(12.5deg)';
+                    document.getElementById('header').style.transform = 'perspective(1000px) rotateX(-12.5deg)';
                 }
                 if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                    document.getElementById('header').style.transform = 'perspective(1000px) rotateX(25deg)';
+                    document.getElementById('header').style.transform = 'perspective(1000px) rotateX(-25deg)';
                 }
                 if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                    document.getElementById('header').style.transform = 'perspective(1000px) rotateX(25deg)';
+                    document.getElementById('header').style.transform = 'perspective(1000px) rotateX(-25deg)';
                 }
             }
             else{
-                document.getElementById('header').style.backgroundSize = "100% auto"
                 document.getElementById('header').style.transform = 'perspective(1000px) rotateX(0deg)';
             }
-        }
-        console.log(window.scrollY)
-        };
+    }
+    };
+    window.onscroll = scrollAnime
     return (
         <header id="header">
             <h1>HI THERE I'M ,<br/><span className="glow">aadithya</span></h1>

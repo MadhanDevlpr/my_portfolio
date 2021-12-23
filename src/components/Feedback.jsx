@@ -7,10 +7,10 @@ function Feedback() {
             <p>This feedback form works with formcarry.</p>
             <form action="https://formcarry.com/s/mPUDUSPBIbi" method="POST" acceptCharset="UTF-8"><br />
             <div className="wrap-input">
-                <input required="" placeholder="Email" type="email" name="Email" /><br />
-                <input required="" placeholder="Name" type="text" name="Name" /><br /><br />
+                <input required placeholder="Email" type="email" name="Email" /><br />
+                <input required placeholder="Name" type="text" name="Name" /><br /><br />
             </div><br /><br />
-            <textarea required="" className="feedf" placeholder="Feedback" type="text" name="Feedback" spellCheck="true" min-height="400px" width="auto"></textarea><br /><br />
+            <textarea required className="feedf" placeholder="Feedback" type="text" name="Feedback" spellCheck="true" min-height="400px" width="auto"></textarea><br /><br />
             <button type="submit" className="btn btn-light buttonn">Send</button><br /><br />
             </form>
         </div>
