@@ -3,16 +3,16 @@ function Navbar() {
   function scrollNav(){
     if(window.innerWidth >=900){
       if (window.scrollY >= 60 ){
-        document.getElementById('nav').style.background="#000000"
+        document.getElementById('nav').style.background="#ffffff"
         document.getElementById('nav').classList.replace('p-4','p-0')
       }
       else{
-        document.getElementById('nav').style.background="#0000000e"
+        document.getElementById('nav').style.background="transparent"
         document.getElementById('nav').classList.replace('p-0','p-4')
       }
     }
     else{
-      document.getElementById('nav').style.background="#000000"
+      document.getElementById('nav').style.background="#ffffff"
         document.getElementById('nav').classList.replace('p-4','p-0')
     }
   }
@@ -22,10 +22,12 @@ function Navbar() {
 
     return (
         <div>
-          <nav id="nav" className="navbar fixed-top p-4 navbar-expand-lg navbar-dark">
-              <a className="navbar-brand p-4" style={{color:"#00ffff",fontSize:"22px",fontWeight:"900"}} href="#header">m.</a>
-              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
+          <nav id="nav" className="navbar fixed-top p-4 navbar-expand-lg navbar-light">
+              <a className="navbar-brand p-4" style={{color:"#6C63FF",fontSize:"22px",fontWeight:"900"}} href="#header">m.</a>
+              <button className="navbar-toggler m-4 p-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <svg className="toggler" xmlns="http://www.w3.org/2000/svg" fill='#fff' width="30" height="30" className="bi bi-list" viewBox="0 0 16 16">
+                <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
               </button>
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ml-auto">

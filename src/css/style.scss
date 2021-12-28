@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
-$revolver:black;
-$shake:#00FFFF;
+$revolver:#2f2e41;
+$shake:#6C63FF;
 
 *{
     margin: 0;
@@ -27,6 +27,7 @@ html{
             .navbar-toggler{
                 outline: none;
                 box-shadow: none;
+                background: $shake;
             }
             .navbar-toggler:focus,
             .navbar-toggler:active,
@@ -57,15 +58,15 @@ html{
             }
             .dropdown-divider{
                 border-width: 2px;
-                border-color: $revolver;
+                border-color: white;
             }
             .dropdown-item{
                 text-shadow: 0 0 1px $revolver;
-                color: $revolver;
-                font-weight: 900;
+                color: white;
+                font-weight: 100;
             }
             .dropdown-item:hover{
-                background: $revolver;
+                background: white;
                 color: $shake;
                 text-shadow: 0 0 1px $shake
             }
@@ -132,7 +133,7 @@ html{
             width: 100%;
             height: 100vh;
             overflow-x: hidden;
-            background: linear-gradient(to top,$revolver,rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0)), url(../images/background.png) center center fixed;
+            background: white;
             background-size: 100% auto;      
             background-repeat: no-repeat;    
             animation-name: background;  
@@ -165,7 +166,7 @@ html{
                 text-align: left;
                 position: absolute;
                 top: 42%;
-                left: 50%;
+                left: 25%;
                 transform: translate(-50%,-50%);
                 .glow{
                     font-size: 6rem;
@@ -182,12 +183,15 @@ html{
                 text-align: left;
                 overflow:hidden;
                 top: 64%;
-                left: 50%;
+                left: 25%;
                 transform: translate(-50%,-50%);
                 line-height: 30px;
                 color: $shake;
                 code{
                     color: white;
+                    background: $shake;
+                    padding: 10px 10px 10px 10px;
+                    white-space: nowrap;
                     font-weight: 900;
                     padding: 5px;
                     border-radius: 10px;
@@ -198,9 +202,10 @@ html{
             #know-more{
                 position: absolute;
                 top: 85%;
-                left: 42.5%;
+                left: 18%;
                 transform: translate(-50%,-50%);
-                color: $revolver;
+                color: white;
+                font-weight:lighter;
                 text-decoration: none;
                 padding: 8px 28px 8px 28px;
                 background: $shake;
@@ -219,9 +224,10 @@ html{
             #projects-btn{
                 position: absolute;
                 top: 85%;
-                left: 55%;
+                left: 32%;
                 transform: translate(-50%,-50%);
-                color: $revolver;
+                color: white;
+                font-weight:lighter;
                 text-decoration: none;
                 padding: 8px 28px 8px 28px;
                 background: $shake;
@@ -236,6 +242,13 @@ html{
                 background: transparent;
                 border: 2px solid $shake;
                 color: $shake;
+            }
+            img{
+                position: absolute;
+                top:50%;
+                left: 70%;
+                transform: translate(-50%,-50%);
+                width: 40vw;
             }
         }
         .projects{
@@ -253,14 +266,14 @@ html{
             h1{
                 padding-bottom: 40px;
                 padding-top: 50px;
-                color: $shake;
+                color: white;
                 overflow: hidden;
                 font-weight: 300;
                 overflow:hidden;
             }
             .card{
                 width: 300px;
-                height:300px;
+                height:325px;
                 align-items: center;
                 text-align: center;
                 justify-content: center;
@@ -269,43 +282,51 @@ html{
                 margin: 40px;
                 border: none;
                 outline: none;
-                transition: .5s;
-                background:  $shake;
+                transition: 1s;
+                background:
+                linear-gradient(217deg, $shake, rgba(255,0,0,0) 70.70%),
+                linear-gradient(127deg, $revolver, rgba(0,255,0,0) 70.70%),
+                linear-gradient(336deg, $revolver, rgba(0,0,255,0) 70.70%),
+                linear-gradient(217deg, black, rgba(255,0,0,0) 70.70%),
+                linear-gradient(127deg, $shake, rgba(0,255,0,0) 70.70%),
+                linear-gradient(336deg, $shake, rgba(0,0,255,0) 70.70%);
+                transform: rotateX(22.5deg) rotateY(-22.5deg);
+                box-shadow: -20px 20px 10px rgba(0,0,0,0.4);
+            }
+            .card .dot{
+                width: 10px;
+                height: 10px;
+                margin: 10px;
+                background: white;
+                border-radius: 50%;
+                box-shadow: -1.5px 1.5px 1px rgba(0,0,0,0.4);
             }
             .card:hover{
-                transform: scale(1.1);
-                background:transparent
+                transform: rotateX(-5.5deg) rotateY(5.5deg);
+                box-shadow: -20px 30px 10px rgba(0,0,0,0.4);
+                height:300px;
             }
-            .card:hover .card-title{
-                color: $shake;
-            }
-            .card:hover .card-text{
-                color: $shake;
-            }
-            .card:hover .btn-primary{
-                color:$shake;
-                background-color: transparent;
-                outline:$shake;
-                border:2px solid$shake;
-            }
-            .card:hover .btn-primary:hover{
-                box-shadow: 0 0 10px $shake;
+            .card:hover .dot{
+                opacity: 0;
+                width: 0px;
+                height: 0px;
+                margin-right: 0px;
             }
             .card-title{
                 font-weight: 900;
-                color: $revolver;
+                color: white;
                 padding: 10px;
                 border-radius: 15px;
             }
             .card-text{
-                color: $revolver;
+                color: white;
                 overflow:hidden;
             }
             .btn-primary{
-                color:$revolver;
-                background-color: transparent;
-                outline:$revolver;
-                border:2px solid$revolver;
+                color:$shake;
+                background-color: white;
+                outline:white;
+                border:2px solid#ffffff;
             }
             .btn-primary:hover{
                 box-shadow: 0 0 6px $revolver;
@@ -368,7 +389,7 @@ html{
                 font-size: 3rem;
                 padding-top: 20px;
                 font-weight: 300;
-                color: $revolver
+                color: white
             }
             img{
                 margin: 20px;
@@ -379,7 +400,7 @@ html{
             p{
                 line-height: 40px;
                 margin-top: 60px;
-                color: $revolver;
+                color: white;
                 padding: 30px;
                 border-radius: 16px;
             }
@@ -512,8 +533,9 @@ html{
             Header{
                 background-size: cover;    
                 animation:none;
-                .wrap{
-                    left: 8%;
+
+                img{
+                    display: none;
                 }
                 h1{
                     position: absolute;
