@@ -3,7 +3,7 @@ function Navbar() {
   function scrollNav(){
     if(window.innerWidth >=900){
       if (window.scrollY >= 60 ){
-        document.getElementById('nav').style.background="#ffffff"
+        document.getElementById('nav').style.background="linear-gradient(to right,#B3DE8B,#6AC08A)"
         document.getElementById('nav').classList.replace('p-4','p-0')
       }
       else{
@@ -12,7 +12,7 @@ function Navbar() {
       }
     }
     else{
-      document.getElementById('nav').style.background="#ffffff"
+      document.getElementById('nav').style.background="linear-gradient(to right,#B3DE8B,#6AC08A)"
         document.getElementById('nav').classList.replace('p-4','p-0')
     }
   }

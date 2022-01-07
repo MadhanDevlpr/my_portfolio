@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
-$revolver:#2f2e41;
-$shake:#6C63FF;
+$dark:#0B292B;
+$glow:#6AC08A;
+$light:#B3DE8B;
 
 *{
     margin: 0;
@@ -14,10 +15,10 @@ $shake:#6C63FF;
 
 }
 *::-webkit-scrollbar-thumb{
-    background:$shake;
+    background:$light;
 }
 *::selection{
-    background: white;
+    background: $dark;
     color: transparent;
 }
 html{
@@ -27,7 +28,7 @@ html{
             .navbar-toggler{
                 outline: none;
                 box-shadow: none;
-                background: $shake;
+                background: $light;
             }
             .navbar-toggler:focus,
             .navbar-toggler:active,
@@ -36,14 +37,14 @@ html{
                 box-shadow: none;
             }
             .navbar-brand{
-                color: $shake;
+                color: $light;
             }
             .nav-object{
                 margin-left: 2.5vw;
                 margin-right: 2.5vw;
             }
             .item{
-                color: $shake;
+                color: $dark;
                 text-decoration: none;
                 padding-bottom: 20px;
             }
@@ -52,28 +53,28 @@ html{
             }
             .dropdown-menu{
                 margin-top: 20px;
-                background: $shake;
-                box-shadow: 0 0 10px $revolver; 
+                background: $light;
+                box-shadow: 0 0 10px $dark; 
                 transition: 1s;
             }
             .dropdown-divider{
                 border-width: 2px;
-                border-color: white;
+                border-color: $dark;
             }
             .dropdown-item{
-                text-shadow: 0 0 1px $revolver;
-                color: white;
+                text-shadow: 0 0 1px $dark;
+                color: $dark;
                 font-weight: 100;
             }
             .dropdown-item:hover{
-                background: white;
-                color: $shake;
-                text-shadow: 0 0 1px $shake
+                background: $dark;
+                color: $light;
+                text-shadow: 0 0 1px $light
             }
         //Preloaderz
-        background:$revolver;
+        background:$dark;
         #preloader{
-            color: white;
+            color: $dark;
             .loader-wrapper{
                 width: 100%;
                 height: 100vh;
@@ -133,63 +134,49 @@ html{
             width: 100%;
             height: 100vh;
             overflow-x: hidden;
-            background: white;
-            background-size: 100% auto;      
+            background:linear-gradient(to bottom right,$dark 23%,$glow 1%,transparent 26%),linear-gradient(to top left,$dark 23%,$glow 1%,transparent 26%),url(../images/background.png);   
+            background-size: cover;
             background-repeat: no-repeat;    
-            animation-name: background;  
-            animation-duration: 5s;
-            animation-delay: 4.5s;
             filter:grayscale(0%);
             transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
-            box-shadow: 0 0 5px $shake;
+            box-shadow: 0 0 5px $light;
             transition: 2s;
             //Header elements
-            @keyframes background {
-                from{
-                    background-size: 150%;  
-                    filter:grayscale(100%);
-                    transform:perspective(1000px) rotateX(-25deg);
-                    box-shadow: 0 0 10px $shake;
-                }
-                to{
-                    background-size: 100%;      
-                    filter:grayscale(0%)    ;
-                    transform:perspective(1000px) rotateX(0deg);
-                    box-shadow: 0 0 10px transparent;
-                }
-            }
             
             h1{
-                color: $shake;
+                color: $dark;
                 font-size: 1rem;
                 overflow:hidden;
                 text-align: left;
                 position: absolute;
-                top: 42%;
-                left: 25%;
-                transform: translate(-50%,-50%);
+                top: 40%;
+                left: 50%;
+                transform:translate(-50%,-50%);
                 .glow{
                     font-size: 6rem;
                     font-weight: 100;
                     text-transform: lowercase;
-                    color: white;
-                    text-shadow: 0 0 5px $shake;
+                    color: $dark;
+                    text-shadow: 0 0 5px $light;
                 }
             }
             h3{
                 font-size: .7rem;
-                position: absolute;
-                width:350px;
+                width:390px;
                 text-align: left;
                 overflow:hidden;
-                top: 64%;
-                left: 25%;
-                transform: translate(-50%,-50%);
+                position: absolute;
+                top: 65%;
+                left: 50%;
+                transform:translate(-50%,-50%);
                 line-height: 30px;
-                color: $shake;
+                background: $dark;
+                padding: 10px;
+                border-radius: 10px;
+                color: $light;
                 code{
-                    color: white;
-                    background: $shake;
+                    color: $dark;
+                    background: $light;
                     padding: 10px 10px 10px 10px;
                     white-space: nowrap;
                     font-weight: 900;
@@ -202,13 +189,13 @@ html{
             #know-more{
                 position: absolute;
                 top: 85%;
-                left: 18%;
+                left: 42.5%;
                 transform: translate(-50%,-50%);
-                color: white;
+                color: $dark;
                 font-weight:lighter;
                 text-decoration: none;
                 padding: 8px 28px 8px 28px;
-                background: $shake;
+                background: $light;
                 font-weight: bolder;
                 border: 2px solid transparent;
                 border-radius: 5px;
@@ -218,19 +205,19 @@ html{
             #know-more:hover{
                 top:84.5%;
                 background: transparent;
-                border: 2px solid $shake;
-                color: $shake;
+                border: 2px solid $light;
+                color: $light;
             }
             #projects-btn{
                 position: absolute;
                 top: 85%;
-                left: 32%;
+                left: 57.5%;
                 transform: translate(-50%,-50%);
-                color: white;
+                color: $dark;
                 font-weight:lighter;
                 text-decoration: none;
                 padding: 8px 28px 8px 28px;
-                background: $shake;
+                background: $light;
                 font-weight: bolder;
                 border: 2px solid transparent;
                 border-radius: 5px;
@@ -240,8 +227,8 @@ html{
             #projects-btn:hover{
                 top:84.5%;
                 background: transparent;
-                border: 2px solid $shake;
-                color: $shake;
+                border: 2px solid $light;
+                color: $light;
             }
             img{
                 position: absolute;
@@ -254,7 +241,7 @@ html{
         .projects{
             text-align: center;
             overflow:hidden;
-            background: $revolver;
+            background: $dark;
             //Projects
             .cards{
                 width: 100%;
@@ -266,7 +253,7 @@ html{
             h1{
                 padding-bottom: 40px;
                 padding-top: 50px;
-                color: white;
+                color: $light;
                 overflow: hidden;
                 font-weight: 300;
                 overflow:hidden;
@@ -284,20 +271,19 @@ html{
                 outline: none;
                 transition: 1s;
                 background:
-                linear-gradient(217deg, $shake, rgba(255,0,0,0) 70.70%),
-                linear-gradient(127deg, $revolver, rgba(0,255,0,0) 70.70%),
-                linear-gradient(336deg, $revolver, rgba(0,0,255,0) 70.70%),
+                linear-gradient(217deg, $light, rgba(255,0,0,0) 70.70%),
+                linear-gradient(127deg, $dark, rgba(0,255,0,0) 70.70%),
+                linear-gradient(336deg, $dark, rgba(0,0,255,0) 70.70%),
                 linear-gradient(217deg, black, rgba(255,0,0,0) 70.70%),
-                linear-gradient(127deg, $shake, rgba(0,255,0,0) 70.70%),
-                linear-gradient(336deg, $shake, rgba(0,0,255,0) 70.70%);
+                linear-gradient(127deg, $light, rgba(0,255,0,0) 70.70%),
+                linear-gradient(336deg, $light, rgba(0,0,255,0) 70.70%);
                 transform: rotateX(22.5deg) rotateY(-22.5deg);
                 box-shadow: -20px 20px 10px rgba(0,0,0,0.4);
             }
             .card .dot{
-                width: 10px;
-                height: 10px;
+                padding: 5px;
                 margin: 10px;
-                background: white;
+                background: $dark;
                 border-radius: 50%;
                 box-shadow: -1.5px 1.5px 1px rgba(0,0,0,0.4);
             }
@@ -307,38 +293,37 @@ html{
                 height:300px;
             }
             .card:hover .dot{
-                opacity: 0;
-                width: 0px;
-                height: 0px;
+                opacity: 0;padding: 0px;
                 margin-right: 0px;
             }
             .card-title{
                 font-weight: 900;
-                color: white;
+                color: $dark;
                 padding: 10px;
                 border-radius: 15px;
             }
             .card-text{
-                color: white;
+                color: $dark;
                 overflow:hidden;
             }
             .btn-primary{
-                color:$shake;
-                background-color: white;
-                outline:white;
+                color:$light;
+                background-color: $dark;
+                outline:$dark;
                 border:2px solid#ffffff;
             }
             .btn-primary:hover{
-                box-shadow: 0 0 6px $revolver;
+                box-shadow: 0 0 6px $dark;
             }
         }
         .skills-container{
+            margin-top:100px;
             padding-top: 20px;
             padding-bottom: 40px;
             text-align: center;
             //Skills elements
             h1{
-                color: $shake;
+                color: $light;
                 overflow:hidden;
                 font-weight: lighter;
             }
@@ -355,8 +340,10 @@ html{
             .skills .icon i{
                 padding: 20px;
                 font-size:50px;
-                color: $shake;
-                background: transparent;
+                color: transparent;
+                background: linear-gradient(to bottom right,$glow 50%,$light 50%);
+                background-clip:text;
+                -webkit-background-clip:text;
                 border: 2px solid transparent;
                 border-radius: 15px;
                 transition: .5s;
@@ -364,7 +351,7 @@ html{
                 -webkit-transition: .5s;
             }
             .skills .icon:hover i{
-                border: 2px solid $shake;
+                border: 2px solid $light;
             }
         }
         #about{
@@ -374,49 +361,54 @@ html{
             justify-content: center;
             display: flex;
             flex-direction: column;
-            width: 100%;padding-bottom: 25%;
-            background: $shake;
-            clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
-            padding-top: 20%;
+            width: 100%;
+            transform: scale(0.9) rotateX(18.5deg) rotateY(-18.5deg);
+            background: linear-gradient(to right,$glow,$light);
+            border-radius: 5px;
+            margin-top: 40px;
+            box-shadow: -20px 20px 10px rgba(0,0,0,0.4);
+            padding: 10px;
             //About elements
             .text{
-                width: 95%;
+                width: 100%;
                 overflow: hidden;
+                background: $dark;
+                h1{
+                    margin: 30px;
+                    overflow:hidden;
+                    font-size: 3rem;
+                    padding-top: 20px;
+                    font-weight: 300;
+                    color: $light
+                }
+                img{
+                    margin: 20px;
+                    border-radius: 10px;
+                    padding: 5px;
+                    background: linear-gradient(to right,$dark,$light);
+                }
+                p{
+                    line-height: 40px;
+                    margin-top: 60px;
+                    color: $light;
+                    padding: 30px;
+                    border-radius: 16px;
+                }
             }
-            h1{
-                margin: 30px;
-                overflow:hidden;
-                font-size: 3rem;
-                padding-top: 20px;
-                font-weight: 300;
-                color: white
-            }
-            img{
-                margin: 20px;
-                border-radius: 10px;
-                box-shadow: 0 0 10px  $revolver;
-                filter: grayscale(100%);
-            }
-            p{
-                line-height: 40px;
-                margin-top: 60px;
-                color: white;
-                padding: 30px;
-                border-radius: 16px;
-            }
+            
         }
         .feedbk{
             width: 100%;
             height: auto;
-            box-shadow: 0 0 10px $shake;
-            background: $shake;
+            box-shadow: 0 0 10px $light;
+            background: linear-gradient(to bottom right,$light,$glow);
             background-attachment: fixed;
             clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
             padding-top: 20%;
             //Feedback elements
             h1{
                 color: transparent;
-                color: $revolver;
+                color: $dark;
                 font-weight: 300;
                 margin: 40px;
                 overflow:hidden;
@@ -424,7 +416,7 @@ html{
             }
             p{
                 margin-left: 2vw;
-                color: $revolver;
+                color: $dark;
             }
             form{
                 height: auto;
@@ -437,9 +429,9 @@ html{
                 width: 42.5%;
                 padding: 5px 10px 5px 10px;
                 border-radius: 10px;
-                background: $shake;
-                border:2px solid $revolver;
-                color: $revolver;
+                background: transparent;
+                border:2px solid $dark;
+                color: $dark;
             }
             .wrap-input{
                 display: flex;
@@ -455,23 +447,23 @@ html{
                 outline: none;
                 padding: 5px 10px 5px 10px;
                 border-radius: 10px;
-                background: $shake;
-                border:2px solid $revolver;
-                color: $revolver;
+                background: transparent;
+                border:2px solid $dark;
+                color: $dark;
                 max-height: 400px;
             }
             input::placeholder{
-                color: $revolver;
+                color: $dark;
             }
             textarea::placeholder{
-                color: $revolver;
+                color: $dark;
             }
             .btn{
                 margin-left: 2vw;
-                color: $shake;
-                background: $revolver;
-                border-color: $revolver;
-                outline-color: $revolver;
+                color: $light;
+                background: $dark;
+                border-color: $dark;
+                outline-color: $dark;
             }
         }
         .footer{
@@ -481,42 +473,43 @@ html{
             justify-content: center;
             display: flex;
             flex-direction: column;
-            border-top: 2px solid $revolver;
-            background: $shake;
+            border-top: 2px solid $dark;
+            background: $dark;
             padding-top: 5vh;
+            padding-bottom:5vh;
             //Footer elements
             hr{
-                background: linear-gradient(to right,transparent,$revolver,transparent);
+                background: linear-gradient(to right,transparent,$light,transparent);
                 width: 90%;
                 height: 2px;
             }
             p{
-                color: $revolver;
+                color: $light;
                 font-size: 12px;
                 font-stretch: extra-expanded;
                 height: 100%;
             }
             p svg{
-                fill: $revolver;
-                background: $shake;
+                fill: $light;
                 padding: 1px;
-                border-radius: 20%;
             }
             p a{
-                color: $revolver;
+                color: $light;
                 text-decoration: none;
                 transition: .2s;
                 padding-bottom: 2px;
-                border-bottom: 1.5px solid $revolver;
+                border-bottom: 1.5px solid $light;
             }
             p a:hover{
-                color: $revolver;
+                color: $light;
+                padding-left: 5px;
+                padding-right: 5px;
             }
             .wrap .git-ele{
-                color: $revolver;
+                color: $light;
                 font-family: 'Fira Code';
                 text-decoration: none;
-                border-bottom:2px solid $revolver;
+                border-bottom:2px solid $light;
                 padding: 0px 10px 0px 10px;
             }
             .wrap .git-ele:hover{
