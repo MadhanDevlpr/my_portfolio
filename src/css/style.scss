@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
-$dark:#12121b;
-$glow:#ACD5ED;
-$light:#20A9E8;
+$dark:#171819;
+$glow:#252525;
+$light:#909090;
 
 *{
     margin: 0;
@@ -18,11 +18,15 @@ html{
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y:scroll;
-    scrollbar-color: transparent transparent;
-    scrollbar-width:none;
+    scrollbar-color: $light transparent;
+    scrollbar-width:thin;
     scroll-margin-block-start: 10px;
     scroll-margin-block-end: 10px;
     body{
+            width: 90vw;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
             .navbar{
                 background: $dark;
                 box-shadow: 0 0 10px $glow;
@@ -48,13 +52,17 @@ html{
             }
             .item{
                 color: transparent;
-                background: linear-gradient(to right,$glow,$light);
+                background: linear-gradient(to right,$light,transparent);
                 background-clip: text;
                 -webkit-background-clip: text;
                 -moz-background-clip: text;
                 -oz-background-clip: text;
                 text-decoration: none;
                 padding-bottom: 20px;
+                &:hover{
+                    color: $light;
+                    transform: scale(1.5);
+                }
             }
             .dropdown{
                 margin-right: 10vw;
@@ -142,28 +150,21 @@ html{
             width: 100%;
             height: 100vh;
             overflow-x: hidden;
-            background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),linear-gradient(to bottom right,$dark 23%,$glow 1%,transparent 26%),linear-gradient(to top left,$dark 23%,$glow 1%,transparent 26%),url(../images/background.jpg);   
-            background-position: center;
-            background-attachment: fixed;
-            background-size: cover;
-            background-repeat: no-repeat;    
-            filter:grayscale(0%);
-            transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
-            box-shadow: 0 0 5px $light;
+            background:$dark;
             transition: 2s;
             //Header elements
             
             h1{
-                color: $dark;
+                color: $light;
                 font-size: 1rem;
                 overflow:hidden;
                 text-align: left;
                 position: absolute;
-                top: 40%;
-                left: 50%;
+                top: 50%;
+                left: 35%;
                 transform:translate(-50%,-50%);
                 .glow{
-                    font-size: 7rem;
+                    font-size: 7.6rem;
                     font-weight: 100;
                     text-transform: lowercase;
                     color: transparent;
@@ -177,12 +178,12 @@ html{
             }
             h3{
                 font-size: .7rem;
-                width:390px;
-                text-align: left;
+                width:410px;
+                text-align: center;
                 overflow:hidden;
                 position: absolute;
-                top: 65%;
-                left: 50%;
+                top: 80%;
+                left: 35%;
                 transform:translate(-50%,-50%);
                 line-height: 30px;
                 background: $dark;
@@ -199,58 +200,6 @@ html{
                     border-radius: 10px;
                     font-family: 'Fira Code', monospace;
                 }
-            }
-
-            #know-more{
-                position: absolute;
-                top: 85%;
-                left: 42.5%;
-                transform: translate(-50%,-50%);
-                color: $dark;
-                font-weight:lighter;
-                text-decoration: none;
-                padding: 8px 28px 8px 28px;
-                background: $light;
-                font-weight: bolder;
-                border: 2px solid transparent;
-                border-radius: 5px;
-                transition: .5s;
-                font-size: .8rem;
-            }
-            #know-more:hover{
-                top:84.5%;
-                background: transparent;
-                border: 2px solid $light;
-                color: $light;
-            }
-            #projects-btn{
-                position: absolute;
-                top: 85%;
-                left: 57.5%;
-                transform: translate(-50%,-50%);
-                color: $dark;
-                font-weight:lighter;
-                text-decoration: none;
-                padding: 8px 28px 8px 28px;
-                background: $light;
-                font-weight: bolder;
-                border: 2px solid transparent;
-                border-radius: 5px;
-                transition: .5s;
-                font-size: .8rem;
-            }
-            #projects-btn:hover{
-                top:84.5%;
-                background: transparent;
-                border: 2px solid $light;
-                color: $light;
-            }
-            img{
-                position: absolute;
-                top:50%;
-                left: 70%;
-                transform: translate(-50%,-50%);
-                width: 40vw;
             }
         }
         .projects{
@@ -299,17 +248,6 @@ html{
                 linear-gradient(217deg, black, rgba(255,0,0,0) 70.70%),
                 linear-gradient(127deg, $light, rgba(0,255,0,0) 70.70%),
                 linear-gradient(336deg, $light, rgba(0,0,255,0) 70.70%);
-                transform: rotateX(22.5deg) rotateY(-22.5deg);
-                box-shadow: -20px 20px 10px rgba(0,0,0,0.4);
-                &:hover{
-                    transform: rotateX(-5.5deg) rotateY(5.5deg);
-                    box-shadow: -20px 30px 10px rgba(0,0,0,0.4);
-                    height:300px;
-                }
-                &:hover .dot{
-                    opacity: 0;padding: 0px;
-                    margin-right: 0px;
-                }
             }
             .card-title{
                 font-weight: 900;
