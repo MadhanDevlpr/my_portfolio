@@ -1,5 +1,5 @@
 
-## Getting started with React.js-Portfolio
+## Getting started with my Portfolio
 
 Site-URL / Demo -  https://madhan-developer.herokuapp.com
 
