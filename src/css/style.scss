@@ -1,30 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
-$dark:#0B292B;
-$glow:#6AC08A;
-$light:#B3DE8B;
+$dark:#12121b;
+$glow:#ACD5ED;
+$light:#20A9E8;
 
 *{
     margin: 0;
     padding: 0;
-    font-family:  'Comfortaa';
+    font-family: 'Outfit', sans-serif;
     transition: .5s;
-}
-*::-webkit-scrollbar{
-    width: 5px;
-
-}
-*::-webkit-scrollbar-thumb{
-    background:$light;
+    font-weight: 400;
 }
 *::selection{
-    background: $dark;
-    color: transparent;
+    background: transparent;
 }
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
+    overflow-y:scroll;
+    scrollbar-color: transparent transparent;
+    scrollbar-width:none;
+    scroll-margin-block-start: 10px;
+    scroll-margin-block-end: 10px;
     body{
+            .navbar{
+                background: $dark;
+                box-shadow: 0 0 10px $glow;
+                border-radius: 10px;
+                width: 90%;
+                margin:0 auto;
+                margin-top:20px
+            }
             .navbar-toggler{
                 outline: none;
                 box-shadow: none;
@@ -36,15 +42,17 @@ html{
                 outline: none;
                 box-shadow: none;
             }
-            .navbar-brand{
-                color: $light;
-            }
             .nav-object{
                 margin-left: 2.5vw;
                 margin-right: 2.5vw;
             }
             .item{
-                color: $dark;
+                color: transparent;
+                background: linear-gradient(to right,$glow,$light);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -oz-background-clip: text;
                 text-decoration: none;
                 padding-bottom: 20px;
             }
@@ -134,7 +142,9 @@ html{
             width: 100%;
             height: 100vh;
             overflow-x: hidden;
-            background:linear-gradient(to bottom right,$dark 23%,$glow 1%,transparent 26%),linear-gradient(to top left,$dark 23%,$glow 1%,transparent 26%),url(../images/background.png);   
+            background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),linear-gradient(to bottom right,$dark 23%,$glow 1%,transparent 26%),linear-gradient(to top left,$dark 23%,$glow 1%,transparent 26%),url(../images/background.jpg);   
+            background-position: center;
+            background-attachment: fixed;
             background-size: cover;
             background-repeat: no-repeat;    
             filter:grayscale(0%);
@@ -153,10 +163,15 @@ html{
                 left: 50%;
                 transform:translate(-50%,-50%);
                 .glow{
-                    font-size: 6rem;
+                    font-size: 7rem;
                     font-weight: 100;
                     text-transform: lowercase;
-                    color: $dark;
+                    color: transparent;
+                    background: linear-gradient(to right,$light,$glow);
+                    background-clip:text;
+                    -webkit-background-clip:text;
+                    -moz-background-clip:text;
+                    -oz-background-clip:text;
                     text-shadow: 0 0 5px $light;
                 }
             }
@@ -258,6 +273,13 @@ html{
                 font-weight: 300;
                 overflow:hidden;
             }
+            .card .dot{
+                padding: 5px;
+                margin: 10px;
+                background: $dark;
+                border-radius: 50%;
+                box-shadow: -1.5px 1.5px 1px rgba(0,0,0,0.4);
+            }
             .card{
                 width: 300px;
                 height:325px;
@@ -279,22 +301,15 @@ html{
                 linear-gradient(336deg, $light, rgba(0,0,255,0) 70.70%);
                 transform: rotateX(22.5deg) rotateY(-22.5deg);
                 box-shadow: -20px 20px 10px rgba(0,0,0,0.4);
-            }
-            .card .dot{
-                padding: 5px;
-                margin: 10px;
-                background: $dark;
-                border-radius: 50%;
-                box-shadow: -1.5px 1.5px 1px rgba(0,0,0,0.4);
-            }
-            .card:hover{
-                transform: rotateX(-5.5deg) rotateY(5.5deg);
-                box-shadow: -20px 30px 10px rgba(0,0,0,0.4);
-                height:300px;
-            }
-            .card:hover .dot{
-                opacity: 0;padding: 0px;
-                margin-right: 0px;
+                &:hover{
+                    transform: rotateX(-5.5deg) rotateY(5.5deg);
+                    box-shadow: -20px 30px 10px rgba(0,0,0,0.4);
+                    height:300px;
+                }
+                &:hover .dot{
+                    opacity: 0;padding: 0px;
+                    margin-right: 0px;
+                }
             }
             .card-title{
                 font-weight: 900;
@@ -320,6 +335,7 @@ html{
             margin-top:100px;
             padding-top: 20px;
             padding-bottom: 40px;
+            margin-bottom:100px;
             text-align: center;
             //Skills elements
             h1{
@@ -336,6 +352,9 @@ html{
             }
             .skills .icon{
                 margin: 15px;
+                &:hover i{
+                    filter: grayscale(100%);
+                }
             }
             .skills .icon i{
                 padding: 20px;
@@ -349,9 +368,9 @@ html{
                 transition: .5s;
                 -moz-transition: .5s;
                 -webkit-transition: .5s;
-            }
-            .skills .icon:hover i{
-                border: 2px solid $light;
+                &:hover{
+                    transform: scale(1.5);
+                }
             }
         }
         #about{
@@ -362,17 +381,14 @@ html{
             display: flex;
             flex-direction: column;
             width: 100%;
-            transform: scale(0.9) rotateX(18.5deg) rotateY(-18.5deg);
-            background: linear-gradient(to right,$glow,$light);
             border-radius: 5px;
             margin-top: 40px;
-            box-shadow: -20px 20px 10px rgba(0,0,0,0.4);
+            box-shadow: 0px 0px 25px rgba(0,0,0,0.4);
             padding: 10px;
             //About elements
             .text{
                 width: 100%;
                 overflow: hidden;
-                background: $dark;
                 h1{
                     margin: 30px;
                     overflow:hidden;
@@ -380,12 +396,6 @@ html{
                     padding-top: 20px;
                     font-weight: 300;
                     color: $light
-                }
-                img{
-                    margin: 20px;
-                    border-radius: 10px;
-                    padding: 5px;
-                    background: linear-gradient(to right,$dark,$light);
                 }
                 p{
                     line-height: 40px;
@@ -400,15 +410,12 @@ html{
         .feedbk{
             width: 100%;
             height: auto;
-            box-shadow: 0 0 10px $light;
-            background: linear-gradient(to bottom right,$light,$glow);
             background-attachment: fixed;
-            clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0 100%);
             padding-top: 20%;
             //Feedback elements
             h1{
                 color: transparent;
-                color: $dark;
+                color: $light;
                 font-weight: 300;
                 margin: 40px;
                 overflow:hidden;
@@ -416,7 +423,7 @@ html{
             }
             p{
                 margin-left: 2vw;
-                color: $dark;
+                color: $light;
             }
             form{
                 height: auto;
@@ -430,8 +437,8 @@ html{
                 padding: 5px 10px 5px 10px;
                 border-radius: 10px;
                 background: transparent;
-                border:2px solid $dark;
-                color: $dark;
+                border:2px solid $light;
+                color: $light;
             }
             .wrap-input{
                 display: flex;
@@ -448,22 +455,22 @@ html{
                 padding: 5px 10px 5px 10px;
                 border-radius: 10px;
                 background: transparent;
-                border:2px solid $dark;
-                color: $dark;
+                border:2px solid $light;
+                color: $light;
                 max-height: 400px;
             }
             input::placeholder{
-                color: $dark;
+                color: $light;
             }
             textarea::placeholder{
-                color: $dark;
+                color: $light;
             }
             .btn{
                 margin-left: 2vw;
-                color: $light;
-                background: $dark;
-                border-color: $dark;
-                outline-color: $dark;
+                color: $dark;
+                background: $light;
+                border-color: $light;
+                outline-color: $light
             }
         }
         .footer{
@@ -473,7 +480,7 @@ html{
             justify-content: center;
             display: flex;
             flex-direction: column;
-            border-top: 2px solid $dark;
+            border-top: 2px solid $light;
             background: $dark;
             padding-top: 5vh;
             padding-bottom:5vh;
@@ -524,7 +531,10 @@ html{
                 margin: 2.5vw;
             }
             Header{
+                background:linear-gradient(to bottom right,transparent 23%,transparent 1%,transparent 26%),linear-gradient(to top left,transparent 23%,transparent 1%,transparent 26%),url(../images/background.jpg);   
                 background-size: cover;    
+                background-position: center;
+                background-attachment: fixed;
                 animation:none;
 
                 img{
