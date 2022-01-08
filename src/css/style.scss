@@ -262,8 +262,8 @@ html{
             .btn-primary{
                 color:$light;
                 background-color: $dark;
-                outline:$dark;
-                border:2px solid#ffffff;
+                border: none;
+                outline: none;
             }
             .btn-primary:hover{
                 box-shadow: 0 0 6px $dark;
@@ -298,7 +298,7 @@ html{
                 padding: 20px;
                 font-size:50px;
                 color: transparent;
-                background: linear-gradient(to bottom right,$glow 50%,$light 50%);
+                background: linear-gradient(to bottom right,$glow ,$light );
                 background-clip:text;
                 -webkit-background-clip:text;
                 border: 2px solid transparent;
