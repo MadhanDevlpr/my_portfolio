@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
-$dark:#171819;
-$glow:#252525;
-$light:#909090;
+$dark:#272727;
+$glow:#312d2c;
+$light:#f0e7b8;
 
 *{
     margin: 0;
@@ -10,6 +10,13 @@ $light:#909090;
     font-family: 'Outfit', sans-serif;
     transition: .5s;
     font-weight: 400;
+}
+*::-webkit-scrollbar{
+    width: 8px;
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb{
+    background:$light;
 }
 *::selection{
     background: transparent;
@@ -28,7 +35,8 @@ html{
             margin-top: 20px;
             margin-bottom: 20px;
             .navbar{
-                background: $dark;
+                background: #1718199e;
+                backdrop-filter: blur(10px);
                 box-shadow: 0 0 10px $glow;
                 border-radius: 10px;
                 width: 90%;
@@ -469,52 +477,26 @@ html{
                 margin: 2.5vw;
             }
             Header{
-                background:linear-gradient(to bottom right,transparent 23%,transparent 1%,transparent 26%),linear-gradient(to top left,transparent 23%,transparent 1%,transparent 26%),url(../images/background.jpg);   
-                background-size: cover;    
-                background-position: center;
-                background-attachment: fixed;
-                animation:none;
-
                 img{
                     display: none;
                 }
                 h1{
                     position: absolute;
-                    top: 30%;
+                    top: 50%;
                     left: 50%;
                     transform: translate(-50%,-50%);
+                    font-size: 1rem;
+                    .glow{
+                        font-size:5rem
+                    }
                 }
                 h3{
                     position: absolute;
-                    top: 55%;
+                    top: 80%;
                     left: 50%;
                     text-align: center;
                     transform: translate(-50%,-50%);
                     font-size: .8rem;
-                }
-                #know-more{
-                    position: absolute;
-                    top: 75%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
-                }
-                #know-more:hover{
-                    position: absolute;
-                    top: 74%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
-                }
-                #projects-btn{
-                    position: absolute;
-                    top: 85%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
-                }
-                #projects-btn:hover{
-                    position: absolute;
-                    top: 84%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
                 }
                 
             }
@@ -547,18 +529,19 @@ html{
             Header {
                     h1{
                     position: absolute;
-                    top: 30%;
+                    top: 40%;
                     left: 50%;
-                    font-size: 1rem;
+                    font-size: 0.8rem;
                     transform: translate(-50%,-50%);
                     white-space: nowrap;
                     .glow{
-                        font-size:4.5rem
+                        font-size:3.5rem
                     }
                 }
                 h3{
                     font-size: 0.6rem;
                     width: 300px;
+                    top:75%
                 }
             }
             #about{
@@ -587,9 +570,6 @@ html{
                 h3{
                     font-size: .4rem;
                     width: 200px;
-                }
-                #know-more{
-                    white-space: nowrap;
                 }
             }
             #about h1{
