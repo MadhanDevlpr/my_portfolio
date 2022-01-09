@@ -2,17 +2,17 @@ import React from 'react';
 
 function About() {
     return (
-        <div id="about">
+        <section id="about">
                 <div className="text">
                     <h1>Who I am.</h1>
                     <p>
-                        I'm Madhan Aadithya, I'm a Front-end Developer and a Pythonista I'm studying 8th Grade and started programming at 11 years old,
-                        My first language is Python and I made more practice on it and atlast I started using Flask, But I need Html to create websites with Flask so I learnt Html very well and
-                        learnt Css for styling the Html, But this was not enough, I just created Static websites but now in the recent past I've learnt javascript and learnt to create Dynamic websites.
+                        I'm Madhan Aadithya, I'm a Front-end Developer and a Pythonista I'm studying 8th Grade and I started programming at 11 years old,
+                        I started my journey with Python and made more practice on it and atlast I started using a web framework called Flask, I learnt html to make static websites with Flask but just Html was not so good so
+                        I learnt Css for styling the Html but I was'nt satisfied with my work, I just created Static websites but now in the recent past I've learnt javascript and learnt to create Dynamic websites.
                         I've also learnt Bootstrap for making some lightweight projects.
                     </p>
                 </div>
-        </div>
+        </section>
     )
 }
 

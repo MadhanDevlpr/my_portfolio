@@ -2,7 +2,7 @@ import React from 'react';
 
 function Projects() {
     return (
-        <div id="projectss">
+        <section id="projectss">
             <div className="projects">
                 <div className="projecttitle">
                     <h1>Some of my projects.</h1>
@@ -82,7 +82,7 @@ function Projects() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -29,11 +29,17 @@ html{
     scrollbar-width:thin;
     scroll-margin-block-start: 10px;
     scroll-margin-block-end: 10px;
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+    height: 100vh;
     body{
-            width: 90vw;
+            width: 90%;
             margin: 0 auto;
             margin-top: 20px;
             margin-bottom: 20px;
+            section{
+                scroll-snap-align: start;
+            }
             .navbar{
                 background: #1718199e;
                 backdrop-filter: blur(10px);
@@ -153,13 +159,13 @@ html{
               }
         }
         //Main-elements        
-        Header{
+        #header{
             width: 100%;
             height: 100vh;
             overflow-x: hidden;
             background:$dark;
             transition: 2s;
-            //Header elements
+            //#header elements
             .toggle-bgm{
                 background-color: $light;
                 position: absolute;
@@ -219,6 +225,7 @@ html{
             text-align: center;
             overflow:hidden;
             background: $dark;
+            padding-top: 100px;
             //Projects
             .cards{
                 width: 100%;
@@ -290,7 +297,7 @@ html{
         }
         .skills-container{
             margin-top:100px;
-            padding-top: 20px;
+            padding-top: 100px;
             padding-bottom: 40px;
             margin-bottom:100px;
             text-align: center;
@@ -331,6 +338,7 @@ html{
             }
         }
         #about{
+            
             align-items: center;
             overflow:hidden;
             text-align: center;
@@ -342,6 +350,7 @@ html{
             margin-top: 40px;
             box-shadow: 0px 0px 25px rgba(0,0,0,0.4);
             padding: 10px;
+            padding-top: 100px;
             //About elements
             .text{
                 width: 100%;
@@ -368,7 +377,7 @@ html{
             width: 100%;
             height: auto;
             background-attachment: fixed;
-            padding-top: 20%;
+            padding-top: 100px;
             //Feedback elements
             h1{
                 color: transparent;
@@ -487,7 +496,7 @@ html{
                 margin-right: 2.5vw;
                 margin: 2.5vw;
             }
-            Header{
+            #header{
                 img{
                     display: none;
                 }
@@ -537,7 +546,7 @@ html{
             }
         }
         @media(max-width:600px){
-            Header {
+            #header {
                     h1{
                     position: absolute;
                     top: 40%;
@@ -571,7 +580,7 @@ html{
             }
         }
         @media(max-width:300px){
-            Header{
+            #header{
                 h1{
                     font-size: 0.8rem;
                     .glow{

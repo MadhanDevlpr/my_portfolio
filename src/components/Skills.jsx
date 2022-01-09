@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div id="skills" className="skills-container">
+    <section id="skills" className="skills-container">
       <div>
         <h1>
           Skills
@@ -36,7 +36,7 @@ const Skills = () => {
           <i className="fab fa-sass"></i>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
