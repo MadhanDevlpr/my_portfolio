@@ -37,8 +37,22 @@ html{
             margin: 0 auto;
             margin-top: 20px;
             margin-bottom: 20px;
+            animation-name: rise;
+            animation-duration: 1.5s;
+            animation-delay: 4.5s;
             section{
+                &:nth-child(1){
+                    scroll-snap-align: end;
+                }
                 scroll-snap-align: start;
+            }
+            @keyframes rise{
+                from{
+                    margin-top: 160px;
+                }
+                to{
+                    margin-top: 20px;
+                }
             }
             .navbar{
                 background: #1718199e;
@@ -151,6 +165,26 @@ html{
                     top:0%;
                     visibility: visible;
                   }
+                  91%{
+                    opacity: 1;
+                    top:0%;
+                    visibility: visible;
+                  }
+                  92%{
+                    opacity: 1;
+                    top:0%;
+                    visibility: visible;
+                  }
+                  93%{
+                    opacity: 1;
+                    top:0%;
+                    visibility: visible;
+                  }
+                  94%{
+                    opacity: 1;
+                    top:0%;
+                    visibility: visible;
+                  }
                   100%{
                       opacity: 1;
                       top:-100%;
@@ -178,9 +212,9 @@ html{
                 font-size: 1rem;
                 overflow:hidden;
                 text-align: left;
-                position: absolute;
+                position: relative;
                 top: 50%;
-                left: 35%;
+                left: 55%;
                 transform:translate(-50%,-50%);
                 .glow{
                     font-size: 7.6rem;
@@ -200,9 +234,9 @@ html{
                 width:410px;
                 text-align: center;
                 overflow:hidden;
-                position: absolute;
-                top: 80%;
-                left: 35%;
+                position: relative;
+                top: 50%;
+                left: 30%;
                 transform:translate(-50%,-50%);
                 line-height: 30px;
                 background: $dark;
@@ -316,9 +350,6 @@ html{
             }
             .skills .icon{
                 margin: 15px;
-                &:hover i{
-                    filter: grayscale(100%);
-                }
             }
             .skills .icon i{
                 padding: 20px;
@@ -333,7 +364,7 @@ html{
                 -moz-transition: .5s;
                 -webkit-transition: .5s;
                 &:hover{
-                    transform: scale(1.5);
+                    transform: scale(1.5) rotate(10deg);
                 }
             }
         }
