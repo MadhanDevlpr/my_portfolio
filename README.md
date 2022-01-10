@@ -5,7 +5,7 @@ Site-URL / Demo -  https://madhan-developer.herokuapp.com
 
 Clone or Fork this repository and follow the instructions below:
 
-Go to ``` src/components/Loader```, and change the name in the loader,
+navigate to both ``` src/images ``` , ``` /public``` and change images per your need,
 
 And then change the Header's texts and the Github link in ```Header.jsx```,
 
