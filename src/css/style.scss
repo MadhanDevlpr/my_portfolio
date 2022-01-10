@@ -38,8 +38,8 @@ html{
             margin-top: 20px;
             margin-bottom: 20px;
             animation-name: rise;
-            animation-duration: 1.5s;
-            animation-delay: 9.6s;
+            animation-duration: 3s;
+            animation-delay: 8.5s;
             section{
                 &:nth-child(1){
                     scroll-snap-align: end;
@@ -130,7 +130,7 @@ html{
                 justify-content: center;
                 align-items: center;
                 z-index: 10000;
-                animation-duration: 10s;
+                animation-duration: 9s;
                 animation-timing-function: linear;
                 opacity: 1;
                 visibility: hidden;
@@ -140,6 +140,9 @@ html{
                     opacity: 0;
                     transition: 1s;
                     position: absolute;
+                    top:60%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
                     &:nth-child(1){
                         animation-name: reveal;
                         animation-duration: 1s;
@@ -184,29 +187,36 @@ html{
               @keyframes revealed{
                 0%{
                     opacity: 0;
+                    top: 60%;
                 }
                 50%{
                     opacity: 1;
+                    top:45%;
                 }
                 75%{
                     opacity: 1;
+                    top: 22.5%;
                 }
                 100%{
                     opacity: 0;
+                    top:0;
                 }
               }
               @keyframes reveal{
                 0%{
                     opacity: 0;
                     font-size: 30px;
+                    top:60%;
                 }
                 50%{
                     opacity: 1;
                     font-size: 12vw;
+                    top:45%;
                 }
                 100%{
                     opacity: 0;
                     font-size: 30px;
+                    top:0%;
                 }
               }
               @keyframes fade{
