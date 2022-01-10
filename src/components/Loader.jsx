@@ -1,5 +1,5 @@
 import React from 'react'
-import loader from '../images/loader.gif'
+import name from '../images/name.png';
 const Loader = () => {
     window.onload = function(){
         document.getElementById('loader').style.animationName = "fade"
@@ -7,7 +7,13 @@ const Loader = () => {
     return (
         <div id="preloader">
             <div id="loader" className="loader-wrapper">
-                <img alt='Loading' src={loader}></img>
+                <div>Html</div>
+                <div>Css</div>
+                <div>Sass</div>
+                <div>Javascript</div>
+                <div>React.js</div>
+                <div>Python</div>
+                <div id="name"><img src={name} alt="Madhan Aadithya" /></div>
             </div>
         </div>
     )
