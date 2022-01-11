@@ -39,7 +39,7 @@ html{
             margin-bottom: 20px;
             animation-name: rise;
             animation-duration: 3s;
-            animation-delay: 8.5s;
+            animation-delay: 7.75s;
             section{
                 &:nth-child(1){
                     scroll-snap-align: end;
@@ -130,53 +130,57 @@ html{
                 justify-content: center;
                 align-items: center;
                 z-index: 10000;
-                animation-duration: 9s;
+                animation-duration: 8.5s;
                 animation-timing-function: linear;
                 opacity: 1;
                 visibility: hidden;
                 div{
                     color: $light;
-                    font-size: 30px;
+                    font-size: 100px;
                     opacity: 0;
                     transition: 1s;
                     position: absolute;
-                    top:60%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
+
+                    top:20%;
                     &:nth-child(1){
                         animation-name: reveal;
-                        animation-duration: 1s;
+                        animation-duration: 2s;
                         animation-delay: 1s;
                     }
                     &:nth-child(2){
                         animation-name: reveal;
-                        animation-duration: 1s;
+                        animation-duration: 2s;
                         animation-delay: 2s;
                     }
                     &:nth-child(3){
                         animation-name: reveal;
-                        animation-duration: 1s;
+                        animation-duration: 2s;
                         animation-delay: 3s;
                     }
                     &:nth-child(4){
                         animation-name: reveal;
-                        animation-duration: 1s;
+                        animation-duration: 2s;
                         animation-delay: 4s;
                     }
                     &:nth-child(5){
                         animation-name: reveal;
-                        animation-duration: 1s;
+                        animation-duration: 2s;
                         animation-delay: 5s;
                     }
                     &:nth-child(6){
                         animation-name: reveal;
-                        animation-duration: 1s;
+                        animation-duration: 2s;
                         animation-delay: 6s;
                     }
                     &:nth-child(7){
                         animation-name: revealed;
                         animation-duration: 2s;
                         animation-delay: 7s;
+                        opacity: 0;
+                        position: absolute;
+                        top: 0%;
+                        left: 0%;
+                        transform: translate(-50%,-50%);
                         img{
                             width: 62vw;
                             transition: 1s;
@@ -186,37 +190,44 @@ html{
               }
               @keyframes revealed{
                 0%{
-                    opacity: 0;
-                    top: 60%;
+                    opacity: 0;        
+                    top: 80%;   
+                    left: 50%;
                 }
                 50%{
                     opacity: 1;
-                    top:45%;
-                }
-                75%{
-                    opacity: 1;
-                    top: 22.5%;
+                    top:50%;
+                    left: 50%;
                 }
                 100%{
+                    top:0%;
+                    left: 50%;
                     opacity: 0;
-                    top:0;
                 }
               }
               @keyframes reveal{
                 0%{
                     opacity: 0;
-                    font-size: 30px;
-                    top:60%;
+                    top:80%;
+                    transform: rotateX(-90deg);
+                }
+                25%{
+
+                    opacity: 0.5;
+                    transform: rotateZ(5deg);
                 }
                 50%{
                     opacity: 1;
-                    font-size: 12vw;
-                    top:45%;
+                    transform: rotateZ(-5deg);
+                }
+                75%{
+                    opacity: 0.5;
+                    transform: rotateZ(5deg);
                 }
                 100%{
                     opacity: 0;
-                    font-size: 30px;
-                    top:0%;
+                    transform: rotateX(90deg);
+                    top:20%;
                 }
               }
               @keyframes fade{
@@ -535,7 +546,7 @@ html{
             textarea{
                 font-family: 'Fira Code';
                 margin-left: 2vw;
-                min-width: 90vw;
+                min-width: 78.25vw;
                 height: 200px;
                 border: none;
                 outline: none;
