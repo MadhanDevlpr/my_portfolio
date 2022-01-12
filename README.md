@@ -25,7 +25,7 @@
 
 - Create a formcarry account and in ``` src/components/Feedback.jsx ``` in the line 8 replace ``` https://formcarry.com/s/mPUDUSPBIbi ``` with your Formcarry id.
 
-- If you don't replace the ID all feedbacks are gonna be received by me so make sure you do that.
+- If you don't replace the ID, all feedbacks are gonna be received by me so make sure you do that.
 
 <hr>
 
@@ -35,6 +35,7 @@
 
 
 And  finally run ``` npm start ``` to view a local preview of your app.
+
 
 Deployment 🧪:
 
