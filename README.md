@@ -9,7 +9,7 @@
 
 
 
-- Download this Project in your Pc and follow the instructions below
+- Download this Project in your Computer and follow the instructions below
 
 - Install required node modules, Run:
   ``` 
