@@ -11,7 +11,7 @@
 
 - Download this Project in your Pc and follow the instructions below
 
-- Install required node moduled, Run:
+- Install required node modules, Run:
   ``` 
   npm install 
   
@@ -23,7 +23,15 @@
   
 - Make changes in the images and logos and the content in the Components
 
-- Create a formcarry account and in ``` src/components/Feedback.jsx ``` in the line 8 replace ``` https://formcarry.com/s/mPUDUSPBIbi ``` with your Formcarry id.
+- Create a formcarry account and in 
+ ``` 
+ src/components/Feedback.jsx 
+ ``` 
+ in line 8 replace 
+ ```
+ https://formcarry.com/s/mPUDUSPBIbi 
+ ``` 
+ with your Formcarry id.
 
 - If you don't replace the ID, all feedbacks are gonna be received by me so make sure you do that.
 
