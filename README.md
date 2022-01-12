@@ -83,6 +83,6 @@ Forkers
 
 [![Forkers repo roster for @MadhanDevlpr/React.js-Portfolio](https://reporoster.com/forks/MadhanDevlpr/React.js-Portfolio)](https://github.com/MadhanDevlpr/React.js-Portfolio/network/members)
 
-### License
 
-MIT
+
+<p align="center"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/MadhanDevlpr/React.js-Portfolio?color=%23f0e7b8&style=for-the-badge"></img></p>
