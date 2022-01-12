@@ -9,7 +9,7 @@
 
 
 
-- Download this Project in your Pc and follow th instruction below
+- Download this Project in your Pc and follow the instructions below
 
 - Install required node moduled, Run:
   ``` 
