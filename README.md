@@ -46,11 +46,10 @@ Requirement: Netlify account
 Run the below command:
 ```
 npm run build
-
 ```
 Then you'll be able to see a build folder within the directory.
 
-Heade over to https://app.netlify.com/teams/YOURUSERNAME/sites
+Head over to https://app.netlify.com/teams/YOURUSERNAME/sites
 
 Drag and drop the build folder to the part of the page that is shown below.
 
