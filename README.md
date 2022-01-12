@@ -27,7 +27,7 @@
  ``` 
  src/components/Feedback.jsx 
  ``` 
- in line 8 replace 
+ in line 8 replace the below content
  ```
  https://formcarry.com/s/mPUDUSPBIbi 
  ``` 
