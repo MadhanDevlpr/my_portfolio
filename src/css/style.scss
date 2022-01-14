@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
-$dark:#272727;
-$glow:#312d2c;
-$light:#f0e7b8;
-$bright:#ead87d;
-
+$background-dark:#21212b;
+$background-light:#242b32;
+$red:#e06c75;
+$green:#98c379;
+$orange:#d19a66;
+$blue:#61afef;
+$violet:#c678dd;
+$teal:#56b6c2;
+$gray:#abb2bf;
 *{
     margin: 0;
     padding: 0;
@@ -14,21 +18,21 @@ $bright:#ead87d;
 }
 h1{
     color: transparent;
-    background: linear-gradient(to right,$light,$bright);
+    background: linear-gradient(to right,$red,$blue);
     background-clip:text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
 }
 p{
     color: transparent;
-    background: linear-gradient(to right,$light,$bright);
+    background: linear-gradient(to right,$red,$blue);
     background-clip:text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
 }
 h3{
     color: transparent;
-    background: linear-gradient(to right,$light,$bright);
+    background: linear-gradient(to right,$red,$blue);
     background-clip:text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -38,7 +42,7 @@ h3{
     background: transparent;
 }
 *::-webkit-scrollbar-thumb{
-    background:$light;
+    background:$red;
 }
 *::selection{
     background: transparent;
@@ -47,7 +51,7 @@ html{
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y:scroll;
-    scrollbar-color: $light transparent;
+    scrollbar-color: $red transparent;
     scrollbar-width:thin;
     scroll-margin-block-start: 10px;
     scroll-margin-block-end: 10px;
@@ -79,7 +83,7 @@ html{
             .navbar{
                 background: #1718199e;
                 backdrop-filter: blur(10px);
-                box-shadow: 0 0 10px $glow;
+                box-shadow: 0 0 10px $teal;
                 border-radius: 10px;
                 width: 90%;
                 margin:0 auto;
@@ -88,7 +92,7 @@ html{
             .navbar-toggler{
                 outline: none;
                 box-shadow: none;
-                background: $light;
+                background: $red;
             }
             .navbar-toggler:focus,
             .navbar-toggler:active,
@@ -102,15 +106,14 @@ html{
             }
             .item{
                 color: transparent;
-                background: linear-gradient(to right,$light,transparent);
-                background-clip: text;
+                background: linear-gradient(to right,$red,$blue);
+                background-clip:text;
                 -webkit-background-clip: text;
                 -moz-background-clip: text;
-                -oz-background-clip: text;
                 text-decoration: none;
                 padding-bottom: 20px;
                 &:hover{
-                    color: $light;
+                    color: $red;
                     transform: scale(1.5);
                 }
             }
@@ -119,28 +122,28 @@ html{
             }
             .dropdown-menu{
                 margin-top: 20px;
-                background: $light;
-                box-shadow: 0 0 10px $dark; 
+                background: $red;
+                box-shadow: 0 0 10px $background-dark; 
                 transition: 1s;
             }
             .dropdown-divider{
                 border-width: 2px;
-                border-color: $dark;
+                border-color: $background-dark;
             }
             .dropdown-item{
-                text-shadow: 0 0 1px $dark;
-                color: $dark;
+                text-shadow: 0 0 1px $background-dark;
+                color: $background-dark;
                 font-weight: 100;
             }
             .dropdown-item:hover{
-                background: $dark;
-                color: $light;
-                text-shadow: 0 0 1px $light
+                background: $background-dark;
+                color: $red;
+                text-shadow: 0 0 1px $red
             }
         //Preloaderz
-        background:$dark;
+        background:$background-dark;
         #preloader{
-            color: $dark;
+            color: $background-dark;
             .loader-wrapper{
                 width: 100%;
                 height: 100vh;
@@ -157,7 +160,7 @@ html{
                 opacity: 1;
                 visibility: hidden;
                 div{
-                    color: $light;
+                    color: $red;
                     font-size: 10vw;
                     opacity: 0;
                     transition: 1s;
@@ -322,18 +325,18 @@ html{
             width: 100%;
             height: 100vh;
             overflow-x: hidden;
-            background:$dark;
+            background:$background-dark;
             transition: 2s;
             //#header elements
             .toggle-bgm{
-                background-color: $light;
+                background-color: $red;
                 position: absolute;
                 top: 50%;
                 left: 70%;
                 transform:translate(-50%,-50%);
             }
             h1{
-                color: $light;
+                color: $orange;
                 font-size: 1rem;
                 overflow:hidden;
                 text-align: left;
@@ -346,12 +349,12 @@ html{
                     font-weight: 100;
                     text-transform: lowercase;
                     color: transparent;
-                    background: linear-gradient(to right,$light,$glow);
+                    background: linear-gradient(to right,$green,$violet);
                     background-clip:text;
                     -webkit-background-clip:text;
                     -moz-background-clip:text;
                     -oz-background-clip:text;
-                    text-shadow: 0 0 5px $light;
+                    text-shadow: 0 0 5px $red;
                 }
             }
             h3{
@@ -364,13 +367,12 @@ html{
                 left: 30%;
                 transform:translate(-50%,-50%);
                 line-height: 30px;
-                background: $dark;
+                background: $background-dark;
                 padding: 10px;
                 border-radius: 10px;
-                color: $light;
+                color: $teal;
                 code{
-                    color: $dark;
-                    background: $light;
+                    color: $violet;
                     padding: 10px 10px 10px 10px;
                     white-space: nowrap;
                     font-weight: 900;
@@ -383,7 +385,7 @@ html{
         .projects{
             text-align: center;
             overflow:hidden;
-            background: $dark;
+            background: $background-dark;
             padding-top: 100px;
             //Projects
             .cards{
@@ -396,7 +398,11 @@ html{
             h1{
                 padding-bottom: 40px;
                 padding-top: 50px;
-                color: $light;
+                color: transparent;
+                    background: linear-gradient(to right,$red,$blue);
+                    background-clip:text;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
                 overflow: hidden;
                 font-weight: 300;
                 overflow:hidden;
@@ -404,7 +410,7 @@ html{
             .card .dot{
                 padding: 5px;
                 margin: 10px;
-                background: $dark;
+                background: $background-dark;
                 border-radius: 50%;
                 box-shadow: -1.5px 1.5px 1px rgba(0,0,0,0.4);
             }
@@ -421,31 +427,32 @@ html{
                 outline: none;
                 transition: 1s;
                 background:
-                linear-gradient(217deg, $light, rgba(255,0,0,0) 70.70%),
-                linear-gradient(127deg, $dark, rgba(0,255,0,0) 70.70%),
-                linear-gradient(336deg, $dark, rgba(0,0,255,0) 70.70%),
-                linear-gradient(217deg, black, rgba(255,0,0,0) 70.70%),
-                linear-gradient(127deg, $light, rgba(0,255,0,0) 70.70%),
-                linear-gradient(336deg, $light, rgba(0,0,255,0) 70.70%);
+                linear-gradient(217deg, $green, rgba(255,0,0,0) 70.70%),
+                linear-gradient(127deg, $orange, rgba(0,255,0,0) 70.70%),
+                linear-gradient(336deg, $blue, rgba(0,0,255,0) 70.70%),
+                linear-gradient(217deg, $violet, rgba(255,0,0,0) 70.70%),
+                linear-gradient(127deg, $teal, rgba(0,255,0,0) 70.70%),
+                linear-gradient(336deg, $gray, rgba(0,0,255,0) 70.70%);
             }
             .card-title{
                 font-weight: 900;
-                color: $dark;
+                color: $background-dark;
                 padding: 10px;
                 border-radius: 15px;
             }
             .card-text{
-                color: $dark;
+                color: $background-dark;
                 overflow:hidden;
             }
             .btn-primary{
-                color:$light;
-                background-color: $dark;
+                color:$orange;
+                background-color: $background-dark;
                 border: none;
                 outline: none;
             }
             .btn-primary:hover{
-                box-shadow: 0 0 6px $dark;
+                box-shadow: 0 0 6px $background-dark;
+                color: $blue;
             }
             .btn-primary:active,
             .btn-primary:focus{
@@ -462,7 +469,11 @@ html{
             text-align: center;
             //Skills elements
             h1{
-                color: $light;
+                color: transparent;
+                    background: linear-gradient(to right,$red,$blue);
+                    background-clip:text;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
                 overflow:hidden;
                 font-weight: lighter;
             }
@@ -480,9 +491,10 @@ html{
                 padding: 20px;
                 font-size:50px;
                 color: transparent;
-                background: linear-gradient(to bottom right,$glow ,$light );
+                background: linear-gradient(to right,$red,$blue);
                 background-clip:text;
-                -webkit-background-clip:text;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
                 border: 2px solid transparent;
                 border-radius: 15px;
                 transition: .5s;
@@ -517,12 +529,20 @@ html{
                     font-size: 3rem;
                     padding-top: 20px;
                     font-weight: 300;
-                    color: $light
+                    color: transparent;
+                    background: linear-gradient(to right,$blue,$violet);
+                    background-clip:text;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
                 }
                 p{
                     line-height: 40px;
                     margin-top: 60px;
-                    color: $light;
+                    color: transparent;
+                    background: linear-gradient(to right,$gray,$blue,$green);
+                    background-clip:text;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
                     padding: 30px;
                     border-radius: 16px;
                 }
@@ -537,7 +557,11 @@ html{
             //Feedback elements
             h1{
                 color: transparent;
-                color: $light;
+                color: transparent;
+                background: linear-gradient(to right,$teal,$orange);
+                background-clip:text;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
                 font-weight: 300;
                 margin: 40px;
                 overflow:hidden;
@@ -545,7 +569,11 @@ html{
             }
             p{
                 margin-left: 2vw;
-                color: $light;
+                color: transparent;
+                background: linear-gradient(to right,$teal,$red,$violet);
+                background-clip:text;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
             }
             form{
                 height: auto;
@@ -559,8 +587,8 @@ html{
                 padding: 5px 10px 5px 10px;
                 border-radius: 10px;
                 background: transparent;
-                border:2px solid $light;
-                color: $light;
+                border:2px solid $teal;
+                color: $blue;
             }
             .wrap-input{
                 display: flex;
@@ -577,74 +605,91 @@ html{
                 padding: 5px 10px 5px 10px;
                 border-radius: 10px;
                 background: transparent;
-                border:2px solid $light;
-                color: $light;
+                border:2px solid $teal;
+                color: $orange;
                 max-height: 400px;
             }
             input::placeholder{
-                color: $light;
+                color: $teal;
             }
             textarea::placeholder{
-                color: $light;
+                color: $blue;
             }
             .btn{
                 margin-left: 2vw;
-                color: $dark;
-                background: $light;
-                border-color: $light;
-                outline-color: $light
+                color: $background-dark;
+                background: $teal;
+                border-color: $teal;
+                outline-color: $blue
             }
         }
         .footer{
-            height: auto;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            display: flex;
-            flex-direction: column;
-            border-top: 2px solid $light;
-            background: $dark;
-            padding-top: 5vh;
-            padding-bottom:5vh;
+            
+            background: linear-gradient(to right,$red,$green,$blue,$orange,$teal,$violet,$gray);
+            padding-top: 2.5px;
             //Footer elements
-            hr{
-                background: linear-gradient(to right,transparent,$light,transparent);
-                width: 90%;
-                height: 2px;
+            .footer-content{
+                padding-top: 5vh;
+            padding-bottom:5vh;
+                height: auto;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                background:$background-dark;
+                hr{
+                    background: linear-gradient(to right,$red,$green,$blue,$orange,$teal,$violet,$gray);
+                    width: 90%;
+                    height: 2px;
+                }
+                p{
+                    color: transparent;
+                    background: linear-gradient(to right,$red,$green,$blue,$orange,$teal,$violet,$gray);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    -oz-background-clip: text;
+                    font-size: 12px;
+                    font-stretch: extra-expanded;
+                    height: 100%;
+                }
+                p svg{
+                    fill: $red;
+                    padding: 1px;
+                }
+                p a{
+                    color: transparent;
+                    background: linear-gradient(to right,$red,$green,$blue,$orange,$teal,$violet,$gray);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    -oz-background-clip: text;
+                    text-decoration: none;
+                    transition: .2s;
+                    padding-bottom: 2px;
+                    border-bottom: 1.5px solid $blue;
+                }
+                p a:hover{
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+                .wrap .git-ele{
+                    color: transparent;
+                    background: linear-gradient(to right,$red,$green,$blue,$orange,$teal,$violet,$gray);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    -oz-background-clip: text;
+                    font-family: 'Fira Code';
+                    text-decoration: none;
+                    border-bottom:2px solid $violet;
+                    padding: 0px 10px 0px 10px;
+                }
+                .wrap .git-ele:hover{
+                    padding: 0px 15px 0px 15px;
+                }
             }
-            p{
-                color: $light;
-                font-size: 12px;
-                font-stretch: extra-expanded;
-                height: 100%;
-            }
-            p svg{
-                fill: $light;
-                padding: 1px;
-            }
-            p a{
-                color: $light;
-                text-decoration: none;
-                transition: .2s;
-                padding-bottom: 2px;
-                border-bottom: 1.5px solid $light;
-            }
-            p a:hover{
-                color: $light;
-                padding-left: 5px;
-                padding-right: 5px;
-            }
-            .wrap .git-ele{
-                color: $light;
-                font-family: 'Fira Code';
-                text-decoration: none;
-                border-bottom:2px solid $light;
-                padding: 0px 10px 0px 10px;
-            }
-            .wrap .git-ele:hover{
-                padding: 0px 15px 0px 15px;
-            }
-
         }
         @media(max-width:992px){
             .nav-object{

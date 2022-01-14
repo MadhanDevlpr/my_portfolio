@@ -1,6 +1,6 @@
 <p align="center"><a href="https://madhan-developer.herokuapp.com"><img href="https://madhan-developer.herokuapp.com" width="140px" src="https://user-images.githubusercontent.com/81558579/149097554-bd5c3840-1d30-4c3a-912a-242421555dc2.png"></img></a><h4 align="center">An awesome portfolio with Gruvbox's color scheme<h4></p><hr>
-<p align="center"><img alt="GitHub" src="https://img.shields.io/github/license/MadhanDevlpr/React.js-Portfolio?color=%23f0e7b8&label=LICENSE&logoColor=%23171819&style=for-the-badge"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/MadhanDevlpr/React.js-Portfolio?color=%23f0e7b8&label=SCSS&style=for-the-badge"></img></p>
-<p align="center"><img alt="GitHub forks" src="https://img.shields.io/github/forks/MadhanDevlpr/React.js-Portfolio?color=%23f0e7b8&style=for-the-badge"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/MadhanDevlpr/React.js-Portfolio?color=%23f0e7b8&style=for-the-badge"></img></p>
+<p align="center"><img alt="GitHub" src="https://img.shields.io/github/license/MadhanDevlpr/React.js-Portfolio?color=%23e06c75&label=LICENSE&logoColor=%23171819&style=for-the-badge"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/MadhanDevlpr/React.js-Portfolio?color=%2398c379&label=SCSS&style=for-the-badge"></img></p>
+<p align="center"><img alt="GitHub forks" src="https://img.shields.io/github/forks/MadhanDevlpr/React.js-Portfolio?color=%23d19a66&style=for-the-badge"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/MadhanDevlpr/React.js-Portfolio?color=%2361afef&style=for-the-badge"></img></p>
 
   <hr>
 <p align=center>This Portfolio is highly styled to be interactive for the user.</p>
@@ -85,4 +85,4 @@ Forkers
 
 
 
-<p align="center"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/MadhanDevlpr/React.js-Portfolio?color=%23f0e7b8&style=for-the-badge"></img></p>
+<p align="center"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/MadhanDevlpr/React.js-Portfolio?color=%2356b6c2&style=for-the-badge"></img></p>
