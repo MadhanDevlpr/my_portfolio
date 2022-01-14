@@ -155,12 +155,17 @@ html{
                 justify-content: center;
                 align-items: center;
                 z-index: 10000;
-                animation-duration: 8.5s;
+                animation-duration: 9s;
                 animation-timing-function: linear;
                 opacity: 1;
                 visibility: hidden;
                 div{
-                    color: $red;
+                    color: transparent;
+                    background: linear-gradient(to right,$red,$green,$blue,$orange,$teal,$violet,$gray);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    -oz-background-clip: text;
                     font-size: 10vw;
                     opacity: 0;
                     transition: 1s;
@@ -170,37 +175,37 @@ html{
                     &:nth-child(1){
                         animation-name: reveal;
                         animation-duration: 2s;
-                        animation-delay: 1s;
+                        animation-delay: 1.5s;
                     }
                     &:nth-child(2){
                         animation-name: reveal;
                         animation-duration: 2s;
-                        animation-delay: 2s;
+                        animation-delay: 2.5s;
                     }
                     &:nth-child(3){
                         animation-name: reveal;
                         animation-duration: 2s;
-                        animation-delay: 3s;
+                        animation-delay: 3.5s;
                     }
                     &:nth-child(4){
                         animation-name: reveal;
                         animation-duration: 2s;
-                        animation-delay: 4s;
+                        animation-delay: 4.5s;
                     }
                     &:nth-child(5){
                         animation-name: reveal;
                         animation-duration: 2s;
-                        animation-delay: 5s;
+                        animation-delay: 5.5s;
                     }
                     &:nth-child(6){
                         animation-name: reveal;
                         animation-duration: 2s;
-                        animation-delay: 6s;
+                        animation-delay: 6.5s;
                     }
                     &:nth-child(7){
                         animation-name: revealed;
                         animation-duration: 2s;
-                        animation-delay: 7s;
+                        animation-delay: 8s;
                         opacity: 0;
                         position: absolute;
                         top: 0%;
@@ -236,20 +241,24 @@ html{
                     top:80%;
                     transform: rotateX(-45deg);
                 }
+                15%{
+                    opacity: 0.15;
+                    transform: rotateX(-11.5deg);
+                }
                 25%{
                     opacity: 0.25;
-                    top:75%;
                     transform: rotateX(-11.5deg);
                 }
                 50%{
-                    opacity: 0.5;
-                    top:50%;
+                    opacity: 1;
                     transform: rotateX(22.5deg);
                 }
                 75%{
-                    opacity: 0.5;
-                    top:25%;
+                    opacity: 0.75;
                     transform: rotateX(11.5deg);
+                }
+                85%{
+                    opacity: 0.65;
                 }
                 100%{
                     opacity: 0;
