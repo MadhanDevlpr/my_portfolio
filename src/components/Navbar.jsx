@@ -1,65 +1,60 @@
-import React from 'react';
-import logo from '../images/logo.png'
+import React from "react";
+import logo from "../images/logo.png"
 function Navbar() {
-  function scrollNav(){
-    if(window.innerWidth >=900){
-      if (window.scrollY >= 60 ){
-        document.getElementById('nav').style.opacity = "1";
-      }
-      else{
-        document.getElementById('nav').style.opacity = "1";
-      }
-    }
-    else{
-      document.getElementById('nav').style.opacity = "1";
-    }
+  function openNav(){
+    document.getElementById("openNav").style.top = "-50%";
+    document.getElementById("openNav").style.opacity = "0";
+    document.getElementById("closeNav").style.top = "-5%";
+    document.getElementById("closeNav").style.opacity = "1";
+    document.getElementById("sidenav").style.left = "0%";
   }
-  window.addEventListener('resize',scrollNav)
-  window.addEventListener('scroll',scrollNav)
-  window.addEventListener('load',scrollNav)
+  function closeNav(){
+    document.getElementById("closeNav").style.top = "-50%";
+    document.getElementById("closeNav").style.opacity = "0";
+    document.getElementById("openNav").style.top = "-5%";
+    document.getElementById("openNav").style.opacity = "1";
+    document.getElementById("sidenav").style.left = "-120%";
+  }
 
     return (
         <div>
-          <nav id="nav" className="navbar fixed-top p-0 navbar-expand-lg navbar-light">
-              <a className="navbar-brand p-4" href="#header">
-              <img src={logo} width="30" height="30" alt=""/>
+          <div className="navbar-m">
+              <a className="p-4" href="#header">
+                <img src={logo} width="20" height="20" alt=""/>
               </a>
-              <button className="navbar-toggler m-4 p-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <svg className="toggler bi bi-list" xmlns="http://www.w3.org/2000/svg" fill='#171819' width="30" height="30" viewBox="0 0 16 16">
-                <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg>
+              
+              <button onClick={closeNav} id="closeNav" className="navbar-toggler closenav m-4 p-1" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#21212b" class="bi bi-x" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
               </button>
-              <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav ml-auto">
-                  <li className='nav-object'>
-                    <a className="item" href="#header">home <span className="sr-only">(current)</span></a>
+              <button onClick={openNav} id="openNav" className="navbar-toggler m-4 p-1" type="button">
+                <svg className="toggler bi bi-list" xmlns="http://www.w3.org/2000/svg" fill="#21212b" width="20" height="20" viewBox="0 0 16 16">
+                  <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+              </button>
+            </div>
+            <div id="sidenav" className="sidenav-m">
+                <ul>
+                  
+                  <li>
+                    <a className="navbar-item p-2" onClick={closeNav} href="#header">home <span className="sr-only">(current)</span></a>
                   </li>
-                  <li className='nav-object'>
-                    <a className="item" href="#about">about</a>
+                  <li>
+                    <a className="navbar-item p-2" onClick={closeNav} href="#about">about</a>
                   </li>
-                  <li className='nav-object'>
-                    <a className="item" href="#skills">skills</a>
+                  <li>
+                    <a className="navbar-item p-2" onClick={closeNav} href="#skills">skills</a>
                   </li>
-                  <li className='nav-object'>
-                    <a className="item" href="#projectss">projects</a>
+                  <li>
+                    <a className="navbar-item p-2" onClick={closeNav} href="#projectss">projects</a>
                   </li>
-                  <li className='nav-object'>
-                    <a className="item" href="#feedback">feedback</a>
-                  </li>
-                  <li className="nav-object dropdown">
-                    <a className="item dropdown-toggle" href="#links" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      links
-                    </a>
-                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a className="dropdown-item" target="_blank" rel="noreferrer" href="https://github.com/MadhanDevlpr">github</a>
-                      <a className="dropdown-item" target="_blank" rel="noreferrer" href="https://codepen.io/madhanaadithya">codepen</a>
-                      <div className="dropdown-divider"></div>
-                      <a className="dropdown-item" target="_blank" rel="noreferrer" href="https://cssbattle.dev/player/madhandev">cssbattle.dev</a>
-                    </div>
+                  <li>
+                    <a className="navbar-item p-2" onClick={closeNav} href="#feedback">feedback</a>
                   </li>
                 </ul>
+                <a id="news" href="http://eepurl.com/hCZPS1" target="_blank">Subscribe to my NewsLetter</a>
               </div>
-            </nav>
         </div>
     )
 }

@@ -4,6 +4,7 @@ function Projects() {
     return (
         <section id="projectss">
             <div className="projects">
+                <h1 id="work">Work</h1>
                 <div className="projecttitle">
                     <h1>Some of my projects.</h1>
                 </div>
