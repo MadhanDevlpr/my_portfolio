@@ -351,9 +351,11 @@ html{
             background:$background-dark;
             transition: 2s;
             //#header elements
+
+
             h1{
                 color: $orange;
-                font-size: 1rem;
+                font-size: 0.8rem;
                 overflow:hidden;
                 text-align: left;
                 position: relative;
@@ -361,7 +363,7 @@ html{
                 left: 55%;
                 transform:translate(-50%,-50%);
                 .glow{
-                    font-size: 7.6rem;
+                    font-size: 5.6rem;
                     font-weight: 100;
                     text-transform: lowercase;
                     color: transparent;
@@ -373,9 +375,11 @@ html{
                     text-shadow: 0 0 5px $red;
                 }
             }
+
+
             h3{
-                font-size: .7rem;
-                width:410px;
+                font-size: .6rem;
+                width:420px;
                 text-align: center;
                 overflow:hidden;
                 position: relative;
@@ -396,6 +400,35 @@ html{
                     border-radius: 10px;
                     font-family: 'Fira Code', monospace;
                 }
+            }
+            .circle-container{
+                background: linear-gradient(to bottom right, $blue -100%,$violet 100%);
+                width: 450px;
+                height: 450px;
+
+                position: absolute;
+                top: 55%;
+                left: 80%;
+                transform: translate(-50%,-50%) rotate(-30deg);
+                border-radius: 50%;
+                &:hover{
+                    filter: brightness(200%);
+                }
+                &:hover .circle{
+                    left: 100%;
+                    opacity: 0;
+                }
+            }
+            .circle{
+                width: 400px;
+                height: 400px;
+                background: $background-dark;
+                position: absolute;
+                top: 55%;
+                left: 70%;
+                transform: translate(-50%,-50%);
+                border-radius: 50%;
+                
             }
         }
         .projects{
@@ -843,3 +876,4 @@ html{
         }
     }
 }
+

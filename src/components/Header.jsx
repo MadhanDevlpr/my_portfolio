@@ -10,6 +10,12 @@ const Header = () =>{
             the languages well known for me are
             <code>Python, Html, Css, Sass, Javacript</code>, the tools and frameworks I use are
             <code>Vs Code, React, Flask, Git Bash, WSL.</code></h3>
+
+            <div className="circle-container">
+                <div className="circle">
+                
+                </div>
+            </div>
         </section>
     )
 }
