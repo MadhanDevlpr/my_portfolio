@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 $background-dark:#21212b;
 $background-light:#242b32;
 $red:#e06c75;
@@ -12,7 +11,7 @@ $gray:#abb2bf;
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Outfit', sans-serif;
+    font-family:'Roboto Mono', monospace;
     transition: .5s;
     font-weight: 400;
 }
@@ -59,6 +58,7 @@ html{
     overflow-y: scroll;
     height: 100vh;
     body{
+            width: 90%;
             margin: 0 auto;
             margin-top: 20px;
             margin-bottom: 20px;
@@ -97,23 +97,6 @@ html{
             .p-4{
                 float: left;
                 margin-top: 0px;
-            }
-            #news{
-                position: absolute;
-                bottom: 5%;
-                right: 5%;
-                color: transparent;
-                background: linear-gradient(to right,$red,$green,$blue,$orange,$teal,$violet,$gray);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -moz-background-clip: text;
-                -oz-background-clip: text;
-                text-decoration: none;
-                &:hover{
-                    color: $teal;
-                    text-shadow: 0 0 10px $teal;
-                    text-decoration: none;
-                }
             }
             .navbar-toggler{
                 outline: none;
@@ -191,13 +174,9 @@ html{
                 opacity: 1;
                 visibility: hidden;
                 div{
-                    color: transparent;
-                    background: linear-gradient(to right,$red,$green,$blue,$orange,$teal,$violet,$gray);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -moz-background-clip: text;
-                    -oz-background-clip: text;
-                    font-size: 10vw;
+                    color: #fff;
+                    font-size: 30px;
+                    text-transform: uppercase;
                     opacity: 0;
                     transition: 1s;
                     position: absolute;
@@ -368,39 +347,6 @@ html{
             background:$background-dark;
             transition: 2s;
             //#header elements
-            #anime{
-              position: absolute;
-              top:50%;
-              left: 80%;
-              transform:translate(-50%, -50%) scale(1.5);
-              display: flex;
-              flex-wrap: wrap;
-              width: 250px;
-              margin: 50px auto;
-              .square{
-                width: 20px;
-                height: 20px;
-                margin: 2px;
-                background: linear-gradient(to bottom right,$violet,$blue);
-                opacity: 0.15;
-                box-shadow: 0 0 5px $blue;
-                animation: stagger 2s infinite linear;
-                &:hover{
-                  opacity: 1;
-                }
-              }
-              @keyframes stagger{
-                0%{
-                  opacity: 0;
-                }
-                50%{
-                  opacity: 1;
-                }
-                100%{
-                  opacity: 0
-                }
-              }
-            }
             h1{
                 color: $orange;
                 font-size: 1rem;
