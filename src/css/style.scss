@@ -59,7 +59,6 @@ html{
     overflow-y: scroll;
     height: 100vh;
     body{
-            width: 90%;
             margin: 0 auto;
             margin-top: 20px;
             margin-bottom: 20px;
@@ -136,7 +135,7 @@ html{
                 margin-left: 2.5vw;
                 margin-right: 2.5vw;
             }
-            
+
             .closenav{
                 float: right;
             }
@@ -252,8 +251,8 @@ html{
               }
               @keyframes revealed{
                 0%{
-                    opacity: 0;        
-                    top: 80%;   
+                    opacity: 0;
+                    top: 80%;
                     left: 50%;
                 }
                 50%{
@@ -361,7 +360,7 @@ html{
                   }
               }
         }
-        //Main-elements        
+        //Main-elements
         #header{
             width: 100%;
             height: 100vh;
@@ -369,12 +368,38 @@ html{
             background:$background-dark;
             transition: 2s;
             //#header elements
-            .toggle-bgm{
-                background-color: $red;
-                position: absolute;
-                top: 50%;
-                left: 70%;
-                transform:translate(-50%,-50%);
+            #anime{
+              position: absolute;
+              top:50%;
+              left: 80%;
+              transform:translate(-50%, -50%) scale(1.5);
+              display: flex;
+              flex-wrap: wrap;
+              width: 250px;
+              margin: 50px auto;
+              .square{
+                width: 20px;
+                height: 20px;
+                margin: 2px;
+                background: linear-gradient(to bottom right,$violet,$blue);
+                opacity: 0.15;
+                box-shadow: 0 0 5px $blue;
+                animation: stagger 2s infinite linear;
+                &:hover{
+                  opacity: 1;
+                }
+              }
+              @keyframes stagger{
+                0%{
+                  opacity: 0;
+                }
+                50%{
+                  opacity: 1;
+                }
+                100%{
+                  opacity: 0
+                }
+              }
             }
             h1{
                 color: $orange;
@@ -554,7 +579,7 @@ html{
             }
         }
         #about{
-            
+
             align-items: center;
             overflow:hidden;
             text-align: center;
@@ -605,7 +630,7 @@ html{
                     border-radius: 16px;
                 }
             }
-            
+
         }
         .feedbk{
             width: 100%;
@@ -682,7 +707,7 @@ html{
             }
         }
         .footer{
-            
+
             background: linear-gradient(to right,$red,$green,$blue,$orange,$teal,$violet,$gray);
             padding-top: 2.5px;
             //Footer elements
@@ -777,7 +802,7 @@ html{
                     transform: translate(-50%,-50%);
                     font-size: .8rem;
                 }
-                
+
             }
             #about{
                 clip-path:none;
