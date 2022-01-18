@@ -152,6 +152,25 @@ html{
                         }
                     }
                 }
+                .link-b{
+                    
+                    .fa-github-square{
+                        position: absolute;
+                        top: 55%;
+                        left: 5%;
+                        transform: translate(-50%,-50%);
+                    }
+                    .fa-codepen{
+                        position: absolute;
+                        top: 65%;
+                        left: 5%;
+                        transform: translate(-50%,-50%);
+                    }
+                    svg:hover path{
+                        fill: $red;
+                        box-shadow: 0 0 10px $orange;
+                    }
+                }
             }
         //Preloaderz
         background:$background-dark;
@@ -571,7 +590,8 @@ html{
             margin-top: 40px;
             box-shadow: 0px 0px 25px rgba(0,0,0,0.4);
             padding: 10px;
-            padding-top: 100px;z-index: 2;
+            padding-top: 100px;
+            z-index: 2;
             #back{
                 font-size:200px;
                 text-transform: lowercase;
