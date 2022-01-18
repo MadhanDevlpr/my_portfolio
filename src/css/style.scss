@@ -58,7 +58,6 @@ html{
     overflow-y: scroll;
     height: 100vh;
     body{
-            width: 90%;
             margin: 0 auto;
             margin-top: 20px;
             margin-bottom: 20px;
@@ -376,7 +375,6 @@ html{
                 }
             }
 
-
             h3{
                 font-size: .6rem;
                 width:420px;
@@ -405,17 +403,16 @@ html{
                 background: linear-gradient(to bottom right, $blue -100%,$violet 100%);
                 width: 450px;
                 height: 450px;
-
                 position: absolute;
                 top: 55%;
-                left: 80%;
+                left: 75%;
                 transform: translate(-50%,-50%) rotate(-30deg);
                 border-radius: 50%;
                 &:hover{
                     filter: brightness(200%);
                 }
                 &:hover .circle{
-                    left: 200%;
+                    left: 100%;
                     opacity: 0;
                 }
             }
@@ -425,7 +422,7 @@ html{
                 background: $background-dark;
                 position: absolute;
                 top: 55%;
-                left: 70%;
+                left: 75%;
                 transform: translate(-50%,-50%);
                 border-radius: 50%;
                 
@@ -562,14 +559,14 @@ html{
             }
         }
         #about{
-
             align-items: center;
             overflow:hidden;
             text-align: center;
             justify-content: center;
             display: flex;
             flex-direction: column;
-            width: 100%;
+            width: 90%;
+            margin-left: 5%;
             border-radius: 5px;
             margin-top: 40px;
             box-shadow: 0px 0px 25px rgba(0,0,0,0.4);
@@ -764,8 +761,11 @@ html{
                 margin: 2.5vw;
             }
             #header{
-                img{
+                .circle-container{
                     display: none;
+                    .circle{
+                        display: none;
+                    }
                 }
                 h1{
                     position: absolute;
