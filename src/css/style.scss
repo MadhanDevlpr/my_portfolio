@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-$background-dark:#21212b;
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+$background-dark:#000b00;
 $background-light:#242b32;
 $red:#e06c75;
 $green:#98c379;
@@ -11,9 +11,9 @@ $gray:#abb2bf;
 *{
     margin: 0;
     padding: 0;
-    font-family:'Roboto Mono', monospace;
+    font-family: 'Megrim', cursive;
     transition: .5s;
-    font-weight: 400;
+    font-weight: 300;
 }
 h1{
     color: transparent;
@@ -58,6 +58,7 @@ html{
     overflow-y: scroll;
     height: 100vh;
     body{
+        width: 90%;
             margin: 0 auto;
             margin-top: 20px;
             margin-bottom: 20px;
@@ -153,7 +154,7 @@ html{
                     }
                 }
                 .link-b{
-                    
+
                     .fa-github-square{
                         position: absolute;
                         top: 55%;
@@ -370,52 +371,54 @@ html{
             transition: 2s;
             //#header elements
 
-
-            h1{
-                color: $orange;
-                font-size: 0.8rem;
-                overflow:hidden;
-                text-align: left;
-                position: relative;
-                top: 50%;
-                left: 55%;
-                transform:translate(-50%,-50%);
-                .glow{
-                    font-size: 5.6rem;
-                    font-weight: 100;
-                    text-transform: lowercase;
-                    color: transparent;
-                    background: linear-gradient(to right,$green,$violet);
-                    background-clip:text;
-                    -webkit-background-clip:text;
-                    -moz-background-clip:text;
-                    -oz-background-clip:text;
-                    text-shadow: 0 0 5px $red;
-                }
-            }
-
-            h3{
-                font-size: .6rem;
-                width:420px;
+            .content{
+                align-items: center;
                 text-align: center;
-                overflow:hidden;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
                 position: relative;
-                top: 50%;
-                left: 30%;
+                top: 60%;
+                left: 25%;
                 transform:translate(-50%,-50%);
-                line-height: 30px;
-                background: $background-dark;
-                padding: 10px;
-                border-radius: 10px;
-                color: $teal;
-                code{
-                    color: $violet;
-                    padding: 10px 10px 10px 10px;
-                    white-space: nowrap;
-                    font-weight: 900;
-                    padding: 5px;
+                h1{
+                    color: $orange;
+                    font-size: 1.2rem;
+                    overflow:hidden;
+                    text-align: left;
+                    .glow{
+                        font-size: 7.6rem;
+
+                        text-transform: lowercase;
+                        color: transparent;
+                        background: linear-gradient(to right,$green,$violet);
+                        background-clip:text;
+                        -webkit-background-clip:text;
+                        -moz-background-clip:text;
+                        -oz-background-clip:text;
+                        text-shadow: 0 0 5px $red;
+                    }
+                }
+
+                h3{
+                    font-size: 1rem;
+                    width:520px;
+                    text-align: center;
+                    overflow:hidden;
+                    line-height: 30px;
+                    background: $background-dark;
+                    padding: 10px;
                     border-radius: 10px;
-                    font-family: 'Fira Code', monospace;
+                    color: $teal;
+                    code{
+                        color: $violet;
+                        padding: 10px 10px 10px 10px;
+                        white-space: nowrap;
+
+                        padding: 5px;
+                        border-radius: 10px;
+                        font-family: 'Fira Code', monospace;
+                    }
                 }
             }
             .circle-container{
@@ -430,7 +433,7 @@ html{
                 &:hover{
                     filter: brightness(200%);
                 }
-                &:hover .circle{
+                &:hover  .circle{
                     left: 100%;
                     opacity: 0;
                 }
@@ -444,7 +447,7 @@ html{
                 left: 75%;
                 transform: translate(-50%,-50%);
                 border-radius: 50%;
-                
+
             }
         }
         .projects{
@@ -476,7 +479,7 @@ html{
                     -webkit-background-clip: text;
                     -moz-background-clip: text;
                 overflow: hidden;
-                font-weight: 300;
+                font-weight: 900;
                 overflow:hidden;
             }
             .card .dot{
@@ -508,6 +511,7 @@ html{
             }
             .card-title{
                 font-weight: 900;
+                font-style: italic;
                 color: $background-dark;
                 padding: 10px;
                 border-radius: 15px;
@@ -515,12 +519,16 @@ html{
             .card-text{
                 color: $background-dark;
                 overflow:hidden;
+                font-weight: 300;
+                font-style: italic;
+                font-family: Roboto
             }
             .btn-primary{
                 color:$orange;
                 background-color: $background-dark;
                 border: none;
                 outline: none;
+                font-weight: 900
             }
             .btn-primary:hover{
                 box-shadow: 0 0 6px $background-dark;
@@ -547,7 +555,7 @@ html{
                     -webkit-background-clip: text;
                     -moz-background-clip: text;
                 overflow:hidden;
-                font-weight: lighter;
+
             }
             .skills{
                 justify-content: center;
@@ -611,7 +619,7 @@ html{
                     overflow:hidden;
                     font-size: 3rem;
                     padding-top: 20px;
-                    font-weight: 300;
+
                     color: transparent;
                     background: linear-gradient(to right,$blue,$violet);
                     background-clip:text;
@@ -619,6 +627,9 @@ html{
                     -moz-background-clip: text;
                 }
                 p{
+                    font-family:"Roboto",sans-serif;
+                    font-style: italic;
+
                     line-height: 40px;
                     margin-top: 60px;
                     color: transparent;
@@ -645,7 +656,7 @@ html{
                 background-clip:text;
                 -webkit-background-clip: text;
                 -moz-background-clip: text;
-                font-weight: 300;
+
                 margin: 40px;
                 overflow:hidden;
                 font-size: 3rem;
@@ -660,9 +671,10 @@ html{
             }
             form{
                 height: auto;
+                font-family: Roboto;
             }
             input{
-                font-family: 'Fira Code';
+                font-family: Roboto;
                 border: none;
                 outline: none;
                 margin-left: 2vw;
@@ -679,9 +691,8 @@ html{
                 overflow: hidden;
             }
             textarea{
-                font-family: 'Fira Code';
                 margin-left: 2vw;
-                min-width: 78.25vw;
+                min-width: 87.25vw;
                 height: 200px;
                 border: none;
                 outline: none;
@@ -764,7 +775,6 @@ html{
                     -webkit-background-clip: text;
                     -moz-background-clip: text;
                     -oz-background-clip: text;
-                    font-family: 'Fira Code';
                     text-decoration: none;
                     border-bottom:2px solid $violet;
                     padding: 0px 10px 0px 10px;
@@ -896,4 +906,3 @@ html{
         }
     }
 }
-
