@@ -71,7 +71,7 @@ Copy the url and Paste it into the world.
 
 <hr>
 
-If your're interested in contributing to this project please create a PR.
+If your're interested in contributing to this project please send me a msg in the feedback form of my portfolio.
 
 <hr>
 
