@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/style.scss';
+import './css/style.css';
 
 import Loader from './components/Loader';
 import Navbar from './components/Navbar';
