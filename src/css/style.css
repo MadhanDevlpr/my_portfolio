@@ -1,4 +1,15 @@
+:root{
+	--deep: #740805;
+	--light: #fcd3bd;
+	--mid: #d66d4e;
+	--yellow: #F7DC6F;
+	--seashell: #F7C9B6;
+	--peach: #F1A17E;
+	--grey: #abb2bf;
+	--black: #490E08;
+}
 @import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&amp;display=swap&#39);
+
  * {
 	 margin: 0;
 	 padding: 0;
@@ -6,23 +17,24 @@
 	 transition: 0.5s;
 	 font-weight: 300;
 }
+
  h1 {
 	 color: transparent;
-	 background: linear-gradient(to right, #e06c75, #61afef);
+	 background: linear-gradient(to right, var(--deep), var(--light));
 	 background-clip: text;
 	 -webkit-background-clip: text;
 	 -moz-background-clip: text;
 }
  p {
 	 color: transparent;
-	 background: linear-gradient(to right, #e06c75, #61afef);
+	 background: linear-gradient(to right, var(--deep), var(--light));
 	 background-clip: text;
 	 -webkit-background-clip: text;
 	 -moz-background-clip: text;
 }
  h3 {
 	 color: transparent;
-	 background: linear-gradient(to right, #e06c75, #61afef);
+	 background: linear-gradient(to right, var(--deep), var(--light));
 	 background-clip: text;
 	 -webkit-background-clip: text;
 	 -moz-background-clip: text;
@@ -32,7 +44,7 @@
 	 background: transparent;
 }
  *::-webkit-scrollbar-thumb {
-	 background: #e06c75;
+	 background: var(--deep);
 }
  *::selection {
 	 background: transparent;
@@ -41,7 +53,7 @@
 	 scroll-behavior: smooth;
 	 overflow-x: hidden;
 	 overflow-y: scroll;
-	 scrollbar-color: #e06c75 transparent;
+	 scrollbar-color: var(--deep) transparent;
 	 scrollbar-width: thin;
 	 scroll-margin-block-start: 10px;
 	 scroll-margin-block-end: 10px;
@@ -57,7 +69,7 @@
 	 animation-name: rise;
 	 animation-duration: 3s;
 	 animation-delay: 7.75s;
-	 background: #000b00;
+	 background: var(--black);
 }
  html body section {
 	 scroll-snap-align: start;
@@ -74,9 +86,9 @@
 	}
 }
  html body .navbar-m {
-	 background: rgba(33, 33, 43, 0.9);
+	 background: var(--deep);
 	 backdrop-filter: blur(10px);
-	 border: 1px solid #56b6c2;
+	 border: 1px solid var(--deep);
 	 border-radius: 20px;
 	 z-index: 9999;
 	 width: 90vw;
@@ -95,7 +107,7 @@
  html body .navbar-toggler {
 	 outline: none;
 	 box-shadow: none;
-	 background: #e06c75;
+	 background: var(--deep);
 	 float: right;
 	 position: fixed;
 	 top: -5%;
@@ -115,8 +127,8 @@
 	 position: fixed;
 	 top: 0%;
 	 left: -120%;
-	 background: #000b00;
-	 border-right: 1px solid #98c379;
+	 background: var(--black);
+	 border-right: 1px solid var(--yellow);
 	 z-index: 5000;
 	 align-items: center;
 	 text-align: center;
@@ -125,7 +137,7 @@
 	 transition: 0.5s ease-in-out;
 }
  html body .sidenav-m li {
-	 color: #d19a66;
+	 color: var(--seashell);
 	 margin-bottom: 30px;
 	 font-size: 20px;
 	 list-style-type: none;
@@ -134,12 +146,12 @@
 	 margin-top: 250px;
 }
  html body .sidenav-m li a {
-	 color: #d19a66;
+	 color: var(--seashell);
 	 margin-bottom: 30px;
 	 text-decoration: none;
 }
  html body .sidenav-m li a:hover {
-	 color: #98c379;
+	 color: var(--yellow);
 }
  html body .sidenav-m .link-b .fa-github-square {
 	 position: absolute;
@@ -154,11 +166,11 @@
 	 transform: translate(-50%, -50%);
 }
  html body .sidenav-m .link-b svg:hover path {
-	 fill: #e06c75;
-	 box-shadow: 0 0 10px #d19a66;
+	 fill: var(--deep);
+	 box-shadow: 0 0 10px var(--seashell);
 }
  html body #preloader {
-	 color: #000b00;
+	 color: var(--black);
 }
  html body #preloader .loader-wrapper {
 	 width: 100%;
@@ -166,7 +178,7 @@
 	 position: fixed;
 	 top: 0;
 	 left: 0;
-	 background-color: #000b00;
+	 background-color: var(--black);
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
@@ -177,7 +189,7 @@
 	 visibility: hidden;
 }
  html body #preloader .loader-wrapper div {
-	 color: #fff;
+	 color: var(--light);
 	 font-size: 20px;
 	 text-transform: uppercase;
      white-space: nowrap;
@@ -348,7 +360,7 @@
 	 width: 100%;
 	 height: 100vh;
 	 overflow-x: hidden;
-	 background: #000b00;
+	 background: var(--black);
 	 transition: 2s;
 }
  html body #header .content {
@@ -363,7 +375,7 @@
      transform: translate(-50%,-50%);
 }
  html body #header .content h1 {
-	 color: #d19a66;
+	 color: var(--seashell);
 	 font-size: 1rem;
 	 overflow: hidden;
 	 text-align: left;
@@ -373,12 +385,12 @@
 	 font-size: 6rem;
 	 text-transform: lowercase;
 	 color: transparent;
-	 background: linear-gradient(to right, #98c379, #c678dd);
+	 background: linear-gradient(to right, var(--yellow), var(--peach));
 	 background-clip: text;
 	 -webkit-background-clip: text;
 	 -moz-background-clip: text;
 	 -oz-background-clip: text;
-	 text-shadow: 0 0 5px #e06c75;
+	 text-shadow: 0 0 5px var(--deep);
 }
  html body #header .content h3 {
 	 font-size: 1rem;
@@ -386,21 +398,21 @@
 	 text-align: center;
 	 overflow: hidden;
 	 line-height: 30px;
-	 background: #000b00;
+	 background: var(--black);
 	 padding: 10px;
 	 border-radius: 10px;
-	 color: #56b6c2;
+	 color: var(--mid);
 
 }
  html body #header .content h3 code {
-	 color: #c678dd;
+	 color: var(--peach);
 	 padding: 10px 10px 10px 10px;
 	 white-space: nowrap;
 	 padding: 5px;
 	 border-radius: 10px;
 }
  html body #header .circle-container {
-	 background: linear-gradient(to bottom right, #61afef -100%, #c678dd 100%);
+	 background: linear-gradient(to bottom right, var(--light) -100%, var(--peach) 100%);
 	 width: 450px;
 	 height: 450px;
 	 position: absolute;
@@ -419,7 +431,7 @@
  html body #header .circle {
 	 width: 400px;
 	 height: 400px;
-	 background: #000b00;
+	 background: var(--black);
 	 position: absolute;
 	 top: 55%;
 	 left: 75%;
@@ -429,7 +441,7 @@
  html body .projects {
 	 text-align: center;
 	 overflow: hidden;
-	 background: #000b00;
+	 background: var(--black);
 	 padding-top: 100px;
 }
  html body .projects #work {
@@ -450,7 +462,7 @@
 	 padding-bottom: 40px;
 	 padding-top: 50px;
 	 color: transparent;
-	 background: linear-gradient(to right, #e06c75, #61afef);
+	 background: linear-gradient(to right, var(--deep), var(--light));
 	 background-clip: text;
 	 -webkit-background-clip: text;
 	 -moz-background-clip: text;
@@ -461,7 +473,7 @@
  html body .projects .card .dot {
 	 padding: 5px;
 	 margin: 10px;
-	 background: #000b00;
+	 background: var(--black);
 	 border-radius: 50%;
 	 box-shadow: -1.5px 1.5px 1px rgba(0, 0, 0, 0.4);
 }
@@ -477,31 +489,36 @@
 	 border: none;
 	 outline: none;
 	 transition: 1s;
-	 background: linear-gradient(217deg, #98c379, rgba(255, 0, 0, 0) 70.7%), linear-gradient(127deg, #d19a66, rgba(0, 255, 0, 0) 70.7%), linear-gradient(336deg, #61afef, rgba(0, 0, 255, 0) 70.7%), linear-gradient(217deg, #c678dd, rgba(255, 0, 0, 0) 70.7%), linear-gradient(127deg, #56b6c2, rgba(0, 255, 0, 0) 70.7%), linear-gradient(336deg, #abb2bf, rgba(0, 0, 255, 0) 70.7%);
+	 background: linear-gradient(217deg, var(--yellow), rgba(255, 0, 0, 0) 70.7%),
+	  linear-gradient(127deg, var(--seashell), rgba(0, 255, 0, 0) 70.7%),
+	   linear-gradient(336deg, var(--light), rgba(0, 0, 255, 0) 70.7%),
+	    linear-gradient(217deg, var(--peach), var(--light) 70.7%),
+	     linear-gradient(127deg, var(--mid), rgba(0, 255, 0, 0) 70.7%),
+	      linear-gradient(336deg, var(--grey), rgba(0, 0, 255, 0) 70.7%);
 }
  html body .projects .card-title {
 	 font-weight: 900;
 	 font-style: italic;
-	 color: #000b00;
+	 color: var(--black);
 	 padding: 10px;
 	 border-radius: 15px;
 }
  html body .projects .card-text {
-	 color: #000b00;
+	 color: var(--black);
 	 overflow: hidden;
 	 font-weight: 700;
 	 font-style: italic;
 }
  html body .projects .btn-primary {
-	 color: #d19a66;
-	 background-color: #000b00;
+	 color: var(--seashell);
+	 background-color: var(--black);
 	 border: none;
 	 outline: none;
 	 font-weight: 900;
 }
  html body .projects .btn-primary:hover {
-	 box-shadow: 0 0 6px #000b00;
-	 color: #61afef;
+	 box-shadow: 0 0 6px var(--black);
+	 color: var(--light);
 }
  html body .projects .btn-primary:active, html body .projects .btn-primary:focus {
 	 border: none;
@@ -517,7 +534,7 @@
 }
  html body .skills-container h1 {
 	 color: transparent;
-	 background: linear-gradient(to right, #e06c75, #61afef);
+	 background: linear-gradient(to right, var(--deep), var(--light));
 	 background-clip: text;
 	 -webkit-background-clip: text;
 	 -moz-background-clip: text;
@@ -535,7 +552,7 @@
 	 padding: 20px;
 	 font-size: 50px;
 	 color: transparent;
-	 background: linear-gradient(to right, #e06c75, #61afef);
+	 background: linear-gradient(to right, var(--deep), var(--light));
 	 background-clip: text;
 	 -webkit-background-clip: text;
 	 -moz-background-clip: text;
@@ -584,7 +601,7 @@
 	 font-size: 3rem;
 	 padding-top: 20px;
 	 color: transparent;
-	 background: linear-gradient(to right, #61afef, #c678dd);
+	 background: linear-gradient(to right, var(--light), var(--peach));
 	 background-clip: text;
 	 -webkit-background-clip: text;
 	 -moz-background-clip: text;
@@ -592,9 +609,10 @@
  html body #about .text p {
 	 font-style: italic;
 	 line-height: 40px;
+	 font-size: larger;
 	 margin-top: 60px;
 	 color: transparent;
-	 background: linear-gradient(to right, #abb2bf, #61afef, #98c379);
+	 background: linear-gradient(to right, var(--grey), var(--light), var(--yellow));
 	 background-clip: text;
 	 -webkit-background-clip: text;
 	 -moz-background-clip: text;
@@ -610,7 +628,7 @@
  html body .feedbk h1 {
 	 color: transparent;
 	 color: transparent;
-	 background: linear-gradient(to right, #56b6c2, #d19a66);
+	 background: linear-gradient(to right, var(--mid), var(--seashell));
 	 background-clip: text;
 	 -webkit-background-clip: text;
 	 -moz-background-clip: text;
@@ -621,7 +639,7 @@
  html body .feedbk p {
 	 margin-left: 2vw;
 	 color: transparent;
-	 background: linear-gradient(to right, #56b6c2, #e06c75, #c678dd);
+	 background: linear-gradient(to right, var(--mid), var(--deep), var(--peach));
 	 background-clip: text;
 	 -webkit-background-clip: text;
 	 -moz-background-clip: text;
@@ -637,8 +655,8 @@
 	 padding: 5px 10px 5px 10px;
 	 border-radius: 10px;
 	 background: transparent;
-	 border: 2px solid #56b6c2;
-	 color: #61afef;
+	 border: 2px solid var(--mid);
+	 color: var(--light);
 }
  html body .feedbk .wrap-input {
 	 display: flex;
@@ -654,25 +672,25 @@
 	 padding: 5px 10px 5px 10px;
 	 border-radius: 10px;
 	 background: transparent;
-	 border: 2px solid #56b6c2;
-	 color: #d19a66;
+	 border: 2px solid var(--mid);
+	 color: var(--seashell);
 	 max-height: 400px;
 }
  html body .feedbk input::placeholder {
-	 color: #56b6c2;
+	 color: var(--mid);
 }
  html body .feedbk textarea::placeholder {
-	 color: #61afef;
+	 color: var(--light);
 }
  html body .feedbk .btn {
 	 margin-left: 2vw;
-	 color: #000b00;
-	 background: #56b6c2;
-	 border-color: #56b6c2;
-	 outline-color: #61afef;
+	 color: var(--black);
+	 background: var(--mid);
+	 border-color: var(--mid);
+	 outline-color: var(--light);
 }
  html body .footer {
-	 background: linear-gradient(to right, #e06c75, #98c379, #61afef, #d19a66, #56b6c2, #c678dd, #abb2bf);
+	 background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
 	 padding-top: 2.5px;
 }
  html body .footer .footer-content {
@@ -684,16 +702,16 @@
 	 justify-content: center;
 	 display: flex;
 	 flex-direction: column;
-	 background: #000b00;
+	 background: var(--black);
 }
  html body .footer .footer-content hr {
-	 background: linear-gradient(to right, #e06c75, #98c379, #61afef, #d19a66, #56b6c2, #c678dd, #abb2bf);
+	 background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
 	 width: 90%;
 	 height: 2px;
 }
  html body .footer .footer-content p {
 	 color: transparent;
-	 background: linear-gradient(to right, #e06c75, #98c379, #61afef, #d19a66, #56b6c2, #c678dd, #abb2bf);
+	 background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
 	 background-clip: text;
 	 -webkit-background-clip: text;
 	 -moz-background-clip: text;
@@ -703,12 +721,12 @@
 	 height: 100%;
 }
  html body .footer .footer-content p svg {
-	 fill: #e06c75;
+	 fill: var(--deep);
 	 padding: 1px;
 }
  html body .footer .footer-content p a {
 	 color: transparent;
-	 background: linear-gradient(to right, #e06c75, #98c379, #61afef, #d19a66, #56b6c2, #c678dd, #abb2bf);
+	 background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
 	 background-clip: text;
 	 -webkit-background-clip: text;
 	 -moz-background-clip: text;
@@ -716,7 +734,7 @@
 	 text-decoration: none;
 	 transition: 0.2s;
 	 padding-bottom: 2px;
-	 border-bottom: 1.5px solid #61afef;
+	 border-bottom: 1.5px solid var(--light);
 }
  html body .footer .footer-content p a:hover {
 	 padding-left: 5px;
@@ -724,13 +742,13 @@
 }
  html body .footer .footer-content .wrap .git-ele {
 	 color: transparent;
-	 background: linear-gradient(to right, #e06c75, #98c379, #61afef, #d19a66, #56b6c2, #c678dd, #abb2bf);
+	 background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
 	 background-clip: text;
 	 -webkit-background-clip: text;
 	 -moz-background-clip: text;
 	 -oz-background-clip: text;
 	 text-decoration: none;
-	 border-bottom: 2px solid #c678dd;
+	 border-bottom: 2px solid var(--peach);
 	 padding: 0px 10px 0px 10px;
 }
  html body .footer .footer-content .wrap .git-ele:hover {
