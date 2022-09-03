@@ -422,7 +422,7 @@
 	 border-radius: 50%;
 }
  html body #header .circle-container:hover {
-	 filter: brightness(200%);
+	 filter: brightness(100%);
 }
  html body #header .circle-container:hover .circle {
 	 left: 100%;
