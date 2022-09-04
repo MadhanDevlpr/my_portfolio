@@ -25,7 +25,7 @@
   
 - Make changes in the images and logos and the content in the Components
 
-- Create a formcarry account and in 
+- Create your own formcarry account and in 
  ``` 
  src/components/Feedback.jsx 
  ``` 
@@ -65,7 +65,7 @@ Drag and drop the build folder to the part of the page that is shown below.
 
 <img width="881" alt="Screenshot 2022-01-12 151709" src="https://user-images.githubusercontent.com/81558579/149115193-5e38efaa-4a7c-41f3-9202-9476f686b0b5.png">
 
-If you've followed the steps correctly you're site should have be deployed ✔.
+If you've followed the steps correctly you're site should have be successfully deployed ✔.
 
 Copy the url and Paste it into the world.
 
