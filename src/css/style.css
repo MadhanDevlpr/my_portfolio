@@ -409,17 +409,30 @@
 	padding: 5px;
 	border-radius: 10px;
 }
-@keyframes rotate{
-	0%{
-		transform: rotate(0deg);
-	}
-	50%{
-		opacity: 0;
-		transform: rotate(360deg);
-	}
-	100%{
-		transform: rotate(0deg);
-	}
+@keyframes rotate {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25%{
+  	clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 0, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 100%);
+  }
+  50%{
+  	clip-path: polygon(20% 0%, 0% 20%, 100% 50%, 0% 80%, 20% 100%, 50% 0, 80% 100%, 100% 80%, 0 50%, 100% 20%, 80% 0%, 50% 100%);
+  }
+  75%{
+  	clip-path: polygon(20% 0%, 0% 20%, 100% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 0 50%, 100% 20%, 80% 0%, 50% 30%);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
  html body #header .circle-container {
 	background: linear-gradient(to bottom right, var(--light) -100%, var(--peach) 100%);
@@ -429,12 +442,12 @@
 	top: 55%;
 	left: 75%;
 	transform: translate(-50%, -50%) ;
-	border-radius: 10%;
+	border-radius: 50%;
 }
  html body #header .circle-container:hover {
 	filter: brightness(100%);
 	border-radius: 50%;
-	box-shadow: 0 0 10px var(--light);
+	box-shadow: 0 0 50px var(--light);
 	width: 450px;
 	height: 450px;
 }
@@ -446,13 +459,14 @@
 	width: 400px;
 	height: 400px;
 	background: var(--black);
-	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	clip-path: polygon(20% 0%, 0% 20%, 15% 50%, 0% 80%, 20% 100%, 50% 85%, 80% 100%, 100% 80%, 85% 50%, 100% 20%, 80% 0%, 50% 15%);
 	border-radius: 10%;
-	animation-name: rotate;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
-	animation-delay: 1s;
-
+	-webkit-animation: rotate 6.5s linear infinite;
+  -moz-animation: rotate 6.5s linear infinite;
+  -ms-animation: rotate 6.5s linear infinite;
+  -o-animation: rotate 6.5s linear infinite;
+  animation: rotate 6.5s linear infinite;
+ animation-delay: 2s;
 }
  html body .projects {
 	text-align: center;
