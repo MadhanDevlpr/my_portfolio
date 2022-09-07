@@ -9,750 +9,766 @@
 	--black: #490E08;
 }
 @import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&amp;display=swap&#39);
-
  * {
-	 margin: 0;
-	 padding: 0;
-	 font-family: Comfortaa;
-	 transition: 0.5s;
-	 font-weight: 300;
+	margin: 0;
+	padding: 0;
+	font-family: Comfortaa;
+	transition: 0.5s;
+	font-weight: 300;
 }
 
  h1 {
-	 color: transparent;
-	 background: linear-gradient(to right, var(--deep), var(--light));
-	 background-clip: text;
-	 -webkit-background-clip: text;
-	 -moz-background-clip: text;
+	color: transparent;
+	background: linear-gradient(to right, var(--deep), var(--light));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
 }
  p {
-	 color: transparent;
-	 background: linear-gradient(to right, var(--deep), var(--light));
-	 background-clip: text;
-	 -webkit-background-clip: text;
-	 -moz-background-clip: text;
+	color: transparent;
+	background: linear-gradient(to right, var(--deep), var(--light));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
 }
  h3 {
-	 color: transparent;
-	 background: linear-gradient(to right, var(--deep), var(--light));
-	 background-clip: text;
-	 -webkit-background-clip: text;
-	 -moz-background-clip: text;
+	color: transparent;
+	background: linear-gradient(to right, var(--deep), var(--light));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
 }
  *::-webkit-scrollbar {
-	 width: 8px;
-	 background: transparent;
+	width: 8px;
+	background: transparent;
 }
  *::-webkit-scrollbar-thumb {
-	 background: var(--deep);
+	background: var(--deep);
 }
  *::selection {
-	 background: transparent;
+	background: transparent;
 }
  html {
-	 scroll-behavior: smooth;
-	 overflow-x: hidden;
-	 overflow-y: scroll;
-	 scrollbar-color: var(--deep) transparent;
-	 scrollbar-width: thin;
-	 scroll-margin-block-start: 10px;
-	 scroll-margin-block-end: 10px;
-	 scroll-snap-type: y proximity;
-	 overflow-y: scroll;
-	 height: 100vh;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	scrollbar-color: var(--deep) transparent;
+	scrollbar-width: thin;
+	scroll-margin-block-start: 10px;
+	scroll-margin-block-end: 10px;
+	scroll-snap-type: y proximity;
+	overflow-y: scroll;
+	height: 100vh;
 }
  html body {
-	 width: 100%;
-	 margin: 0 auto;
-	 margin-top: 20px;
-	 margin-bottom: 20px;
-	 animation-name: rise;
-	 animation-duration: 3s;
-	 animation-delay: 7.75s;
-	 background: var(--black);
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	animation-name: rise;
+	animation-duration: 3s;
+	animation-delay: 7.75s;
+	background: var(--black);
 }
  html body section {
-	 scroll-snap-align: start;
+	scroll-snap-align: start;
 }
  html body section:nth-child(1) {
-	 scroll-snap-align: end;
+	scroll-snap-align: end;
 }
  @keyframes rise {
-	 from {
-		 margin-top: 160px;
+	from {
+		margin-top: 160px;
 	}
-	 to {
-		 margin-top: 20px;
+	to {
+		margin-top: 20px;
 	}
 }
  html body .navbar-m {
-	 background: var(--deep);
-	 backdrop-filter: blur(10px);
-	 border: 1px solid var(--deep);
-	 border-radius: 20px;
-	 z-index: 9999;
-	 width: 90vw;
-	 margin: 0 auto;
-	 height: 70px;
-	 margin-top: 10px;
-	 position: fixed;
-	 top: 10%;
-	 left: 50%;
-	 transform: translate(-50%, -50%);
+	background: var(--deep);
+	backdrop-filter: blur(10px);
+	border: 1px solid var(--deep);
+	border-radius: 20px;
+	z-index: 9999;
+	width: 90vw;
+	margin: 0 auto;
+	height: 70px;
+	margin-top: 10px;
+	position: fixed;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
  html body .p-4 {
-	 float: left;
-	 margin-top: 0px;
+	float: left;
+	margin-top: 0px;
 }
  html body .navbar-toggler {
-	 outline: none;
-	 box-shadow: none;
-	 background: var(--deep);
-	 float: right;
-	 position: fixed;
-	 top: -5%;
-	 right: 0%;
-	 transition: 0.5s;
+	outline: none;
+	box-shadow: none;
+	background: var(--deep);
+	float: right;
+	position: fixed;
+	top: -5%;
+	right: 0%;
+	transition: 0.5s;
 }
  html body .navbar-toggler:focus, html body .navbar-toggler:active, html body .navbar-toggler-icon:focus {
-	 outline: none;
-	 box-shadow: none;
+	outline: none;
+	box-shadow: none;
 }
  html body .closenav {
-	 float: right;
+	float: right;
 }
  html body .sidenav-m {
-	 width: 100vw;
-	 height: 100%;
-	 position: fixed;
-	 top: 0%;
-	 left: -120%;
-	 background: var(--black);
-	 border-right: 1px solid var(--yellow);
-	 z-index: 5000;
-	 align-items: center;
-	 text-align: center;
-	 justify-content: center;
-	 display: flex;
-	 transition: 0.5s ease-in-out;
+	width: 100vw;
+	height: 100%;
+	position: fixed;
+	top: 0%;
+	left: -120%;
+	background: var(--black);
+	border-right: 1px solid var(--yellow);
+	z-index: 5000;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	transition: 0.5s ease-in-out;
 }
  html body .sidenav-m li {
-	 color: var(--seashell);
-	 margin-bottom: 30px;
-	 font-size: 20px;
-	 list-style-type: none;
+	color: var(--seashell);
+	margin-bottom: 30px;
+	font-size: 20px;
+	list-style-type: none;
 }
  html body .sidenav-m li:nth-child(1) {
-	 margin-top: 250px;
+	margin-top: 250px;
 }
  html body .sidenav-m li a {
-	 color: var(--seashell);
-	 margin-bottom: 30px;
-	 text-decoration: none;
+	color: var(--seashell);
+	margin-bottom: 30px;
+	text-decoration: none;
 }
  html body .sidenav-m li a:hover {
-	 color: var(--yellow);
+	color: var(--yellow);
 }
  html body .sidenav-m .link-b .fa-github-square {
-	 position: absolute;
-	 top: 55%;
-	 left: 5%;
-	 transform: translate(-50%, -50%);
+	position: absolute;
+	top: 55%;
+	left: 5%;
+	transform: translate(-50%, -50%);
 }
  html body .sidenav-m .link-b .fa-codepen {
-	 position: absolute;
-	 top: 65%;
-	 left: 5%;
-	 transform: translate(-50%, -50%);
+	position: absolute;
+	top: 65%;
+	left: 5%;
+	transform: translate(-50%, -50%);
 }
  html body .sidenav-m .link-b svg:hover path {
-	 fill: var(--deep);
-	 box-shadow: 0 0 10px var(--seashell);
+	fill: var(--deep);
+	box-shadow: 0 0 10px var(--seashell);
 }
  html body #preloader {
-	 color: var(--black);
+	color: var(--black);
 }
  html body #preloader .loader-wrapper {
-	 width: 100%;
-	 height: 100vh;
-	 position: fixed;
-	 top: 0;
-	 left: 0;
-	 background-color: var(--black);
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
-	 z-index: 10000;
-	 animation-duration: 10s;
-	 animation-timing-function: linear;
-	 opacity: 1;
-	 visibility: hidden;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: var(--black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10000;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	opacity: 1;
+	visibility: hidden;
 }
  html body #preloader .loader-wrapper div {
-	 color: var(--light);
-	 font-size: 20px;
-	 text-transform: uppercase;
+	color: var(--light);
+	font-size: 20px;
+	text-transform: uppercase;
      white-space: nowrap;
-	 opacity: 0;
-	 transition: 1s;
-	 position: absolute;
-	 top: 20%;
+	opacity: 0;
+	transition: 1s;
+	position: absolute;
+	top: 20%;
 }
  html body #preloader .loader-wrapper div:nth-child(1) {
-	 animation-name: revealed;
-	 animation-duration: 2s;
-	 animation-delay: 1.5s;
-	 opacity: 0;
-	 position: absolute;
-	 top: 0%;
-	 left: 0%;
-	 transform: translate(-50%, -50%);
+	animation-name: revealed;
+	animation-duration: 2s;
+	animation-delay: 1.5s;
+	opacity: 0;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	transform: translate(-50%, -50%);
 }
  html body #preloader .loader-wrapper div:nth-child(1) img {
-	 width: 25vw;
+	width: 25vw;
 }
  html body #preloader .loader-wrapper div:nth-child(2) {
-	 animation-name: reveal;
-	 animation-duration: 2s;
-	 animation-delay: 2.5s;
+	animation-name: reveal;
+	animation-duration: 2s;
+	animation-delay: 2.5s;
 }
  html body #preloader .loader-wrapper div:nth-child(3) {
-	 animation-name: reveal;
-	 animation-duration: 2s;
-	 animation-delay: 3.5s;
+	animation-name: reveal;
+	animation-duration: 2s;
+	animation-delay: 3.5s;
 }
  html body #preloader .loader-wrapper div:nth-child(4) {
-	 animation-name: reveal;
-	 animation-duration: 2s;
-	 animation-delay: 4.5s;
+	animation-name: reveal;
+	animation-duration: 2s;
+	animation-delay: 4.5s;
 }
  html body #preloader .loader-wrapper div:nth-child(5) {
-	 animation-name: reveal;
-	 animation-duration: 2s;
-	 animation-delay: 5.5s;
+	animation-name: reveal;
+	animation-duration: 2s;
+	animation-delay: 5.5s;
 }
  html body #preloader .loader-wrapper div:nth-child(6) {
-	 animation-name: reveal;
-	 animation-duration: 2s;
-	 animation-delay: 6.5s;
+	animation-name: reveal;
+	animation-duration: 2s;
+	animation-delay: 6.5s;
 }
  html body #preloader .loader-wrapper div:nth-child(7) {
-	 animation-name: reveal;
-	 animation-duration: 2s;
-	 animation-delay: 7.5s;
+	animation-name: reveal;
+	animation-duration: 2s;
+	animation-delay: 7.5s;
 }
  html body #preloader .loader-wrapper div:nth-child(8) {
-	 animation-name: reveal;
-	 animation-duration: 2s;
-	 animation-delay: 8.5s;
+	animation-name: reveal;
+	animation-duration: 2s;
+	animation-delay: 8.5s;
 }
  @keyframes revealed {
-	 0% {
-		 opacity: 0;
-		 top: 80%;
-		 left: 50%;
+	0% {
+		opacity: 0;
+		top: 80%;
+		left: 50%;
 	}
-	 50% {
-		 opacity: 1;
-		 top: 50%;
-		 left: 50%;
+	50% {
+		opacity: 1;
+		top: 50%;
+		left: 50%;
 	}
-	 100% {
-		 top: 0%;
-		 left: 50%;
-		 opacity: 0;
+	100% {
+		top: 0%;
+		left: 50%;
+		opacity: 0;
 	}
 }
  @keyframes reveal {
-	 0% {
-		 opacity: 0;
-		 top: 80%;
-		 transform: rotateX(-45deg);
+	0% {
+		opacity: 0;
+		top: 80%;
+		transform: rotateX(-45deg);
 	}
-	 15% {
-		 opacity: 0.15;
-		 transform: rotateX(-11.5deg);
+	15% {
+		opacity: 0.15;
+		transform: rotateX(-11.5deg);
 	}
-	 25% {
-		 opacity: 0.25;
-		 transform: rotateX(-11.5deg);
+	25% {
+		opacity: 0.25;
+		transform: rotateX(-11.5deg);
 	}
-	 50% {
-		 opacity: 1;
-		 transform: rotateX(22.5deg);
+	50% {
+		opacity: 1;
+		transform: rotateX(22.5deg);
 	}
-	 75% {
-		 opacity: 0.75;
-		 transform: rotateX(11.5deg);
+	75% {
+		opacity: 0.75;
+		transform: rotateX(11.5deg);
 	}
-	 85% {
-		 opacity: 0.65;
+	85% {
+		opacity: 0.65;
 	}
-	 100% {
-		 opacity: 0;
-		 transform: rotateX(45deg);
-		 top: 20%;
+	100% {
+		opacity: 0;
+		transform: rotateX(45deg);
+		top: 20%;
 	}
 }
  @keyframes fade {
-	 0% {
-		 opacity: 1;
-		 top: 0%;
-		 visibility: visible;
+	0% {
+		opacity: 1;
+		top: 0%;
+		visibility: visible;
 	}
-	 25% {
-		 opacity: 1;
-		 top: 0%;
-		 visibility: visible;
+	25% {
+		opacity: 1;
+		top: 0%;
+		visibility: visible;
 	}
-	 50% {
-		 opacity: 1;
-		 top: 0%;
-		 visibility: visible;
+	50% {
+		opacity: 1;
+		top: 0%;
+		visibility: visible;
 	}
-	 75% {
-		 opacity: 1;
-		 top: 0%;
-		 visibility: visible;
+	75% {
+		opacity: 1;
+		top: 0%;
+		visibility: visible;
 	}
-	 90% {
-		 opacity: 1;
-		 top: 0%;
-		 visibility: visible;
+	90% {
+		opacity: 1;
+		top: 0%;
+		visibility: visible;
 	}
-	 91% {
-		 opacity: 1;
-		 top: 0%;
-		 visibility: visible;
+	91% {
+		opacity: 1;
+		top: 0%;
+		visibility: visible;
 	}
-	 92% {
-		 opacity: 1;
-		 top: 0%;
-		 visibility: visible;
+	92% {
+		opacity: 1;
+		top: 0%;
+		visibility: visible;
 	}
-	 93% {
-		 opacity: 1;
-		 top: 0%;
-		 visibility: visible;
+	93% {
+		opacity: 1;
+		top: 0%;
+		visibility: visible;
 	}
-	 94% {
-		 opacity: 1;
-		 top: 0%;
-		 visibility: visible;
+	94% {
+		opacity: 1;
+		top: 0%;
+		visibility: visible;
 	}
-	 95% {
-		 opacity: 1;
-		 top: 0%;
-		 visibility: visible;
+	95% {
+		opacity: 1;
+		top: 0%;
+		visibility: visible;
 	}
-	 96% {
-		 opacity: 1;
-		 top: 0%;
-		 visibility: visible;
+	96% {
+		opacity: 1;
+		top: 0%;
+		visibility: visible;
 	}
-	 100% {
-		 opacity: 1;
-		 top: -100%;
-		 visibility: hidden;
+	100% {
+		opacity: 1;
+		top: -100%;
+		visibility: hidden;
 	}
 }
  html body #header {
-	 width: 100%;
-	 height: 100vh;
-	 overflow-x: hidden;
-	 background: var(--black);
-	 transition: 2s;
+	width: 100%;
+	height: 100vh;
+	overflow-x: hidden;
+	background: var(--black);
+	transition: 2s;
 }
  html body #header .content {
-	 align-items: center;
-	 text-align: center;
-	 justify-content: center;
-	 display: flex;
-	 flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
      position: absolute;
      top:55%;
      left:20%;
      transform: translate(-50%,-50%);
 }
  html body #header .content h1 {
-	 color: var(--seashell);
-	 font-size: 1rem;
-	 overflow: hidden;
-	 text-align: left;
+	color: var(--seashell);
+	font-size: 1rem;
+	overflow: hidden;
+	text-align: left;
 
 }
  html body #header .content h1 .glow {
-	 font-size: 6rem;
-	 text-transform: lowercase;
-	 color: transparent;
-	 background: linear-gradient(to right, var(--yellow), var(--peach));
-	 background-clip: text;
-	 -webkit-background-clip: text;
-	 -moz-background-clip: text;
-	 -oz-background-clip: text;
-	 text-shadow: 0 0 5px var(--deep);
+	font-size: 6rem;
+	text-transform: lowercase;
+	color: transparent;
+	background: linear-gradient(to right, var(--yellow), var(--peach));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-oz-background-clip: text;
+	text-shadow: 0 0 5px var(--deep);
 }
  html body #header .content h3 {
-	 font-size: 1rem;
-	 width: 30vw;
-	 text-align: center;
-	 overflow: hidden;
-	 line-height: 30px;
-	 background: var(--black);
-	 padding: 10px;
-	 border-radius: 10px;
-	 color: var(--mid);
-
+	font-size: 1rem;
+	width: 30vw;
+	text-align: center;
+	overflow: hidden;
+	line-height: 30px;
+	background: var(--black);
+	padding: 10px;
+	border-radius: 10px;
+	color: var(--mid);
 }
  html body #header .content h3 code {
-	 color: var(--peach);
-	 padding: 10px 10px 10px 10px;
-	 white-space: nowrap;
-	 padding: 5px;
-	 border-radius: 10px;
+	color: var(--peach);
+	padding: 10px 10px 10px 10px;
+	white-space: nowrap;
+	padding: 5px;
+	border-radius: 10px;
+}
+@keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		opacity: 0;
+		transform: rotate(360deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
 }
  html body #header .circle-container {
-	 background: linear-gradient(to bottom right, var(--light) -100%, var(--peach) 100%);
-	 width: 450px;
-	 height: 450px;
-	 position: absolute;
-	 top: 55%;
-	 left: 75%;
-	 transform: translate(-50%, -50%) rotate(-30deg);
-	 border-radius: 50%;
+	background: linear-gradient(to bottom right, var(--light) -100%, var(--peach) 100%);
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 55%;
+	left: 75%;
+	transform: translate(-50%, -50%) ;
+	border-radius: 10%;
 }
  html body #header .circle-container:hover {
-	 filter: brightness(100%);
+	filter: brightness(100%);
+	border-radius: 50%;
+	box-shadow: 0 0 10px var(--light);
+	width: 450px;
+	height: 450px;
 }
  html body #header .circle-container:hover .circle {
-	 left: 100%;
-	 opacity: 0;
+	opacity: 0;
+	clip-path: polygon(50% 0%, 100% 0, 98% 35%, 100% 100%, 79% 91%, 50% 100%, 21% 91%, 0 100%, 2% 35%, 0 0);
 }
  html body #header .circle {
-	 width: 400px;
-	 height: 400px;
-	 background: var(--black);
-	 position: absolute;
-	 top: 55%;
-	 left: 75%;
-	 transform: translate(-50%, -50%);
-	 border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	background: var(--black);
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	border-radius: 10%;
+	animation-name: rotate;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+
 }
  html body .projects {
-	 text-align: center;
-	 overflow: hidden;
-	 background: var(--black);
-	 padding-top: 100px;
+	text-align: center;
+	overflow: hidden;
+	background: var(--black);
+	padding-top: 100px;
 }
  html body .projects #work {
-	 font-size: 200px;
-	 position: absolute;
-	 right: 0%;
-	 opacity: 0.2;
-	 cursor: default;
+	font-size: 200px;
+	position: absolute;
+	right: 0%;
+	opacity: 0.2;
+	cursor: default;
 }
  html body .projects .cards {
-	 width: 100%;
-	 justify-content: center;
-	 display: flex;
-	 flex-wrap: wrap;
-	 overflow: hidden;
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
 }
  html body .projects h1 {
-	 padding-bottom: 40px;
-	 padding-top: 50px;
-	 color: transparent;
-	 background: linear-gradient(to right, var(--deep), var(--light));
-	 background-clip: text;
-	 -webkit-background-clip: text;
-	 -moz-background-clip: text;
-	 overflow: hidden;
-	 font-weight: 900;
-	 overflow: hidden;
+	padding-bottom: 40px;
+	padding-top: 50px;
+	color: transparent;
+	background: linear-gradient(to right, var(--deep), var(--light));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	overflow: hidden;
+	font-weight: 900;
+	overflow: hidden;
 }
  html body .projects .card .dot {
-	 padding: 5px;
-	 margin: 10px;
-	 background: var(--black);
-	 border-radius: 50%;
-	 box-shadow: -1.5px 1.5px 1px rgba(0, 0, 0, 0.4);
+	padding: 5px;
+	margin: 10px;
+	background: var(--black);
+	border-radius: 50%;
+	box-shadow: -1.5px 1.5px 1px rgba(0, 0, 0, 0.4);
 }
  html body .projects .card {
-	 width: 300px;
-	 height: 325px;
-	 align-items: center;
-	 text-align: center;
-	 justify-content: center;
-	 display: flex;
-	 flex-direction: column;
-	 margin: 40px;
-	 border: none;
-	 outline: none;
-	 transition: 1s;
-	 background: linear-gradient(217deg, var(--yellow), rgba(255, 0, 0, 0) 70.7%),
-	  linear-gradient(127deg, var(--seashell), rgba(0, 255, 0, 0) 70.7%),
-	   linear-gradient(336deg, var(--light), rgba(0, 0, 255, 0) 70.7%),
-	    linear-gradient(217deg, var(--peach), var(--light) 70.7%),
-	     linear-gradient(127deg, var(--mid), rgba(0, 255, 0, 0) 70.7%),
-	      linear-gradient(336deg, var(--grey), rgba(0, 0, 255, 0) 70.7%);
+	width: 300px;
+	height: 325px;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	margin: 40px;
+	border: none;
+	outline: none;
+	transition: 1s;
+	background: linear-gradient(217deg, var(--yellow), rgba(255, 0, 0, 0) 70.7%),
+	linear-gradient(127deg, var(--seashell), rgba(0, 255, 0, 0) 70.7%),
+	linear-gradient(336deg, var(--light), rgba(0, 0, 255, 0) 70.7%),
+	linear-gradient(217deg, var(--peach), var(--light) 70.7%),
+	linear-gradient(127deg, var(--mid), rgba(0, 255, 0, 0) 70.7%),
+	linear-gradient(336deg, var(--grey), rgba(0, 0, 255, 0) 70.7%);
 }
  html body .projects .card-title {
-	 font-weight: 900;
-	 font-style: italic;
-	 color: var(--black);
-	 padding: 10px;
-	 border-radius: 15px;
+	font-weight: 900;
+	font-style: italic;
+	color: var(--black);
+	padding: 10px;
+	border-radius: 15px;
 }
  html body .projects .card-text {
-	 color: var(--black);
-	 overflow: hidden;
-	 font-weight: 700;
-	 font-style: italic;
+	color: var(--black);
+	overflow: hidden;
+	font-weight: 700;
+	font-style: italic;
 }
  html body .projects .btn-primary {
-	 color: var(--seashell);
-	 background-color: var(--black);
-	 border: none;
-	 outline: none;
-	 font-weight: 900;
+	color: var(--seashell);
+	background-color: var(--black);
+	border: none;
+	outline: none;
+	font-weight: 900;
 }
  html body .projects .btn-primary:hover {
-	 box-shadow: 0 0 6px var(--black);
-	 color: var(--light);
+	box-shadow: 0 0 6px var(--black);
+	color: var(--light);
 }
  html body .projects .btn-primary:active, html body .projects .btn-primary:focus {
-	 border: none;
-	 outline: none;
-	 box-shadow: none;
+	border: none;
+	outline: none;
+	box-shadow: none;
 }
  html body .skills-container {
-	 margin-top: 100px;
-	 padding-top: 100px;
-	 padding-bottom: 40px;
-	 margin-bottom: 100px;
-	 text-align: center;
+	margin-top: 100px;
+	padding-top: 100px;
+	padding-bottom: 40px;
+	margin-bottom: 100px;
+	text-align: center;
 }
  html body .skills-container h1 {
-	 color: transparent;
-	 background: linear-gradient(to right, var(--deep), var(--light));
-	 background-clip: text;
-	 -webkit-background-clip: text;
-	 -moz-background-clip: text;
-	 overflow: hidden;
+	color: transparent;
+	background: linear-gradient(to right, var(--deep), var(--light));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	overflow: hidden;
 }
  html body .skills-container .skills {
-	 justify-content: center;
-	 display: flex;
-	 flex-wrap: wrap;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
 }
  html body .skills-container .skills .icon {
-	 margin: 15px;
+	margin: 15px;
 }
  html body .skills-container .skills .icon i {
-	 padding: 20px;
-	 font-size: 50px;
-	 color: transparent;
-	 background: linear-gradient(to right, var(--deep), var(--light));
-	 background-clip: text;
-	 -webkit-background-clip: text;
-	 -moz-background-clip: text;
-	 border: 2px solid transparent;
-	 border-radius: 15px;
-	 transition: 0.5s;
-	 -moz-transition: 0.5s;
-	 -webkit-transition: 0.5s;
+	padding: 20px;
+	font-size: 50px;
+	color: transparent;
+	background: linear-gradient(to right, var(--deep), var(--light));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	border: 2px solid transparent;
+	border-radius: 15px;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
 }
  html body .skills-container .skills .icon i:hover {
-	 transform: scale(1.5) rotate(10deg);
+	transform: scale(1.5) rotate(10deg);
 }
  html body #about {
-	 align-items: center;
-	 overflow: hidden;
-	 text-align: center;
-	 justify-content: center;
-	 display: flex;
-	 flex-direction: column;
-	 width: 90%;
-	 margin-left: 5%;
-	 border-radius: 5px;
-	 margin-top: 40px;
-	 box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
-	 padding: 10px;
-	 padding-top: 100px;
-	 z-index: 2;
+	align-items: center;
+	overflow: hidden;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin-left: 5%;
+	border-radius: 5px;
+	margin-top: 40px;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+	padding: 10px;
+	padding-top: 100px;
+	z-index: 2;
 }
  html body #about #back {
-	 font-size: 25vw;
-	 text-transform: lowercase;
-	 position: absolute;
-	 top: 82.5%;
-	 right: 0%;
-	 opacity: 0.2;
-	 cursor: default;
+	font-size: 25vw;
+	text-transform: lowercase;
+	position: absolute;
+	top: 82.5%;
+	right: 0%;
+	opacity: 0.2;
+	cursor: default;
 }
  html body #about .text {
-	 width: 100%;
-	 overflow: hidden;
-	 z-index: 4;
+	width: 100%;
+	overflow: hidden;
+	z-index: 4;
 }
  html body #about .text h1 {
-	 margin: 30px;
-	 overflow: hidden;
-	 font-size: 3rem;
-	 padding-top: 20px;
-	 color: transparent;
-	 background: linear-gradient(to right, var(--light), var(--peach));
-	 background-clip: text;
-	 -webkit-background-clip: text;
-	 -moz-background-clip: text;
+	margin: 30px;
+	overflow: hidden;
+	font-size: 3rem;
+	padding-top: 20px;
+	color: transparent;
+	background: linear-gradient(to right, var(--light), var(--peach));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
 }
  html body #about .text p {
-	 font-style: italic;
-	 line-height: 40px;
-	 font-size: larger;
-	 margin-top: 60px;
-	 color: transparent;
-	 background: linear-gradient(to right, var(--grey), var(--light), var(--yellow));
-	 background-clip: text;
-	 -webkit-background-clip: text;
-	 -moz-background-clip: text;
-	 padding: 30px;
-	 border-radius: 16px;
+	font-style: italic;
+	line-height: 40px;
+	font-size: larger;
+	margin-top: 60px;
+	color: transparent;
+	background: linear-gradient(to right, var(--grey), var(--light), var(--yellow));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	padding: 30px;
+	border-radius: 16px;
 }
  html body .feedbk {
-	 width: 100%;
-	 height: auto;
-	 background-attachment: fixed;
-	 padding-top: 100px;
+	width: 100%;
+	height: auto;
+	background-attachment: fixed;
+	padding-top: 100px;
 }
  html body .feedbk h1 {
-	 color: transparent;
-	 color: transparent;
-	 background: linear-gradient(to right, var(--mid), var(--seashell));
-	 background-clip: text;
-	 -webkit-background-clip: text;
-	 -moz-background-clip: text;
-	 margin: 40px;
-	 overflow: hidden;
-	 font-size: 3rem;
+	color: transparent;
+	color: transparent;
+	background: linear-gradient(to right, var(--mid), var(--seashell));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	margin: 40px;
+	overflow: hidden;
+	font-size: 3rem;
 }
  html body .feedbk p {
-	 margin-left: 2vw;
-	 color: transparent;
-	 background: linear-gradient(to right, var(--mid), var(--deep), var(--peach));
-	 background-clip: text;
-	 -webkit-background-clip: text;
-	 -moz-background-clip: text;
+	margin-left: 2vw;
+	color: transparent;
+	background: linear-gradient(to right, var(--mid), var(--deep), var(--peach));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
 }
  html body .feedbk form {
-	 height: auto;
+	height: auto;
 }
  html body .feedbk input {
-	 border: none;
-	 outline: none;
-	 margin-left: 2vw;
-	 width: 42.5%;
-	 padding: 5px 10px 5px 10px;
-	 border-radius: 10px;
-	 background: transparent;
-	 border: 2px solid var(--mid);
-	 color: var(--light);
+	border: none;
+	outline: none;
+	margin-left: 2vw;
+	width: 42.5%;
+	padding: 5px 10px 5px 10px;
+	border-radius: 10px;
+	background: transparent;
+	border: 2px solid var(--mid);
+	color: var(--light);
 }
  html body .feedbk .wrap-input {
-	 display: flex;
-	 flex-direction: row;
-	 overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
 }
  html body .feedbk textarea {
-	 margin-left: 2vw;
-	 min-width: 87.25vw;
-	 height: 200px;
-	 border: none;
-	 outline: none;
-	 padding: 5px 10px 5px 10px;
-	 border-radius: 10px;
-	 background: transparent;
-	 border: 2px solid var(--mid);
-	 color: var(--seashell);
-	 max-height: 400px;
+	margin-left: 2vw;
+	min-width: 87.25vw;
+	height: 200px;
+	border: none;
+	outline: none;
+	padding: 5px 10px 5px 10px;
+	border-radius: 10px;
+	background: transparent;
+	border: 2px solid var(--mid);
+	color: var(--seashell);
+	max-height: 400px;
 }
  html body .feedbk input::placeholder {
-	 color: var(--mid);
+	color: var(--mid);
 }
  html body .feedbk textarea::placeholder {
-	 color: var(--light);
+	color: var(--light);
 }
  html body .feedbk .btn {
-	 margin-left: 2vw;
-	 color: var(--black);
-	 background: var(--mid);
-	 border-color: var(--mid);
-	 outline-color: var(--light);
+	margin-left: 2vw;
+	color: var(--black);
+	background: var(--mid);
+	border-color: var(--mid);
+	outline-color: var(--light);
 }
  html body .footer {
-	 background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
-	 padding-top: 2.5px;
+	background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
+	padding-top: 2.5px;
 }
  html body .footer .footer-content {
-	 padding-top: 5vh;
-	 padding-bottom: 5vh;
-	 height: auto;
-	 align-items: center;
-	 text-align: center;
-	 justify-content: center;
-	 display: flex;
-	 flex-direction: column;
-	 background: var(--black);
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	height: auto;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	background: var(--black);
 }
  html body .footer .footer-content hr {
-	 background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
-	 width: 90%;
-	 height: 2px;
+	background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
+	width: 90%;
+	height: 2px;
 }
  html body .footer .footer-content p {
-	 color: transparent;
-	 background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
-	 background-clip: text;
-	 -webkit-background-clip: text;
-	 -moz-background-clip: text;
-	 -oz-background-clip: text;
-	 font-size: 12px;
-	 font-stretch: extra-expanded;
-	 height: 100%;
+	color: transparent;
+	background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-oz-background-clip: text;
+	font-size: 12px;
+	font-stretch: extra-expanded;
+	height: 100%;
 }
  html body .footer .footer-content p svg {
-	 fill: var(--deep);
-	 padding: 1px;
+	fill: var(--deep);
+	padding: 1px;
 }
  html body .footer .footer-content p a {
-	 color: transparent;
-	 background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
-	 background-clip: text;
-	 -webkit-background-clip: text;
-	 -moz-background-clip: text;
-	 -oz-background-clip: text;
-	 text-decoration: none;
-	 transition: 0.2s;
-	 padding-bottom: 2px;
-	 border-bottom: 1.5px solid var(--light);
+	color: transparent;
+	background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-oz-background-clip: text;
+	text-decoration: none;
+	transition: 0.2s;
+	padding-bottom: 2px;
+	border-bottom: 1.5px solid var(--light);
 }
  html body .footer .footer-content p a:hover {
-	 padding-left: 5px;
-	 padding-right: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
  html body .footer .footer-content .wrap .git-ele {
-	 color: transparent;
-	 background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
-	 background-clip: text;
-	 -webkit-background-clip: text;
-	 -moz-background-clip: text;
-	 -oz-background-clip: text;
-	 text-decoration: none;
-	 border-bottom: 2px solid var(--peach);
-	 padding: 0px 10px 0px 10px;
+	color: transparent;
+	background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-oz-background-clip: text;
+	text-decoration: none;
+	border-bottom: 2px solid var(--peach);
+	padding: 0px 10px 0px 10px;
 }
  html body .footer .footer-content .wrap .git-ele:hover {
-	 padding: 0px 15px 0px 15px;
+	padding: 0px 15px 0px 15px;
 }
 @media (max-width:1500px){
     html body #header .content{
