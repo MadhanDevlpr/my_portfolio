@@ -147,25 +147,31 @@
  html body .sidenav-m li a {
 	color: var(--seashell);
 	margin-bottom: 30px;
+	border-bottom: 2px solid transparent;
 	text-decoration: none;
 }
  html body .sidenav-m li a:hover {
 	color: var(--yellow);
+	padding-bottom: 5px;
+	border-bottom: 2px solid var(--yellow);
+
 }
  html body .sidenav-m .link-b .fa-github-square {
 	position: absolute;
 	top: 55%;
 	left: 5%;
 	transform: translate(-50%, -50%);
+	fill: var(--seashell);
 }
  html body .sidenav-m .link-b .fa-codepen {
 	position: absolute;
 	top: 65%;
 	left: 5%;
 	transform: translate(-50%, -50%);
+	fill: var(--seashell);
 }
  html body .sidenav-m .link-b svg:hover path {
-	fill: var(--deep);
+	fill: var(--yellow);
 	box-shadow: 0 0 10px var(--seashell);
 }
  html body #preloader {
