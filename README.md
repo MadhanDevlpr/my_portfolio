@@ -25,17 +25,14 @@
   
 - Make changes in the images and logos and the content in the Components
 
-- Create your own formcarry account and in 
+Head over to the file below
  ``` 
- src/components/Feedback.jsx 
+ src/components/Contact.jsx 
  ``` 
- in line 8 replace the below content
- ```
- https://formcarry.com/s/mPUDUSPBIbi 
- ``` 
- with your Formcarry id.
+ in line 8 replace my email with yours &
+ in line 10 replace the website's url with yours!
 
-- If you don't replace the ID, all feedbacks are gonna be received by me so make sure you do that.
+- If you don't replace the mail, all feedbacks are gonna be received by me so make sure you do that.
 
 <hr>
 
