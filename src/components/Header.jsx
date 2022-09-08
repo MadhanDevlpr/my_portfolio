@@ -1,5 +1,5 @@
 import React from "react";
-
+import logo_svg from "../images/logo.svg"
 const Header = () =>{
     return (
         <section id="header">
@@ -11,7 +11,10 @@ const Header = () =>{
                 <span>Python, Html, Css, Sass, Javacript</span>, the tools and frameworks I use are
                 <span>Vs Code, React, Flask, Git Bash, WSL.</span></h3>
             </div>
-            <div className="circle-container"><div className="circle"></div></div>
+            <div className="circle-container">
+                <img src={logo_svg}></img>
+                <div className="circle"></div>
+            </div>
             
         </section>
     )
