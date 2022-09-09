@@ -694,11 +694,8 @@ html body #header .circle-container:hover img{
 }
  html body .feedbk p {
 	margin-left: 2vw;
-	color: transparent;
-	background: linear-gradient(to right, var(--mid), var(--deep), var(--peach));
-	background-clip: text;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
+	color: var(--peach);
+	font-size: large;
 }
  html body .feedbk form {
 	height: auto;
@@ -706,9 +703,10 @@ html body #header .circle-container:hover img{
  html body .feedbk input {
 	border: none;
 	outline: none;
-	margin-left: 2vw;
-	width: 42.5%;
-	padding: 5px 10px 5px 10px;
+	font-size: larger;
+	margin: 2vw;
+	width: 100%;
+	padding: 20px 20px 20px 20px;
 	border-radius: 10px;
 	background: transparent;
 	border: 2px solid var(--mid);
@@ -716,21 +714,34 @@ html body #header .circle-container:hover img{
 }
  html body .feedbk .wrap-input {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	width: 100vw;
 	overflow: hidden;
 }
- html body .feedbk textarea {
-	margin-left: 2vw;
-	min-width: 87.25vw;
-	height: 200px;
+html body .feedbk .wrap-input textarea {
 	border: none;
 	outline: none;
-	padding: 5px 10px 5px 10px;
+	font-size: larger;
+	margin: 2vw;
+	width: 65.95555555555555555555555555555555vw;
+	padding: 20px 20px 20px 20px;
 	border-radius: 10px;
+	margin-bottom: 0;
 	background: transparent;
 	border: 2px solid var(--mid);
-	color: var(--seashell);
-	max-height: 400px;
+	color: var(--light);
+}
+html body .feedbk .wrap-input textarea::placeholder{
+	color: var(--light);
+}
+html body .feedbk .wrap-input textarea::ms-input-placeholder{
+	color: var(--light);
+}
+html body .feedbk .wrap-input .wrapper{
+	display: flex;
+	flex-direction: row;
+	width: 70vw;
+	overflow: hidden;
 }
  html body .feedbk input::placeholder {
 	color: var(--mid);
@@ -738,8 +749,13 @@ html body #header .circle-container:hover img{
  html body .feedbk textarea::placeholder {
 	color: var(--light);
 }
+html body .feedbk button{
+	font-weight: bolder;
+}
  html body .feedbk .btn {
 	margin-left: 2vw;
+	padding: 20px;
+
 	color: var(--black);
 	background: var(--mid);
 	border-color: var(--mid);
