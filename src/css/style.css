@@ -56,18 +56,14 @@
 	scrollbar-width: thin;
 	scroll-margin-block-start: 10px;
 	scroll-margin-block-end: 10px;
-	scroll-snap-type: y proximity;
 	overflow-y: scroll;
 	height: 100vh;
 }
  html body {
-	width: 100%;
+	width: 100vw;
 	margin: 0 auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	animation-name: rise;
-	animation-duration: 3s;
-	animation-delay: 7.75s;
 	background: var(--black);
 }
  html body section {
@@ -76,13 +72,43 @@
  html body section:nth-child(1) {
 	scroll-snap-align: end;
 }
- @keyframes rise {
-	from {
-		margin-top: 160px;
-	}
-	to {
-		margin-top: 20px;
-	}
+
+html body .desktop ul{
+  display:flex;
+  height:80px;
+  width:100%;
+  background:transparent;
+  align-items: center;
+  justify-content:space-between;
+  padding:0 50px 0 100px;
+  flex-wrap: wrap;
+  transition: 0;
+}
+nav .logo{
+  
+}
+html body .desktop ul{
+  display:flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+html body .desktop ul li{
+  margin:0 5px;
+}
+html body .desktop ul li a{
+  color:var(--light);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding:8px 15px;
+  letter-spacing:1px;
+  border-bottom:1.5px solid transparent;
+  transition:all 0.3s ease;
+}
+html body .desktop ul li a.active,
+html body .desktop ul li a:hover{
+  border-color:var(--light);
+  color:var(--light);
 }
  html body .navbar-m {
 	background: var(--deep);
@@ -98,6 +124,7 @@
 	top: 10%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	visibility: hidden;
 }
  html body .p-4 {
 	float: left;
@@ -134,6 +161,7 @@
 	justify-content: center;
 	display: flex;
 	transition: 0.5s ease-in-out;
+	visibility: hidden;
 }
  html body .sidenav-m li {
 	color: var(--seashell);
@@ -188,7 +216,7 @@
 	justify-content: center;
 	align-items: center;
 	z-index: 10000;
-	animation-duration: 10s;
+	animation-duration: 5s;
 	animation-timing-function: linear;
 	opacity: 1;
 	visibility: hidden;
@@ -220,36 +248,6 @@
 	animation-name: reveal;
 	animation-duration: 2s;
 	animation-delay: 2.5s;
-}
- html body #preloader .loader-wrapper div:nth-child(3) {
-	animation-name: reveal;
-	animation-duration: 2s;
-	animation-delay: 3.5s;
-}
- html body #preloader .loader-wrapper div:nth-child(4) {
-	animation-name: reveal;
-	animation-duration: 2s;
-	animation-delay: 4.5s;
-}
- html body #preloader .loader-wrapper div:nth-child(5) {
-	animation-name: reveal;
-	animation-duration: 2s;
-	animation-delay: 5.5s;
-}
- html body #preloader .loader-wrapper div:nth-child(6) {
-	animation-name: reveal;
-	animation-duration: 2s;
-	animation-delay: 6.5s;
-}
- html body #preloader .loader-wrapper div:nth-child(7) {
-	animation-name: reveal;
-	animation-duration: 2s;
-	animation-delay: 7.5s;
-}
- html body #preloader .loader-wrapper div:nth-child(8) {
-	animation-name: reveal;
-	animation-duration: 2s;
-	animation-delay: 8.5s;
 }
  @keyframes revealed {
 	0% {
@@ -361,6 +359,7 @@
 		visibility: hidden;
 	}
 }
+
  html body #header {
 	width: 100%;
 	height: 100vh;
@@ -628,14 +627,17 @@ html body #header .circle-container:hover img{
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
-	width: 90%;
-	margin-left: 5%;
+	width: 80vw;
+	height: 60vh;
 	border-radius: 5px;
-	margin-top: 40px;
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
 	padding: 10px;
 	padding-top: 100px;
 	z-index: 2;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
  html body #about #back {
 	font-size: 25vw;
@@ -761,74 +763,19 @@ html body .feedbk button{
 	border-color: var(--mid);
 	outline-color: var(--light);
 }
- html body .footer {
-	background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
-	padding-top: 2.5px;
-}
- html body .footer .footer-content {
-	padding-top: 5vh;
-	padding-bottom: 5vh;
-	height: auto;
-	align-items: center;
-	text-align: center;
-	justify-content: center;
-	display: flex;
-	flex-direction: column;
-	background: var(--black);
-}
- html body .footer .footer-content hr {
-	background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
-	width: 90%;
-	height: 2px;
-}
- html body .footer .footer-content p {
-	color: transparent;
-	background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
-	background-clip: text;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	-oz-background-clip: text;
-	font-size: 12px;
-	font-stretch: extra-expanded;
-	height: 100%;
-}
- html body .footer .footer-content p svg {
-	fill: var(--deep);
-	padding: 1px;
-}
- html body .footer .footer-content p a {
-	color: transparent;
-	background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
-	background-clip: text;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	-oz-background-clip: text;
-	text-decoration: none;
-	transition: 0.2s;
-	padding-bottom: 2px;
-	border-bottom: 1.5px solid var(--light);
-}
- html body .footer .footer-content p a:hover {
-	padding-left: 5px;
-	padding-right: 5px;
-}
- html body .footer .footer-content .wrap .git-ele {
-	color: transparent;
-	background: linear-gradient(to right, var(--deep), var(--yellow), var(--light), var(--seashell), var(--mid), var(--peach), var(--grey));
-	background-clip: text;
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	-oz-background-clip: text;
-	text-decoration: none;
-	border-bottom: 2px solid var(--peach);
-	padding: 0px 10px 0px 10px;
-}
- html body .footer .footer-content .wrap .git-ele:hover {
-	padding: 0px 15px 0px 15px;
-}
+
 @media (max-width:1500px){
     html body #header .content{
         left:30%;
+    }
+    html body .desktop{
+    	visibility: hidden;
+    }
+    html body .navbar-m{
+    	visibility: visible;
+    }
+    html body .sidenav-m{
+    	visibility: visible;
     }
 }
 @media (max-width:1130px){
