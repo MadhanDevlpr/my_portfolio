@@ -8,11 +8,11 @@
 	--grey: #abb2bf;
 	--black: #490E08;
 }
-@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&amp;display=swap&#39);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
  * {
 	margin: 0;
 	padding: 0;
-	font-family: Comfortaa;
+	font-family: Raleway;
 	transition: 0.5s;
 	font-weight: 300;
 }
@@ -64,7 +64,9 @@
 	margin: 0 auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	background: var(--black);
+	background: radial-gradient(circle at bottom, var(--deep),var(--black));
+	background-attachment: fixed;
+
 }
  html body section {
 	scroll-snap-align: start;
@@ -72,38 +74,48 @@
  html body section:nth-child(1) {
 	scroll-snap-align: end;
 }
-
+html body .desktop{
+	position: fixed;
+	z-index: 4;
+}
 html body .desktop ul{
   display:flex;
-  height:80px;
   width:100%;
   background:transparent;
-  align-items: center;
-  justify-content:space-between;
+  align-items: right;
+  justify-content: right;
   padding:0 50px 0 100px;
   flex-wrap: wrap;
   transition: 0;
+  position: fixed;
 }
-nav .logo{
-  
+html body .desktop ul li{
+  margin:0 0px;
 }
+html body .desktop ul .logo{
+	position: absolute;
+	top: 2%;
+	left: 2%;
+	transform: translate(-50%,-50%);
+	margin: 25px;
+}
+
 html body .desktop ul{
   display:flex;
   flex-wrap: wrap;
   list-style-type: none;
 }
-html body .desktop ul li{
-  margin:0 5px;
-}
+
 html body .desktop ul li a{
   color:var(--light);
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
-  padding:8px 15px;
-  letter-spacing:1px;
+  padding:2.5px;
+  letter-spacing:0px;
   border-bottom:1.5px solid transparent;
   transition:all 0.3s ease;
+  margin-left: 20px;
 }
 html body .desktop ul li a.active,
 html body .desktop ul li a:hover{
@@ -216,7 +228,7 @@ html body .desktop ul li a:hover{
 	justify-content: center;
 	align-items: center;
 	z-index: 10000;
-	animation-duration: 5s;
+	animation-duration: 3s;
 	animation-timing-function: linear;
 	opacity: 1;
 	visibility: hidden;
@@ -243,58 +255,30 @@ html body .desktop ul li a:hover{
 }
  html body #preloader .loader-wrapper div:nth-child(1) img {
 	width: 25vw;
-}
- html body #preloader .loader-wrapper div:nth-child(2) {
-	animation-name: reveal;
+	animation-name: revealed;
 	animation-duration: 2s;
-	animation-delay: 2.5s;
-}
- @keyframes revealed {
+	animation-delay: 1.5s;
+} @keyframes revealed {
 	0% {
 		opacity: 0;
+		width: 0px;
+		height: 0px;
 		top: 80%;
 		left: 50%;
 	}
 	50% {
 		opacity: 1;
+		width: 50vw;
+		height: 50vw;
 		top: 50%;
 		left: 50%;
 	}
 	100% {
 		top: 0%;
 		left: 50%;
+		width: 0px;
+		height: 0px;
 		opacity: 0;
-	}
-}
- @keyframes reveal {
-	0% {
-		opacity: 0;
-		top: 80%;
-		transform: rotateX(-45deg);
-	}
-	15% {
-		opacity: 0.15;
-		transform: rotateX(-11.5deg);
-	}
-	25% {
-		opacity: 0.25;
-		transform: rotateX(-11.5deg);
-	}
-	50% {
-		opacity: 1;
-		transform: rotateX(22.5deg);
-	}
-	75% {
-		opacity: 0.75;
-		transform: rotateX(11.5deg);
-	}
-	85% {
-		opacity: 0.65;
-	}
-	100% {
-		opacity: 0;
-		transform: rotateX(45deg);
-		top: 20%;
 	}
 }
  @keyframes fade {
@@ -362,9 +346,9 @@ html body .desktop ul li a:hover{
 
  html body #header {
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	overflow-x: hidden;
-	background: var(--black);
+	background: radial-gradient(circle at bottom,var(--deep),var(--black));
 	transition: 2s;
 }
  html body #header .content {
@@ -373,10 +357,10 @@ html body .desktop ul li a:hover{
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
-     position: absolute;
-     top:55%;
-     left:20%;
-     transform: translate(-50%,-50%);
+	 position: absolute;
+	 top:50%;
+	 left:25%;
+	 transform: translate(-50%,-50%);
 }
  html body #header .content h1 {
 	color: var(--seashell);
@@ -394,7 +378,7 @@ html body .desktop ul li a:hover{
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	-oz-background-clip: text;
-	text-shadow: 0 0 5px var(--deep);
+	text-shadow: 0 0 5px var(--light);
 }
  html body #header .content h3 {
 	font-size: 1rem;
@@ -405,6 +389,7 @@ html body .desktop ul li a:hover{
 	padding: 10px;
 	border-radius: 10px;
 	color: var(--mid);
+	margin-bottom: 20px;
 }
  html body #header .content h3 span {
  	background: var(--deep);
@@ -414,6 +399,21 @@ html body .desktop ul li a:hover{
 	white-space: nowrap;
 	padding: 5px;
 	border-radius: 10px;
+}
+html body #header .content a{
+	padding: 15px 20px;
+	border: 2px solid var(--light);
+	color: var(--light);
+	border-radius: 5px;
+	text-decoration: none;
+}
+html body #header .content a:hover{
+	background: var(--light);
+	color: var(--deep);
+}
+html body #header .content #water{
+	position: fixed;
+	bottom: 0%;
 }
 @keyframes rotate {
   from {
@@ -447,11 +447,11 @@ html body .desktop ul li a:hover{
   }
 }
  html body #header .circle-container {
-	background: linear-gradient(to bottom right, var(--light) -100%, var(--peach) 100%);
+	background: var(--light);
 	width: 400px;
 	height: 400px;
 	position: absolute;
-	top: 55%;
+	top: 50%;
 	left: 75%;
 	transform: translate(-50%, -50%) ;
 	border-radius: 50%;
@@ -483,9 +483,12 @@ html body #header .circle-container:hover img{
  html body #header .circle {
 	width: 400px;
 	height: 400px;
-	background: var(--black);
+	background: radial-gradient(circle at bottom,var(--deep),var(--black));
+	background-attachment: fixed;
+	background-size: cover;
+	border: 10px solid var(--light);
 	clip-path: polygon(20% 0%, 0% 20%, 15% 50%, 0% 80%, 20% 100%, 50% 85%, 80% 100%, 100% 80%, 85% 50%, 100% 20%, 80% 0%, 50% 15%);
-	border-radius: 10%;
+	border-radius: 50%;
 	-webkit-animation: rotate 6.5s linear infinite;
   -moz-animation: rotate 6.5s linear infinite;
   -ms-animation: rotate 6.5s linear infinite;
@@ -496,7 +499,7 @@ html body #header .circle-container:hover img{
  html body .projects {
 	text-align: center;
 	overflow: hidden;
-	background: var(--black);
+	background: transparent;
 	padding-top: 100px;
 }
  html body .projects #work {
@@ -627,13 +630,13 @@ html body #header .circle-container:hover img{
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
-	width: 80vw;
-	height: 60vh;
+	width: 100vw;
+	height: 100vh;
 	border-radius: 5px;
 	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
 	padding: 10px;
 	padding-top: 100px;
-	z-index: 2;
+
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -643,7 +646,7 @@ html body #header .circle-container:hover img{
 	font-size: 25vw;
 	text-transform: lowercase;
 	position: absolute;
-	top: 82.5%;
+	top: 62.5%;
 	right: 0%;
 	opacity: 0.2;
 	cursor: default;
@@ -763,7 +766,21 @@ html body .feedbk button{
 	border-color: var(--mid);
 	outline-color: var(--light);
 }
-
+html body #footer{
+	position: absolute;
+	bottom: -20vh;
+	width: 100vw;
+}
+html body #footer a{
+	background: transparent;
+	padding: 20px;
+	text-decoration: none;
+	color: var(--light);
+}
+html body #footer .links{
+	float: right;
+	padding-right: 20px;
+}
 @media (max-width:1500px){
     html body #header .content{
         left:30%;
@@ -780,15 +797,30 @@ html body .feedbk button{
 }
 @media (max-width:1130px){
     html body #header .circle-container {
-        display: none;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100px;
+        height: 100px;
+   }
+   html body #header .circle-container:hover{
+   	width: 120px;
+   	height: 120px;
+   }
+   html body #header .circle-container img{
+   	width: 100px;
+        height: 100px;
    }
     html body #header .circle-container .circle {
-        display: none;
+    	width: 100px;
+    	height: 100px;
    }
    html body #header .content{
     position: absolute;
     top:50%;
     left:50%;
+    z-index: 2;
     
    }
    html body #header .content h1 .glow{

@@ -7,13 +7,14 @@ import Header from './components/Header';
 import Projects from './components/Projects';
 import About from './components/About';
 import Contact from './components/Contact';
-
+import Footer from './components/Footer'
 import { BrowserRouter as Router,Route, Link, Routes} from 'react-router-dom';
 function App() {
   return (
     <Router>
       <Loader />
       <Navbar />
+      <Footer />
       <Routes>
         <Route path="/" element={<Header />}/>
         <Route path="/about"  element={<About/>}/>

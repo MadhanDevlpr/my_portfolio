@@ -15,7 +15,9 @@ function Navbar() {
     document.getElementById("openNav").style.opacity = "1";
     document.getElementById("sidenav").style.left = "-120%";
   }
-
+if (window.location.href == "https://localhost:3000/about" || window.location.href == "https://madhanaadithya.studio/about"){
+  document.getElementsByClassName('about').style = "border-bottom:2px solid #fcd3bd";
+}
     return (
         <div>
           <div className="desktop">
@@ -24,8 +26,8 @@ function Navbar() {
               <a className="logo" href="#header">
                 <img src={logo} width="40" height="40" alt=""/>
               </a>
-                <li><a href="/" class="active">Home</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a className="home" href="/">Home</a></li>
+                <li><a className="about" href="/about">About</a></li>
                 <li><a href="/projects">Projects</a></li>
                 <li><a href="/contact">Contact</a></li>
               </ul>
