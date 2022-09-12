@@ -14,13 +14,14 @@ function App() {
     <Router>
       <Loader />
       <Navbar />
-      <Footer />
+      
       <Routes>
         <Route path="/" element={<Header />}/>
         <Route path="/about"  element={<About/>}/>
         <Route path="/projects"  element={<Projects/>}/>
         <Route path="/contact"  element={<Contact/>}/>
       </Routes>
+      <Footer />
     </Router>
   );
 }
