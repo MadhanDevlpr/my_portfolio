@@ -15,9 +15,6 @@ function Navbar() {
     document.getElementById("openNav").style.opacity = "1";
     document.getElementById("sidenav").style.left = "-120%";
   }
-if (window.location.href == "https://localhost:3000/about" || window.location.href == "https://madhanaadithya.studio/about"){
-  document.getElementsByClassName('about').style = "border-bottom:2px solid #fcd3bd";
-}
     return (
         <div>
           <div className="desktop">

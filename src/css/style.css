@@ -575,8 +575,8 @@ html body #header .circle-container:hover img{
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
-	background: transparent;
 	height: 92.5vh;
+	background: transparent;
 }
  html body #about #back {
 	font-size: 25vw;
@@ -587,7 +587,6 @@ html body #header .circle-container:hover img{
 	opacity: 0.2;
 	cursor: default;
 } html body #about  h1 {
-	margin: 30px;
 	font-size: 3rem;
 	padding-top: 20px;
 	color: transparent;
@@ -599,8 +598,9 @@ html body #header .circle-container:hover img{
  html body #about  p {
 	font-style: italic;
 	line-height: 40px;
-	font-size: x-large;
-	margin-top: 60px;
+	font-size: larger;
+	font-weight: 500;
+	margin-top: 0px;
 	color: transparent;
 	background: linear-gradient(to right, var(--grey), var(--light), var(--yellow));
 	background-clip: text;
@@ -719,6 +719,12 @@ html body #footer .links{
     }
     html body .sidenav-m{
     	visibility: visible;
+    }
+    html body #about{
+    	height: auto;
+    }
+    html body #about h1{
+    	margin-top: 50px;
     }
 }
 @media (max-width:1130px){
