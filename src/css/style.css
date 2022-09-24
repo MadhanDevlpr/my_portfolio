@@ -392,15 +392,16 @@ html body .desktop ul li a:hover{
 	border-radius: 10px;
 }
 html body #header .content a{
-	padding: 15px 20px;
-	border: 2px solid var(--light);
-	color: var(--light);
-	border-radius: 5px;
+	padding: 10px 50px;
+	font-weight: 500;
+	color: var(--black);
 	text-decoration: none;
+	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	background: var(--light);
 }
 html body #header .content a:hover{
-	background: var(--light);
 	color: var(--deep);
+	clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
 }
 html body #header .content #water{
 	position: fixed;
