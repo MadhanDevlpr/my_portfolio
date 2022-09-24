@@ -159,7 +159,7 @@ html body .desktop ul li a:hover{
 	position: fixed;
 	top: 0%;
 	left: -120%;
-	background: linear-gradient(to bottom,var(--black),rgba(0,0,0,0.9));
+	background: radial-gradient(circle at bottom,var(--deep) 20%,var(--black));
 	border-right: 1px solid var(--yellow);
 	z-index: 5000;
 	align-items: center;
