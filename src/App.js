@@ -14,7 +14,6 @@ function App() {
     <Router>
       <Loader />
       <Navbar />
-      
       <Routes>
         <Route path="/" element={<Header />}/>
         <Route path="/about"  element={<About/>}/>

@@ -257,21 +257,21 @@ html body .desktop ul li a:hover{
 		opacity: 0;
 		width: 0px;
 		height: 0px;
-		top: 80%;
+		top: 50%;
 		left: 50%;
 	}
 	50% {
 		opacity: 1;
-		width: 50vw;
-		height: 50vw;
+		width: 200px;
+		height: 200px;
 		top: 50%;
 		left: 50%;
 	}
 	100% {
-		top: 0%;
+		top: 50%;
 		left: 50%;
-		width: 0px;
-		height: 0px;
+		width: 250px;
+		height: 250px;
 		opacity: 0;
 	}
 }
@@ -571,8 +571,12 @@ html body #header .circle-container:hover img{
 }
  html body #about {
 	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
 	background: transparent;
-	padding-top: 100px;
+	height: 92.5vh;
 }
  html body #about #back {
 	font-size: 25vw;
@@ -595,7 +599,7 @@ html body #header .circle-container:hover img{
  html body #about  p {
 	font-style: italic;
 	line-height: 40px;
-	font-size: larger;
+	font-size: x-large;
 	margin-top: 60px;
 	color: transparent;
 	background: linear-gradient(to right, var(--grey), var(--light), var(--yellow));

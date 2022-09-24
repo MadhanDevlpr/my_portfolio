@@ -23,7 +23,7 @@ if (window.location.href == "https://localhost:3000/about" || window.location.hr
           <div className="desktop">
 
               <ul>
-              <a className="logo" href="#header">
+              <a className="logo" href="/">
                 <img src={logo} width="40" height="40" alt=""/>
               </a>
                 <li><a className="home" href="/">Home</a></li>
