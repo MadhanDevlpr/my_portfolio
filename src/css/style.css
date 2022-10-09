@@ -58,6 +58,7 @@
 }
  html body {
 	width: 100vw;
+	overflow-x: hidden;
 	margin: 0 auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -393,15 +394,16 @@ html body .desktop ul li a:hover{
 }
 html body #header .content a{
 	padding: 10px 50px;
-	font-weight: 500;
+	font-weight: 900;
 	color: var(--black);
 	text-decoration: none;
-	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	clip-path: polygon(10% 15%, 100% 0%, 90% 85%, 0% 100%);
 	background: var(--light);
+	transform: rotate(-2.5deg);
 }
 html body #header .content a:hover{
-	color: var(--deep);
-	clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+	transform: rotate(2.5deg);
+	
 }
 html body #header .content #water{
 	position: fixed;
