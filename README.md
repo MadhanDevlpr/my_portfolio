@@ -9,68 +9,7 @@
 
 
 
-
-
-- Download this Project in your Computer and follow the instructions below
-
-- Install required node modules, Run:
-  ``` 
-  npm install 
-  
-  ``` or ``` 
-  
-  yarn add
-  
-  ```
-  
-- Make changes in the images and logos and the content in the Components
-
-Head over to the file below
- ``` 
- src/components/Contact.jsx 
- ``` 
- in line 8 replace my email with yours &
- in line 10 replace the website's url with yours!
-
-- If you don't replace the mail, all feedbacks are gonna be received by me so make sure you do that.
-
-<hr>
-
-- Change the href links of all the ```<a>``` tags.
-
-<hr>
-
-
-And  finally run ``` npm start ``` to view a local preview of your app.
-
-
-Deployment 🧪:
-
-We're gonna be deploying our portfolio in Netlify
-
-Requirement: Netlify account
-
-Run the below command:
-```
-npm run build
-```
-Then you'll be able to see a build folder within the directory.
-
-Head over to https://app.netlify.com/teams/YOURUSERNAME/sites
-
-Drag and drop the build folder to the part of the page that is shown below.
-
-<img width="881" alt="Screenshot 2022-01-12 151709" src="https://user-images.githubusercontent.com/81558579/149115193-5e38efaa-4a7c-41f3-9202-9476f686b0b5.png">
-
-If you've followed the steps correctly you're site should have be successfully deployed ✔.
-
-Copy the url and Paste it into the world.
-
-
-<hr>
-
-If your're interested in contributing to this project please send me a msg in the feedback form of my portfolio.
-
+This isn't running on React but for a " Reaction "
 <hr>
 
 Stargazers
