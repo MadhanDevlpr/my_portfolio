@@ -24,3 +24,6 @@ Forkers
 
 
 <p align="center"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/MadhanDevlpr/React.js-Portfolio?color=white&style=for-the-badge"></img></p>
+
+
+New updates on it's way . . .
