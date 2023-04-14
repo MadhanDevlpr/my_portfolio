@@ -78,6 +78,16 @@ body{
 	background: transparent;
 	height: 100vh;
 }
+.main .watermark{
+	white-space: nowrap;
+	color: #fff;
+	opacity: 0.1;
+	user-select: none;
+	position: absolute;
+	top:100%;
+	left:50%;
+	transform: translate(-25%,0%);
+}
 .text{
 	position: absolute;
 	top:40%;
@@ -114,6 +124,13 @@ body{
 	margin-left: 2.5vw;
 
 }
+.main .lf{
+	text-align: left;
+}
+.main .lf p{
+	color: aqua;
+	font-weight:900;
+}
 .main svg{
 	position: absolute;
 	bottom: 10%;
@@ -142,10 +159,24 @@ body{
 	width: 100vw;
 	background:#fff;
 	backdrop-filter: blur(50%);
-	align-items: center;
 	text-align: center;
-	justify-content: center;
-	display: flex;
+}
+.mainabt .watermark{
+	font-size: 20vw;
+	color: var(--deep);
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	opacity: 0.1;
+	user-select: none;
+	mask-position: 100%;
+}
+.mainabt p{
+	position: relative;
+	top:25%;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 2rem;
 }
 .hash{
 	background: var(--aqua);
@@ -153,3 +184,80 @@ body{
 	padding: 5px;
 	border-radius: 10px;
 }
+.links{
+	position: relative;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%);
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.mainabt  a{
+	color: aqua;
+	text-decoration: none;
+	padding: 2px;
+}
+.projects{
+	background: linear-gradient(to top,#fff 20%, rgba(255,255,255,0.8) 20%);
+	width:100vw;
+	height:100vh;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+.projects .watermark{
+	font-size: 25vw;
+	color: yellow;
+	opacity: 0.5;
+	user-select: none;
+}
+.projectlist{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	background: #fff;
+	padding-bottom: 10vh;
+}
+.projectlist .card {
+	flex: 50%;
+	max-width: 100vw;
+	line-height: 3;
+	margin-bottom: 5vh;
+}
+.contact{
+	width:100vw;
+}
+
+@media only screen and (max-width: 1500px) {
+	.projectlist .card {
+		flex: 100%;
+		max-width: 100vw;
+	}
+	.main .text{
+		top:50%;
+		left:50%
+	}
+	.main h1{
+		font-size: 15vw;
+	}
+	.main .hash{
+		font-size: 0.8rem;
+	}
+	.main .watermark{
+		font-size: 10vw;
+		position: absolute;
+		top:125%;
+		left:50%;
+		transform: translate(-50%,-50%);
+	}
+	.mainabt{
+		height:auto
+	}
+  }
