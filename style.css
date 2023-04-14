@@ -107,6 +107,9 @@ body{
 	font-size: 8vw;
 	color: white;
 }
+.main h1 span{
+	visibility: none;
+}
 .main p{
 	margin-left: 2.5vw;
 
