@@ -14,8 +14,9 @@
 	margin: 0;
 	padding:0
 }
+
 body{
-	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(https://images.unsplash.com/photo-1537429149818-2d0e3e20857b?&w=1700&q=80);
+	background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)), url(back.jpeg);
 	background-size: cover;
 	background-position: 50% 50%;
 	background-attachment: fixed;
@@ -26,11 +27,15 @@ body{
 	right:2.5%;
 	transform: translate(-50%,-50%);
 	cursor: pointer;
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), linear-gradient(to bottom right,#ff005d83 50%,#00fff270 50%), linear-gradient(to bottom left,yellow 50%,violet 50%);
+	padding: 10px;
+	border-radius: 50%;
+	z-index: 10000;
 }
 .sidenav .list{
 	width:100vw;
 	height:100vh;
-	background:linear-gradient(to bottom, #000,#000, transparent);
+	background:linear-gradient(to bottom, #000,rgba(0,0,0,0.8), rgba(0,0,0,0.6));
 	z-index:10;
 	opacity: 0;
 	position: fixed;
@@ -43,6 +48,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	transition: .5s;
+	z-index: 1000000000;
 }
 .sidenav .list a{
 	margin: 10px;
@@ -57,7 +63,6 @@ body{
 .sidenav .list a:hover{
 	background-color: yellow;
 }
-
 .sidenav #close{
 	background-color: red;
 	font-size: 2rem;
@@ -70,21 +75,32 @@ body{
 	cursor: pointer;
 }
 .main{
-	
 	background: transparent;
 	height: 100vh;
 }
-
 .text{
 	position: absolute;
 	top:40%;
 	left:30%;
 	transform: translate(-50%,-50%);
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+.text .tags{
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
 }
 .main .text i{
 	color: white;
 	width: 20px;
 	height: 20px;
+	
 }
 .main h1{
 	
@@ -93,7 +109,7 @@ body{
 }
 .main p{
 	margin-left: 2.5vw;
-	color: white;
+
 }
 .main svg{
 	position: absolute;
@@ -102,23 +118,18 @@ body{
 	transform: translate(-50%,-50%);
 	fill: rgba(255, 255, 0, 0.486);
 }
+
 .about {
 	padding: 5vh;
-	align-items: left;
+	align-items: center;
 	justify-content: center;
-	text-align: right;
+	text-align: center;
 	background: #fff;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
-.about img{
-	width:10vw;
-	height: 10vw;
-	margin-left: 10vw;	
-	filter:grayscale(100%) brightness(0%) ;
-}
-.about p{
-	font-size: 1.25rem;
+
+.about h2{
 	padding-right: 20px;
 	color: #000;
 	line-height: 2.5;
@@ -126,10 +137,16 @@ body{
 .mainabt{
 	height: 100vh;
 	width: 100vw;
-	background:transparent;
+	background:#fff;
 	backdrop-filter: blur(50%);
 	align-items: center;
 	text-align: center;
 	justify-content: center;
 	display: flex;
+}
+.hash{
+	background: var(--aqua);
+	color: var(--deep);
+	padding: 5px;
+	border-radius: 10px;
 }
