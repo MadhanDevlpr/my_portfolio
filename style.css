@@ -53,19 +53,7 @@ body{
 	transition: .5s;
 	z-index: 1000000000;
 }
-.sidenav .list a{
-	margin: 10px;
-	padding:10px 30px;
-	font-size: 2rem;
-	color: black;
-	border-radius: 10px;
-	background-color: aqua;
-	text-decoration: none;
-	transition: .5s;
-}
-.sidenav .list a:hover{
-	background-color: yellow;
-}
+
 .sidenav #close{
 	background-color: red;
 	font-size: 2rem;
@@ -236,8 +224,24 @@ body{
 }
 .contact{
 	width:100vw;
+	padding-top:10vh;
+	padding-bottom: 10vh;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
 }
 
+.contact h1{
+	color: yellow;
+	margin-right: 5px;
+}
+.contact img{
+	width: 50px;
+	height: 50px;
+	border-radius: 300pc;
+}
 @media only screen and (max-width: 1500px) {
 	.projectlist .card {
 		flex: 100%;
