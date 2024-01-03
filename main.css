@@ -10,7 +10,7 @@ block-size: 100%;
 html {
 scroll-snap-type: y mandatory;
 scroll-behavior: smooth;
-background: url(back.jpeg);
+background: url(background.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -27,13 +27,13 @@ justify-content: center;
 }
 
 section:nth-of-type(odd) {
-color: rgba(215,255,255,0.9);
-background: rgba(0,0,20,0.9);
+color: #B6E2D3;
+background: #ef7c8de6;
 }
 
 section:nth-of-type(even) {
-color: rgba(0,0,0,0.9);
-background: rgba(215,255,255,0.9);
+color: #EF7C8E;
+background: #B6E2D3e6;
 }
 
 body {
@@ -59,7 +59,6 @@ font-size: 4rem;
     left:50%;
     transform: translate(-50%,-50%);
     font-style: italic;
-    color: rgba(250,255,255,0.9);
 }
 .text h1{
     font-size: 16vw;
@@ -78,15 +77,10 @@ font-size: 4rem;
     font-size: 22.5px;
     position: relative;
     bottom: 15%;
-    color: rgba(0,0,20,0.9);
-    background: rgba(215,255,255,0.5);
+    background:#B6E2D3;
     text-decoration: none;
-    padding:5px 25vw;
-}
-.ab2{
-    
-    background: red;
-    padding: 5px 25vw;
+    padding:20px;
+    color: #EF7C8E;
 }
 
 @media only screen and (max-width: 1500px){
