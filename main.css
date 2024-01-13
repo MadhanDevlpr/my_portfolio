@@ -35,7 +35,7 @@ section h1{
     align-items: center;
     text-align: center;
     color: #fff;
-    background: #000000;
+    background: rgba(0,0,0,0.9);
     mix-blend-mode: multiply;
     user-select: none;
     
