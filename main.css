@@ -1,92 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 *{
-font-family: Poppins;
-}
-
-html, body, section {
-block-size: 100%;
-}
-
-html {
-scroll-snap-type: y mandatory;
-scroll-behavior: smooth;
-background: url(background.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-}
-
-section {
-scroll-snap-align: start;
-scroll-snap-stop: always;
-
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-}
-
-section:nth-of-type(odd) {
-color: #B6E2D3;
-background: #ef7c8de6;
-}
-
-section:nth-of-type(even) {
-color: #EF7C8E;
-background: #B6E2D3e6;
-}
-
-body {
+    font-family: 'Permanent Marker', cursive;
 margin: 0;
-font-family: system-ui, sans-serif;
-font-size: 4rem;
+padding: 0;
+box-sizing: border-box;
 }
-.text .lf{
-    text-align: center;
-    justify-content: center;
+section{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    mix-blend-mode: multiply;
+}
+section video{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(2000%);
+}
+section h1{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    font-size: 28vw;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background: #000000;
+    mix-blend-mode: multiply;
+    user-select: none;
+    
 }
-.text p{
-    position: absolute;
-    top:22.5%;
-    font-size: 0.5em;
-    white-space: wrap;
-}
-.text h2{
-    font-size: 0.25em;
-    position: absolute;
-    top:2%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    font-style: italic;
-}
-.text h1{
-    font-size: 16vw;
-    font-weight: lighter;
-}
-.text .tags{
-    position:absolute;
-    bottom:5%;
-    right:5%;
-}
-.text .hash{
-    font-size: 0.5cm;
-
-}
-.main .ab{
-    font-size: 22.5px;
-    position: relative;
-    bottom: 15%;
-    background:#B6E2D3;
+section h1 a{
+    font-size: 20px;
+    color: #fff;
     text-decoration: none;
-    padding:20px;
-    color: #EF7C8E;
+    border: 10px solid white;
+    border-radius: 30px;
+    padding: 20px 40px;
+    margin-bottom: 10px;
+
 }
 
-@media only screen and (max-width: 1500px){
-    .text h2{
-        font-size: 15px;
-        width: 80vw;
-        text-align: center;
-    }
-}
