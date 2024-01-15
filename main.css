@@ -1,53 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 *{
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Montserrat', sans-serif;
 margin: 0;
 padding: 0;
-box-sizing: border-box;
 }
-section{
-    position: absolute;
-    width: 100%;
+.main{
+    width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    mix-blend-mode: multiply;
 }
-section video{
-    position: absolute;
+.main video{
+    position: fixed;
     top:0;
     left:0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
-    filter: brightness(2000%);
 }
-section h1{
+.main h1{
     position: absolute;
     top:0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
+    user-select: none;
     flex-direction: column;
-    font-size: 28vw;
+    font-size: 25vw;
     font-weight: 900;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #fff;
-    background: rgba(0,0,0,0.9);
+    background: #000000;
     mix-blend-mode: multiply;
-    user-select: none;
     
 }
-section h1 a{
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-    border: 10px solid white;
-    border-radius: 30px;
-    padding: 20px 40px;
-    margin-bottom: 10px;
 
+.div{
+    height:100vh;
+    mix-blend-mode: multiply;
+    background-color: #000;
+    width: 100vw;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
+#about .wrapper{
+    color: #fff;
+    display: flex;
+    font-size: 20vw;
+}
+#about .wrapper .dynamic{
+    margin-left: 15px;
+    height: 25vw;
+    overflow: hidden;
+    
+}
+#about .wrapper .dynamic li{
+    position: relative;
+    list-style: none;
+    top:0;
+    animation: slide 12s steps(4) infinite;
+}
+@keyframes slide{
+    100%{
+        top:-100vw
+    }
+}
+#about .wrapper .dynamic li::after{
+    content:"";
+    position: absolute;
+    left: 0;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    border-left: 30px solid #fff;
+    animation: typing 3s steps(10) infinite;
+}
+@keyframes typing{
+    40%,60%{
+        left:calc(100% + 30px)
+    }
+    100%{
+        left: 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+    
+  }
