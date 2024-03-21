@@ -1,4 +1,0 @@
-function pop(){
-
-    document.getElementById
-}

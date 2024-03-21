@@ -1,0 +1,49 @@
+*{
+  margin:0;
+  font-family: monospace;
+  padding:0;
+}
+.instructions{
+  width:100vw;
+  height:100vh;
+  position: absolute;
+  z-index: 3;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.instructions h1{
+  color: yellow;
+  margin-bottom: 5vh;
+  font-size: 3rem;
+}
+.instructions a{
+  text-decoration: none;
+  background-color: blueviolet;
+  font-size: 2rem;
+  color: #000;
+  padding: 20px;
+  font-weight: 900;
+}
+.nav{
+  position: absolute;
+  display: flex;
+  
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width:100vw;
+  margin-bottom: 10vh;
+  bottom:0;
+  
+}
+.nav a{
+  padding: 1.5rem;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 1.5rem;
+  color: rgb(255, 10, 255);
+}
