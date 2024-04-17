@@ -1,49 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1537429149818-2d0e3e20857b?&w=1700&q=80');
+  background-size: cover;
+  background-position: center;
+
+}
+@font-face {
+  font-family: kitty;
+  src: url('Jujutsu\ Kaisen.ttf');
+}
+@font-face {
+  font-family: maddy;
+  src: url('Yokelvision.otf');
+}
 *{
-  margin:0;
-  font-family: monospace;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
-.instructions{
-  width:100vw;
-  height:100vh;
-  position: absolute;
-  z-index: 3;
-  background-color: #000;
+h1{
+  font-family: kitty;
+}
+.hero {
+  
+height: 100vh;
   display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
   flex-direction: column;
-}
-.instructions h1{
-  color: yellow;
-  margin-bottom: 5vh;
-  font-size: 3rem;
-}
-.instructions a{
-  text-decoration: none;
-  background-color: blueviolet;
-  font-size: 2rem;
-  color: #000;
-  padding: 20px;
-  font-weight: 900;
-}
-.nav{
-  position: absolute;
-  display: flex;
-  
+  justify-content: center;
   align-items: center;
   text-align: center;
-  justify-content: center;
-  width:100vw;
-  margin-bottom: 10vh;
-  bottom:0;
-  
+  color: #fff;
 }
-.nav a{
-  padding: 1.5rem;
+.text{
+  width:100vw;
+  height: 100vh;display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 24px;
+  font-family: maddy;
+  margin-bottom: 40px;
+}
+
+.btn {
+  padding: 15px 30px;
+  background-color: #ff5252;
+  color: #fff;
   text-decoration: none;
-  font-family: monospace;
+  border-radius: 5px;
   font-size: 1.5rem;
-  color: rgb(255, 10, 255);
+  font-family: maddy;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff1744;
 }
